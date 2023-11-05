@@ -19,7 +19,27 @@ namespace ASE_assignment
 
         private void button1_Click(object sender, EventArgs e)
         {
+           
+        }
 
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void RunButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+            panel2.CreateGraphics();
         }
     }
 }
