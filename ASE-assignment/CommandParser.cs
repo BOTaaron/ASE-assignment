@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Windows.Forms;
 
 namespace ASE_assignment
 {
@@ -20,10 +21,16 @@ namespace ASE_assignment
 
             string[] validCommands = { "moveTo", "drawTo", "clear", "reset", "rectangle", "circle", "triangle", "pen", "fill" };
             bool validation = false;
+            if (validation == false)
+            {
+                MessageBox.Show("Input not recognised, read the documentation for help", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
 
             return validation;
         }
     }
+
+
 
 
 

@@ -4,7 +4,9 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Drawing.Text;
+using System.IO;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -13,13 +15,12 @@ namespace ASE_assignment
 {
     public partial class Form1 : Form 
     {      
-        private int textLocation = 10;
         public Form1()
         {
             
             InitializeComponent();
             // event handlers for the buttons and text box
-            CommandBox.KeyUp += new KeyEventHandler(CommandBox_KeyDown);
+            CommandBox.KeyDown += new KeyEventHandler(CommandBox_KeyDown);
             SyntaxButton.Click += new EventHandler(SyntaxButton_Click);
             RunButton.Click += new EventHandler(RunButton_Click);
  
@@ -38,7 +39,7 @@ namespace ASE_assignment
             // if the user presses enter, try to parse the command 
             if (e.KeyCode == Keys.Enter)
             {
-                parse.Parser(CommandBox.Text);
+               // parse.Parser(CommandBox.Text);
                 DisplayInput(CommandBox.Text);
                 CommandBox.Clear();
                 
@@ -47,26 +48,27 @@ namespace ASE_assignment
 
         private void RunButton_Click(object sender, EventArgs e)
         {
-            // try to parse the command and check the syntax when the user clicks the 'Run' button
-            parse.Parser(CommandBox.Text);
-            CommandBox.Clear();
+            // try to parse the command and run the program when the user clicks the 'Run' button
+            // parse.Parser(CommandBox.Text);
+            
             
         }
 
         private void SyntaxButton_Click(object sender, EventArgs e)
         {
             // checks syntax is valid when the 'Syntax' button is clicked
-            parse.ValidateSyntax(CommandBox.Text);
+            // parse.ValidateSyntax(CommandBox.Text);
             CommandBox.Clear();
         }
 
         private void DisplayInput(string line)
         {
-            //Create a label that displays the text the user enters when the enter key is pressed
-            //Value is stored in the line variable from the CommandBox.Text input
-            //Label width is equal to width of the panel 
+            // Create a label that displays the text the user enters when the enter key is pressed
+            // Value is stored in the line variable from the CommandBox.Text input
+            // Label width is equal to width of the panel 
             // Point defines the label location, with X (left/right) of 0 and Y (up/down) straight after the previous label 
-            
+            // Does not create a label if an empty line is entered
+
             if (line != "")
             { 
             Label inputLabel = new Label();
@@ -74,16 +76,51 @@ namespace ASE_assignment
             CommandPanel.Controls.Add(inputLabel);
             inputLabel.Width = CommandPanel.Width;
             inputLabel.Location = new Point(0, CommandPanel.Controls.Count * inputLabel.Height);
-                MessageBox.Show("Invalid Input!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                
              }
+
             
             
         }
 
 
+ 
+
+        private void SaveButton_Click(object sender, EventArgs e)
+        {
+            FileManager fileManager = new FileManager();
+
+            // adds text from all labels inside the CommandPanel to a List called userInput
+            List<string> userInput = new List<string>();
+            string path = null;
+            // iterate through all labels in CommandPanel.Controls and add to the userInput list
+            foreach (Label textLabels in CommandPanel.Controls)
+            {           
+                userInput.Add(textLabels.Text);
+            }
+
+            using (SaveFileDialog sfd = new SaveFileDialog())
+            {
+                sfd.Filter = "txt files (*.txt)|*.txt";
+                sfd.RestoreDirectory = true;
+
+                if (sfd.ShowDialog() == DialogResult.OK)
+                {
+                     path = sfd.FileName;
+
+                }
+                else 
+                {
+                    return;
+                }
+            }
+            fileManager.SaveFile(userInput, path);
+        }
+
+
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            // adds a scroll bar if the text exceeds the height of the panel
             CommandPanel.AutoScroll = true;
         }
 
@@ -106,5 +143,7 @@ namespace ASE_assignment
         {
 
         }
+
+
     }
 }
