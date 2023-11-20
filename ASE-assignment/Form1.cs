@@ -23,26 +23,22 @@ namespace ASE_assignment
             CommandBox.KeyDown += new KeyEventHandler(CommandBox_KeyDown);
             SyntaxButton.Click += new EventHandler(SyntaxButton_Click);
             RunButton.Click += new EventHandler(RunButton_Click);
- 
 
-            
         }
 
 
 
         CommandParser parse = new CommandParser();
 
-
         private void CommandBox_KeyDown(object sender, KeyEventArgs e)
         {
            
-            // if the user presses enter, try to parse the command 
+            // if the user presses enter, call DisplayInput function to place line inside the label for the user to view
             if (e.KeyCode == Keys.Enter)
             {
                // parse.Parser(CommandBox.Text);
                 DisplayInput(CommandBox.Text);
-                CommandBox.Clear();
-                
+                CommandBox.Clear(); 
             }
         }
 
@@ -78,13 +74,7 @@ namespace ASE_assignment
             inputLabel.Location = new Point(0, CommandPanel.Controls.Count * inputLabel.Height);
                 
              }
-
-            
-            
         }
-
-
- 
 
         private void SaveButton_Click(object sender, EventArgs e)
         {
@@ -99,16 +89,20 @@ namespace ASE_assignment
                 userInput.Add(textLabels.Text);
             }
 
+            // instantiates the SaveFileDIalog class to select a path to save the file
             using (SaveFileDialog sfd = new SaveFileDialog())
             {
+                // sets the file name filter so that only text files appear in the option
                 sfd.Filter = "txt files (*.txt)|*.txt";
+                // restore the directory to the previously selected directory
                 sfd.RestoreDirectory = true;
 
+                // when OK is clicked, set the path and filename to save the input
                 if (sfd.ShowDialog() == DialogResult.OK)
                 {
                      path = sfd.FileName;
-
                 }
+                // if cancel is clicked, do nothing
                 else 
                 {
                     return;
@@ -116,6 +110,27 @@ namespace ASE_assignment
             }
             fileManager.SaveFile(userInput, path);
         }
+
+         private void OpenButton_Click(object sender, EventArgs e)
+         {
+            using (OpenFileDialog ofd = new OpenFileDialog())
+            {
+                ofd.Filter = "Text files (*.txt)|*.txt";
+                if (ofd.ShowDialog() == DialogResult.OK)
+                {
+                    FileManager fileManager = new FileManager();
+                    List<Label> labels = fileManager.DisplayFile(ofd.FileName);
+
+                    CommandPanel.Controls.Clear();
+                    foreach (Label label in labels)
+                    {
+                        CommandPanel.Controls.Add(label);
+                    }
+                }
+            }
+         }
+
+
 
 
         private void Form1_Load(object sender, EventArgs e)
@@ -139,11 +154,6 @@ namespace ASE_assignment
 
         }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-
+      
     }
 }
