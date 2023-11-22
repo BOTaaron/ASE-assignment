@@ -30,12 +30,13 @@ namespace ASE_assignment
 
         public List<System.Windows.Forms.Label> DisplayFile(string path)
         {
+            // call the ReadFile function and pass in the location of the file to be read
             List<string> commands = ReadFile(path);
             List<System.Windows.Forms.Label> labels = new List<System.Windows.Forms.Label>();
             int position = 0;
 
             // foreach iterates through the list of lines in the file and adds each one to a label at the line break
-            // position creates the label location directly under the previous one
+            // positions label against left side of panel
             foreach (string command in commands)
             {
                 System.Windows.Forms.Label label = new System.Windows.Forms.Label
@@ -45,6 +46,7 @@ namespace ASE_assignment
                     Location = new Point(0, position)
                 };
                 labels.Add(label);
+            // position creates the label location directly under the previous one
                 position += label.Height;
             }
             
@@ -54,6 +56,7 @@ namespace ASE_assignment
 
         public List<string> ReadFile(string path)
         {
+            // read text inside a file and save it into a List to be returned and displayed using the DisplayFile function
             List<string> commands = new List<string> ();
 
             using (StreamReader sr = new StreamReader(path))
