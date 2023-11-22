@@ -36,7 +36,7 @@ namespace ASE_assignment
             // if the user presses enter, call DisplayInput function to place line inside the label for the user to view
             if (e.KeyCode == Keys.Enter)
             {
-               // parse.Parser(CommandBox.Text);
+                parse.ParseLine(CommandBox.Text);
                 DisplayInput(CommandBox.Text);
                 CommandBox.Clear(); 
             }
