@@ -2,22 +2,25 @@
 using System.Linq;
 using System.Windows.Forms;
 using System.Collections.Generic;
+using System.Drawing;
+using System.Security.Cryptography;
 
 namespace ASE_assignment
 {
     internal class CommandParser
     {
 
-        public void ParseLine(string userInput)
+        public Command ParseLine(string userInput)
         {  
             // split user input into an array of strings divided by spaces
-            string[] line = userInput.Split(' ');
+            string[] line = userInput.ToLower().Split(' ');
 
             // first word of the line is to be used as a command, converted to lowercase to prevent user errors
-            string command = line[0].ToLower();
-            string [] parameters = line.Skip(1).ToArray();
-            List<int> intParameters = new List<int>();           
 
+            List<string> command = new List<string>();
+            List<int> intParams = new List<int>();
+            List<string> stringParams = new List<string>();
+             
             // check the array is not empty
             if ( line.Length == 0 )
             {
@@ -25,54 +28,54 @@ namespace ASE_assignment
             }
             else if ( line.Length == 1 )
             {
-                switch(command)
-                {
-                    case "clear":
-                       // ClearCanvass();
-                        break;
-                    case "reset":
-                       // ResetPen();
-                        break;
-                }
+                command.Add(line[0]);
             }
             else if ( line.Length == 2 )
             {
-                if (command.Equals("fill"))
+                command.Add(line[0]);
+
+                if (line[1].Contains(",")) 
                 {
-                    switch(parameters[0])
+                    // if parameters contain a comma delimiter, split at the comma
+                    // then, convert to an integer and add them to 
+                    string[] splitParams = line[1].Split(',');
+
+                    foreach (var param in splitParams)
                     {
-                        case "on":
-                            //penFill = true; 
-                            break;
-                        case "off":
-                            //penFill = false;
-                            break;
-                        default:
-                            throw new ArgumentException($"Unknown parameter: {parameters[0]}");
+                        if (int.TryParse(param, out int integer))
+                        {
+                            intParams.Add(integer);
+                        }
+                        else
+                        {
+                            throw new FormatException($"Invalid format of '{param}'");
+                        }
                     }
-                }
-                else if (command.Equals("pen"))
+                    
+                } 
+                else if (int.TryParse(line[1], out int param))
                 {
-                    switch(parameters[0])
-                    {
-                        case "red":
-                           // PenColour("red");
-                            break;
-                        case "green":
-                           // PenColour("green");
-                            break;
-                        case "blue":
-                           // PenColour("blue");
-                            break;
-                        default:
-                            throw new ArgumentException($"Unknown parameter: {parameters[0]}");
-                    }
+                    intParams.Add(param);
                 }
+                else
+                {
+                    stringParams.Add(line[1]);
+                }
+
             }
             else if ( line.Length > 2 ) 
             {
                 throw new InvalidOperationException("Too many parameters entered");
             }
+
+            var parsedCommand = new Command
+            {
+                parsedCommand = command,
+                IntParams = intParams,
+                StringParam = stringParams
+            };
+
+            return parsedCommand;
 
         }
 
