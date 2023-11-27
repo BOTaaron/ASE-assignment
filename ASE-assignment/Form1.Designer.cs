@@ -84,7 +84,6 @@
             this.DrawingPanel.Size = new System.Drawing.Size(784, 640);
             this.DrawingPanel.TabIndex = 6;
             this.DrawingPanel.TabStop = false;
-            this.DrawingPanel.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // OpenButton
             // 

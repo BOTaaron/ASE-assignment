@@ -149,11 +149,7 @@ namespace ASE_assignment
         }
 
 
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
+     
       
     }
 }

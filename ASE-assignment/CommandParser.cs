@@ -21,13 +21,14 @@ namespace ASE_assignment
             List<int> intParams = new List<int>();
             List<string> stringParams = new List<string>();
              
-            // check the array is not empty
+            // check the array is not empty, else throw an exception
             if ( line.Length == 0 )
             {
                 throw new InvalidOperationException("User input expected");
             }
             else if ( line.Length == 1 )
             {
+                // if the line array only contains one value, parse it as a command
                 command.Add(line[0]);
             }
             else if ( line.Length == 2 )
@@ -37,7 +38,7 @@ namespace ASE_assignment
                 if (line[1].Contains(",")) 
                 {
                     // if parameters contain a comma delimiter, split at the comma
-                    // then, convert to an integer and add them to 
+                    // then, convert to an integer and add them to the appropriate list
                     string[] splitParams = line[1].Split(',');
 
                     foreach (var param in splitParams)
@@ -59,6 +60,7 @@ namespace ASE_assignment
                 }
                 else
                 {
+                    // assume the parameter is a string and add it to a string list
                     stringParams.Add(line[1]);
                 }
 
@@ -68,9 +70,10 @@ namespace ASE_assignment
                 throw new InvalidOperationException("Too many parameters entered");
             }
 
+            // 
             var parsedCommand = new Command
             {
-                parsedCommand = command,
+                ParsedCommand = command,
                 IntParams = intParams,
                 StringParam = stringParams
             };

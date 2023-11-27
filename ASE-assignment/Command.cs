@@ -8,8 +8,11 @@ namespace ASE_assignment
 {
     internal class Command
     {
-        public List<string> parsedCommand{ get; set;}
+        // accessors for the user input parsed by the CommandParser class
+        public List<string> ParsedCommand{ get; set;}
         public List<int> IntParams { get; set; }
         public List<string> StringParam { get; set;}
+
+
     }
 }
