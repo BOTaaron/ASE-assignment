@@ -10,20 +10,25 @@ namespace ASE_assignment
     {
         public void RunLines(Command parsedLine)
         {
-            if (parsedLine.ParsedCommand.Equals("moveTo"))
+            // if statements that define behaviour when an expected command is entered
+            if (parsedLine.ParsedCommand[0].Equals("moveto"))
             {
+                
 
             }
-            else if (parsedLine.ParsedCommand.Equals("drawTo"))
+            else if (parsedLine.ParsedCommand.Equals("drawto"))
             {
-
+                throw new NotImplementedException();
             }
             else if (parsedLine.ParsedCommand.Equals("clear"))
             {
 
             }
-            else if (parsedLine.ParsedCommand.Equals("reset"))
+            else if (parsedLine.ParsedCommand[0].Equals("reset"))
             {
+                Console.WriteLine(parsedLine.ParsedCommand);
+                Console.ReadLine();
+                throw new ArgumentException("Worked");
 
             }
             else if (parsedLine.ParsedCommand.Equals("rectangle"))
@@ -45,6 +50,12 @@ namespace ASE_assignment
             else if (parsedLine.ParsedCommand.Equals("fill"))
             {
 
+            }
+            else
+            {
+                // if command is not from the expected commands, throw an exception (to do later)
+                Console.WriteLine(parsedLine.ParsedCommand);
+                throw new NotImplementedException();
             }
 
         }

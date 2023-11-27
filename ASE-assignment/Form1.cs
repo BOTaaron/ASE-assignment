@@ -29,6 +29,7 @@ namespace ASE_assignment
 
 
         CommandParser parse = new CommandParser();
+        RunCommand run = new RunCommand();
 
         private void CommandBox_KeyDown(object sender, KeyEventArgs e)
         {
@@ -45,8 +46,9 @@ namespace ASE_assignment
         private void RunButton_Click(object sender, EventArgs e)
         {
             // try to parse the command and run the program when the user clicks the 'Run' button
-            // parse.Parser(CommandBox.Text);
-            
+            var parsedLine = parse.ParseLine(CommandBox.Text);
+            run.RunLines(parsedLine);
+
             
         }
 
@@ -113,9 +115,11 @@ namespace ASE_assignment
 
          private void OpenButton_Click(object sender, EventArgs e)
          {
+            // displays a menu that prompts user to select a file, filtered to .txt files
             using (OpenFileDialog ofd = new OpenFileDialog())
             {
                 ofd.Filter = "Text files (*.txt)|*.txt";
+                // when user clicks ok in the prompt, displays each line from the file in its own label 
                 if (ofd.ShowDialog() == DialogResult.OK)
                 {
                     FileManager fileManager = new FileManager();

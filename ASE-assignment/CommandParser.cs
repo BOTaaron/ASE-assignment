@@ -15,13 +15,14 @@ namespace ASE_assignment
             // split user input into an array of strings divided by spaces
             string[] line = userInput.ToLower().Split(' ');
 
-            // first word of the line is to be used as a command, converted to lowercase to prevent user errors
-
+           
+            // initialise a list to store each part of the line of user input depending on the format of the parameter
+            // once parsed, returned and accessed through accessors in Command class
             List<string> command = new List<string>();
             List<int> intParams = new List<int>();
             List<string> stringParams = new List<string>();
              
-            // check the array is not empty, else throw an exception
+            // throw an exception if user input is empty
             if ( line.Length == 0 )
             {
                 throw new InvalidOperationException("User input expected");
@@ -56,21 +57,23 @@ namespace ASE_assignment
                 } 
                 else if (int.TryParse(line[1], out int param))
                 {
+                    // statement returns true and runs if parameter is a number, and then gets added to intParams list
                     intParams.Add(param);
                 }
                 else
                 {
-                    // assume the parameter is a string and add it to a string list
+                    // assume the parameter is a string and add it to a string list to be checked later
                     stringParams.Add(line[1]);
                 }
 
             }
             else if ( line.Length > 2 ) 
             {
+                // command is too long, throw an exception. Can be modified later if processing more complex user inputs
                 throw new InvalidOperationException("Too many parameters entered");
             }
 
-            // 
+            // parsedCommand stores the parsed values and returns them so they can be accessed in the Command class
             var parsedCommand = new Command
             {
                 ParsedCommand = command,
