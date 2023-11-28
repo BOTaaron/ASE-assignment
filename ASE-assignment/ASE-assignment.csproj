@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Pen.cs" />
     <Compile Include="Command.cs" />
     <Compile Include="CommandParser.cs" />
     <Compile Include="FileManager.cs" />

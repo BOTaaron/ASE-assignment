@@ -14,11 +14,19 @@ using System.Windows.Forms;
 namespace ASE_assignment
 {
     public partial class Form1 : Form 
-    {      
+    {
+        private Bitmap drawingCanvass;
+        private Bitmap errorCanvass;
+        private Bitmap penCanvass;
+        Pen canvass = new Pen();
         public Form1()
         {
             
             InitializeComponent();
+            drawingCanvass = new Bitmap(DrawingPanel.Width, DrawingPanel.Height);
+            errorCanvass = new Bitmap(DrawingPanel.Width, DrawingPanel.Height);
+            penCanvass = new Bitmap(DrawingPanel.Width, DrawingPanel.Height);
+            DrawingPanel.Image = canvass.RefreshCanvass(penCanvass, drawingCanvass);
             // event handlers for the buttons and text box
             CommandBox.KeyDown += new KeyEventHandler(CommandBox_KeyDown);
             SyntaxButton.Click += new EventHandler(SyntaxButton_Click);
@@ -26,7 +34,7 @@ namespace ASE_assignment
 
         }
 
-
+        
 
         CommandParser parse = new CommandParser();
         RunCommand run = new RunCommand();
@@ -47,15 +55,15 @@ namespace ASE_assignment
         {
             // try to parse the command and run the program when the user clicks the 'Run' button
             var parsedLine = parse.ParseLine(CommandBox.Text);
-            run.RunLines(parsedLine);
+            run.RunLines(parsedLine, drawingCanvass, penCanvass);
+            CommandBox.Clear();
+           // DrawingPanel.Refresh();
 
             
         }
-
         private void SyntaxButton_Click(object sender, EventArgs e)
         {
-            // checks syntax is valid when the 'Syntax' button is clicked
-            // parse.ValidateSyntax(CommandBox.Text);
+            // checks syntax is valid when the 'Syntax' button is clicked           
             CommandBox.Clear();
         }
 
@@ -67,7 +75,7 @@ namespace ASE_assignment
             // Point defines the label location, with X (left/right) of 0 and Y (up/down) straight after the previous label 
             // Does not create a label if an empty line is entered
 
-            if (line != "")
+            if (line != "" && !line.Equals("clear") && !line.Equals("run") && !line.Equals("reset"))
             { 
             Label inputLabel = new Label();
             inputLabel.Text = line;
@@ -133,9 +141,6 @@ namespace ASE_assignment
                 }
             }
          }
-
-
-
 
         private void Form1_Load(object sender, EventArgs e)
         {
