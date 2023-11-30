@@ -30,9 +30,7 @@ namespace ASE_assignment
                     // Positions the pen to the x and y coordinates
                     int x = parsedLine.IntParams[0];
                     int y = parsedLine.IntParams[1];
-                    controller.PositionPen(x, y);
-                    
-                    
+                    controller.PositionPen(x, y);                 
                 }
                 else
                 {
@@ -46,7 +44,6 @@ namespace ASE_assignment
                     int x = parsedLine.IntParams[0];
                     int y = parsedLine.IntParams[1];
                     controller.PenDraw(x, y);
-
                 }
                 else
                 {
@@ -57,12 +54,10 @@ namespace ASE_assignment
             else if (parsedLine.ParsedCommand[0].Equals("clear"))
             {
                 canvass.ClearCanvas();
-
             }
             else if (parsedLine.ParsedCommand[0].Equals("reset"))
             {
-                controller.PositionPen(0, 0);
-                
+                controller.PositionPen(0, 0);              
             }
             else if (parsedLine.ParsedCommand[0].Equals("run"))
             {
@@ -71,13 +66,11 @@ namespace ASE_assignment
             else if (parsedLine.ParsedCommand[0].Equals("rectangle"))
             {
                 controller.DrawShape(new Rectangle(parsedLine.IntParams[0], parsedLine.IntParams[1]));
-                
+               
             }
             else if (parsedLine.ParsedCommand[0].Equals("circle"))
             {
                 controller.DrawShape(new Circle(parsedLine.IntParams[0]));
-
-
             }
             else if (parsedLine.ParsedCommand[0].Equals("triangle"))
             {
@@ -99,12 +92,24 @@ namespace ASE_assignment
                     case "black":
                         controller.PenColour(Color.Black);
                         break;
+                        default: throw new ArgumentException("Invalid colour selected");
                 
                 }
             }
             else if (parsedLine.ParsedCommand[0].Equals("fill"))
             {
-                throw new NotImplementedException("Not implemented");
+                if (parsedLine.StringParam[0].Equals("on"))
+                {
+                    controller.ShapeFill(true);
+                }
+                else if (parsedLine.StringParam[0].Equals("off"))
+                {
+                    controller.ShapeFill(false);
+                }
+                else
+                {
+                    throw new ArgumentException("Unexpected parameter");
+                }
             }
             else
             {

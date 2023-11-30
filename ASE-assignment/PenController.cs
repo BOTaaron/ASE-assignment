@@ -15,6 +15,7 @@ namespace ASE_assignment
         private readonly Canvass canvass;
         private Pen pen;
         private Color penColour;
+        private bool shapeFill;
 
         public PenController(Canvass canvass)
         {
@@ -22,6 +23,7 @@ namespace ASE_assignment
             // set default pen colour to black
             this.penColour = Color.Black;
             this.pen = new Pen(penColour);
+            this.shapeFill = false;
         }
 
         public void PositionPen(int x, int y)
@@ -46,16 +48,19 @@ namespace ASE_assignment
 
         public void DrawShape(Shape shape)
         {
+            shape.shapeFill = shapeFill;
             shape.Draw(canvass.DrawingGraphics, pen, currentX, currentY);
         }
         public void PenColour(Color colour)
         {
             // create new pen that uses colour value from method to define colour of drawing
-            pen = new Pen(colour);
-
-            
+            pen = new Pen(colour);           
         }
-
+        public void ShapeFill(bool fill)
+        {
+            shapeFill = fill;
+        }
+        
     }
 
 }

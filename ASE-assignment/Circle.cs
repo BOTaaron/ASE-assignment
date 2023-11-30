@@ -20,7 +20,19 @@ namespace ASE_assignment
         // takes radius as a single parameter from user input
         public override void Draw(Graphics graphics, Pen pen, int x, int y)
         {
-            graphics.DrawEllipse(pen, x - Radius, y - Radius, Radius * 2, Radius * 2);
+            if (shapeFill)
+            {
+                Fill(graphics, new SolidBrush(pen.Color), x, y);
+            }
+            else
+            {
+                graphics.DrawEllipse(pen, x - Radius, y - Radius, Radius * 2, Radius * 2);
+            }
+            
+        }
+        public override void Fill(Graphics graphics, Brush brush, int x, int y)
+        {
+            graphics.FillEllipse(brush, x - Radius, y - Radius,Radius * 2, Radius * 2);
         }
     }
 }

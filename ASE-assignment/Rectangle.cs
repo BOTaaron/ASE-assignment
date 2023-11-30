@@ -23,7 +23,20 @@ namespace ASE_assignment
         // takes radius as a single parameter from user input
         public override void Draw(Graphics graphics, Pen pen, int x, int y)
         {
+            // depending on the value of shapeFill, draw either a solid or drawn shape
+            if (shapeFill)
+            {
+                Fill(graphics, new SolidBrush(pen.Color), x, y);
+            }
+            else
+            {
             graphics.DrawRectangle(pen, x - Width / 2, y - Height / 2, Width, Height);
+            }
+
+        }
+        public override void Fill(Graphics graphics, Brush brush, int x, int y)
+        {
+            graphics.FillRectangle(brush, x - Width / 2, y - Height / (Width / 2), Width, Height);
         }
     }
 }
