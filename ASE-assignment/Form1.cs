@@ -35,15 +35,8 @@ namespace ASE_assignment
             RunButton.Click += new EventHandler(RunButton_Click);
 
         }
-
-
-
-
-
-        
-
+      
         CommandParser parse = new CommandParser();
-
 
         private void CommandBox_KeyDown(object sender, KeyEventArgs e)
         {
@@ -169,14 +162,8 @@ namespace ASE_assignment
             
         }
 
-        private void DrawingPanel_Click(object sender, EventArgs e)
-        {
 
-        }
 
-        private void CommandPanel_Paint(object sender, PaintEventArgs e)
-        {
 
-        }
     }
 }

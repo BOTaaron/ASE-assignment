@@ -26,10 +26,7 @@ namespace ASE_assignment
             canvass.CursorGraphics.Clear(Color.Transparent);
             canvass.CursorGraphics.DrawEllipse(Pens.Black, x - 5, y - 5, 10, 10);
             currentX = x;
-            currentY = y;
-
-            
-            
+            currentY = y;          
         }
 
         public void PenDraw(int x, int y)
@@ -39,6 +36,10 @@ namespace ASE_assignment
             PositionPen(x, y);
             currentX = x;
             currentY = y;    
+        }
+        public void DrawShape(Shape shape)
+        {
+            shape.Draw(canvass.DrawingGraphics, currentX, currentY);
         }
 
     }

@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Canvass.cs" />
+    <Compile Include="Circle.cs" />
     <Compile Include="PenController.cs" />
     <Compile Include="Command.cs" />
     <Compile Include="CommandParser.cs" />
@@ -59,7 +60,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Rectangle.cs" />
     <Compile Include="RunCommand.cs" />
+    <Compile Include="Shape.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>

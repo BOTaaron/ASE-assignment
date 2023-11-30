@@ -78,7 +78,7 @@
             // 
             // DrawingPanel
             // 
-            this.DrawingPanel.BackColor = System.Drawing.SystemColors.WindowFrame;
+            this.DrawingPanel.BackColor = System.Drawing.Color.Gray;
             this.DrawingPanel.Location = new System.Drawing.Point(715, 39);
             this.DrawingPanel.Name = "DrawingPanel";
             this.DrawingPanel.Size = new System.Drawing.Size(784, 640);

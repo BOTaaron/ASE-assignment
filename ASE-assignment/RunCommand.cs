@@ -61,7 +61,8 @@ namespace ASE_assignment
             }
             else if (parsedLine.ParsedCommand[0].Equals("reset"))
             {
-                throw new NotImplementedException("Not implemented");
+                controller.PositionPen(0, 0);
+                
             }
             else if (parsedLine.ParsedCommand[0].Equals("run"))
             {
@@ -73,7 +74,8 @@ namespace ASE_assignment
             }
             else if (parsedLine.ParsedCommand[0].Equals("circle"))
             {
-                throw new NotImplementedException("Not implemented");
+                controller.DrawShape(new Circle(parsedLine.IntParams[0]));
+
 
             }
             else if (parsedLine.ParsedCommand[0].Equals("triangle"))
