@@ -70,7 +70,8 @@ namespace ASE_assignment
             }
             else if (parsedLine.ParsedCommand[0].Equals("rectangle"))
             {
-                throw new NotImplementedException("Not implemented");
+                controller.DrawShape(new Rectangle(parsedLine.IntParams[0], parsedLine.IntParams[1]));
+                
             }
             else if (parsedLine.ParsedCommand[0].Equals("circle"))
             {

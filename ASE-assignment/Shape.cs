@@ -9,6 +9,7 @@ namespace ASE_assignment
 {
     public abstract class Shape
     {
+        // base class for future shapes, taking graphics object and location to create the shape as parameters
         public abstract void Draw(Graphics graphics, int x, int y);
     }
 }

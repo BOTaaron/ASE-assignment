@@ -37,6 +37,8 @@ namespace ASE_assignment
             currentX = x;
             currentY = y;    
         }
+        // draw a shape onto the canvass with current location of the cursor
+
         public void DrawShape(Shape shape)
         {
             shape.Draw(canvass.DrawingGraphics, currentX, currentY);

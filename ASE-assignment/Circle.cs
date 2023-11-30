@@ -16,6 +16,8 @@ namespace ASE_assignment
             Radius = radius;
         }
 
+        // overrides the draw method in the Shape class, with x and y parameters the current cursor location
+        // takes radius as a single parameter from user input
         public override void Draw(Graphics graphics, int x, int y)
         {
             graphics.DrawEllipse(Pens.Black, x - Radius, y - Radius, Radius * 2, Radius * 2);
