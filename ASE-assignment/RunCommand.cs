@@ -90,6 +90,15 @@ namespace ASE_assignment
                     case "red":
                         controller.PenColour(Color.Red);
                         break;
+                    case "blue":
+                        controller.PenColour(Color.Blue);
+                        break;
+                    case "green":
+                        controller.PenColour(Color.Green);
+                        break;
+                    case "black":
+                        controller.PenColour(Color.Black);
+                        break;
                 
                 }
             }
