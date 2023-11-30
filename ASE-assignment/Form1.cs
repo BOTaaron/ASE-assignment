@@ -26,7 +26,7 @@ namespace ASE_assignment
 
             canvass = new Canvass(DrawingPanel.Width, DrawingPanel.Height);
             penController = new PenController(canvass);
-            runCommand = new RunCommand(penController);
+            runCommand = new RunCommand(penController, canvass);
             DrawingPanel.Image = canvass.CombineCanvass();
 
             // event handlers for the buttons and text box

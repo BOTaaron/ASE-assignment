@@ -10,10 +10,13 @@ namespace ASE_assignment
     internal class RunCommand
     {
         private PenController controller;
+        private Canvass canvass;
 
-        public RunCommand(PenController controller)
+        public RunCommand(PenController controller, Canvass canvass)
         {
             this.controller = controller;
+            this.canvass = canvass;
+
         }
 
         public void RunLines(Command parsedLine)
@@ -53,8 +56,8 @@ namespace ASE_assignment
             }
             else if (parsedLine.ParsedCommand[0].Equals("clear"))
             {
-                
-                throw new NotImplementedException("Not implemented");
+                canvass.ClearCanvas();
+
             }
             else if (parsedLine.ParsedCommand[0].Equals("reset"))
             {
