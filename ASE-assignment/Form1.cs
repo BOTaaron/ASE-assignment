@@ -15,18 +15,20 @@ namespace ASE_assignment
 {
     public partial class Form1 : Form 
     {
-        private Bitmap drawingCanvass;
-        private Bitmap errorCanvass;
-        private Bitmap penCanvass;
-        Pen canvass = new Pen();
+        private Canvass canvass;
+        private PenController penController;
+        private RunCommand runCommand;
+
         public Form1()
         {
             
             InitializeComponent();
-            drawingCanvass = new Bitmap(DrawingPanel.Width, DrawingPanel.Height);
-            errorCanvass = new Bitmap(DrawingPanel.Width, DrawingPanel.Height);
-            penCanvass = new Bitmap(DrawingPanel.Width, DrawingPanel.Height);
-            DrawingPanel.Image = canvass.RefreshCanvass(penCanvass, drawingCanvass);
+
+            canvass = new Canvass(DrawingPanel.Width, DrawingPanel.Height);
+            penController = new PenController(canvass);
+            runCommand = new RunCommand(penController);
+            DrawingPanel.Image = canvass.CombineCanvass();
+
             // event handlers for the buttons and text box
             CommandBox.KeyDown += new KeyEventHandler(CommandBox_KeyDown);
             SyntaxButton.Click += new EventHandler(SyntaxButton_Click);
@@ -34,10 +36,14 @@ namespace ASE_assignment
 
         }
 
+
+
+
+
         
 
         CommandParser parse = new CommandParser();
-        RunCommand run = new RunCommand();
+
 
         private void CommandBox_KeyDown(object sender, KeyEventArgs e)
         {
@@ -53,11 +59,15 @@ namespace ASE_assignment
 
         private void RunButton_Click(object sender, EventArgs e)
         {
-            // try to parse the command and run the program when the user clicks the 'Run' button
+            // Parse the command, and then pass the bitmaps into the RunLines function
+            // clears the text box and refreshes the bitmap
             var parsedLine = parse.ParseLine(CommandBox.Text);
-            run.RunLines(parsedLine, drawingCanvass, penCanvass);
+            runCommand.RunLines(parsedLine);
+            DrawingPanel.Image = canvass.CombineCanvass();
+            DrawingPanel.Refresh();
             CommandBox.Clear();
-           // DrawingPanel.Refresh();
+            
+
 
             
         }
@@ -66,6 +76,8 @@ namespace ASE_assignment
             // checks syntax is valid when the 'Syntax' button is clicked           
             CommandBox.Clear();
         }
+
+
 
         private void DisplayInput(string line)
         {
@@ -157,8 +169,14 @@ namespace ASE_assignment
             
         }
 
+        private void DrawingPanel_Click(object sender, EventArgs e)
+        {
 
-     
-      
+        }
+
+        private void CommandPanel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
