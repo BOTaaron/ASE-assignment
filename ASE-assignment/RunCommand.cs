@@ -85,7 +85,13 @@ namespace ASE_assignment
             }
             else if (parsedLine.ParsedCommand[0].Equals("pen"))
             {
-                throw new NotImplementedException("Not implemented");
+                switch(parsedLine.StringParam[0]) 
+                {
+                    case "red":
+                        controller.PenColour(Color.Red);
+                        break;
+                
+                }
             }
             else if (parsedLine.ParsedCommand[0].Equals("fill"))
             {

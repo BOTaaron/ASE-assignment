@@ -13,10 +13,15 @@ namespace ASE_assignment
         private int currentX = 0;
         private int currentY = 0;
         private readonly Canvass canvass;
+        private Pen pen;
+        private Color penColour;
 
         public PenController(Canvass canvass)
         {
             this.canvass = canvass;
+            // set default pen colour to black
+            this.penColour = Color.Black;
+            this.pen = new Pen(penColour);
         }
 
         public void PositionPen(int x, int y)
@@ -24,7 +29,7 @@ namespace ASE_assignment
             // moves the pen around the bitmap and uses a circle to visually show the location
 
             canvass.CursorGraphics.Clear(Color.Transparent);
-            canvass.CursorGraphics.DrawEllipse(Pens.Black, x - 5, y - 5, 10, 10);
+            canvass.CursorGraphics.DrawEllipse(pen, x - 5, y - 5, 10, 10);
             currentX = x;
             currentY = y;          
         }
@@ -32,7 +37,7 @@ namespace ASE_assignment
         public void PenDraw(int x, int y)
         {
             // draw a line and save the updates coordinates to be shared with PositionPen
-            canvass.DrawingGraphics.DrawLine(Pens.Black, currentX, currentY, x, y); 
+            canvass.DrawingGraphics.DrawLine(pen, currentX, currentY, x, y); 
             PositionPen(x, y);
             currentX = x;
             currentY = y;    
@@ -41,7 +46,14 @@ namespace ASE_assignment
 
         public void DrawShape(Shape shape)
         {
-            shape.Draw(canvass.DrawingGraphics, currentX, currentY);
+            shape.Draw(canvass.DrawingGraphics, pen, currentX, currentY);
+        }
+        public void PenColour(Color colour)
+        {
+            // create new pen that uses colour value from method to define colour of drawing
+            pen = new Pen(colour);
+
+            
         }
 
     }
