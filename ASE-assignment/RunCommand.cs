@@ -11,6 +11,7 @@ namespace ASE_assignment
     {
         private PenController controller;
         private Canvass canvass;
+        public event Action OnRunCommandReceived;
 
         public RunCommand(PenController controller, Canvass canvass)
         {
@@ -61,7 +62,7 @@ namespace ASE_assignment
             }
             else if (parsedLine.ParsedCommand[0].Equals("run"))
             {
-                throw new NotImplementedException("Not implemented");
+                OnRunCommandReceived?.Invoke();
             }
             else if (parsedLine.ParsedCommand[0].Equals("rectangle"))
             {

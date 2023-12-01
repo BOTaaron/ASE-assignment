@@ -24,7 +24,7 @@ namespace ASE_assignment
         public override void Draw(Graphics graphics, Pen pen, int x, int y)
         {
             // depending on the value of shapeFill, draw either a solid or drawn shape
-            if (shapeFill)
+            if (ShapeFill)
             {
                 Fill(graphics, new SolidBrush(pen.Color), x, y);
             }

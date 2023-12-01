@@ -62,9 +62,10 @@
             // 
             // CommandBox
             // 
+            this.CommandBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CommandBox.Location = new System.Drawing.Point(69, 757);
             this.CommandBox.Name = "CommandBox";
-            this.CommandBox.Size = new System.Drawing.Size(571, 20);
+            this.CommandBox.Size = new System.Drawing.Size(571, 29);
             this.CommandBox.TabIndex = 2;
             this.CommandBox.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 

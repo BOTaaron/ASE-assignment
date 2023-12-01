@@ -18,16 +18,18 @@ namespace ASE_assignment
         private Canvass canvass;
         private PenController penController;
         private RunCommand runCommand;
+        
 
         public Form1()
         {
             
             InitializeComponent();
-
+            this.AutoScaleMode = AutoScaleMode.Dpi;
             canvass = new Canvass(DrawingPanel.Width, DrawingPanel.Height);
             penController = new PenController(canvass);
             runCommand = new RunCommand(penController, canvass);
             DrawingPanel.Image = canvass.CombineCanvass();
+            runCommand.OnRunCommandReceived += RunMultiLines;
 
             // event handlers for the buttons and text box
             CommandBox.KeyDown += new KeyEventHandler(CommandBox_KeyDown);
@@ -43,10 +45,17 @@ namespace ASE_assignment
            
             // if the user presses enter, call DisplayInput function to place line inside the label for the user to view
             if (e.KeyCode == Keys.Enter)
-            {
-                parse.ParseLine(CommandBox.Text);
-                DisplayInput(CommandBox.Text);
-                CommandBox.Clear(); 
+            {               
+                if (CommandBox.Text.ToLower().Equals("run"))
+                {
+                    RunMultiLines();
+                }
+                else
+                {
+                    DisplayInput(CommandBox.Text);
+                    CommandBox.Clear();
+                }
+
             }
         }
 
@@ -58,11 +67,22 @@ namespace ASE_assignment
             runCommand.RunLines(parsedLine);
             DrawingPanel.Image = canvass.CombineCanvass();
             DrawingPanel.Refresh();
-            CommandBox.Clear();
-            
-
-
-            
+            CommandBox.Clear();           
+        }
+        private void RunMultiLines()
+        {
+            foreach (Control control in CommandPanel.Controls)
+            {
+                if (control is Label label)
+                {
+                    string commandLine = label.Text;
+                    var parsedLines = parse.ParseLine(label.Text);
+                    DrawingPanel.Image = canvass.CombineCanvass();
+                    runCommand.RunLines(parsedLines);
+                    DrawingPanel.Refresh();
+                    CommandBox.Clear();
+                }
+            }
         }
         private void SyntaxButton_Click(object sender, EventArgs e)
         {
@@ -164,6 +184,6 @@ namespace ASE_assignment
 
 
 
-
+ 
     }
 }

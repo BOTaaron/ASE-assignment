@@ -33,7 +33,7 @@ namespace ASE_assignment
             canvass.CursorGraphics.Clear(Color.Transparent);
             canvass.CursorGraphics.DrawEllipse(pen, x - 5, y - 5, 10, 10);
             currentX = x;
-            currentY = y;          
+            currentY = y;
         }
 
         public void PenDraw(int x, int y)
@@ -48,7 +48,7 @@ namespace ASE_assignment
 
         public void DrawShape(Shape shape)
         {
-            shape.shapeFill = shapeFill;
+            shape.ShapeFill = shapeFill;
             shape.Draw(canvass.DrawingGraphics, pen, currentX, currentY);
         }
         public void PenColour(Color colour)
@@ -56,6 +56,7 @@ namespace ASE_assignment
             // create new pen that uses colour value from method to define colour of drawing
             pen = new Pen(colour);           
         }
+        // used to set the boolean for drawing solid shapes
         public void ShapeFill(bool fill)
         {
             shapeFill = fill;

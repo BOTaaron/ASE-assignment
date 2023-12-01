@@ -20,7 +20,8 @@ namespace ASE_assignment
         // takes radius as a single parameter from user input
         public override void Draw(Graphics graphics, Pen pen, int x, int y)
         {
-            if (shapeFill)
+            // depending on the value of shapeFill, draw either a solid or drawn shape
+            if (ShapeFill)
             {
                 Fill(graphics, new SolidBrush(pen.Color), x, y);
             }
