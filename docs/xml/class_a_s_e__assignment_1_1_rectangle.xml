@@ -1,0 +1,250 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="class_a_s_e__assignment_1_1_rectangle" kind="class" language="C#" prot="package">
+    <compoundname>ASE_assignment::Rectangle</compoundname>
+    <basecompoundref refid="class_a_s_e__assignment_1_1_shape" prot="public" virt="non-virtual">ASE_assignment.Shape</basecompoundref>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="class_a_s_e__assignment_1_1_rectangle_1abb36f8980b4412df35682ffe8ad6b7d5" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>int</type>
+        <definition>int ASE_assignment.Rectangle.Width</definition>
+        <argsstring></argsstring>
+        <name>Width</name>
+        <qualifiedname>ASE_assignment.Rectangle.Width</qualifiedname>
+        <briefdescription>
+<para>Accessors for getting/setting the width of the rectangle. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ASE-assignment/Rectangle.cs" line="18" column="20" bodyfile="ASE-assignment/Rectangle.cs" bodystart="18" bodyend="18"/>
+      </memberdef>
+      <memberdef kind="property" id="class_a_s_e__assignment_1_1_rectangle_1aaaa5847d44f355963b42c5be5c4dcd29" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>int</type>
+        <definition>int ASE_assignment.Rectangle.Height</definition>
+        <argsstring></argsstring>
+        <name>Height</name>
+        <qualifiedname>ASE_assignment.Rectangle.Height</qualifiedname>
+        <briefdescription>
+<para>Accessors for getting/setting the height of the rectangle. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ASE-assignment/Rectangle.cs" line="22" column="20" bodyfile="ASE-assignment/Rectangle.cs" bodystart="22" bodyend="22"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_a_s_e__assignment_1_1_rectangle_1a9582cbbf0d4e93a85c1c15d066d0f18b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ASE_assignment.Rectangle.Rectangle</definition>
+        <argsstring>(int width, int height)</argsstring>
+        <name>Rectangle</name>
+        <qualifiedname>ASE_assignment.Rectangle.Rectangle</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>width</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>height</declname>
+        </param>
+        <briefdescription>
+<para>Draw a rectangle using parameters parsed from user input for the size of the shape. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>width</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Width of the rectangle</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>height</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Height of the rectangle</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ASE-assignment/Rectangle.cs" line="29" column="16" bodyfile="ASE-assignment/Rectangle.cs" bodystart="29" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_s_e__assignment_1_1_rectangle_1a636ae94c3325330db9f223e5866f79f1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void ASE_assignment.Rectangle.Draw</definition>
+        <argsstring>(Graphics graphics, Pen pen, int x, int y)</argsstring>
+        <name>Draw</name>
+        <qualifiedname>ASE_assignment.Rectangle.Draw</qualifiedname>
+        <param>
+          <type>Graphics</type>
+          <declname>graphics</declname>
+        </param>
+        <param>
+          <type>Pen</type>
+          <declname>pen</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+<para>Overrides the draw method in the shape class to draw either a hollow or solid shape onto the bitmap canvass. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>graphics</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The bitmap to draw on</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pen</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The pen used for drawing</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The x (left and right) coordinate to draw the shape from the center point</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The y (up and down) coordinate to draw the shape from the center point</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ASE-assignment/Rectangle.cs" line="41" column="30" bodyfile="ASE-assignment/Rectangle.cs" bodystart="41" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_s_e__assignment_1_1_rectangle_1a60ce2a00418e22105605cb9e31f784ee" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void ASE_assignment.Rectangle.Fill</definition>
+        <argsstring>(Graphics graphics, Brush brush, int x, int y)</argsstring>
+        <name>Fill</name>
+        <qualifiedname>ASE_assignment.Rectangle.Fill</qualifiedname>
+        <param>
+          <type>Graphics</type>
+          <declname>graphics</declname>
+        </param>
+        <param>
+          <type>Brush</type>
+          <declname>brush</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+<para>Draws the shape with a solid fill. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>graphics</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The bitmap to draw on</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>brush</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The solid brush used for drawing</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The x (left and right) coordinate to draw the shape from the center point</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The y (up and down) coordinate to draw the shape from the center point</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ASE-assignment/Rectangle.cs" line="61" column="30" bodyfile="ASE-assignment/Rectangle.cs" bodystart="61" bodyend="64"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Extends the Shape class to draw a rectangle on the canvass. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>ASE_assignment.Rectangle</label>
+        <link refid="class_a_s_e__assignment_1_1_rectangle"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Shape</label>
+        <link refid="class_a_s_e__assignment_1_1_shape"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>ASE_assignment.Rectangle</label>
+        <link refid="class_a_s_e__assignment_1_1_rectangle"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Shape</label>
+        <link refid="class_a_s_e__assignment_1_1_shape"/>
+      </node>
+    </collaborationgraph>
+    <location file="ASE-assignment/Rectangle.cs" line="13" column="13" bodyfile="ASE-assignment/Rectangle.cs" bodystart="14" bodyend="65"/>
+    <listofallmembers>
+      <member refid="class_a_s_e__assignment_1_1_rectangle_1a636ae94c3325330db9f223e5866f79f1" prot="public" virt="non-virtual"><scope>ASE_assignment::Rectangle</scope><name>Draw</name></member>
+      <member refid="class_a_s_e__assignment_1_1_rectangle_1a60ce2a00418e22105605cb9e31f784ee" prot="public" virt="non-virtual"><scope>ASE_assignment::Rectangle</scope><name>Fill</name></member>
+      <member refid="class_a_s_e__assignment_1_1_rectangle_1aaaa5847d44f355963b42c5be5c4dcd29" prot="public" virt="non-virtual"><scope>ASE_assignment::Rectangle</scope><name>Height</name></member>
+      <member refid="class_a_s_e__assignment_1_1_rectangle_1a9582cbbf0d4e93a85c1c15d066d0f18b" prot="public" virt="non-virtual"><scope>ASE_assignment::Rectangle</scope><name>Rectangle</name></member>
+      <member refid="class_a_s_e__assignment_1_1_shape_1add0c33be27ded76dd89bbfe6f7f32fbf" prot="public" virt="non-virtual"><scope>ASE_assignment::Rectangle</scope><name>ShapeFill</name></member>
+      <member refid="class_a_s_e__assignment_1_1_rectangle_1abb36f8980b4412df35682ffe8ad6b7d5" prot="public" virt="non-virtual"><scope>ASE_assignment::Rectangle</scope><name>Width</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

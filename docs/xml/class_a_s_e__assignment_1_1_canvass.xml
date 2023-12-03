@@ -1,0 +1,189 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="class_a_s_e__assignment_1_1_canvass" kind="class" language="C#" prot="public">
+    <compoundname>ASE_assignment::Canvass</compoundname>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_a_s_e__assignment_1_1_canvass_1a31e14fba553b947eb4f9910942e63f51" prot="private" static="no" mutable="no">
+        <type>Bitmap</type>
+        <definition>Bitmap ASE_assignment.Canvass.drawingCanvass</definition>
+        <argsstring></argsstring>
+        <name>drawingCanvass</name>
+        <qualifiedname>ASE_assignment.Canvass.drawingCanvass</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ASE-assignment/Canvass.cs" line="17" column="24" bodyfile="ASE-assignment/Canvass.cs" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_s_e__assignment_1_1_canvass_1a1f38356fb423e1160444a8d3ed5c0303" prot="private" static="no" mutable="no">
+        <type>Bitmap</type>
+        <definition>Bitmap ASE_assignment.Canvass.cursorCanvass</definition>
+        <argsstring></argsstring>
+        <name>cursorCanvass</name>
+        <qualifiedname>ASE_assignment.Canvass.cursorCanvass</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ASE-assignment/Canvass.cs" line="18" column="24" bodyfile="ASE-assignment/Canvass.cs" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_s_e__assignment_1_1_canvass_1ac7662465bdc4c4c0d80b9c2b5a1e2349" prot="private" static="no" mutable="no">
+        <type>Graphics</type>
+        <definition>Graphics ASE_assignment.Canvass.drawingGraphics</definition>
+        <argsstring></argsstring>
+        <name>drawingGraphics</name>
+        <qualifiedname>ASE_assignment.Canvass.drawingGraphics</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ASE-assignment/Canvass.cs" line="19" column="26" bodyfile="ASE-assignment/Canvass.cs" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_s_e__assignment_1_1_canvass_1a6e4ab1a7176f91124ba0ab5e9bbccee2" prot="private" static="no" mutable="no">
+        <type>Graphics</type>
+        <definition>Graphics ASE_assignment.Canvass.cursorGraphics</definition>
+        <argsstring></argsstring>
+        <name>cursorGraphics</name>
+        <qualifiedname>ASE_assignment.Canvass.cursorGraphics</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ASE-assignment/Canvass.cs" line="20" column="26" bodyfile="ASE-assignment/Canvass.cs" bodystart="20" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="class_a_s_e__assignment_1_1_canvass_1a89472c8fc3889e6f9d7d9e4b9c651496" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>Graphics</type>
+        <definition>Graphics ASE_assignment.Canvass.DrawingGraphics</definition>
+        <argsstring></argsstring>
+        <name>DrawingGraphics</name>
+        <qualifiedname>ASE_assignment.Canvass.DrawingGraphics</qualifiedname>
+        <briefdescription>
+<para>publicly expose the graphics for drawing as a read-only property to be accessed elsewhere in the program </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ASE-assignment/Canvass.cs" line="63" column="25" bodyfile="ASE-assignment/Canvass.cs" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_a_s_e__assignment_1_1_canvass_1a2218a2139faa919ba8af51d86d8d23ab" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>Graphics</type>
+        <definition>Graphics ASE_assignment.Canvass.CursorGraphics</definition>
+        <argsstring></argsstring>
+        <name>CursorGraphics</name>
+        <qualifiedname>ASE_assignment.Canvass.CursorGraphics</qualifiedname>
+        <briefdescription>
+<para>publicly expose the graphics for the cursor as a read-only property to be accessed elsewhere in the program </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ASE-assignment/Canvass.cs" line="67" column="25" bodyfile="ASE-assignment/Canvass.cs" bodystart="67" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_a_s_e__assignment_1_1_canvass_1abeaf1c7fe91b532a2525e2da10507ba5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ASE_assignment.Canvass.Canvass</definition>
+        <argsstring>(int width, int height)</argsstring>
+        <name>Canvass</name>
+        <qualifiedname>ASE_assignment.Canvass.Canvass</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>width</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>height</declname>
+        </param>
+        <briefdescription>
+<para>Creates the bitmaps and graphics used for drawing inside the &apos;DrawingPanel&apos; PictureBox control Takes width and height of the parent contained as parameters to set the bitmap size. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>width</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Width of PictureBox parent</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>height</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Height of PictureBox parent</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ASE-assignment/Canvass.cs" line="28" column="16" bodyfile="ASE-assignment/Canvass.cs" bodystart="28" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_s_e__assignment_1_1_canvass_1a181afa7ab407bc36ccd47ba3dddda3ed" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Bitmap</type>
+        <definition>Bitmap ASE_assignment.Canvass.CombineCanvass</definition>
+        <argsstring>()</argsstring>
+        <name>CombineCanvass</name>
+        <qualifiedname>ASE_assignment.Canvass.CombineCanvass</qualifiedname>
+        <briefdescription>
+<para>Combines the transparent bitmap for displaying the cursor with the bitmap used for drawing shapes allows for drawing without the cursor marking the drawing bitmap so that it may be cleared each time it moves. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>A combined bitmap to be drawn across in the PictureBox</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ASE-assignment/Canvass.cs" line="40" column="23" bodyfile="ASE-assignment/Canvass.cs" bodystart="40" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_s_e__assignment_1_1_canvass_1a749800420c13feb719c69d21cd2646bf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ASE_assignment.Canvass.ClearCanvas</definition>
+        <argsstring>()</argsstring>
+        <name>ClearCanvas</name>
+        <qualifiedname>ASE_assignment.Canvass.ClearCanvas</qualifiedname>
+        <briefdescription>
+<para>Clears both bitmaps so that the user can start fresh. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ASE-assignment/Canvass.cs" line="54" column="21" bodyfile="ASE-assignment/Canvass.cs" bodystart="54" bodyend="58"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Generates the bitmaps used for drawing. Initialises bitmaps outside of local scope and contains functions necessary to manipulate them. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="ASE-assignment/Canvass.cs" line="14" column="11" bodyfile="ASE-assignment/Canvass.cs" bodystart="15" bodyend="68"/>
+    <listofallmembers>
+      <member refid="class_a_s_e__assignment_1_1_canvass_1abeaf1c7fe91b532a2525e2da10507ba5" prot="public" virt="non-virtual"><scope>ASE_assignment::Canvass</scope><name>Canvass</name></member>
+      <member refid="class_a_s_e__assignment_1_1_canvass_1a749800420c13feb719c69d21cd2646bf" prot="public" virt="non-virtual"><scope>ASE_assignment::Canvass</scope><name>ClearCanvas</name></member>
+      <member refid="class_a_s_e__assignment_1_1_canvass_1a181afa7ab407bc36ccd47ba3dddda3ed" prot="public" virt="non-virtual"><scope>ASE_assignment::Canvass</scope><name>CombineCanvass</name></member>
+      <member refid="class_a_s_e__assignment_1_1_canvass_1a1f38356fb423e1160444a8d3ed5c0303" prot="private" virt="non-virtual"><scope>ASE_assignment::Canvass</scope><name>cursorCanvass</name></member>
+      <member refid="class_a_s_e__assignment_1_1_canvass_1a6e4ab1a7176f91124ba0ab5e9bbccee2" prot="private" virt="non-virtual"><scope>ASE_assignment::Canvass</scope><name>cursorGraphics</name></member>
+      <member refid="class_a_s_e__assignment_1_1_canvass_1a2218a2139faa919ba8af51d86d8d23ab" prot="public" virt="non-virtual"><scope>ASE_assignment::Canvass</scope><name>CursorGraphics</name></member>
+      <member refid="class_a_s_e__assignment_1_1_canvass_1a31e14fba553b947eb4f9910942e63f51" prot="private" virt="non-virtual"><scope>ASE_assignment::Canvass</scope><name>drawingCanvass</name></member>
+      <member refid="class_a_s_e__assignment_1_1_canvass_1ac7662465bdc4c4c0d80b9c2b5a1e2349" prot="private" virt="non-virtual"><scope>ASE_assignment::Canvass</scope><name>drawingGraphics</name></member>
+      <member refid="class_a_s_e__assignment_1_1_canvass_1a89472c8fc3889e6f9d7d9e4b9c651496" prot="public" virt="non-virtual"><scope>ASE_assignment::Canvass</scope><name>DrawingGraphics</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

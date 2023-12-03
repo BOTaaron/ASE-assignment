@@ -7,7 +7,11 @@ using System.Threading.Tasks;
 
 namespace ASE_assignment
 {
-    internal class Canvass
+    /// <summary>
+    /// Generates the bitmaps used for drawing. Initialises bitmaps outside of local scope and contains 
+    /// functions necessary to manipulate them
+    /// </summary>
+    public class Canvass
     {
         // initialise the bitmaps and graphics 
         private Bitmap drawingCanvass;
@@ -15,38 +19,51 @@ namespace ASE_assignment
         private Graphics drawingGraphics;
         private Graphics cursorGraphics;
 
+        /// <summary>
+        /// Creates the bitmaps and graphics used for drawing inside the 'DrawingPanel' PictureBox control
+        /// Takes width and height of the parent contained as parameters to set the bitmap size
+        /// </summary>
+        /// <param name="width">Width of PictureBox parent</param>
+        /// <param name="height">Height of PictureBox parent</param>
         public Canvass(int width, int height)
         {
             drawingCanvass = new Bitmap(width, height);
             cursorCanvass = new Bitmap(width, height);
             drawingGraphics = Graphics.FromImage(drawingCanvass);
-            cursorGraphics = Graphics.FromImage(cursorCanvass);
-            
-            
-            
+            cursorGraphics = Graphics.FromImage(cursorCanvass);           
         }
+        /// <summary>
+        /// Combines the transparent bitmap for displaying the cursor with the bitmap used for drawing shapes
+        /// allows for drawing without the cursor marking the drawing bitmap so that it may be cleared each time it moves
+        /// </summary>
+        /// <returns>A combined bitmap to be drawn across in the PictureBox</returns>
         public Bitmap CombineCanvass()
         {
             using (Bitmap combined = new Bitmap(drawingCanvass.Width, drawingCanvass.Height)) 
             using (Graphics g = Graphics.FromImage(combined))
-            {
-                // combine the bitmaps to create a transparent layer that shows only the cursor, 
-                // and another bitmap for the drawing
+            {             
                 g.DrawImageUnscaled(drawingCanvass, 0, 0);
                 g.DrawImageUnscaled(cursorCanvass, 0, 0);
                 return new Bitmap(combined);
             }
             
         }
-
+        /// <summary>
+        /// Clears both bitmaps so that the user can start fresh 
+        /// </summary>
         public void ClearCanvas()
-        {
-            // clear both canvases to blank bitmaps
+        {           
             drawingGraphics.Clear(Color.Gray);
             cursorGraphics.Clear(Color.Transparent);
         }
 
+        /// <summary>
+        /// publicly expose the graphics for drawing as a read-only property to be accessed elsewhere in the program 
+        /// </summary>
         public Graphics DrawingGraphics => drawingGraphics;
+        /// <summary>
+        /// publicly expose the graphics for the cursor as a read-only property to be accessed elsewhere in the program
+        /// </summary>
         public Graphics CursorGraphics => cursorGraphics;
     }
 }

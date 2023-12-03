@@ -1,0 +1,213 @@
+\doxysection{ASE\+\_\+assignment.\+Form1 Class Reference}
+\hypertarget{class_a_s_e__assignment_1_1_form1}{}\label{class_a_s_e__assignment_1_1_form1}\index{ASE\_assignment.Form1@{ASE\_assignment.Form1}}
+
+
+Create the form for the main application. Contains all the methods for UI functionality such as buttons and panels for displaying the drawing.  
+
+
+Inheritance diagram for ASE\+\_\+assignment.\+Form1\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_a_s_e__assignment_1_1_form1}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_a_s_e__assignment_1_1_form1_a25861b5bd71e0159a84334363ab02185}\label{class_a_s_e__assignment_1_1_form1_a25861b5bd71e0159a84334363ab02185} 
+{\bfseries Form1} ()
+\begin{DoxyCompactList}\small\item\em Initialise the form, and create objects required for functionality. Contains event handlers for buttons and set the Drawing\+Panel image to the combined bitmap. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override void \mbox{\hyperlink{class_a_s_e__assignment_1_1_form1_a6d52d48ab9b399e2504272c4ebe93769}{Dispose}} (bool disposing)
+\begin{DoxyCompactList}\small\item\em Clean up any resources being used. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_a_s_e__assignment_1_1_form1_a95ab37574cf5687eae3b72087e5a2bb5}{Command\+Box\+\_\+\+Key\+Down}} (object sender, Key\+Event\+Args e)
+\begin{DoxyCompactList}\small\item\em Defines behaviour when the enter/return key is pressed while the textbox is selected. If \textquotesingle{}run\textquotesingle{} is entered it will run all of the commands displayed inside the left panel. If commands are entered it will display them within labels inside the panel. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_a_s_e__assignment_1_1_form1_a1c7d2c5dd4c703548600623b94ae1996}{Run\+Button\+\_\+\+Click}} (object sender, Event\+Args e)
+\begin{DoxyCompactList}\small\item\em Defines behaviour when the \textquotesingle{}run\textquotesingle{} button is clicked. Parses the command and runs it before refreshing the bitmaps. \end{DoxyCompactList}\item 
+\Hypertarget{class_a_s_e__assignment_1_1_form1_ac75050440a712696d7c870bbf3cee266}\label{class_a_s_e__assignment_1_1_form1_ac75050440a712696d7c870bbf3cee266} 
+void {\bfseries Run\+Multi\+Lines} ()
+\begin{DoxyCompactList}\small\item\em Iterates through each label contained within the \textquotesingle{}Command\+Panel\textquotesingle{}, parsing and running each line and refreshing the canvas. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_a_s_e__assignment_1_1_form1_a302a619f9d1c2aa6338716b593798cc4}{Syntax\+Button\+\_\+\+Click}} (object sender, Event\+Args e)
+\item 
+void \mbox{\hyperlink{class_a_s_e__assignment_1_1_form1_a19f88d0fb23d931f3bc8037840ae2392}{Display\+Input}} (string line)
+\begin{DoxyCompactList}\small\item\em Checks that commands are not clearing or infinitely running the program. Takes user input from the Text\+Box and adds each line to a label when called, directly below the previous label. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_a_s_e__assignment_1_1_form1_abbf12b0bfb420ad150e45eb98a03f93f}{Save\+Button\+\_\+\+Click}} (object sender, Event\+Args e)
+\begin{DoxyCompactList}\small\item\em Loop through each label and add the lines to a List. Save\+File\+Dialog prompts user to select a directory and saves to a directory in a text file when the user clicks \textquotesingle{}OK\textquotesingle{} in the prompt. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_a_s_e__assignment_1_1_form1_af8574f43ea58023f6c1be37df34a9bbc}{Open\+Button\+\_\+\+Click}} (object sender, Event\+Args e)
+\begin{DoxyCompactList}\small\item\em Defines behaviour when the \textquotesingle{}open\textquotesingle{} button is clicked. Calls a dialog box to select the file to open from a list of text files. \end{DoxyCompactList}\item 
+\Hypertarget{class_a_s_e__assignment_1_1_form1_a9057cd1a27c669e2eb373b4ab790af80}\label{class_a_s_e__assignment_1_1_form1_a9057cd1a27c669e2eb373b4ab790af80} 
+void {\bfseries Form1\+\_\+\+Load} (object sender, Event\+Args e)
+\item 
+\Hypertarget{class_a_s_e__assignment_1_1_form1_aed302fe4407728a6a15b771f2dd5e3d7}\label{class_a_s_e__assignment_1_1_form1_aed302fe4407728a6a15b771f2dd5e3d7} 
+void {\bfseries text\+Box1\+\_\+\+Text\+Changed} (object sender, Event\+Args e)
+\item 
+\Hypertarget{class_a_s_e__assignment_1_1_form1_add15d22660df69b707702dc700149475}\label{class_a_s_e__assignment_1_1_form1_add15d22660df69b707702dc700149475} 
+void {\bfseries Initialize\+Component} ()
+\begin{DoxyCompactList}\small\item\em Required method for Designer support -\/ do not modify the contents of this method with the code editor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_a_s_e__assignment_1_1_form1_a39d44a6d44067ea95994566c25515be4}\label{class_a_s_e__assignment_1_1_form1_a39d44a6d44067ea95994566c25515be4} 
+\mbox{\hyperlink{class_a_s_e__assignment_1_1_canvass}{Canvass}} {\bfseries canvass}
+\item 
+\Hypertarget{class_a_s_e__assignment_1_1_form1_a714d2d52d0beb78d95bf5df044de727e}\label{class_a_s_e__assignment_1_1_form1_a714d2d52d0beb78d95bf5df044de727e} 
+\mbox{\hyperlink{class_a_s_e__assignment_1_1_pen_controller}{Pen\+Controller}} {\bfseries pen\+Controller}
+\item 
+\Hypertarget{class_a_s_e__assignment_1_1_form1_a4d2946159dda349c36701e69332dd460}\label{class_a_s_e__assignment_1_1_form1_a4d2946159dda349c36701e69332dd460} 
+\mbox{\hyperlink{class_a_s_e__assignment_1_1_run_command}{Run\+Command}} {\bfseries run\+Command}
+\item 
+\Hypertarget{class_a_s_e__assignment_1_1_form1_a671bd7fd07f81843a50c6795b9203ab6}\label{class_a_s_e__assignment_1_1_form1_a671bd7fd07f81843a50c6795b9203ab6} 
+\mbox{\hyperlink{class_a_s_e__assignment_1_1_command_parser}{Command\+Parser}} {\bfseries parse} = new \mbox{\hyperlink{class_a_s_e__assignment_1_1_command_parser}{Command\+Parser}}()
+\item 
+\Hypertarget{class_a_s_e__assignment_1_1_form1_abe508e24a52c4232296d9fc975d05329}\label{class_a_s_e__assignment_1_1_form1_abe508e24a52c4232296d9fc975d05329} 
+System.\+Component\+Model.\+IContainer {\bfseries components} = null
+\begin{DoxyCompactList}\small\item\em Required designer variable. \end{DoxyCompactList}\item 
+\Hypertarget{class_a_s_e__assignment_1_1_form1_aa9ef00ba926c299ba32dc690d1941115}\label{class_a_s_e__assignment_1_1_form1_aa9ef00ba926c299ba32dc690d1941115} 
+System.\+Windows.\+Forms.\+Button {\bfseries Syntax\+Button}
+\item 
+\Hypertarget{class_a_s_e__assignment_1_1_form1_ab9626736f61e5b037ffb18adae622a70}\label{class_a_s_e__assignment_1_1_form1_ab9626736f61e5b037ffb18adae622a70} 
+System.\+Windows.\+Forms.\+Button {\bfseries Run\+Button}
+\item 
+\Hypertarget{class_a_s_e__assignment_1_1_form1_a7a3c08131e15dee758a625bf6d389156}\label{class_a_s_e__assignment_1_1_form1_a7a3c08131e15dee758a625bf6d389156} 
+System.\+Windows.\+Forms.\+Text\+Box {\bfseries Command\+Box}
+\item 
+\Hypertarget{class_a_s_e__assignment_1_1_form1_a1aa58a815a56261ed990a8d152d62eb8}\label{class_a_s_e__assignment_1_1_form1_a1aa58a815a56261ed990a8d152d62eb8} 
+System.\+Windows.\+Forms.\+Panel {\bfseries Command\+Panel}
+\item 
+\Hypertarget{class_a_s_e__assignment_1_1_form1_a06a611c4acbc1aa32e22761fc1f5fb9b}\label{class_a_s_e__assignment_1_1_form1_a06a611c4acbc1aa32e22761fc1f5fb9b} 
+System.\+Windows.\+Forms.\+Picture\+Box {\bfseries Drawing\+Panel}
+\item 
+\Hypertarget{class_a_s_e__assignment_1_1_form1_ac5e0e06b64363422d693c30012301142}\label{class_a_s_e__assignment_1_1_form1_ac5e0e06b64363422d693c30012301142} 
+System.\+Windows.\+Forms.\+Button {\bfseries Open\+Button}
+\item 
+\Hypertarget{class_a_s_e__assignment_1_1_form1_aeaa935e8fad412c7622f9367eec1859d}\label{class_a_s_e__assignment_1_1_form1_aeaa935e8fad412c7622f9367eec1859d} 
+System.\+Windows.\+Forms.\+Button {\bfseries Save\+Button}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Create the form for the main application. Contains all the methods for UI functionality such as buttons and panels for displaying the drawing. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_a_s_e__assignment_1_1_form1_a95ab37574cf5687eae3b72087e5a2bb5}\label{class_a_s_e__assignment_1_1_form1_a95ab37574cf5687eae3b72087e5a2bb5} 
+\index{ASE\_assignment.Form1@{ASE\_assignment.Form1}!CommandBox\_KeyDown@{CommandBox\_KeyDown}}
+\index{CommandBox\_KeyDown@{CommandBox\_KeyDown}!ASE\_assignment.Form1@{ASE\_assignment.Form1}}
+\doxysubsubsection{\texorpdfstring{CommandBox\_KeyDown()}{CommandBox\_KeyDown()}}
+{\footnotesize\ttfamily void ASE\+\_\+assignment.\+Form1.\+Command\+Box\+\_\+\+Key\+Down (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Key\+Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Defines behaviour when the enter/return key is pressed while the textbox is selected. If \textquotesingle{}run\textquotesingle{} is entered it will run all of the commands displayed inside the left panel. If commands are entered it will display them within labels inside the panel. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sender} & Object that raised the event, in this case Text\+Box\\
+\hline
+{\em e} & The event, in this case the Enter/\+Return key is pressed\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_a_s_e__assignment_1_1_form1_a19f88d0fb23d931f3bc8037840ae2392}\label{class_a_s_e__assignment_1_1_form1_a19f88d0fb23d931f3bc8037840ae2392} 
+\index{ASE\_assignment.Form1@{ASE\_assignment.Form1}!DisplayInput@{DisplayInput}}
+\index{DisplayInput@{DisplayInput}!ASE\_assignment.Form1@{ASE\_assignment.Form1}}
+\doxysubsubsection{\texorpdfstring{DisplayInput()}{DisplayInput()}}
+{\footnotesize\ttfamily void ASE\+\_\+assignment.\+Form1.\+Display\+Input (\begin{DoxyParamCaption}\item[{string}]{line }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Checks that commands are not clearing or infinitely running the program. Takes user input from the Text\+Box and adds each line to a label when called, directly below the previous label. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em line} & Text entered by the user into the Text\+Box when the Enter/\+Return key is pressed\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_a_s_e__assignment_1_1_form1_a6d52d48ab9b399e2504272c4ebe93769}\label{class_a_s_e__assignment_1_1_form1_a6d52d48ab9b399e2504272c4ebe93769} 
+\index{ASE\_assignment.Form1@{ASE\_assignment.Form1}!Dispose@{Dispose}}
+\index{Dispose@{Dispose}!ASE\_assignment.Form1@{ASE\_assignment.Form1}}
+\doxysubsubsection{\texorpdfstring{Dispose()}{Dispose()}}
+{\footnotesize\ttfamily override void ASE\+\_\+assignment.\+Form1.\+Dispose (\begin{DoxyParamCaption}\item[{bool}]{disposing }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+Clean up any resources being used. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em disposing} & true if managed resources should be disposed; otherwise, false.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_a_s_e__assignment_1_1_form1_af8574f43ea58023f6c1be37df34a9bbc}\label{class_a_s_e__assignment_1_1_form1_af8574f43ea58023f6c1be37df34a9bbc} 
+\index{ASE\_assignment.Form1@{ASE\_assignment.Form1}!OpenButton\_Click@{OpenButton\_Click}}
+\index{OpenButton\_Click@{OpenButton\_Click}!ASE\_assignment.Form1@{ASE\_assignment.Form1}}
+\doxysubsubsection{\texorpdfstring{OpenButton\_Click()}{OpenButton\_Click()}}
+{\footnotesize\ttfamily void ASE\+\_\+assignment.\+Form1.\+Open\+Button\+\_\+\+Click (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Defines behaviour when the \textquotesingle{}open\textquotesingle{} button is clicked. Calls a dialog box to select the file to open from a list of text files. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sender} & The object that raised the event, in this case the \textquotesingle{}open\textquotesingle{} button\\
+\hline
+{\em e} & The event, in this case the button being clicked \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_a_s_e__assignment_1_1_form1_a1c7d2c5dd4c703548600623b94ae1996}\label{class_a_s_e__assignment_1_1_form1_a1c7d2c5dd4c703548600623b94ae1996} 
+\index{ASE\_assignment.Form1@{ASE\_assignment.Form1}!RunButton\_Click@{RunButton\_Click}}
+\index{RunButton\_Click@{RunButton\_Click}!ASE\_assignment.Form1@{ASE\_assignment.Form1}}
+\doxysubsubsection{\texorpdfstring{RunButton\_Click()}{RunButton\_Click()}}
+{\footnotesize\ttfamily void ASE\+\_\+assignment.\+Form1.\+Run\+Button\+\_\+\+Click (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Defines behaviour when the \textquotesingle{}run\textquotesingle{} button is clicked. Parses the command and runs it before refreshing the bitmaps. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sender} & Object that raised the event, in this case Run button\\
+\hline
+{\em e} & The event, in this case \textquotesingle{}run\textquotesingle{} button clicked\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_a_s_e__assignment_1_1_form1_abbf12b0bfb420ad150e45eb98a03f93f}\label{class_a_s_e__assignment_1_1_form1_abbf12b0bfb420ad150e45eb98a03f93f} 
+\index{ASE\_assignment.Form1@{ASE\_assignment.Form1}!SaveButton\_Click@{SaveButton\_Click}}
+\index{SaveButton\_Click@{SaveButton\_Click}!ASE\_assignment.Form1@{ASE\_assignment.Form1}}
+\doxysubsubsection{\texorpdfstring{SaveButton\_Click()}{SaveButton\_Click()}}
+{\footnotesize\ttfamily void ASE\+\_\+assignment.\+Form1.\+Save\+Button\+\_\+\+Click (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Loop through each label and add the lines to a List. Save\+File\+Dialog prompts user to select a directory and saves to a directory in a text file when the user clicks \textquotesingle{}OK\textquotesingle{} in the prompt. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sender} & The object that raised the event, in this case the \textquotesingle{}save\textquotesingle{} button\\
+\hline
+{\em e} & The event, in this case the \textquotesingle{}save\textquotesingle{} button being clicked\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_a_s_e__assignment_1_1_form1_a302a619f9d1c2aa6338716b593798cc4}\label{class_a_s_e__assignment_1_1_form1_a302a619f9d1c2aa6338716b593798cc4} 
+\index{ASE\_assignment.Form1@{ASE\_assignment.Form1}!SyntaxButton\_Click@{SyntaxButton\_Click}}
+\index{SyntaxButton\_Click@{SyntaxButton\_Click}!ASE\_assignment.Form1@{ASE\_assignment.Form1}}
+\doxysubsubsection{\texorpdfstring{SyntaxButton\_Click()}{SyntaxButton\_Click()}}
+{\footnotesize\ttfamily void ASE\+\_\+assignment.\+Form1.\+Syntax\+Button\+\_\+\+Click (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em sender} & \\
+\hline
+{\em e} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+ASE-\/assignment/Form1.\+cs\item 
+ASE-\/assignment/Form1.\+Designer.\+cs\end{DoxyCompactItemize}

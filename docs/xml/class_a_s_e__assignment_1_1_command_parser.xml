@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="class_a_s_e__assignment_1_1_command_parser" kind="class" language="C#" prot="package">
+    <compoundname>ASE_assignment::CommandParser</compoundname>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_a_s_e__assignment_1_1_command_parser_1ae16170c7e29d7070320bc1b43a1783f9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_a_s_e__assignment_1_1_command" kindref="compound">Command</ref></type>
+        <definition>Command ASE_assignment.CommandParser.ParseLine</definition>
+        <argsstring>(string userInput)</argsstring>
+        <name>ParseLine</name>
+        <qualifiedname>ASE_assignment.CommandParser.ParseLine</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>userInput</declname>
+        </param>
+        <briefdescription>
+<para>Splits the user&apos;s input into values and adds it to a list, depending on whether the parameter is a string, integer, or multiple integers. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>userInput</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Line of commands taken from the text box in the form</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Returns a Command object containing three lists, for the command, string parameter, and numberical parameters</para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>InvalidOperationException</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>FormatException</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ASE-assignment/CommandParser.cs" line="22" column="24" bodyfile="ASE-assignment/CommandParser.cs" bodystart="22" bodyend="95"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Parses the command into usable portions. Splits the line at each space and checks the value in each position. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="ASE-assignment/CommandParser.cs" line="13" column="13" bodyfile="ASE-assignment/CommandParser.cs" bodystart="14" bodyend="97"/>
+    <listofallmembers>
+      <member refid="class_a_s_e__assignment_1_1_command_parser_1ae16170c7e29d7070320bc1b43a1783f9" prot="public" virt="non-virtual"><scope>ASE_assignment::CommandParser</scope><name>ParseLine</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

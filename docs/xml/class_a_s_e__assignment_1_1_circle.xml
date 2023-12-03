@@ -1,0 +1,218 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="class_a_s_e__assignment_1_1_circle" kind="class" language="C#" prot="package">
+    <compoundname>ASE_assignment::Circle</compoundname>
+    <basecompoundref refid="class_a_s_e__assignment_1_1_shape" prot="public" virt="non-virtual">ASE_assignment.Shape</basecompoundref>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="class_a_s_e__assignment_1_1_circle_1aa009b6314c43a84e7176fbe55c0b9cc8" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>int</type>
+        <definition>int ASE_assignment.Circle.Radius</definition>
+        <argsstring></argsstring>
+        <name>Radius</name>
+        <qualifiedname>ASE_assignment.Circle.Radius</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ASE-assignment/Circle.cs" line="15" column="20" bodyfile="ASE-assignment/Circle.cs" bodystart="15" bodyend="15"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_a_s_e__assignment_1_1_circle_1a05e0d07f42e10eef0975fd6105919ee6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ASE_assignment.Circle.Circle</definition>
+        <argsstring>(int radius)</argsstring>
+        <name>Circle</name>
+        <qualifiedname>ASE_assignment.Circle.Circle</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>radius</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>radius</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Sets the radius of the circle to be drawn</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ASE-assignment/Circle.cs" line="20" column="16" bodyfile="ASE-assignment/Circle.cs" bodystart="20" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_s_e__assignment_1_1_circle_1ac108c2460fc84052d21b1ecfb7ebfd55" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void ASE_assignment.Circle.Draw</definition>
+        <argsstring>(Graphics graphics, Pen pen, int x, int y)</argsstring>
+        <name>Draw</name>
+        <qualifiedname>ASE_assignment.Circle.Draw</qualifiedname>
+        <param>
+          <type>Graphics</type>
+          <declname>graphics</declname>
+        </param>
+        <param>
+          <type>Pen</type>
+          <declname>pen</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>graphics</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The image to draw onto</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pen</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The pen used to draw hollow shapes</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The x (left and right) coordinate to draw on the bitmap</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The y (up and down) coordinate to draw on the bitmap</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ASE-assignment/Circle.cs" line="34" column="30" bodyfile="ASE-assignment/Circle.cs" bodystart="34" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_s_e__assignment_1_1_circle_1a129663c4f328875b54c489a754c3f254" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void ASE_assignment.Circle.Fill</definition>
+        <argsstring>(Graphics graphics, Brush brush, int x, int y)</argsstring>
+        <name>Fill</name>
+        <qualifiedname>ASE_assignment.Circle.Fill</qualifiedname>
+        <param>
+          <type>Graphics</type>
+          <declname>graphics</declname>
+        </param>
+        <param>
+          <type>Brush</type>
+          <declname>brush</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>graphics</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The image to draw onto</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>brush</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The brush used to draw solid shapes</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The x (left and right) coordinate to draw on the bitmap</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The y (up and down) coordinate to draw on the bitmap</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ASE-assignment/Circle.cs" line="54" column="30" bodyfile="ASE-assignment/Circle.cs" bodystart="54" bodyend="57"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Circle class that extends the Shape class to draw a circle onto a canvass. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>ASE_assignment.Circle</label>
+        <link refid="class_a_s_e__assignment_1_1_circle"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Shape</label>
+        <link refid="class_a_s_e__assignment_1_1_shape"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>ASE_assignment.Circle</label>
+        <link refid="class_a_s_e__assignment_1_1_circle"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Shape</label>
+        <link refid="class_a_s_e__assignment_1_1_shape"/>
+      </node>
+    </collaborationgraph>
+    <location file="ASE-assignment/Circle.cs" line="13" column="13" bodyfile="ASE-assignment/Circle.cs" bodystart="14" bodyend="58"/>
+    <listofallmembers>
+      <member refid="class_a_s_e__assignment_1_1_circle_1a05e0d07f42e10eef0975fd6105919ee6" prot="public" virt="non-virtual"><scope>ASE_assignment::Circle</scope><name>Circle</name></member>
+      <member refid="class_a_s_e__assignment_1_1_circle_1ac108c2460fc84052d21b1ecfb7ebfd55" prot="public" virt="non-virtual"><scope>ASE_assignment::Circle</scope><name>Draw</name></member>
+      <member refid="class_a_s_e__assignment_1_1_circle_1a129663c4f328875b54c489a754c3f254" prot="public" virt="non-virtual"><scope>ASE_assignment::Circle</scope><name>Fill</name></member>
+      <member refid="class_a_s_e__assignment_1_1_circle_1aa009b6314c43a84e7176fbe55c0b9cc8" prot="public" virt="non-virtual"><scope>ASE_assignment::Circle</scope><name>Radius</name></member>
+      <member refid="class_a_s_e__assignment_1_1_shape_1add0c33be27ded76dd89bbfe6f7f32fbf" prot="public" virt="non-virtual"><scope>ASE_assignment::Circle</scope><name>ShapeFill</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

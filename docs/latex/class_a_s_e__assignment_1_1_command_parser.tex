@@ -1,0 +1,48 @@
+\doxysection{ASE\+\_\+assignment.\+Command\+Parser Class Reference}
+\hypertarget{class_a_s_e__assignment_1_1_command_parser}{}\label{class_a_s_e__assignment_1_1_command_parser}\index{ASE\_assignment.CommandParser@{ASE\_assignment.CommandParser}}
+
+
+Parses the command into usable portions. Splits the line at each space and checks the value in each position.  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_a_s_e__assignment_1_1_command}{Command}} \mbox{\hyperlink{class_a_s_e__assignment_1_1_command_parser_ae16170c7e29d7070320bc1b43a1783f9}{Parse\+Line}} (string user\+Input)
+\begin{DoxyCompactList}\small\item\em Splits the user\textquotesingle{}s input into values and adds it to a list, depending on whether the parameter is a string, integer, or multiple integers. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Parses the command into usable portions. Splits the line at each space and checks the value in each position. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_a_s_e__assignment_1_1_command_parser_ae16170c7e29d7070320bc1b43a1783f9}\label{class_a_s_e__assignment_1_1_command_parser_ae16170c7e29d7070320bc1b43a1783f9} 
+\index{ASE\_assignment.CommandParser@{ASE\_assignment.CommandParser}!ParseLine@{ParseLine}}
+\index{ParseLine@{ParseLine}!ASE\_assignment.CommandParser@{ASE\_assignment.CommandParser}}
+\doxysubsubsection{\texorpdfstring{ParseLine()}{ParseLine()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_a_s_e__assignment_1_1_command}{Command}} ASE\+\_\+assignment.\+Command\+Parser.\+Parse\+Line (\begin{DoxyParamCaption}\item[{string}]{user\+Input }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Splits the user\textquotesingle{}s input into values and adds it to a list, depending on whether the parameter is a string, integer, or multiple integers. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Input} & Line of commands taken from the text box in the form\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns a Command object containing three lists, for the command, string parameter, and numberical parameters
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Invalid\+Operation\+Exception} & \\
+\hline
+{\em Format\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+ASE-\/assignment/Command\+Parser.\+cs\end{DoxyCompactItemize}

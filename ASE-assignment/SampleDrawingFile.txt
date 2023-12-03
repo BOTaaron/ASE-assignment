@@ -1,0 +1,10 @@
+drawto 400,400
+pen green
+fill on
+rectangle 15,20
+drawto 150,100
+pen blue
+circle 15
+fill off
+drawto 300,200
+circle 40

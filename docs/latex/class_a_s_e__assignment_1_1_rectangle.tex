@@ -1,0 +1,116 @@
+\doxysection{ASE\+\_\+assignment.\+Rectangle Class Reference}
+\hypertarget{class_a_s_e__assignment_1_1_rectangle}{}\label{class_a_s_e__assignment_1_1_rectangle}\index{ASE\_assignment.Rectangle@{ASE\_assignment.Rectangle}}
+
+
+Extends the Shape class to draw a rectangle on the canvass.  
+
+
+Inheritance diagram for ASE\+\_\+assignment.\+Rectangle\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_a_s_e__assignment_1_1_rectangle}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_a_s_e__assignment_1_1_rectangle_a9582cbbf0d4e93a85c1c15d066d0f18b}{Rectangle}} (int width, int height)
+\begin{DoxyCompactList}\small\item\em Draw a rectangle using parameters parsed from user input for the size of the shape. \end{DoxyCompactList}\item 
+override void \mbox{\hyperlink{class_a_s_e__assignment_1_1_rectangle_a636ae94c3325330db9f223e5866f79f1}{Draw}} (Graphics graphics, Pen pen, int x, int y)
+\begin{DoxyCompactList}\small\item\em Overrides the draw method in the shape class to draw either a hollow or solid shape onto the bitmap canvass. \end{DoxyCompactList}\item 
+override void \mbox{\hyperlink{class_a_s_e__assignment_1_1_rectangle_a60ce2a00418e22105605cb9e31f784ee}{Fill}} (Graphics graphics, Brush brush, int x, int y)
+\begin{DoxyCompactList}\small\item\em Draws the shape with a solid fill. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_a_s_e__assignment_1_1_shape}{ASE\+\_\+assignment.\+Shape}}}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_a_s_e__assignment_1_1_shape_a6bb21024ef15686aa32c25733de9f56e}{Draw}} (Graphics graphics, Pen pen, int x, int y)
+\begin{DoxyCompactList}\small\item\em Abstract method to draw shape outlines, to be overriden in the. \end{DoxyCompactList}\item 
+void {\bfseries Fill} (Graphics graphics, Brush brush, int x, int y)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_a_s_e__assignment_1_1_rectangle_abb36f8980b4412df35682ffe8ad6b7d5}\label{class_a_s_e__assignment_1_1_rectangle_abb36f8980b4412df35682ffe8ad6b7d5} 
+int {\bfseries Width}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Accessors for getting/setting the width of the rectangle. \end{DoxyCompactList}\item 
+\Hypertarget{class_a_s_e__assignment_1_1_rectangle_aaaa5847d44f355963b42c5be5c4dcd29}\label{class_a_s_e__assignment_1_1_rectangle_aaaa5847d44f355963b42c5be5c4dcd29} 
+int {\bfseries Height}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Accessors for getting/setting the height of the rectangle. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties inherited from \mbox{\hyperlink{class_a_s_e__assignment_1_1_shape}{ASE\+\_\+assignment.\+Shape}}}
+\begin{DoxyCompactItemize}
+\item 
+bool {\bfseries Shape\+Fill} = false\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Accessor for the boolean to change between pen or brush fill. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Extends the Shape class to draw a rectangle on the canvass. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_a_s_e__assignment_1_1_rectangle_a9582cbbf0d4e93a85c1c15d066d0f18b}\label{class_a_s_e__assignment_1_1_rectangle_a9582cbbf0d4e93a85c1c15d066d0f18b} 
+\index{ASE\_assignment.Rectangle@{ASE\_assignment.Rectangle}!Rectangle@{Rectangle}}
+\index{Rectangle@{Rectangle}!ASE\_assignment.Rectangle@{ASE\_assignment.Rectangle}}
+\doxysubsubsection{\texorpdfstring{Rectangle()}{Rectangle()}}
+{\footnotesize\ttfamily ASE\+\_\+assignment.\+Rectangle.\+Rectangle (\begin{DoxyParamCaption}\item[{int}]{width,  }\item[{int}]{height }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Draw a rectangle using parameters parsed from user input for the size of the shape. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em width} & Width of the rectangle\\
+\hline
+{\em height} & Height of the rectangle\\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_a_s_e__assignment_1_1_rectangle_a636ae94c3325330db9f223e5866f79f1}\label{class_a_s_e__assignment_1_1_rectangle_a636ae94c3325330db9f223e5866f79f1} 
+\index{ASE\_assignment.Rectangle@{ASE\_assignment.Rectangle}!Draw@{Draw}}
+\index{Draw@{Draw}!ASE\_assignment.Rectangle@{ASE\_assignment.Rectangle}}
+\doxysubsubsection{\texorpdfstring{Draw()}{Draw()}}
+{\footnotesize\ttfamily override void ASE\+\_\+assignment.\+Rectangle.\+Draw (\begin{DoxyParamCaption}\item[{Graphics}]{graphics,  }\item[{Pen}]{pen,  }\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Overrides the draw method in the shape class to draw either a hollow or solid shape onto the bitmap canvass. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em graphics} & The bitmap to draw on\\
+\hline
+{\em pen} & The pen used for drawing\\
+\hline
+{\em x} & The x (left and right) coordinate to draw the shape from the center point\\
+\hline
+{\em y} & The y (up and down) coordinate to draw the shape from the center point\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_a_s_e__assignment_1_1_rectangle_a60ce2a00418e22105605cb9e31f784ee}\label{class_a_s_e__assignment_1_1_rectangle_a60ce2a00418e22105605cb9e31f784ee} 
+\index{ASE\_assignment.Rectangle@{ASE\_assignment.Rectangle}!Fill@{Fill}}
+\index{Fill@{Fill}!ASE\_assignment.Rectangle@{ASE\_assignment.Rectangle}}
+\doxysubsubsection{\texorpdfstring{Fill()}{Fill()}}
+{\footnotesize\ttfamily override void ASE\+\_\+assignment.\+Rectangle.\+Fill (\begin{DoxyParamCaption}\item[{Graphics}]{graphics,  }\item[{Brush}]{brush,  }\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Draws the shape with a solid fill. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em graphics} & The bitmap to draw on\\
+\hline
+{\em brush} & The solid brush used for drawing\\
+\hline
+{\em x} & The x (left and right) coordinate to draw the shape from the center point\\
+\hline
+{\em y} & The y (up and down) coordinate to draw the shape from the center point\\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+ASE-\/assignment/Rectangle.\+cs\end{DoxyCompactItemize}

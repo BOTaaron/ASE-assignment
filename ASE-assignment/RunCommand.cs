@@ -7,19 +7,26 @@ using System.Threading.Tasks;
 
 namespace ASE_assignment
 {
+    /// <summary>
+    /// Takes the parsed commands as parameters and runs the desired command by calling the correct function
+    /// </summary>
     internal class RunCommand
     {
         private PenController controller;
         private Canvass canvass;
-        public event Action OnRunCommandReceived;
-
         public RunCommand(PenController controller, Canvass canvass)
         {
             this.controller = controller;
             this.canvass = canvass;
 
         }
-
+        /// <summary>
+        /// Takes the parsed line of commands from the accessors in the Command class and call the function depending on the command,
+        /// passing in the parameter where necessary. Throws an exception if the value is not valid.
+        /// </summary>
+        /// <param name="parsedLine">The parsed line of commands from the Command class</param>
+        /// <exception cref="ArgumentException"></exception>
+        /// <exception cref="NotImplementedException"></exception>
         public void RunLines(Command parsedLine)
         {
             // if statements that define behaviour when an expected command is entered
@@ -62,7 +69,7 @@ namespace ASE_assignment
             }
             else if (parsedLine.ParsedCommand[0].Equals("run"))
             {
-                OnRunCommandReceived?.Invoke();
+                
             }
             else if (parsedLine.ParsedCommand[0].Equals("rectangle"))
             {

@@ -1,0 +1,139 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="class_a_s_e__assignment_1_1_run_command" kind="class" language="C#" prot="package">
+    <compoundname>ASE_assignment::RunCommand</compoundname>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_a_s_e__assignment_1_1_run_command_1ac9e327c6a81eaf2c1e5963713a696ac6" prot="private" static="no" mutable="no">
+        <type><ref refid="class_a_s_e__assignment_1_1_pen_controller" kindref="compound">PenController</ref></type>
+        <definition>PenController ASE_assignment.RunCommand.controller</definition>
+        <argsstring></argsstring>
+        <name>controller</name>
+        <qualifiedname>ASE_assignment.RunCommand.controller</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ASE-assignment/RunCommand.cs" line="15" column="31" bodyfile="ASE-assignment/RunCommand.cs" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_s_e__assignment_1_1_run_command_1a98c0babcb7a78f677f5123259ef6e058" prot="private" static="no" mutable="no">
+        <type><ref refid="class_a_s_e__assignment_1_1_canvass" kindref="compound">Canvass</ref></type>
+        <definition>Canvass ASE_assignment.RunCommand.canvass</definition>
+        <argsstring></argsstring>
+        <name>canvass</name>
+        <qualifiedname>ASE_assignment.RunCommand.canvass</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ASE-assignment/RunCommand.cs" line="16" column="25" bodyfile="ASE-assignment/RunCommand.cs" bodystart="16" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_a_s_e__assignment_1_1_run_command_1adc1dbba4033dd2a760a727f9918097ff" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ASE_assignment.RunCommand.RunCommand</definition>
+        <argsstring>(PenController controller, Canvass canvass)</argsstring>
+        <name>RunCommand</name>
+        <qualifiedname>ASE_assignment.RunCommand.RunCommand</qualifiedname>
+        <param>
+          <type><ref refid="class_a_s_e__assignment_1_1_pen_controller" kindref="compound">PenController</ref></type>
+          <declname>controller</declname>
+        </param>
+        <param>
+          <type><ref refid="class_a_s_e__assignment_1_1_canvass" kindref="compound">Canvass</ref></type>
+          <declname>canvass</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ASE-assignment/RunCommand.cs" line="17" column="16" bodyfile="ASE-assignment/RunCommand.cs" bodystart="17" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_s_e__assignment_1_1_run_command_1a54a6f7a5d08e288a81d624976b53d1ca" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ASE_assignment.RunCommand.RunLines</definition>
+        <argsstring>(Command parsedLine)</argsstring>
+        <name>RunLines</name>
+        <qualifiedname>ASE_assignment.RunCommand.RunLines</qualifiedname>
+        <param>
+          <type><ref refid="class_a_s_e__assignment_1_1_command" kindref="compound">Command</ref></type>
+          <declname>parsedLine</declname>
+        </param>
+        <briefdescription>
+<para>Takes the parsed line of commands from the accessors in the Command class and call the function depending on the command, passing in the parameter where necessary. Throws an exception if the value is not valid. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>parsedLine</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The parsed line of commands from the Command class</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>ArgumentException</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>NotImplementedException</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ASE-assignment/RunCommand.cs" line="30" column="21" bodyfile="ASE-assignment/RunCommand.cs" bodystart="30" bodyend="128"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Takes the parsed commands as parameters and runs the desired command by calling the correct function. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>ASE_assignment.RunCommand</label>
+        <link refid="class_a_s_e__assignment_1_1_run_command"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>controller</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>canvass</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>ASE_assignment.Canvass</label>
+        <link refid="class_a_s_e__assignment_1_1_canvass"/>
+      </node>
+      <node id="2">
+        <label>ASE_assignment.PenController</label>
+        <link refid="class_a_s_e__assignment_1_1_pen_controller"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>canvass</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="ASE-assignment/RunCommand.cs" line="13" column="13" bodyfile="ASE-assignment/RunCommand.cs" bodystart="14" bodyend="129"/>
+    <listofallmembers>
+      <member refid="class_a_s_e__assignment_1_1_run_command_1a98c0babcb7a78f677f5123259ef6e058" prot="private" virt="non-virtual"><scope>ASE_assignment::RunCommand</scope><name>canvass</name></member>
+      <member refid="class_a_s_e__assignment_1_1_run_command_1ac9e327c6a81eaf2c1e5963713a696ac6" prot="private" virt="non-virtual"><scope>ASE_assignment::RunCommand</scope><name>controller</name></member>
+      <member refid="class_a_s_e__assignment_1_1_run_command_1adc1dbba4033dd2a760a727f9918097ff" prot="public" virt="non-virtual"><scope>ASE_assignment::RunCommand</scope><name>RunCommand</name></member>
+      <member refid="class_a_s_e__assignment_1_1_run_command_1a54a6f7a5d08e288a81d624976b53d1ca" prot="public" virt="non-virtual"><scope>ASE_assignment::RunCommand</scope><name>RunLines</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

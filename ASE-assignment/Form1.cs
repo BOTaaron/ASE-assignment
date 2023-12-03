@@ -13,23 +13,27 @@ using System.Windows.Forms;
 
 namespace ASE_assignment
 {
+    /// <summary>
+    /// Create the form for the main application. Contains all the methods for UI functionality such as buttons and panels for displaying the drawing
+    /// </summary>
     public partial class Form1 : Form 
     {
         private Canvass canvass;
         private PenController penController;
         private RunCommand runCommand;
         
-
+        /// <summary>
+        /// Initialise the form, and create objects required for functionality. Contains event handlers for buttons and set the DrawingPanel image to the combined bitmap 
+        /// </summary>
         public Form1()
         {
             
             InitializeComponent();
-            this.AutoScaleMode = AutoScaleMode.Dpi;
             canvass = new Canvass(DrawingPanel.Width, DrawingPanel.Height);
             penController = new PenController(canvass);
             runCommand = new RunCommand(penController, canvass);
             DrawingPanel.Image = canvass.CombineCanvass();
-            runCommand.OnRunCommandReceived += RunMultiLines;
+
 
             // event handlers for the buttons and text box
             CommandBox.KeyDown += new KeyEventHandler(CommandBox_KeyDown);
@@ -40,6 +44,13 @@ namespace ASE_assignment
       
         CommandParser parse = new CommandParser();
 
+        /// <summary>
+        /// Defines behaviour when the enter/return key is pressed while the textbox is selected. 
+        /// If 'run' is entered it will run all of the commands displayed inside the left panel.
+        /// If commands are entered it will display them within labels inside the panel
+        /// </summary>
+        /// <param name="sender">Object that raised the event, in this case TextBox</param>
+        /// <param name="e">The event, in this case the Enter/Return key is pressed</param>
         private void CommandBox_KeyDown(object sender, KeyEventArgs e)
         {
            
@@ -58,7 +69,11 @@ namespace ASE_assignment
 
             }
         }
-
+        /// <summary>
+        /// Defines behaviour when the 'run' button is clicked. Parses the command and runs it before refreshing the bitmaps
+        /// </summary>
+        /// <param name="sender">Object that raised the event, in this case Run button</param>
+        /// <param name="e">The event, in this case 'run' button clicked</param>
         private void RunButton_Click(object sender, EventArgs e)
         {
             // Parse the command, and then pass the bitmaps into the RunLines function
@@ -69,6 +84,9 @@ namespace ASE_assignment
             DrawingPanel.Refresh();
             CommandBox.Clear();           
         }
+        /// <summary>
+        /// Iterates through each label contained within the 'CommandPanel', parsing and running each line and refreshing the canvas
+        /// </summary>
         private void RunMultiLines()
         {
             foreach (Control control in CommandPanel.Controls)
@@ -77,13 +95,18 @@ namespace ASE_assignment
                 {
                     string commandLine = label.Text;
                     var parsedLines = parse.ParseLine(label.Text);
-                    DrawingPanel.Image = canvass.CombineCanvass();
                     runCommand.RunLines(parsedLines);
-                    DrawingPanel.Refresh();
-                    CommandBox.Clear();
                 }
             }
+            DrawingPanel.Image = canvass.CombineCanvass();
+            DrawingPanel.Refresh();
+            CommandBox.Clear();
         }
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void SyntaxButton_Click(object sender, EventArgs e)
         {
             // checks syntax is valid when the 'Syntax' button is clicked           
@@ -91,26 +114,28 @@ namespace ASE_assignment
         }
 
 
-
+        /// <summary>
+        /// Checks that commands are not clearing or infinitely running the program.
+        /// Takes user input from the TextBox and adds each line to a label when called, directly below the previous label
+        /// </summary>
+        /// <param name="line">Text entered by the user into the TextBox when the Enter/Return key is pressed</param>
         private void DisplayInput(string line)
         {
-            // Create a label that displays the text the user enters when the enter key is pressed
-            // Value is stored in the line variable from the CommandBox.Text input
-            // Label width is equal to width of the panel 
-            // Point defines the label location, with X (left/right) of 0 and Y (up/down) straight after the previous label 
-            // Does not create a label if an empty line is entered
-
             if (line != "" && !line.Equals("clear") && !line.Equals("run") && !line.Equals("reset"))
             { 
             Label inputLabel = new Label();
             inputLabel.Text = line;
             CommandPanel.Controls.Add(inputLabel);
             inputLabel.Width = CommandPanel.Width;
-            inputLabel.Location = new Point(0, CommandPanel.Controls.Count * inputLabel.Height);
-                
-             }
+            inputLabel.Location = new Point(0, CommandPanel.Controls.Count * inputLabel.Height);                
+            }
         }
-
+        /// <summary>
+        /// Loop through each label and add the lines to a List. SaveFileDialog prompts user to select a directory
+        /// and saves to a directory in a text file when the user clicks 'OK' in the prompt.
+        /// </summary>
+        /// <param name="sender">The object that raised the event, in this case the 'save' button</param>
+        /// <param name="e">The event, in this case the 'save' button being clicked</param>
         private void SaveButton_Click(object sender, EventArgs e)
         {
             FileManager fileManager = new FileManager();
@@ -145,7 +170,11 @@ namespace ASE_assignment
             }
             fileManager.SaveFile(userInput, path);
         }
-
+        /// <summary>
+        /// Defines behaviour when the 'open' button is clicked. Calls a dialog box to select the file to open from a list of text files
+        /// </summary>
+        /// <param name="sender">The object that raised the event, in this case the 'open' button</param>
+        /// <param name="e">The event, in this case the button being clicked </param>
          private void OpenButton_Click(object sender, EventArgs e)
          {
             // displays a menu that prompts user to select a file, filtered to .txt files

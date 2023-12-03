@@ -1,0 +1,639 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="class_a_s_e__assignment_1_1_form1" kind="class" language="C#" prot="public">
+    <compoundname>ASE_assignment::Form1</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Form</basecompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_a_s_e__assignment_1_1_form1_1a39d44a6d44067ea95994566c25515be4" prot="private" static="no" mutable="no">
+        <type><ref refid="class_a_s_e__assignment_1_1_canvass" kindref="compound">Canvass</ref></type>
+        <definition>Canvass ASE_assignment.Form1.canvass</definition>
+        <argsstring></argsstring>
+        <name>canvass</name>
+        <qualifiedname>ASE_assignment.Form1.canvass</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ASE-assignment/Form1.cs" line="21" column="25" bodyfile="ASE-assignment/Form1.cs" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_s_e__assignment_1_1_form1_1a714d2d52d0beb78d95bf5df044de727e" prot="private" static="no" mutable="no">
+        <type><ref refid="class_a_s_e__assignment_1_1_pen_controller" kindref="compound">PenController</ref></type>
+        <definition>PenController ASE_assignment.Form1.penController</definition>
+        <argsstring></argsstring>
+        <name>penController</name>
+        <qualifiedname>ASE_assignment.Form1.penController</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ASE-assignment/Form1.cs" line="22" column="31" bodyfile="ASE-assignment/Form1.cs" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_s_e__assignment_1_1_form1_1a4d2946159dda349c36701e69332dd460" prot="private" static="no" mutable="no">
+        <type><ref refid="class_a_s_e__assignment_1_1_run_command" kindref="compound">RunCommand</ref></type>
+        <definition>RunCommand ASE_assignment.Form1.runCommand</definition>
+        <argsstring></argsstring>
+        <name>runCommand</name>
+        <qualifiedname>ASE_assignment.Form1.runCommand</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ASE-assignment/Form1.cs" line="23" column="28" bodyfile="ASE-assignment/Form1.cs" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_s_e__assignment_1_1_form1_1a671bd7fd07f81843a50c6795b9203ab6" prot="private" static="no" mutable="no">
+        <type><ref refid="class_a_s_e__assignment_1_1_command_parser" kindref="compound">CommandParser</ref></type>
+        <definition>CommandParser ASE_assignment.Form1.parse</definition>
+        <argsstring></argsstring>
+        <name>parse</name>
+        <qualifiedname>ASE_assignment.Form1.parse</qualifiedname>
+        <initializer>= new <ref refid="class_a_s_e__assignment_1_1_command_parser" kindref="compound">CommandParser</ref>()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ASE-assignment/Form1.cs" line="45" column="23" bodyfile="ASE-assignment/Form1.cs" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_s_e__assignment_1_1_form1_1abe508e24a52c4232296d9fc975d05329" prot="private" static="no" mutable="no">
+        <type>System.ComponentModel.IContainer</type>
+        <definition>System.ComponentModel.IContainer ASE_assignment.Form1.components</definition>
+        <argsstring></argsstring>
+        <name>components</name>
+        <qualifiedname>ASE_assignment.Form1.components</qualifiedname>
+        <initializer>= null</initializer>
+        <briefdescription>
+<para>Required designer variable. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ASE-assignment/Form1.Designer.cs" line="8" column="48" bodyfile="ASE-assignment/Form1.Designer.cs" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_s_e__assignment_1_1_form1_1aa9ef00ba926c299ba32dc690d1941115" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.Button</type>
+        <definition>System.Windows.Forms.Button ASE_assignment.Form1.SyntaxButton</definition>
+        <argsstring></argsstring>
+        <name>SyntaxButton</name>
+        <qualifiedname>ASE_assignment.Form1.SyntaxButton</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ASE-assignment/Form1.Designer.cs" line="133" column="42" bodyfile="ASE-assignment/Form1.Designer.cs" bodystart="133" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_s_e__assignment_1_1_form1_1ab9626736f61e5b037ffb18adae622a70" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.Button</type>
+        <definition>System.Windows.Forms.Button ASE_assignment.Form1.RunButton</definition>
+        <argsstring></argsstring>
+        <name>RunButton</name>
+        <qualifiedname>ASE_assignment.Form1.RunButton</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ASE-assignment/Form1.Designer.cs" line="134" column="42" bodyfile="ASE-assignment/Form1.Designer.cs" bodystart="134" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_s_e__assignment_1_1_form1_1a7a3c08131e15dee758a625bf6d389156" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.TextBox</type>
+        <definition>System.Windows.Forms.TextBox ASE_assignment.Form1.CommandBox</definition>
+        <argsstring></argsstring>
+        <name>CommandBox</name>
+        <qualifiedname>ASE_assignment.Form1.CommandBox</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ASE-assignment/Form1.Designer.cs" line="135" column="43" bodyfile="ASE-assignment/Form1.Designer.cs" bodystart="135" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_s_e__assignment_1_1_form1_1a1aa58a815a56261ed990a8d152d62eb8" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.Panel</type>
+        <definition>System.Windows.Forms.Panel ASE_assignment.Form1.CommandPanel</definition>
+        <argsstring></argsstring>
+        <name>CommandPanel</name>
+        <qualifiedname>ASE_assignment.Form1.CommandPanel</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ASE-assignment/Form1.Designer.cs" line="136" column="41" bodyfile="ASE-assignment/Form1.Designer.cs" bodystart="136" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_s_e__assignment_1_1_form1_1a06a611c4acbc1aa32e22761fc1f5fb9b" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.PictureBox</type>
+        <definition>System.Windows.Forms.PictureBox ASE_assignment.Form1.DrawingPanel</definition>
+        <argsstring></argsstring>
+        <name>DrawingPanel</name>
+        <qualifiedname>ASE_assignment.Form1.DrawingPanel</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ASE-assignment/Form1.Designer.cs" line="137" column="46" bodyfile="ASE-assignment/Form1.Designer.cs" bodystart="137" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_s_e__assignment_1_1_form1_1ac5e0e06b64363422d693c30012301142" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.Button</type>
+        <definition>System.Windows.Forms.Button ASE_assignment.Form1.OpenButton</definition>
+        <argsstring></argsstring>
+        <name>OpenButton</name>
+        <qualifiedname>ASE_assignment.Form1.OpenButton</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ASE-assignment/Form1.Designer.cs" line="138" column="42" bodyfile="ASE-assignment/Form1.Designer.cs" bodystart="138" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_s_e__assignment_1_1_form1_1aeaa935e8fad412c7622f9367eec1859d" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.Button</type>
+        <definition>System.Windows.Forms.Button ASE_assignment.Form1.SaveButton</definition>
+        <argsstring></argsstring>
+        <name>SaveButton</name>
+        <qualifiedname>ASE_assignment.Form1.SaveButton</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ASE-assignment/Form1.Designer.cs" line="139" column="42" bodyfile="ASE-assignment/Form1.Designer.cs" bodystart="139" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_a_s_e__assignment_1_1_form1_1a25861b5bd71e0159a84334363ab02185" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ASE_assignment.Form1.Form1</definition>
+        <argsstring>()</argsstring>
+        <name>Form1</name>
+        <qualifiedname>ASE_assignment.Form1.Form1</qualifiedname>
+        <briefdescription>
+<para>Initialise the form, and create objects required for functionality. Contains event handlers for buttons and set the DrawingPanel image to the combined bitmap. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ASE-assignment/Form1.cs" line="28" column="16" bodyfile="ASE-assignment/Form1.cs" bodystart="28" bodyend="43"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_a_s_e__assignment_1_1_form1_1a95ab37574cf5687eae3b72087e5a2bb5" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ASE_assignment.Form1.CommandBox_KeyDown</definition>
+        <argsstring>(object sender, KeyEventArgs e)</argsstring>
+        <name>CommandBox_KeyDown</name>
+        <qualifiedname>ASE_assignment.Form1.CommandBox_KeyDown</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>KeyEventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Defines behaviour when the enter/return key is pressed while the textbox is selected. If &apos;run&apos; is entered it will run all of the commands displayed inside the left panel. If commands are entered it will display them within labels inside the panel. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sender</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Object that raised the event, in this case TextBox</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The event, in this case the Enter/Return key is pressed</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ASE-assignment/Form1.cs" line="54" column="22" bodyfile="ASE-assignment/Form1.cs" bodystart="54" bodyend="71"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_s_e__assignment_1_1_form1_1a1c7d2c5dd4c703548600623b94ae1996" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ASE_assignment.Form1.RunButton_Click</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>RunButton_Click</name>
+        <qualifiedname>ASE_assignment.Form1.RunButton_Click</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Defines behaviour when the &apos;run&apos; button is clicked. Parses the command and runs it before refreshing the bitmaps. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sender</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Object that raised the event, in this case Run button</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The event, in this case &apos;run&apos; button clicked</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ASE-assignment/Form1.cs" line="77" column="22" bodyfile="ASE-assignment/Form1.cs" bodystart="77" bodyend="86"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_s_e__assignment_1_1_form1_1ac75050440a712696d7c870bbf3cee266" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ASE_assignment.Form1.RunMultiLines</definition>
+        <argsstring>()</argsstring>
+        <name>RunMultiLines</name>
+        <qualifiedname>ASE_assignment.Form1.RunMultiLines</qualifiedname>
+        <briefdescription>
+<para>Iterates through each label contained within the &apos;CommandPanel&apos;, parsing and running each line and refreshing the canvas. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ASE-assignment/Form1.cs" line="90" column="22" bodyfile="ASE-assignment/Form1.cs" bodystart="90" bodyend="104"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_s_e__assignment_1_1_form1_1a302a619f9d1c2aa6338716b593798cc4" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ASE_assignment.Form1.SyntaxButton_Click</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>SyntaxButton_Click</name>
+        <qualifiedname>ASE_assignment.Form1.SyntaxButton_Click</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sender</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ASE-assignment/Form1.cs" line="110" column="22" bodyfile="ASE-assignment/Form1.cs" bodystart="110" bodyend="114"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_s_e__assignment_1_1_form1_1a19f88d0fb23d931f3bc8037840ae2392" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ASE_assignment.Form1.DisplayInput</definition>
+        <argsstring>(string line)</argsstring>
+        <name>DisplayInput</name>
+        <qualifiedname>ASE_assignment.Form1.DisplayInput</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>line</declname>
+        </param>
+        <briefdescription>
+<para>Checks that commands are not clearing or infinitely running the program. Takes user input from the TextBox and adds each line to a label when called, directly below the previous label. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>line</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Text entered by the user into the TextBox when the Enter/Return key is pressed</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ASE-assignment/Form1.cs" line="122" column="22" bodyfile="ASE-assignment/Form1.cs" bodystart="122" bodyend="132"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_s_e__assignment_1_1_form1_1abbf12b0bfb420ad150e45eb98a03f93f" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ASE_assignment.Form1.SaveButton_Click</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>SaveButton_Click</name>
+        <qualifiedname>ASE_assignment.Form1.SaveButton_Click</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Loop through each label and add the lines to a List. SaveFileDialog prompts user to select a directory and saves to a directory in a text file when the user clicks &apos;OK&apos; in the prompt. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sender</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The object that raised the event, in this case the &apos;save&apos; button</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The event, in this case the &apos;save&apos; button being clicked</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ASE-assignment/Form1.cs" line="139" column="22" bodyfile="ASE-assignment/Form1.cs" bodystart="139" bodyend="172"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_s_e__assignment_1_1_form1_1af8574f43ea58023f6c1be37df34a9bbc" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ASE_assignment.Form1.OpenButton_Click</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>OpenButton_Click</name>
+        <qualifiedname>ASE_assignment.Form1.OpenButton_Click</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Defines behaviour when the &apos;open&apos; button is clicked. Calls a dialog box to select the file to open from a list of text files. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sender</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The object that raised the event, in this case the &apos;open&apos; button</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The event, in this case the button being clicked </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ASE-assignment/Form1.cs" line="178" column="23" bodyfile="ASE-assignment/Form1.cs" bodystart="178" bodyend="197"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_s_e__assignment_1_1_form1_1a9057cd1a27c669e2eb373b4ab790af80" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ASE_assignment.Form1.Form1_Load</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>Form1_Load</name>
+        <qualifiedname>ASE_assignment.Form1.Form1_Load</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ASE-assignment/Form1.cs" line="199" column="22" bodyfile="ASE-assignment/Form1.cs" bodystart="199" bodyend="203"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_s_e__assignment_1_1_form1_1aed302fe4407728a6a15b771f2dd5e3d7" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ASE_assignment.Form1.textBox1_TextChanged</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>textBox1_TextChanged</name>
+        <qualifiedname>ASE_assignment.Form1.textBox1_TextChanged</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ASE-assignment/Form1.cs" line="207" column="22" bodyfile="ASE-assignment/Form1.cs" bodystart="207" bodyend="212"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_s_e__assignment_1_1_form1_1add15d22660df69b707702dc700149475" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ASE_assignment.Form1.InitializeComponent</definition>
+        <argsstring>()</argsstring>
+        <name>InitializeComponent</name>
+        <qualifiedname>ASE_assignment.Form1.InitializeComponent</qualifiedname>
+        <briefdescription>
+<para>Required method for Designer support - do not modify the contents of this method with the code editor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ASE-assignment/Form1.Designer.cs" line="29" column="22" bodyfile="ASE-assignment/Form1.Designer.cs" bodystart="29" bodyend="129"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_a_s_e__assignment_1_1_form1_1a6d52d48ab9b399e2504272c4ebe93769" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void ASE_assignment.Form1.Dispose</definition>
+        <argsstring>(bool disposing)</argsstring>
+        <name>Dispose</name>
+        <qualifiedname>ASE_assignment.Form1.Dispose</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>disposing</declname>
+        </param>
+        <briefdescription>
+<para>Clean up any resources being used. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>disposing</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>true if managed resources should be disposed; otherwise, false.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ASE-assignment/Form1.Designer.cs" line="14" column="33" bodyfile="ASE-assignment/Form1.Designer.cs" bodystart="14" bodyend="21"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Create the form for the main application. Contains all the methods for UI functionality such as buttons and panels for displaying the drawing. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>ASE_assignment.Form1</label>
+        <link refid="class_a_s_e__assignment_1_1_form1"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Form</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>ASE_assignment.Form1</label>
+        <link refid="class_a_s_e__assignment_1_1_form1"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>canvass</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>penController</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>runCommand</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>parse</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>CommandBox</edgelabel>
+          <edgelabel>CommandPanel</edgelabel>
+          <edgelabel>DrawingPanel</edgelabel>
+          <edgelabel>OpenButton</edgelabel>
+          <edgelabel>RunButton</edgelabel>
+          <edgelabel>SaveButton</edgelabel>
+          <edgelabel>SyntaxButton</edgelabel>
+          <edgelabel>components</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>ASE_assignment.Canvass</label>
+        <link refid="class_a_s_e__assignment_1_1_canvass"/>
+      </node>
+      <node id="6">
+        <label>ASE_assignment.CommandParser</label>
+        <link refid="class_a_s_e__assignment_1_1_command_parser"/>
+      </node>
+      <node id="4">
+        <label>ASE_assignment.PenController</label>
+        <link refid="class_a_s_e__assignment_1_1_pen_controller"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>canvass</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>ASE_assignment.RunCommand</label>
+        <link refid="class_a_s_e__assignment_1_1_run_command"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>controller</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>canvass</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Form</label>
+      </node>
+      <node id="7">
+        <label>System</label>
+      </node>
+    </collaborationgraph>
+    <location file="ASE-assignment/Form1.cs" line="19" column="19" bodyfile="ASE-assignment/Form1.cs" bodystart="20" bodyend="217"/>
+    <listofallmembers>
+      <member refid="class_a_s_e__assignment_1_1_form1_1a39d44a6d44067ea95994566c25515be4" prot="private" virt="non-virtual"><scope>ASE_assignment::Form1</scope><name>canvass</name></member>
+      <member refid="class_a_s_e__assignment_1_1_form1_1a7a3c08131e15dee758a625bf6d389156" prot="private" virt="non-virtual"><scope>ASE_assignment::Form1</scope><name>CommandBox</name></member>
+      <member refid="class_a_s_e__assignment_1_1_form1_1a95ab37574cf5687eae3b72087e5a2bb5" prot="private" virt="non-virtual"><scope>ASE_assignment::Form1</scope><name>CommandBox_KeyDown</name></member>
+      <member refid="class_a_s_e__assignment_1_1_form1_1a1aa58a815a56261ed990a8d152d62eb8" prot="private" virt="non-virtual"><scope>ASE_assignment::Form1</scope><name>CommandPanel</name></member>
+      <member refid="class_a_s_e__assignment_1_1_form1_1abe508e24a52c4232296d9fc975d05329" prot="private" virt="non-virtual"><scope>ASE_assignment::Form1</scope><name>components</name></member>
+      <member refid="class_a_s_e__assignment_1_1_form1_1a19f88d0fb23d931f3bc8037840ae2392" prot="private" virt="non-virtual"><scope>ASE_assignment::Form1</scope><name>DisplayInput</name></member>
+      <member refid="class_a_s_e__assignment_1_1_form1_1a6d52d48ab9b399e2504272c4ebe93769" prot="protected" virt="non-virtual"><scope>ASE_assignment::Form1</scope><name>Dispose</name></member>
+      <member refid="class_a_s_e__assignment_1_1_form1_1a06a611c4acbc1aa32e22761fc1f5fb9b" prot="private" virt="non-virtual"><scope>ASE_assignment::Form1</scope><name>DrawingPanel</name></member>
+      <member refid="class_a_s_e__assignment_1_1_form1_1a25861b5bd71e0159a84334363ab02185" prot="public" virt="non-virtual"><scope>ASE_assignment::Form1</scope><name>Form1</name></member>
+      <member refid="class_a_s_e__assignment_1_1_form1_1a9057cd1a27c669e2eb373b4ab790af80" prot="private" virt="non-virtual"><scope>ASE_assignment::Form1</scope><name>Form1_Load</name></member>
+      <member refid="class_a_s_e__assignment_1_1_form1_1add15d22660df69b707702dc700149475" prot="private" virt="non-virtual"><scope>ASE_assignment::Form1</scope><name>InitializeComponent</name></member>
+      <member refid="class_a_s_e__assignment_1_1_form1_1ac5e0e06b64363422d693c30012301142" prot="private" virt="non-virtual"><scope>ASE_assignment::Form1</scope><name>OpenButton</name></member>
+      <member refid="class_a_s_e__assignment_1_1_form1_1af8574f43ea58023f6c1be37df34a9bbc" prot="private" virt="non-virtual"><scope>ASE_assignment::Form1</scope><name>OpenButton_Click</name></member>
+      <member refid="class_a_s_e__assignment_1_1_form1_1a671bd7fd07f81843a50c6795b9203ab6" prot="private" virt="non-virtual"><scope>ASE_assignment::Form1</scope><name>parse</name></member>
+      <member refid="class_a_s_e__assignment_1_1_form1_1a714d2d52d0beb78d95bf5df044de727e" prot="private" virt="non-virtual"><scope>ASE_assignment::Form1</scope><name>penController</name></member>
+      <member refid="class_a_s_e__assignment_1_1_form1_1ab9626736f61e5b037ffb18adae622a70" prot="private" virt="non-virtual"><scope>ASE_assignment::Form1</scope><name>RunButton</name></member>
+      <member refid="class_a_s_e__assignment_1_1_form1_1a1c7d2c5dd4c703548600623b94ae1996" prot="private" virt="non-virtual"><scope>ASE_assignment::Form1</scope><name>RunButton_Click</name></member>
+      <member refid="class_a_s_e__assignment_1_1_form1_1a4d2946159dda349c36701e69332dd460" prot="private" virt="non-virtual"><scope>ASE_assignment::Form1</scope><name>runCommand</name></member>
+      <member refid="class_a_s_e__assignment_1_1_form1_1ac75050440a712696d7c870bbf3cee266" prot="private" virt="non-virtual"><scope>ASE_assignment::Form1</scope><name>RunMultiLines</name></member>
+      <member refid="class_a_s_e__assignment_1_1_form1_1aeaa935e8fad412c7622f9367eec1859d" prot="private" virt="non-virtual"><scope>ASE_assignment::Form1</scope><name>SaveButton</name></member>
+      <member refid="class_a_s_e__assignment_1_1_form1_1abbf12b0bfb420ad150e45eb98a03f93f" prot="private" virt="non-virtual"><scope>ASE_assignment::Form1</scope><name>SaveButton_Click</name></member>
+      <member refid="class_a_s_e__assignment_1_1_form1_1aa9ef00ba926c299ba32dc690d1941115" prot="private" virt="non-virtual"><scope>ASE_assignment::Form1</scope><name>SyntaxButton</name></member>
+      <member refid="class_a_s_e__assignment_1_1_form1_1a302a619f9d1c2aa6338716b593798cc4" prot="private" virt="non-virtual"><scope>ASE_assignment::Form1</scope><name>SyntaxButton_Click</name></member>
+      <member refid="class_a_s_e__assignment_1_1_form1_1aed302fe4407728a6a15b771f2dd5e3d7" prot="private" virt="non-virtual"><scope>ASE_assignment::Form1</scope><name>textBox1_TextChanged</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

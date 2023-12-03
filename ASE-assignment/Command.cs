@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace ASE_assignment
 {
+    /// <summary>
+    /// Provides getters and setters for the parsed commands so they can be accessed across the project
+    /// </summary>
     internal class Command
     {
         // accessors for the user input parsed by the CommandParser class

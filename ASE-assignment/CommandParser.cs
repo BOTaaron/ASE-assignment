@@ -7,9 +7,18 @@ using System.Security.Cryptography;
 
 namespace ASE_assignment
 {
+    /// <summary>
+    /// Parses the command into usable portions. Splits the line at each space and checks the value in each position.
+    /// </summary>
     internal class CommandParser
     {
-
+        /// <summary>
+        /// Splits the user's input into values and adds it to a list, depending on whether the parameter is a string, integer, or multiple integers
+        /// </summary>
+        /// <param name="userInput">Line of commands taken from the text box in the form</param>
+        /// <returns>Returns a Command object containing three lists, for the command, string parameter, and numberical parameters</returns>
+        /// <exception cref="InvalidOperationException"></exception>
+        /// <exception cref="FormatException"></exception>
         public Command ParseLine(string userInput)
         {  
             // split user input into an array of strings divided by spaces

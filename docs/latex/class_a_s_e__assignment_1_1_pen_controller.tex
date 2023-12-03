@@ -1,0 +1,151 @@
+\doxysection{ASE\+\_\+assignment.\+Pen\+Controller Class Reference}
+\hypertarget{class_a_s_e__assignment_1_1_pen_controller}{}\label{class_a_s_e__assignment_1_1_pen_controller}\index{ASE\_assignment.PenController@{ASE\_assignment.PenController}}
+
+
+Defines behaviour for the pen such as position, colour, drawing, and fills.  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_a_s_e__assignment_1_1_pen_controller_ac71f9f022d0c3883625b03779ed8fb9c}{Pen\+Controller}} (\mbox{\hyperlink{class_a_s_e__assignment_1_1_canvass}{Canvass}} canvass)
+\begin{DoxyCompactList}\small\item\em Default setings for the canvass when the application is launched. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_a_s_e__assignment_1_1_pen_controller_a457cfc2b6cee199a6173d2ef36f276fc}{Position\+Pen}} (int x, int y)
+\begin{DoxyCompactList}\small\item\em Moves the pen from the previous location, represented by currentX and currentY to the new location, represented by a small circle on the bitmap. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_a_s_e__assignment_1_1_pen_controller_af59aaeb3d3a8ef3292f5bee5b5cab799}{Pen\+Draw}} (int x, int y)
+\begin{DoxyCompactList}\small\item\em Moves the pen from the previous location, represented by currentX and currentY to the new location represented by a small circle on the bitmap. Draws a line between the old and new coordinates as it moves. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_a_s_e__assignment_1_1_pen_controller_ae329e23452b4f6104234271c2ea612e3}{Draw\+Shape}} (\mbox{\hyperlink{class_a_s_e__assignment_1_1_shape}{Shape}} shape)
+\begin{DoxyCompactList}\small\item\em Draws a shape onto the canvass. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_a_s_e__assignment_1_1_pen_controller_a658df602355f7ecaf398502e8ca5b195}{Pen\+Colour}} (Color colour)
+\begin{DoxyCompactList}\small\item\em The colour of the pen to be used when drawing on the bitmap. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_a_s_e__assignment_1_1_pen_controller_a259f715929a3f4d97db09d7821211cdc}{Shape\+Fill}} (bool fill)
+\begin{DoxyCompactList}\small\item\em Contains a boolean to set the pen to draw either a solid or hollow shape. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_a_s_e__assignment_1_1_pen_controller_a5a74a4f83631c5ef4a2aab2a2d66cbbd}\label{class_a_s_e__assignment_1_1_pen_controller_a5a74a4f83631c5ef4a2aab2a2d66cbbd} 
+int {\bfseries currentX} = 0
+\item 
+\Hypertarget{class_a_s_e__assignment_1_1_pen_controller_abdfe8d4ac4c25c972007b975221bc2a7}\label{class_a_s_e__assignment_1_1_pen_controller_abdfe8d4ac4c25c972007b975221bc2a7} 
+int {\bfseries currentY} = 0
+\item 
+\Hypertarget{class_a_s_e__assignment_1_1_pen_controller_aa5e6658f9f0b2bb762ce3bde7ba9c3b4}\label{class_a_s_e__assignment_1_1_pen_controller_aa5e6658f9f0b2bb762ce3bde7ba9c3b4} 
+readonly \mbox{\hyperlink{class_a_s_e__assignment_1_1_canvass}{Canvass}} {\bfseries canvass}
+\item 
+\Hypertarget{class_a_s_e__assignment_1_1_pen_controller_a3da8cdeb8ac18b12cf46cdaa7d7dccfb}\label{class_a_s_e__assignment_1_1_pen_controller_a3da8cdeb8ac18b12cf46cdaa7d7dccfb} 
+Pen {\bfseries pen}
+\item 
+\Hypertarget{class_a_s_e__assignment_1_1_pen_controller_a247bbb666989d8acffcbffe5bbae607b}\label{class_a_s_e__assignment_1_1_pen_controller_a247bbb666989d8acffcbffe5bbae607b} 
+Color {\bfseries pen\+Colour}
+\item 
+\Hypertarget{class_a_s_e__assignment_1_1_pen_controller_af1610253d9985aa1ff38082ac1deef56}\label{class_a_s_e__assignment_1_1_pen_controller_af1610253d9985aa1ff38082ac1deef56} 
+bool {\bfseries shape\+Fill}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Defines behaviour for the pen such as position, colour, drawing, and fills. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_a_s_e__assignment_1_1_pen_controller_ac71f9f022d0c3883625b03779ed8fb9c}\label{class_a_s_e__assignment_1_1_pen_controller_ac71f9f022d0c3883625b03779ed8fb9c} 
+\index{ASE\_assignment.PenController@{ASE\_assignment.PenController}!PenController@{PenController}}
+\index{PenController@{PenController}!ASE\_assignment.PenController@{ASE\_assignment.PenController}}
+\doxysubsubsection{\texorpdfstring{PenController()}{PenController()}}
+{\footnotesize\ttfamily ASE\+\_\+assignment.\+Pen\+Controller.\+Pen\+Controller (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_a_s_e__assignment_1_1_canvass}{Canvass}}}]{canvass }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Default setings for the canvass when the application is launched. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em canvass} & The bitmap canvas that all operations take place on\\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_a_s_e__assignment_1_1_pen_controller_ae329e23452b4f6104234271c2ea612e3}\label{class_a_s_e__assignment_1_1_pen_controller_ae329e23452b4f6104234271c2ea612e3} 
+\index{ASE\_assignment.PenController@{ASE\_assignment.PenController}!DrawShape@{DrawShape}}
+\index{DrawShape@{DrawShape}!ASE\_assignment.PenController@{ASE\_assignment.PenController}}
+\doxysubsubsection{\texorpdfstring{DrawShape()}{DrawShape()}}
+{\footnotesize\ttfamily void ASE\+\_\+assignment.\+Pen\+Controller.\+Draw\+Shape (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_a_s_e__assignment_1_1_shape}{Shape}}}]{shape }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Draws a shape onto the canvass. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em shape} & The shape to be drawn depending on user ibput\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_a_s_e__assignment_1_1_pen_controller_a658df602355f7ecaf398502e8ca5b195}\label{class_a_s_e__assignment_1_1_pen_controller_a658df602355f7ecaf398502e8ca5b195} 
+\index{ASE\_assignment.PenController@{ASE\_assignment.PenController}!PenColour@{PenColour}}
+\index{PenColour@{PenColour}!ASE\_assignment.PenController@{ASE\_assignment.PenController}}
+\doxysubsubsection{\texorpdfstring{PenColour()}{PenColour()}}
+{\footnotesize\ttfamily void ASE\+\_\+assignment.\+Pen\+Controller.\+Pen\+Colour (\begin{DoxyParamCaption}\item[{Color}]{colour }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+The colour of the pen to be used when drawing on the bitmap. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em colour} & Colour of the pen to be used, depending on user input in the pen command\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_a_s_e__assignment_1_1_pen_controller_af59aaeb3d3a8ef3292f5bee5b5cab799}\label{class_a_s_e__assignment_1_1_pen_controller_af59aaeb3d3a8ef3292f5bee5b5cab799} 
+\index{ASE\_assignment.PenController@{ASE\_assignment.PenController}!PenDraw@{PenDraw}}
+\index{PenDraw@{PenDraw}!ASE\_assignment.PenController@{ASE\_assignment.PenController}}
+\doxysubsubsection{\texorpdfstring{PenDraw()}{PenDraw()}}
+{\footnotesize\ttfamily void ASE\+\_\+assignment.\+Pen\+Controller.\+Pen\+Draw (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Moves the pen from the previous location, represented by currentX and currentY to the new location represented by a small circle on the bitmap. Draws a line between the old and new coordinates as it moves. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The new x (left/right) coordinate of the pen\\
+\hline
+{\em y} & The new y (left/right) coordinate of the pen\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_a_s_e__assignment_1_1_pen_controller_a457cfc2b6cee199a6173d2ef36f276fc}\label{class_a_s_e__assignment_1_1_pen_controller_a457cfc2b6cee199a6173d2ef36f276fc} 
+\index{ASE\_assignment.PenController@{ASE\_assignment.PenController}!PositionPen@{PositionPen}}
+\index{PositionPen@{PositionPen}!ASE\_assignment.PenController@{ASE\_assignment.PenController}}
+\doxysubsubsection{\texorpdfstring{PositionPen()}{PositionPen()}}
+{\footnotesize\ttfamily void ASE\+\_\+assignment.\+Pen\+Controller.\+Position\+Pen (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Moves the pen from the previous location, represented by currentX and currentY to the new location, represented by a small circle on the bitmap. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The new x (left/right) coordinate of the pen\\
+\hline
+{\em y} & The new y (up/down) coordinate of the pen\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_a_s_e__assignment_1_1_pen_controller_a259f715929a3f4d97db09d7821211cdc}\label{class_a_s_e__assignment_1_1_pen_controller_a259f715929a3f4d97db09d7821211cdc} 
+\index{ASE\_assignment.PenController@{ASE\_assignment.PenController}!ShapeFill@{ShapeFill}}
+\index{ShapeFill@{ShapeFill}!ASE\_assignment.PenController@{ASE\_assignment.PenController}}
+\doxysubsubsection{\texorpdfstring{ShapeFill()}{ShapeFill()}}
+{\footnotesize\ttfamily void ASE\+\_\+assignment.\+Pen\+Controller.\+Shape\+Fill (\begin{DoxyParamCaption}\item[{bool}]{fill }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Contains a boolean to set the pen to draw either a solid or hollow shape. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em fill} & Parameter from the pen command to set solid shapes on or off\\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+ASE-\/assignment/Pen\+Controller.\+cs\end{DoxyCompactItemize}

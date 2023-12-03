@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="dir_bd5ca8e636c4aa900e7121e801a91082" kind="dir">
+    <compoundname>ASE-assignment</compoundname>
+    <innerfile refid="_canvass_8cs">Canvass.cs</innerfile>
+    <innerfile refid="_circle_8cs">Circle.cs</innerfile>
+    <innerfile refid="_command_8cs">Command.cs</innerfile>
+    <innerfile refid="_command_parser_8cs">CommandParser.cs</innerfile>
+    <innerfile refid="_file_manager_8cs">FileManager.cs</innerfile>
+    <innerfile refid="_form1_8cs">Form1.cs</innerfile>
+    <innerfile refid="_form1_8_designer_8cs">Form1.Designer.cs</innerfile>
+    <innerfile refid="_pen_controller_8cs">PenController.cs</innerfile>
+    <innerfile refid="_program_8cs">Program.cs</innerfile>
+    <innerfile refid="_rectangle_8cs">Rectangle.cs</innerfile>
+    <innerfile refid="_run_command_8cs">RunCommand.cs</innerfile>
+    <innerfile refid="_shape_8cs">Shape.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="ASE-assignment/"/>
+  </compounddef>
+</doxygen>

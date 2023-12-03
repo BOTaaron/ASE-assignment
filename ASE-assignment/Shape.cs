@@ -7,12 +7,24 @@ using System.Threading.Tasks;
 
 namespace ASE_assignment
 {
+    /// <summary>
+    /// Base class for shapes, with abstract methods for drawing shapes and solid fills. 
+    /// Contains accessor for shapeFill boolean for solid filling the shapes
+    /// </summary>
     public abstract class Shape
     {
-        // base class for future shapes, taking graphics object and location to create the shape as parameters
-        // provides definition for both drawn shape and solid fill shape with accessor for fill variable
-
+        
+        /// <summary>
+        /// Accessor for the boolean to change between pen or brush fill
+        /// </summary>
         public bool ShapeFill {  get; set; } = false;
+        /// <summary>
+        /// Abstract method to draw shape outlines, to be overriden in the 
+        /// </summary>
+        /// <param name="graphics"></param>
+        /// <param name="pen"></param>
+        /// <param name="x"></param>
+        /// <param name="y"></param>
         public abstract void Draw(Graphics graphics, Pen pen, int x, int y);
         public abstract void Fill(Graphics graphics, Brush brush, int x, int y);
     }

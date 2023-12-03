@@ -1,0 +1,327 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="class_a_s_e__assignment_1_1_pen_controller" kind="class" language="C#" prot="package">
+    <compoundname>ASE_assignment::PenController</compoundname>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_a_s_e__assignment_1_1_pen_controller_1a5a74a4f83631c5ef4a2aab2a2d66cbbd" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ASE_assignment.PenController.currentX</definition>
+        <argsstring></argsstring>
+        <name>currentX</name>
+        <qualifiedname>ASE_assignment.PenController.currentX</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ASE-assignment/PenController.cs" line="16" column="21" bodyfile="ASE-assignment/PenController.cs" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_s_e__assignment_1_1_pen_controller_1abdfe8d4ac4c25c972007b975221bc2a7" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ASE_assignment.PenController.currentY</definition>
+        <argsstring></argsstring>
+        <name>currentY</name>
+        <qualifiedname>ASE_assignment.PenController.currentY</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ASE-assignment/PenController.cs" line="17" column="21" bodyfile="ASE-assignment/PenController.cs" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_s_e__assignment_1_1_pen_controller_1aa5e6658f9f0b2bb762ce3bde7ba9c3b4" prot="private" static="no" mutable="no">
+        <type>readonly <ref refid="class_a_s_e__assignment_1_1_canvass" kindref="compound">Canvass</ref></type>
+        <definition>readonly Canvass ASE_assignment.PenController.canvass</definition>
+        <argsstring></argsstring>
+        <name>canvass</name>
+        <qualifiedname>ASE_assignment.PenController.canvass</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ASE-assignment/PenController.cs" line="18" column="34" bodyfile="ASE-assignment/PenController.cs" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_s_e__assignment_1_1_pen_controller_1a3da8cdeb8ac18b12cf46cdaa7d7dccfb" prot="private" static="no" mutable="no">
+        <type>Pen</type>
+        <definition>Pen ASE_assignment.PenController.pen</definition>
+        <argsstring></argsstring>
+        <name>pen</name>
+        <qualifiedname>ASE_assignment.PenController.pen</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ASE-assignment/PenController.cs" line="19" column="21" bodyfile="ASE-assignment/PenController.cs" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_s_e__assignment_1_1_pen_controller_1a247bbb666989d8acffcbffe5bbae607b" prot="private" static="no" mutable="no">
+        <type>Color</type>
+        <definition>Color ASE_assignment.PenController.penColour</definition>
+        <argsstring></argsstring>
+        <name>penColour</name>
+        <qualifiedname>ASE_assignment.PenController.penColour</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ASE-assignment/PenController.cs" line="20" column="23" bodyfile="ASE-assignment/PenController.cs" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_s_e__assignment_1_1_pen_controller_1af1610253d9985aa1ff38082ac1deef56" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool ASE_assignment.PenController.shapeFill</definition>
+        <argsstring></argsstring>
+        <name>shapeFill</name>
+        <qualifiedname>ASE_assignment.PenController.shapeFill</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ASE-assignment/PenController.cs" line="21" column="22" bodyfile="ASE-assignment/PenController.cs" bodystart="21" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_a_s_e__assignment_1_1_pen_controller_1ac71f9f022d0c3883625b03779ed8fb9c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ASE_assignment.PenController.PenController</definition>
+        <argsstring>(Canvass canvass)</argsstring>
+        <name>PenController</name>
+        <qualifiedname>ASE_assignment.PenController.PenController</qualifiedname>
+        <param>
+          <type><ref refid="class_a_s_e__assignment_1_1_canvass" kindref="compound">Canvass</ref></type>
+          <declname>canvass</declname>
+        </param>
+        <briefdescription>
+<para>Default setings for the canvass when the application is launched. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>canvass</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The bitmap canvas that all operations take place on</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ASE-assignment/PenController.cs" line="27" column="16" bodyfile="ASE-assignment/PenController.cs" bodystart="27" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_s_e__assignment_1_1_pen_controller_1a457cfc2b6cee199a6173d2ef36f276fc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ASE_assignment.PenController.PositionPen</definition>
+        <argsstring>(int x, int y)</argsstring>
+        <name>PositionPen</name>
+        <qualifiedname>ASE_assignment.PenController.PositionPen</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+<para>Moves the pen from the previous location, represented by currentX and currentY to the new location, represented by a small circle on the bitmap. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new x (left/right) coordinate of the pen</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new y (up/down) coordinate of the pen</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ASE-assignment/PenController.cs" line="40" column="21" bodyfile="ASE-assignment/PenController.cs" bodystart="40" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_s_e__assignment_1_1_pen_controller_1af59aaeb3d3a8ef3292f5bee5b5cab799" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ASE_assignment.PenController.PenDraw</definition>
+        <argsstring>(int x, int y)</argsstring>
+        <name>PenDraw</name>
+        <qualifiedname>ASE_assignment.PenController.PenDraw</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+<para>Moves the pen from the previous location, represented by currentX and currentY to the new location represented by a small circle on the bitmap. Draws a line between the old and new coordinates as it moves. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new x (left/right) coordinate of the pen</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new y (left/right) coordinate of the pen</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ASE-assignment/PenController.cs" line="53" column="21" bodyfile="ASE-assignment/PenController.cs" bodystart="53" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_s_e__assignment_1_1_pen_controller_1ae329e23452b4f6104234271c2ea612e3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ASE_assignment.PenController.DrawShape</definition>
+        <argsstring>(Shape shape)</argsstring>
+        <name>DrawShape</name>
+        <qualifiedname>ASE_assignment.PenController.DrawShape</qualifiedname>
+        <param>
+          <type><ref refid="class_a_s_e__assignment_1_1_shape" kindref="compound">Shape</ref></type>
+          <declname>shape</declname>
+        </param>
+        <briefdescription>
+<para>Draws a shape onto the canvass. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>shape</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The shape to be drawn depending on user ibput</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ASE-assignment/PenController.cs" line="65" column="21" bodyfile="ASE-assignment/PenController.cs" bodystart="65" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_s_e__assignment_1_1_pen_controller_1a658df602355f7ecaf398502e8ca5b195" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ASE_assignment.PenController.PenColour</definition>
+        <argsstring>(Color colour)</argsstring>
+        <name>PenColour</name>
+        <qualifiedname>ASE_assignment.PenController.PenColour</qualifiedname>
+        <param>
+          <type>Color</type>
+          <declname>colour</declname>
+        </param>
+        <briefdescription>
+<para>The colour of the pen to be used when drawing on the bitmap. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>colour</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Colour of the pen to be used, depending on user input in the pen command</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ASE-assignment/PenController.cs" line="74" column="21" bodyfile="ASE-assignment/PenController.cs" bodystart="74" bodyend="77"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_s_e__assignment_1_1_pen_controller_1a259f715929a3f4d97db09d7821211cdc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ASE_assignment.PenController.ShapeFill</definition>
+        <argsstring>(bool fill)</argsstring>
+        <name>ShapeFill</name>
+        <qualifiedname>ASE_assignment.PenController.ShapeFill</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>fill</declname>
+        </param>
+        <briefdescription>
+<para>Contains a boolean to set the pen to draw either a solid or hollow shape. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fill</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Parameter from the pen command to set solid shapes on or off</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ASE-assignment/PenController.cs" line="82" column="21" bodyfile="ASE-assignment/PenController.cs" bodystart="82" bodyend="85"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Defines behaviour for the pen such as position, colour, drawing, and fills. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>ASE_assignment.PenController</label>
+        <link refid="class_a_s_e__assignment_1_1_pen_controller"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>canvass</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>ASE_assignment.Canvass</label>
+        <link refid="class_a_s_e__assignment_1_1_canvass"/>
+      </node>
+    </collaborationgraph>
+    <location file="ASE-assignment/PenController.cs" line="14" column="13" bodyfile="ASE-assignment/PenController.cs" bodystart="15" bodyend="87"/>
+    <listofallmembers>
+      <member refid="class_a_s_e__assignment_1_1_pen_controller_1aa5e6658f9f0b2bb762ce3bde7ba9c3b4" prot="private" virt="non-virtual"><scope>ASE_assignment::PenController</scope><name>canvass</name></member>
+      <member refid="class_a_s_e__assignment_1_1_pen_controller_1a5a74a4f83631c5ef4a2aab2a2d66cbbd" prot="private" virt="non-virtual"><scope>ASE_assignment::PenController</scope><name>currentX</name></member>
+      <member refid="class_a_s_e__assignment_1_1_pen_controller_1abdfe8d4ac4c25c972007b975221bc2a7" prot="private" virt="non-virtual"><scope>ASE_assignment::PenController</scope><name>currentY</name></member>
+      <member refid="class_a_s_e__assignment_1_1_pen_controller_1ae329e23452b4f6104234271c2ea612e3" prot="public" virt="non-virtual"><scope>ASE_assignment::PenController</scope><name>DrawShape</name></member>
+      <member refid="class_a_s_e__assignment_1_1_pen_controller_1a3da8cdeb8ac18b12cf46cdaa7d7dccfb" prot="private" virt="non-virtual"><scope>ASE_assignment::PenController</scope><name>pen</name></member>
+      <member refid="class_a_s_e__assignment_1_1_pen_controller_1a247bbb666989d8acffcbffe5bbae607b" prot="private" virt="non-virtual"><scope>ASE_assignment::PenController</scope><name>penColour</name></member>
+      <member refid="class_a_s_e__assignment_1_1_pen_controller_1a658df602355f7ecaf398502e8ca5b195" prot="public" virt="non-virtual"><scope>ASE_assignment::PenController</scope><name>PenColour</name></member>
+      <member refid="class_a_s_e__assignment_1_1_pen_controller_1ac71f9f022d0c3883625b03779ed8fb9c" prot="public" virt="non-virtual"><scope>ASE_assignment::PenController</scope><name>PenController</name></member>
+      <member refid="class_a_s_e__assignment_1_1_pen_controller_1af59aaeb3d3a8ef3292f5bee5b5cab799" prot="public" virt="non-virtual"><scope>ASE_assignment::PenController</scope><name>PenDraw</name></member>
+      <member refid="class_a_s_e__assignment_1_1_pen_controller_1a457cfc2b6cee199a6173d2ef36f276fc" prot="public" virt="non-virtual"><scope>ASE_assignment::PenController</scope><name>PositionPen</name></member>
+      <member refid="class_a_s_e__assignment_1_1_pen_controller_1af1610253d9985aa1ff38082ac1deef56" prot="private" virt="non-virtual"><scope>ASE_assignment::PenController</scope><name>shapeFill</name></member>
+      <member refid="class_a_s_e__assignment_1_1_pen_controller_1a259f715929a3f4d97db09d7821211cdc" prot="public" virt="non-virtual"><scope>ASE_assignment::PenController</scope><name>ShapeFill</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

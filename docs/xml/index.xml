@@ -1,0 +1,152 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.9.8" xml:lang="en-US">
+  <compound refid="class_a_s_e__assignment_1_1_canvass" kind="class"><name>ASE_assignment::Canvass</name>
+    <member refid="class_a_s_e__assignment_1_1_canvass_1a31e14fba553b947eb4f9910942e63f51" kind="variable"><name>drawingCanvass</name></member>
+    <member refid="class_a_s_e__assignment_1_1_canvass_1a1f38356fb423e1160444a8d3ed5c0303" kind="variable"><name>cursorCanvass</name></member>
+    <member refid="class_a_s_e__assignment_1_1_canvass_1ac7662465bdc4c4c0d80b9c2b5a1e2349" kind="variable"><name>drawingGraphics</name></member>
+    <member refid="class_a_s_e__assignment_1_1_canvass_1a6e4ab1a7176f91124ba0ab5e9bbccee2" kind="variable"><name>cursorGraphics</name></member>
+    <member refid="class_a_s_e__assignment_1_1_canvass_1a89472c8fc3889e6f9d7d9e4b9c651496" kind="property"><name>DrawingGraphics</name></member>
+    <member refid="class_a_s_e__assignment_1_1_canvass_1a2218a2139faa919ba8af51d86d8d23ab" kind="property"><name>CursorGraphics</name></member>
+    <member refid="class_a_s_e__assignment_1_1_canvass_1abeaf1c7fe91b532a2525e2da10507ba5" kind="function"><name>Canvass</name></member>
+    <member refid="class_a_s_e__assignment_1_1_canvass_1a181afa7ab407bc36ccd47ba3dddda3ed" kind="function"><name>CombineCanvass</name></member>
+    <member refid="class_a_s_e__assignment_1_1_canvass_1a749800420c13feb719c69d21cd2646bf" kind="function"><name>ClearCanvas</name></member>
+  </compound>
+  <compound refid="class_a_s_e__assignment_1_1_circle" kind="class"><name>ASE_assignment::Circle</name>
+    <member refid="class_a_s_e__assignment_1_1_circle_1aa009b6314c43a84e7176fbe55c0b9cc8" kind="property"><name>Radius</name></member>
+    <member refid="class_a_s_e__assignment_1_1_circle_1a05e0d07f42e10eef0975fd6105919ee6" kind="function"><name>Circle</name></member>
+    <member refid="class_a_s_e__assignment_1_1_circle_1ac108c2460fc84052d21b1ecfb7ebfd55" kind="function"><name>Draw</name></member>
+    <member refid="class_a_s_e__assignment_1_1_circle_1a129663c4f328875b54c489a754c3f254" kind="function"><name>Fill</name></member>
+  </compound>
+  <compound refid="class_a_s_e__assignment_1_1_command" kind="class"><name>ASE_assignment::Command</name>
+    <member refid="class_a_s_e__assignment_1_1_command_1a44223d6d0a96fa9c7acc7d37cd46c993" kind="property"><name>ParsedCommand</name></member>
+    <member refid="class_a_s_e__assignment_1_1_command_1a8610cdf717e5248cee9b1e34c0aa49e1" kind="property"><name>IntParams</name></member>
+    <member refid="class_a_s_e__assignment_1_1_command_1a98130f67e782841d2b157fd0dc7da20b" kind="property"><name>StringParam</name></member>
+  </compound>
+  <compound refid="class_a_s_e__assignment_1_1_command_parser" kind="class"><name>ASE_assignment::CommandParser</name>
+    <member refid="class_a_s_e__assignment_1_1_command_parser_1ae16170c7e29d7070320bc1b43a1783f9" kind="function"><name>ParseLine</name></member>
+  </compound>
+  <compound refid="class_a_s_e__assignment_1_1_file_manager" kind="class"><name>ASE_assignment::FileManager</name>
+    <member refid="class_a_s_e__assignment_1_1_file_manager_1aea3a25fc934be0aede763745030b99b7" kind="function"><name>SaveFile</name></member>
+    <member refid="class_a_s_e__assignment_1_1_file_manager_1aae51c4b5e6b8ca2d291e0ef6d132c1ac" kind="function"><name>DisplayFile</name></member>
+    <member refid="class_a_s_e__assignment_1_1_file_manager_1af093fbb48fbfd819a82a7036f337fe81" kind="function"><name>ReadFile</name></member>
+  </compound>
+  <compound refid="class_a_s_e__assignment_1_1_form1" kind="class"><name>ASE_assignment::Form1</name>
+    <member refid="class_a_s_e__assignment_1_1_form1_1a39d44a6d44067ea95994566c25515be4" kind="variable"><name>canvass</name></member>
+    <member refid="class_a_s_e__assignment_1_1_form1_1a714d2d52d0beb78d95bf5df044de727e" kind="variable"><name>penController</name></member>
+    <member refid="class_a_s_e__assignment_1_1_form1_1a4d2946159dda349c36701e69332dd460" kind="variable"><name>runCommand</name></member>
+    <member refid="class_a_s_e__assignment_1_1_form1_1a671bd7fd07f81843a50c6795b9203ab6" kind="variable"><name>parse</name></member>
+    <member refid="class_a_s_e__assignment_1_1_form1_1abe508e24a52c4232296d9fc975d05329" kind="variable"><name>components</name></member>
+    <member refid="class_a_s_e__assignment_1_1_form1_1aa9ef00ba926c299ba32dc690d1941115" kind="variable"><name>SyntaxButton</name></member>
+    <member refid="class_a_s_e__assignment_1_1_form1_1ab9626736f61e5b037ffb18adae622a70" kind="variable"><name>RunButton</name></member>
+    <member refid="class_a_s_e__assignment_1_1_form1_1a7a3c08131e15dee758a625bf6d389156" kind="variable"><name>CommandBox</name></member>
+    <member refid="class_a_s_e__assignment_1_1_form1_1a1aa58a815a56261ed990a8d152d62eb8" kind="variable"><name>CommandPanel</name></member>
+    <member refid="class_a_s_e__assignment_1_1_form1_1a06a611c4acbc1aa32e22761fc1f5fb9b" kind="variable"><name>DrawingPanel</name></member>
+    <member refid="class_a_s_e__assignment_1_1_form1_1ac5e0e06b64363422d693c30012301142" kind="variable"><name>OpenButton</name></member>
+    <member refid="class_a_s_e__assignment_1_1_form1_1aeaa935e8fad412c7622f9367eec1859d" kind="variable"><name>SaveButton</name></member>
+    <member refid="class_a_s_e__assignment_1_1_form1_1a25861b5bd71e0159a84334363ab02185" kind="function"><name>Form1</name></member>
+    <member refid="class_a_s_e__assignment_1_1_form1_1a95ab37574cf5687eae3b72087e5a2bb5" kind="function"><name>CommandBox_KeyDown</name></member>
+    <member refid="class_a_s_e__assignment_1_1_form1_1a1c7d2c5dd4c703548600623b94ae1996" kind="function"><name>RunButton_Click</name></member>
+    <member refid="class_a_s_e__assignment_1_1_form1_1ac75050440a712696d7c870bbf3cee266" kind="function"><name>RunMultiLines</name></member>
+    <member refid="class_a_s_e__assignment_1_1_form1_1a302a619f9d1c2aa6338716b593798cc4" kind="function"><name>SyntaxButton_Click</name></member>
+    <member refid="class_a_s_e__assignment_1_1_form1_1a19f88d0fb23d931f3bc8037840ae2392" kind="function"><name>DisplayInput</name></member>
+    <member refid="class_a_s_e__assignment_1_1_form1_1abbf12b0bfb420ad150e45eb98a03f93f" kind="function"><name>SaveButton_Click</name></member>
+    <member refid="class_a_s_e__assignment_1_1_form1_1af8574f43ea58023f6c1be37df34a9bbc" kind="function"><name>OpenButton_Click</name></member>
+    <member refid="class_a_s_e__assignment_1_1_form1_1a9057cd1a27c669e2eb373b4ab790af80" kind="function"><name>Form1_Load</name></member>
+    <member refid="class_a_s_e__assignment_1_1_form1_1aed302fe4407728a6a15b771f2dd5e3d7" kind="function"><name>textBox1_TextChanged</name></member>
+    <member refid="class_a_s_e__assignment_1_1_form1_1add15d22660df69b707702dc700149475" kind="function"><name>InitializeComponent</name></member>
+    <member refid="class_a_s_e__assignment_1_1_form1_1a6d52d48ab9b399e2504272c4ebe93769" kind="function"><name>Dispose</name></member>
+  </compound>
+  <compound refid="class_a_s_e__assignment_1_1_pen_controller" kind="class"><name>ASE_assignment::PenController</name>
+    <member refid="class_a_s_e__assignment_1_1_pen_controller_1a5a74a4f83631c5ef4a2aab2a2d66cbbd" kind="variable"><name>currentX</name></member>
+    <member refid="class_a_s_e__assignment_1_1_pen_controller_1abdfe8d4ac4c25c972007b975221bc2a7" kind="variable"><name>currentY</name></member>
+    <member refid="class_a_s_e__assignment_1_1_pen_controller_1aa5e6658f9f0b2bb762ce3bde7ba9c3b4" kind="variable"><name>canvass</name></member>
+    <member refid="class_a_s_e__assignment_1_1_pen_controller_1a3da8cdeb8ac18b12cf46cdaa7d7dccfb" kind="variable"><name>pen</name></member>
+    <member refid="class_a_s_e__assignment_1_1_pen_controller_1a247bbb666989d8acffcbffe5bbae607b" kind="variable"><name>penColour</name></member>
+    <member refid="class_a_s_e__assignment_1_1_pen_controller_1af1610253d9985aa1ff38082ac1deef56" kind="variable"><name>shapeFill</name></member>
+    <member refid="class_a_s_e__assignment_1_1_pen_controller_1ac71f9f022d0c3883625b03779ed8fb9c" kind="function"><name>PenController</name></member>
+    <member refid="class_a_s_e__assignment_1_1_pen_controller_1a457cfc2b6cee199a6173d2ef36f276fc" kind="function"><name>PositionPen</name></member>
+    <member refid="class_a_s_e__assignment_1_1_pen_controller_1af59aaeb3d3a8ef3292f5bee5b5cab799" kind="function"><name>PenDraw</name></member>
+    <member refid="class_a_s_e__assignment_1_1_pen_controller_1ae329e23452b4f6104234271c2ea612e3" kind="function"><name>DrawShape</name></member>
+    <member refid="class_a_s_e__assignment_1_1_pen_controller_1a658df602355f7ecaf398502e8ca5b195" kind="function"><name>PenColour</name></member>
+    <member refid="class_a_s_e__assignment_1_1_pen_controller_1a259f715929a3f4d97db09d7821211cdc" kind="function"><name>ShapeFill</name></member>
+  </compound>
+  <compound refid="class_a_s_e__assignment_1_1_program" kind="class"><name>ASE_assignment::Program</name>
+    <member refid="class_a_s_e__assignment_1_1_program_1a7be208f6d29e186cb87152fb015069b7" kind="function"><name>Main</name></member>
+  </compound>
+  <compound refid="class_a_s_e__assignment_1_1_rectangle" kind="class"><name>ASE_assignment::Rectangle</name>
+    <member refid="class_a_s_e__assignment_1_1_rectangle_1abb36f8980b4412df35682ffe8ad6b7d5" kind="property"><name>Width</name></member>
+    <member refid="class_a_s_e__assignment_1_1_rectangle_1aaaa5847d44f355963b42c5be5c4dcd29" kind="property"><name>Height</name></member>
+    <member refid="class_a_s_e__assignment_1_1_rectangle_1a9582cbbf0d4e93a85c1c15d066d0f18b" kind="function"><name>Rectangle</name></member>
+    <member refid="class_a_s_e__assignment_1_1_rectangle_1a636ae94c3325330db9f223e5866f79f1" kind="function"><name>Draw</name></member>
+    <member refid="class_a_s_e__assignment_1_1_rectangle_1a60ce2a00418e22105605cb9e31f784ee" kind="function"><name>Fill</name></member>
+  </compound>
+  <compound refid="class_a_s_e__assignment_1_1_run_command" kind="class"><name>ASE_assignment::RunCommand</name>
+    <member refid="class_a_s_e__assignment_1_1_run_command_1ac9e327c6a81eaf2c1e5963713a696ac6" kind="variable"><name>controller</name></member>
+    <member refid="class_a_s_e__assignment_1_1_run_command_1a98c0babcb7a78f677f5123259ef6e058" kind="variable"><name>canvass</name></member>
+    <member refid="class_a_s_e__assignment_1_1_run_command_1adc1dbba4033dd2a760a727f9918097ff" kind="function"><name>RunCommand</name></member>
+    <member refid="class_a_s_e__assignment_1_1_run_command_1a54a6f7a5d08e288a81d624976b53d1ca" kind="function"><name>RunLines</name></member>
+  </compound>
+  <compound refid="class_a_s_e__assignment_1_1_shape" kind="class"><name>ASE_assignment::Shape</name>
+    <member refid="class_a_s_e__assignment_1_1_shape_1add0c33be27ded76dd89bbfe6f7f32fbf" kind="property"><name>ShapeFill</name></member>
+    <member refid="class_a_s_e__assignment_1_1_shape_1a6bb21024ef15686aa32c25733de9f56e" kind="function"><name>Draw</name></member>
+    <member refid="class_a_s_e__assignment_1_1_shape_1a967d0bc8edb9161499e0dc7cb0bb4833" kind="function"><name>Fill</name></member>
+  </compound>
+  <compound refid="namespace_a_s_e__assignment" kind="namespace"><name>ASE_assignment</name>
+  </compound>
+  <compound refid="namespace_system" kind="namespace"><name>System</name>
+  </compound>
+  <compound refid="namespace_system_1_1_collections_1_1_generic" kind="namespace"><name>System::Collections::Generic</name>
+  </compound>
+  <compound refid="namespace_system_1_1_component_model" kind="namespace"><name>System::ComponentModel</name>
+  </compound>
+  <compound refid="namespace_system_1_1_component_model_1_1_design" kind="namespace"><name>System::ComponentModel::Design</name>
+  </compound>
+  <compound refid="namespace_system_1_1_data" kind="namespace"><name>System::Data</name>
+  </compound>
+  <compound refid="namespace_system_1_1_drawing" kind="namespace"><name>System::Drawing</name>
+  </compound>
+  <compound refid="namespace_system_1_1_drawing_1_1_text" kind="namespace"><name>System::Drawing::Text</name>
+  </compound>
+  <compound refid="namespace_system_1_1_i_o" kind="namespace"><name>System::IO</name>
+  </compound>
+  <compound refid="namespace_system_1_1_linq" kind="namespace"><name>System::Linq</name>
+  </compound>
+  <compound refid="namespace_system_1_1_reflection_1_1_emit" kind="namespace"><name>System::Reflection::Emit</name>
+  </compound>
+  <compound refid="namespace_system_1_1_security_1_1_cryptography" kind="namespace"><name>System::Security::Cryptography</name>
+  </compound>
+  <compound refid="namespace_system_1_1_security_1_1_cryptography_1_1_x509_certificates" kind="namespace"><name>System::Security::Cryptography::X509Certificates</name>
+  </compound>
+  <compound refid="namespace_system_1_1_text" kind="namespace"><name>System::Text</name>
+  </compound>
+  <compound refid="namespace_system_1_1_threading_1_1_tasks" kind="namespace"><name>System::Threading::Tasks</name>
+  </compound>
+  <compound refid="namespace_system_1_1_windows_1_1_forms" kind="namespace"><name>System::Windows::Forms</name>
+  </compound>
+  <compound refid="_canvass_8cs" kind="file"><name>Canvass.cs</name>
+  </compound>
+  <compound refid="_circle_8cs" kind="file"><name>Circle.cs</name>
+  </compound>
+  <compound refid="_command_8cs" kind="file"><name>Command.cs</name>
+  </compound>
+  <compound refid="_command_parser_8cs" kind="file"><name>CommandParser.cs</name>
+  </compound>
+  <compound refid="_file_manager_8cs" kind="file"><name>FileManager.cs</name>
+  </compound>
+  <compound refid="_form1_8cs" kind="file"><name>Form1.cs</name>
+  </compound>
+  <compound refid="_form1_8_designer_8cs" kind="file"><name>Form1.Designer.cs</name>
+  </compound>
+  <compound refid="_pen_controller_8cs" kind="file"><name>PenController.cs</name>
+  </compound>
+  <compound refid="_program_8cs" kind="file"><name>Program.cs</name>
+  </compound>
+  <compound refid="_rectangle_8cs" kind="file"><name>Rectangle.cs</name>
+  </compound>
+  <compound refid="_run_command_8cs" kind="file"><name>RunCommand.cs</name>
+  </compound>
+  <compound refid="_shape_8cs" kind="file"><name>Shape.cs</name>
+  </compound>
+  <compound refid="dir_bd5ca8e636c4aa900e7121e801a91082" kind="dir"><name>ASE-assignment</name>
+  </compound>
+</doxygenindex>

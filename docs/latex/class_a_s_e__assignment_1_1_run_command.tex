@@ -1,0 +1,57 @@
+\doxysection{ASE\+\_\+assignment.\+Run\+Command Class Reference}
+\hypertarget{class_a_s_e__assignment_1_1_run_command}{}\label{class_a_s_e__assignment_1_1_run_command}\index{ASE\_assignment.RunCommand@{ASE\_assignment.RunCommand}}
+
+
+Takes the parsed commands as parameters and runs the desired command by calling the correct function.  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_a_s_e__assignment_1_1_run_command_adc1dbba4033dd2a760a727f9918097ff}\label{class_a_s_e__assignment_1_1_run_command_adc1dbba4033dd2a760a727f9918097ff} 
+{\bfseries Run\+Command} (\mbox{\hyperlink{class_a_s_e__assignment_1_1_pen_controller}{Pen\+Controller}} controller, \mbox{\hyperlink{class_a_s_e__assignment_1_1_canvass}{Canvass}} canvass)
+\item 
+void \mbox{\hyperlink{class_a_s_e__assignment_1_1_run_command_a54a6f7a5d08e288a81d624976b53d1ca}{Run\+Lines}} (\mbox{\hyperlink{class_a_s_e__assignment_1_1_command}{Command}} parsed\+Line)
+\begin{DoxyCompactList}\small\item\em Takes the parsed line of commands from the accessors in the Command class and call the function depending on the command, passing in the parameter where necessary. Throws an exception if the value is not valid. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_a_s_e__assignment_1_1_run_command_ac9e327c6a81eaf2c1e5963713a696ac6}\label{class_a_s_e__assignment_1_1_run_command_ac9e327c6a81eaf2c1e5963713a696ac6} 
+\mbox{\hyperlink{class_a_s_e__assignment_1_1_pen_controller}{Pen\+Controller}} {\bfseries controller}
+\item 
+\Hypertarget{class_a_s_e__assignment_1_1_run_command_a98c0babcb7a78f677f5123259ef6e058}\label{class_a_s_e__assignment_1_1_run_command_a98c0babcb7a78f677f5123259ef6e058} 
+\mbox{\hyperlink{class_a_s_e__assignment_1_1_canvass}{Canvass}} {\bfseries canvass}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Takes the parsed commands as parameters and runs the desired command by calling the correct function. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_a_s_e__assignment_1_1_run_command_a54a6f7a5d08e288a81d624976b53d1ca}\label{class_a_s_e__assignment_1_1_run_command_a54a6f7a5d08e288a81d624976b53d1ca} 
+\index{ASE\_assignment.RunCommand@{ASE\_assignment.RunCommand}!RunLines@{RunLines}}
+\index{RunLines@{RunLines}!ASE\_assignment.RunCommand@{ASE\_assignment.RunCommand}}
+\doxysubsubsection{\texorpdfstring{RunLines()}{RunLines()}}
+{\footnotesize\ttfamily void ASE\+\_\+assignment.\+Run\+Command.\+Run\+Lines (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_a_s_e__assignment_1_1_command}{Command}}}]{parsed\+Line }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Takes the parsed line of commands from the accessors in the Command class and call the function depending on the command, passing in the parameter where necessary. Throws an exception if the value is not valid. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parsed\+Line} & The parsed line of commands from the Command class\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Argument\+Exception} & \\
+\hline
+{\em Not\+Implemented\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+ASE-\/assignment/Run\+Command.\+cs\end{DoxyCompactItemize}

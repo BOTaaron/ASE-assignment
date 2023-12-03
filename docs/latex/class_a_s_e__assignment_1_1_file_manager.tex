@@ -1,0 +1,80 @@
+\doxysection{ASE\+\_\+assignment.\+File\+Manager Class Reference}
+\hypertarget{class_a_s_e__assignment_1_1_file_manager}{}\label{class_a_s_e__assignment_1_1_file_manager}\index{ASE\_assignment.FileManager@{ASE\_assignment.FileManager}}
+
+
+Class that handles behaviour when saving and loading text files.  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_a_s_e__assignment_1_1_file_manager_aea3a25fc934be0aede763745030b99b7}{Save\+File}} (IEnumerable$<$ string $>$ user\+Input, string path)
+\begin{DoxyCompactList}\small\item\em Loops through lines of text and saves it to the desired file selected in the dialog prompt. \end{DoxyCompactList}\item 
+List$<$ System.\+Windows.\+Forms.\+Label $>$ \mbox{\hyperlink{class_a_s_e__assignment_1_1_file_manager_aae51c4b5e6b8ca2d291e0ef6d132c1ac}{Display\+File}} (string path)
+\begin{DoxyCompactList}\small\item\em Takes text from a text file and adds each line to a list, split at each new line. Adds each line from the list to a new label. \end{DoxyCompactList}\item 
+List$<$ string $>$ \mbox{\hyperlink{class_a_s_e__assignment_1_1_file_manager_af093fbb48fbfd819a82a7036f337fe81}{Read\+File}} (string path)
+\begin{DoxyCompactList}\small\item\em Reads the text in a text file so that it can be inserted into labels and displayed in the form. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class that handles behaviour when saving and loading text files. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_a_s_e__assignment_1_1_file_manager_aae51c4b5e6b8ca2d291e0ef6d132c1ac}\label{class_a_s_e__assignment_1_1_file_manager_aae51c4b5e6b8ca2d291e0ef6d132c1ac} 
+\index{ASE\_assignment.FileManager@{ASE\_assignment.FileManager}!DisplayFile@{DisplayFile}}
+\index{DisplayFile@{DisplayFile}!ASE\_assignment.FileManager@{ASE\_assignment.FileManager}}
+\doxysubsubsection{\texorpdfstring{DisplayFile()}{DisplayFile()}}
+{\footnotesize\ttfamily List$<$ System.\+Windows.\+Forms.\+Label $>$ ASE\+\_\+assignment.\+File\+Manager.\+Display\+File (\begin{DoxyParamCaption}\item[{string}]{path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Takes text from a text file and adds each line to a list, split at each new line. Adds each line from the list to a new label. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & The path of the file to be opened\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns a label containing the text
+\end{DoxyReturn}
+\Hypertarget{class_a_s_e__assignment_1_1_file_manager_af093fbb48fbfd819a82a7036f337fe81}\label{class_a_s_e__assignment_1_1_file_manager_af093fbb48fbfd819a82a7036f337fe81} 
+\index{ASE\_assignment.FileManager@{ASE\_assignment.FileManager}!ReadFile@{ReadFile}}
+\index{ReadFile@{ReadFile}!ASE\_assignment.FileManager@{ASE\_assignment.FileManager}}
+\doxysubsubsection{\texorpdfstring{ReadFile()}{ReadFile()}}
+{\footnotesize\ttfamily List$<$ string $>$ ASE\+\_\+assignment.\+File\+Manager.\+Read\+File (\begin{DoxyParamCaption}\item[{string}]{path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Reads the text in a text file so that it can be inserted into labels and displayed in the form. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & The path of the file to be read\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns a list of strings containing each line of user input
+\end{DoxyReturn}
+\Hypertarget{class_a_s_e__assignment_1_1_file_manager_aea3a25fc934be0aede763745030b99b7}\label{class_a_s_e__assignment_1_1_file_manager_aea3a25fc934be0aede763745030b99b7} 
+\index{ASE\_assignment.FileManager@{ASE\_assignment.FileManager}!SaveFile@{SaveFile}}
+\index{SaveFile@{SaveFile}!ASE\_assignment.FileManager@{ASE\_assignment.FileManager}}
+\doxysubsubsection{\texorpdfstring{SaveFile()}{SaveFile()}}
+{\footnotesize\ttfamily void ASE\+\_\+assignment.\+File\+Manager.\+Save\+File (\begin{DoxyParamCaption}\item[{IEnumerable$<$ string $>$}]{user\+Input,  }\item[{string}]{path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Loops through lines of text and saves it to the desired file selected in the dialog prompt. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Input} & Lines of user input, iterated through and passed in to be saved to a file\\
+\hline
+{\em path} & The path to save the file, passed in from the dialog box\\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+ASE-\/assignment/File\+Manager.\+cs\end{DoxyCompactItemize}
