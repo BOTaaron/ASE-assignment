@@ -19,13 +19,20 @@ namespace ASE_assignment
         /// </summary>
         public bool ShapeFill {  get; set; } = false;
         /// <summary>
-        /// Abstract method to draw shape outlines, to be overriden in the 
+        /// Abstract method to draw shape outlines, to be overriden in the class for each specific shape
         /// </summary>
-        /// <param name="graphics"></param>
-        /// <param name="pen"></param>
-        /// <param name="x"></param>
-        /// <param name="y"></param>
+        /// <param name="graphics">The bitmap to draw on</param>
+        /// <param name="pen">The pen used for drawing on the bitmap</param>
+        /// <param name="x">The x (left/right) coordinate to draw the shape</param>
+        /// <param name="y">The y (up/down) coordinate to draw the shape</param>
         public abstract void Draw(Graphics graphics, Pen pen, int x, int y);
+        /// <summary>
+        /// Abstract method to draw solid fill shapes, to be overriden in the class for each specific shape
+        /// </summary>
+        /// <param name="graphics">The bitmap to draw on</param>
+        /// <param name="brush">The brush used for drawing on the bitmap</param>
+        /// <param name="x">The x (left/right) coordinate to draw the shape</param>
+        /// <param name="y">The y (up/down) coordinate to draw the shape</param>
         public abstract void Fill(Graphics graphics, Brush brush, int x, int y);
     }
 }
