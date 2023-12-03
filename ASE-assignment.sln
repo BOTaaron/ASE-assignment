@@ -5,6 +5,8 @@ VisualStudioVersion = 17.7.34031.279
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ASE-assignment", "ASE-assignment\ASE-assignment.csproj", "{C20B9EFB-D5D7-4B0E-95B1-688FF192E70B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ASE-Assignment-Tests", "ASE-Assignment-Tests\ASE-Assignment-Tests.csproj", "{69428A68-57A0-4929-A137-9E5C44D46467}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{C20B9EFB-D5D7-4B0E-95B1-688FF192E70B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C20B9EFB-D5D7-4B0E-95B1-688FF192E70B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C20B9EFB-D5D7-4B0E-95B1-688FF192E70B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{69428A68-57A0-4929-A137-9E5C44D46467}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{69428A68-57A0-4929-A137-9E5C44D46467}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{69428A68-57A0-4929-A137-9E5C44D46467}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{69428A68-57A0-4929-A137-9E5C44D46467}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

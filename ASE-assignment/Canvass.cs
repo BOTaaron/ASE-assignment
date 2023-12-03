@@ -23,8 +23,8 @@ namespace ASE_assignment
         /// Creates the bitmaps and graphics used for drawing inside the 'DrawingPanel' PictureBox control
         /// Takes width and height of the parent contained as parameters to set the bitmap size
         /// </summary>
-        /// <param name="width">Width of PictureBox parent</param>
-        /// <param name="height">Height of PictureBox parent</param>
+        /// <param name="width">Width of parent container</param>
+        /// <param name="height">Height of parent container</param>
         public Canvass(int width, int height)
         {
             drawingCanvass = new Bitmap(width, height);

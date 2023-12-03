@@ -4,6 +4,7 @@ using System.Windows.Forms;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Security.Cryptography;
+using System.Runtime.CompilerServices;
 
 namespace ASE_assignment
 {
@@ -12,6 +13,7 @@ namespace ASE_assignment
     /// </summary>
     internal class CommandParser
     {
+
         /// <summary>
         /// Splits the user's input into values and adds it to a list, depending on whether the parameter is a string, integer, or multiple integers
         /// </summary>
@@ -32,7 +34,7 @@ namespace ASE_assignment
             List<string> stringParams = new List<string>();
              
             // throw an exception if user input is empty
-            if ( line.Length == 0 )
+            if ( line.Length == 0 || line.Equals(""))
             {
                 throw new InvalidOperationException("User input expected");
             }

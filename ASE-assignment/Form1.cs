@@ -121,7 +121,7 @@ namespace ASE_assignment
         /// <param name="line">Text entered by the user into the TextBox when the Enter/Return key is pressed</param>
         private void DisplayInput(string line)
         {
-            if (line != "" && !line.Equals("clear") && !line.Equals("run") && !line.Equals("reset"))
+            if (!line.Equals("clear") && !line.Equals("run") && !line.Equals("reset"))
             { 
             Label inputLabel = new Label();
             inputLabel.Text = line;
@@ -210,9 +210,5 @@ namespace ASE_assignment
 
             
         }
-
-
-
- 
     }
 }
