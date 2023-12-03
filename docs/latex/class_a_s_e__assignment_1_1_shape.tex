@@ -15,10 +15,9 @@ Inheritance diagram for ASE\+\_\+assignment.\+Shape\+:\begin{figure}[H]
 \begin{DoxyCompactItemize}
 \item 
 void \mbox{\hyperlink{class_a_s_e__assignment_1_1_shape_a6bb21024ef15686aa32c25733de9f56e}{Draw}} (Graphics graphics, Pen pen, int x, int y)
-\begin{DoxyCompactList}\small\item\em Abstract method to draw shape outlines, to be overriden in the. \end{DoxyCompactList}\item 
-\Hypertarget{class_a_s_e__assignment_1_1_shape_a967d0bc8edb9161499e0dc7cb0bb4833}\label{class_a_s_e__assignment_1_1_shape_a967d0bc8edb9161499e0dc7cb0bb4833} 
-void {\bfseries Fill} (Graphics graphics, Brush brush, int x, int y)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Abstract method to draw shape outlines, to be overriden in the class for each specific shape. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_a_s_e__assignment_1_1_shape_a967d0bc8edb9161499e0dc7cb0bb4833}{Fill}} (Graphics graphics, Brush brush, int x, int y)
+\begin{DoxyCompactList}\small\item\em Abstract method to draw solid fill shapes, to be overriden in the class for each specific shape. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Properties}
 \begin{DoxyCompactItemize}
 \item 
@@ -39,17 +38,38 @@ Base class for shapes, with abstract methods for drawing shapes and solid fills.
 
 
 
-Abstract method to draw shape outlines, to be overriden in the. 
+Abstract method to draw shape outlines, to be overriden in the class for each specific shape. 
 
 
 \begin{DoxyParams}{Parameters}
-{\em graphics} & \\
+{\em graphics} & The bitmap to draw on\\
 \hline
-{\em pen} & \\
+{\em pen} & The pen used for drawing on the bitmap\\
 \hline
-{\em x} & \\
+{\em x} & The x (left/right) coordinate to draw the shape\\
 \hline
-{\em y} & \\
+{\em y} & The y (up/down) coordinate to draw the shape\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_a_s_e__assignment_1_1_shape_a967d0bc8edb9161499e0dc7cb0bb4833}\label{class_a_s_e__assignment_1_1_shape_a967d0bc8edb9161499e0dc7cb0bb4833} 
+\index{ASE\_assignment.Shape@{ASE\_assignment.Shape}!Fill@{Fill}}
+\index{Fill@{Fill}!ASE\_assignment.Shape@{ASE\_assignment.Shape}}
+\doxysubsubsection{\texorpdfstring{Fill()}{Fill()}}
+{\footnotesize\ttfamily void ASE\+\_\+assignment.\+Shape.\+Fill (\begin{DoxyParamCaption}\item[{Graphics}]{graphics,  }\item[{Brush}]{brush,  }\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+
+
+Abstract method to draw solid fill shapes, to be overriden in the class for each specific shape. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em graphics} & The bitmap to draw on\\
+\hline
+{\em brush} & The brush used for drawing on the bitmap\\
+\hline
+{\em x} & The x (left/right) coordinate to draw the shape\\
+\hline
+{\em y} & The y (up/down) coordinate to draw the shape\\
 \hline
 \end{DoxyParams}
 

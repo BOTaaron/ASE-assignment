@@ -137,6 +137,10 @@
   </compound>
   <compound refid="_form1_8_designer_8cs" kind="file"><name>Form1.Designer.cs</name>
   </compound>
+  <compound refid="mainpage_8dox" kind="file"><name>mainpage.dox</name>
+  </compound>
+  <compound refid="mainpage_8md" kind="file"><name>mainpage.md</name>
+  </compound>
   <compound refid="_pen_controller_8cs" kind="file"><name>PenController.cs</name>
   </compound>
   <compound refid="_program_8cs" kind="file"><name>Program.cs</name>
@@ -148,5 +152,7 @@
   <compound refid="_shape_8cs" kind="file"><name>Shape.cs</name>
   </compound>
   <compound refid="dir_bd5ca8e636c4aa900e7121e801a91082" kind="dir"><name>ASE-assignment</name>
+  </compound>
+  <compound refid="indexpage" kind="page"><name>index</name>
   </compound>
 </doxygenindex>

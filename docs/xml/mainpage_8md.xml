@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="mainpage_8md" kind="file" language="Markdown">
+    <compoundname>mainpage.md</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">#<sp/>ASE<sp/>Graphical<sp/>Programming<sp/>Language</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">This<sp/>project<sp/>is<sp/>a<sp/>graphical<sp/>programming<sp/>language<sp/>that<sp/>allows<sp/>the<sp/>user<sp/>to<sp/>enter<sp/>commands<sp/>into<sp/>a<sp/>Windows<sp/>Form<sp/>to<sp/>draw<sp/>shapes<sp/>and<sp/>lines<sp/>onto<sp/>a<sp/>canvass.</highlight></codeline>
+<codeline><highlight class="normal">The<sp/>user<sp/>can<sp/>enter<sp/>commands<sp/>and<sp/>run<sp/>them<sp/>individually<sp/>with<sp/>the<sp/>run<sp/>button,<sp/>or<sp/>type<sp/>&apos;run&apos;<sp/>into<sp/>the<sp/>textbox<sp/>to<sp/>run<sp/>all<sp/>of<sp/>the<sp/>commands<sp/>one<sp/>after<sp/>another.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Using<sp/>the<sp/>save<sp/>and<sp/>load<sp/>function,<sp/>all<sp/>of<sp/>user<sp/>input<sp/>lines<sp/>can<sp/>be<sp/>saved<sp/>to<sp/>a<sp/>text<sp/>file<sp/>and<sp/>loaded<sp/>later<sp/>to<sp/>be<sp/>ran<sp/>in<sp/>the<sp/>application.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">The<sp/>cursor<sp/>is<sp/>represented<sp/>by<sp/>a<sp/>small<sp/>circle<sp/>on<sp/>the<sp/>bitmap<sp/>canvass<sp/>and<sp/>shapes<sp/>will<sp/>be<sp/>drawn<sp/>from<sp/>the<sp/>cursor<sp/>with<sp/>the<sp/>shape<sp/>centering<sp/>over<sp/>the<sp/>cursor.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Commands</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">**moveto<sp/>(integer,integer):**<sp/>Moves<sp/>the<sp/>cursor<sp/>to<sp/>the<sp/>coordinates<sp/>specified<sp/>by<sp/>the<sp/>user</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">**drawto<sp/>(integer,<sp/>integer):**<sp/>Draws<sp/>a<sp/>line<sp/>from<sp/>the<sp/>current<sp/>cursor<sp/>location<sp/>to<sp/>the<sp/>coordinates<sp/>specified<sp/>by<sp/>the<sp/>user</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">**clear:**<sp/>Clears<sp/>the<sp/>drawing<sp/>canvass</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">**reset:**<sp/>Resets<sp/>the<sp/>cursor<sp/>to<sp/>the<sp/>0,0<sp/>position<sp/>of<sp/>the<sp/>canvass</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">**run:**<sp/>Runs<sp/>the<sp/>commands<sp/>entered<sp/>in<sp/>the<sp/>left<sp/>panel,<sp/>line<sp/>by<sp/>line</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">**rectangle<sp/>(integer,integer):**<sp/>Draws<sp/>a<sp/>rectangle<sp/>onto<sp/>the<sp/>canvass,<sp/>using<sp/>the<sp/>parameters<sp/>for<sp/>width<sp/>and<sp/>height</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">**circle<sp/>(integer):**<sp/>Draws<sp/>a<sp/>circle<sp/>onto<sp/>the<sp/>canvass,<sp/>using<sp/>the<sp/>integer<sp/>parameter<sp/>for<sp/>the<sp/>radius<sp/>of<sp/>the<sp/>circle</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">**pen<sp/>(red/blue/green/black):**<sp/>Change<sp/>the<sp/>colour<sp/>of<sp/>the<sp/>pen<sp/>drawing<sp/>onto<sp/>the<sp/>canvass</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">**fill<sp/>(on/off):**<sp/>Fill<sp/>on<sp/>to<sp/>draw<sp/>solid<sp/>filled<sp/>shape,<sp/>off<sp/>to<sp/>draw<sp/>hollow<sp/>shape<sp/>outlines</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline></codeline>
+    </programlisting>
+    <location file="ASE-assignment/mainpage.md"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="indexpage" kind="page">
+    <compoundname>index</compoundname>
+    <title>ASE Graphical Programming Language</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><anchor id="index_1md__a_s_e-assignment_2mainpage"/> This project is a graphical programming language that allows the user to enter commands into a Windows Form to draw shapes and lines onto a canvass. The user can enter commands and run them individually with the run button, or type &apos;run&apos; into the textbox to run all of the commands one after another.</para>
+<para>Using the save and load function, all of user input lines can be saved to a text file and loaded later to be ran in the application.</para>
+<para>The cursor is represented by a small circle on the bitmap canvass and shapes will be drawn from the cursor with the shape centering over the cursor.</para>
+<sect1 id="index_1autotoc_md1">
+<title>Commands</title>
+<para><bold>moveto (integer,integer):</bold> Moves the cursor to the coordinates specified by the user</para>
+<para><bold>drawto (integer, integer):</bold> Draws a line from the current cursor location to the coordinates specified by the user</para>
+<para><bold>clear:</bold> Clears the drawing canvass</para>
+<para><bold>reset:</bold> Resets the cursor to the 0,0 position of the canvass</para>
+<para><bold>run:</bold> Runs the commands entered in the left panel, line by line</para>
+<para><bold>rectangle (integer,integer):</bold> Draws a rectangle onto the canvass, using the parameters for width and height</para>
+<para><bold>circle (integer):</bold> Draws a circle onto the canvass, using the integer parameter for the radius of the circle</para>
+<para><bold>pen (red/blue/green/black):</bold> Change the colour of the pen drawing onto the canvass</para>
+<para><bold>fill (on/off):</bold> Fill on to draw solid filled shape, off to draw hollow shape outlines </para>
+</sect1>
+    </detaileddescription>
+    <location file="ASE-assignment/mainpage.md"/>
+  </compounddef>
+</doxygen>

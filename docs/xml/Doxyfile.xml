@@ -44,7 +44,7 @@
   <option  id='ALIASES' default='yes' type='stringlist'>
   </option>
   <option  id='OPTIMIZE_OUTPUT_FOR_C' default='yes' type='bool'><value>NO</value></option>
-  <option  id='OPTIMIZE_OUTPUT_JAVA' default='yes' type='bool'><value>NO</value></option>
+  <option  id='OPTIMIZE_OUTPUT_JAVA' default='no' type='bool'><value>YES</value></option>
   <option  id='OPTIMIZE_FOR_FORTRAN' default='yes' type='bool'><value>NO</value></option>
   <option  id='OPTIMIZE_OUTPUT_VHDL' default='yes' type='bool'><value>NO</value></option>
   <option  id='OPTIMIZE_OUTPUT_SLICE' default='yes' type='bool'><value>NO</value></option>
@@ -127,7 +127,7 @@
   <option  id='INPUT_ENCODING' default='yes' type='string'><value><![CDATA[UTF-8]]></value></option>
   <option  id='INPUT_FILE_ENCODING' default='yes' type='stringlist'>
   </option>
-  <option  id='FILE_PATTERNS' default='yes' type='stringlist'>
+  <option  id='FILE_PATTERNS' default='no' type='stringlist'>
     <value><![CDATA[*.c]]></value>
     <value><![CDATA[*.cc]]></value>
     <value><![CDATA[*.cxx]]></value>
@@ -178,6 +178,7 @@
     <value><![CDATA[*.ucf]]></value>
     <value><![CDATA[*.qsf]]></value>
     <value><![CDATA[*.ice]]></value>
+    <value><![CDATA[*.cs]]></value>
   </option>
   <option  id='RECURSIVE' default='yes' type='bool'><value>NO</value></option>
   <option  id='EXCLUDE' default='yes' type='stringlist'>
@@ -201,7 +202,7 @@
   <option  id='FILTER_SOURCE_FILES' default='yes' type='bool'><value>NO</value></option>
   <option  id='FILTER_SOURCE_PATTERNS' default='yes' type='stringlist'>
   </option>
-  <option  id='USE_MDFILE_AS_MAINPAGE' default='yes' type='string'><value><![CDATA[]]></value></option>
+  <option  id='USE_MDFILE_AS_MAINPAGE' default='no' type='string'><value><![CDATA[mainpage.md]]></value></option>
   <option  id='FORTRAN_COMMENT_AFTER' default='yes' type='int'><value>72</value></option>
   <option  id='SOURCE_BROWSER' default='yes' type='bool'><value>NO</value></option>
   <option  id='INLINE_SOURCES' default='yes' type='bool'><value>NO</value></option>
