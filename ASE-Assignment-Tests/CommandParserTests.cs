@@ -1,8 +1,11 @@
-
+using ASE_assignment;
 namespace ASE_Assignment_Tests
 {
     public class CommandParserTests
     {
+        /// <summary>
+        /// Test to ensure the parser correctly handles invalid parameter formats
+        /// </summary>
         [Fact]
         public void ParseLine_InvalidParameters()
         {
@@ -13,19 +16,34 @@ namespace ASE_Assignment_Tests
             // Act and assert
             Assert.Throws<InvalidOperationException>(() => parse.ParseLine(commandLine));
         }
+        /// <summary>
+        /// Test to ensure the parser correctly handles invalid parameter data types
+        /// </summary>
         [Fact]
-        public void ParseLine_ParseWhitespace()
+        public void ParseLine_InvalidParamaterType()
         {
             // Arrange
             ASE_assignment.CommandParser parser = new();
             string commandLine = "moveto ten,ten";
 
-            // Act
-
-           // var result = parser.ParseLine(commandLine);
-
             // Act and assert
             Assert.Throws<FormatException>(() => parser.ParseLine(commandLine));
+        }
+        [Fact]
+        public void ParseLine_ValidInput()
+        {
+            // Arrange
+            ASE_assignment.CommandParser parser = new();
+            string commandLine = "drawto 100,150";
+            List<string> expectedCommand = new List<string> { "drawto" };
+            List<int> expectedParameter = new List<int> { 100, 150 };
+
+            // Act
+            Command result =  parser.ParseLine(commandLine);
+
+            // Assert
+            Assert.Equal(expectedCommand, result.ParsedCommand);
+            Assert.Equal(expectedParameter, result.IntParams);
         }
     }
 }
