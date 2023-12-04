@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -15,10 +16,11 @@ namespace ASE_assignment
     {  
         private int currentX = 0;
         private int currentY = 0;
-        private readonly Canvass canvass;
+        private Canvass canvass;
         private Pen pen;
         private Color penColour;
         private bool shapeFill;
+        public Color CurrentPenColor => pen.Color;
 
         /// <summary>
         /// Default setings for the canvass when the application is launched
@@ -73,7 +75,7 @@ namespace ASE_assignment
         /// <param name="colour">Colour of the pen to be used, depending on user input in the pen command</param>
         public void PenColour(Color colour)
         {
-            pen = new Pen(colour);           
+            pen = new Pen(colour);
         }
         /// <summary>
         /// Contains a boolean to set the pen to draw either a solid or hollow shape

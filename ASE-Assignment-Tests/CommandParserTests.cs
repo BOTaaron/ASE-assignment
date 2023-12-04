@@ -29,6 +29,9 @@ namespace ASE_Assignment_Tests
             // Act and assert
             Assert.Throws<FormatException>(() => parser.ParseLine(commandLine));
         }
+        /// <summary>
+        /// Test to ensure that the parser correctly parses a valid command
+        /// </summary>
         [Fact]
         public void ParseLine_ValidInput()
         {
@@ -39,7 +42,7 @@ namespace ASE_Assignment_Tests
             List<int> expectedParameter = new List<int> { 100, 150 };
 
             // Act
-            Command result =  parser.ParseLine(commandLine);
+            Command result = parser.ParseLine(commandLine);
 
             // Assert
             Assert.Equal(expectedCommand, result.ParsedCommand);
