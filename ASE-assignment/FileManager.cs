@@ -14,7 +14,7 @@ namespace ASE_assignment
     /// <summary>
     /// Class that handles behaviour when saving and loading text files
     /// </summary>
-    internal class FileManager
+    public class FileManager
     {
         /// <summary>
         /// Loops through lines of text and saves it to the desired file selected in the dialog prompt
