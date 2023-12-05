@@ -109,7 +109,7 @@ namespace ASE_assignment
             }
             else if (parsedLine.ParsedCommand[0].Equals("triangle"))
             {
-                if (parsedLine.ParsedCommand.Count == 1 && parsedLine.StringParam.Count == 0)
+                if (parsedLine.ParsedCommand.Count == 1 && parsedLine.IntParams.Count == 1)
                 {
                 controller.DrawShape(new Triangle(parsedLine.IntParams[0]));
                 }

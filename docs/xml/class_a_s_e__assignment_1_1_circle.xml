@@ -71,6 +71,7 @@
           <declname>y</declname>
         </param>
         <briefdescription>
+<para>Method to draw a hollow circle onto the canvass using its radius. </para>
         </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>

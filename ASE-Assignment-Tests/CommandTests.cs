@@ -47,5 +47,24 @@ namespace ASE_Assignment_Tests
             Assert.Throws<ArgumentException>(() => runCommand.RunLines(parsedLine));
 
         }
+        /// <summary>
+        /// Tests the triangle command and throws an exception when parameters are incorrectly entered
+        /// </summary>
+        [Fact]
+        public void Triangle_InvalidValue()
+        {
+
+            Canvass testBitmap = new Canvass(100, 100);
+            PenController controller = new PenController(testBitmap);
+            CommandParser parse = new CommandParser();
+            RunCommand runCommand = new RunCommand(controller, testBitmap);
+
+            // Assert
+            var parsedLine = parse.ParseLine("triangle 30,30,30");
+
+            // Act 
+            Assert.Throws<ArgumentException>(() => runCommand.RunLines(parsedLine));
+
+        }
     }
 }
