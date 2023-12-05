@@ -73,20 +73,39 @@ namespace ASE_assignment
             }
             else if (parsedLine.ParsedCommand[0].Equals("reset"))
             {
-                controller.PositionPen(0, 0);              
-            }
-            else if (parsedLine.ParsedCommand[0].Equals("run"))
-            {
-                
+                if (parsedLine.StringParam.Count == 0 && parsedLine.StringParam.Count == 2)
+                {
+                    controller.PositionPen(0, 0); 
+                }
+                else
+                {
+                    throw new ArgumentException("Unexpected parameter entered");
+                }
+             
             }
             else if (parsedLine.ParsedCommand[0].Equals("rectangle"))
             {
-                controller.DrawShape(new Rectangle(parsedLine.IntParams[0], parsedLine.IntParams[1]));
+                if (parsedLine.IntParams.Count == 2 && parsedLine.StringParam.Count == 0)
+                {
+                    controller.DrawShape(new Rectangle(parsedLine.IntParams[0], parsedLine.IntParams[1]));
+                }
+                else
+                {
+                    throw new ArgumentException("Invalid parameter entered");
+                }
+   
                
             }
             else if (parsedLine.ParsedCommand[0].Equals("circle"))
             {
-                controller.DrawShape(new Circle(parsedLine.IntParams[0]));
+                if (parsedLine.IntParams.Count == 1 && parsedLine.StringParam.Count == 0)
+                {
+                    controller.DrawShape(new Circle(parsedLine.IntParams[0]));
+                }
+                else
+                {
+                    throw new ArgumentException("Invalid parameter entered");
+                }
             }
             else if (parsedLine.ParsedCommand[0].Equals("triangle"))
             {
@@ -130,7 +149,7 @@ namespace ASE_assignment
             else
             {
                 // if command is not from the expected commands, throw an exception (to do later)
-                //throw new NotImplementedException();
+                //throw new ArgumentException("Unexpected command entered");
             }
 
         }

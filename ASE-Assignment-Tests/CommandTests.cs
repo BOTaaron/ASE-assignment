@@ -10,22 +10,23 @@ namespace ASE_Assignment_Tests
     public class CommandTests
     {
         /// <summary>
-        /// Tests that the clear command throws an exception if invalid parameters are entered
+        /// Tests the circle command throws an exception when parameters are incorrectly entered
         /// </summary>
         [Fact]
-        public void CanvassCommand_Test()
+        public void Circle_InvalidValue()
         {
-            // Arrange
-            Canvass testBitmap = new Canvass(100, 100);
-            PenController controller = new PenController(testBitmap);
-            CommandParser parse = new CommandParser();
-            RunCommand runCommand = new RunCommand(controller, testBitmap);
 
-            // Act
-            var parsedLine = parse.ParseLine("clear 100");
+                Canvass testBitmap = new Canvass(100, 100);
+                PenController controller = new PenController(testBitmap);
+                CommandParser parse = new CommandParser();
+                RunCommand runCommand = new RunCommand(controller, testBitmap);
 
-            // Assert
-            Assert.Throws<ArgumentException>(() => runCommand.RunLines(parsedLine));
-        }
+                // Assert
+                var parsedLine = parse.ParseLine("circle 50,50");
+
+                // Act 
+                Assert.Throws<ArgumentException>(() => runCommand.RunLines(parsedLine));
+
+            }
     }
 }

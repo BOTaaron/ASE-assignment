@@ -78,7 +78,7 @@ namespace ASE_assignment
         {
             // Parse the command, and then pass the bitmaps into the RunLines function
             // clears the text box and refreshes the bitmap
-            var parsedLine = parse.ParseLine(CommandBox.Text);
+            var parsedLine = parse.ParseLine(CommandBox.Text.Trim());
             runCommand.RunLines(parsedLine);
             DrawingPanel.Image = canvass.CombineCanvass();
             DrawingPanel.Refresh();
@@ -93,7 +93,6 @@ namespace ASE_assignment
             {
                 if (control is Label label)
                 {
-                    string commandLine = label.Text;
                     var parsedLines = parse.ParseLine(label.Text);
                     runCommand.RunLines(parsedLines);
                 }
