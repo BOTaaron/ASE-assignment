@@ -91,6 +91,12 @@
     <member refid="class_a_s_e__assignment_1_1_shape_1a6bb21024ef15686aa32c25733de9f56e" kind="function"><name>Draw</name></member>
     <member refid="class_a_s_e__assignment_1_1_shape_1a967d0bc8edb9161499e0dc7cb0bb4833" kind="function"><name>Fill</name></member>
   </compound>
+  <compound refid="class_a_s_e__assignment_1_1_triangle" kind="class"><name>ASE_assignment::Triangle</name>
+    <member refid="class_a_s_e__assignment_1_1_triangle_1aa4bdaf7905a17aac287c673345bc8fd2" kind="property"><name>Sides</name></member>
+    <member refid="class_a_s_e__assignment_1_1_triangle_1aa5e76d822c2a057e2dd401a9e5aaf5d3" kind="function"><name>Triangle</name></member>
+    <member refid="class_a_s_e__assignment_1_1_triangle_1a95036b32dbc8ed46a875f46484ca69e0" kind="function"><name>Draw</name></member>
+    <member refid="class_a_s_e__assignment_1_1_triangle_1a5854cb3a56904f1f890b3a31919cfdb9" kind="function"><name>Fill</name></member>
+  </compound>
   <compound refid="namespace_a_s_e__assignment" kind="namespace"><name>ASE_assignment</name>
   </compound>
   <compound refid="namespace_system" kind="namespace"><name>System</name>
@@ -104,6 +110,8 @@
   <compound refid="namespace_system_1_1_data" kind="namespace"><name>System::Data</name>
   </compound>
   <compound refid="namespace_system_1_1_drawing" kind="namespace"><name>System::Drawing</name>
+  </compound>
+  <compound refid="namespace_system_1_1_drawing_1_1_drawing2_d" kind="namespace"><name>System::Drawing::Drawing2D</name>
   </compound>
   <compound refid="namespace_system_1_1_drawing_1_1_text" kind="namespace"><name>System::Drawing::Text</name>
   </compound>
@@ -150,6 +158,8 @@
   <compound refid="_run_command_8cs" kind="file"><name>RunCommand.cs</name>
   </compound>
   <compound refid="_shape_8cs" kind="file"><name>Shape.cs</name>
+  </compound>
+  <compound refid="_triangle_8cs" kind="file"><name>Triangle.cs</name>
   </compound>
   <compound refid="dir_bd5ca8e636c4aa900e7121e801a91082" kind="dir"><name>ASE-assignment</name>
   </compound>

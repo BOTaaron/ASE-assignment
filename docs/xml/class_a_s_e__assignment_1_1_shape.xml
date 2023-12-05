@@ -4,6 +4,7 @@
     <compoundname>ASE_assignment::Shape</compoundname>
     <derivedcompoundref refid="class_a_s_e__assignment_1_1_circle" prot="public" virt="non-virtual">ASE_assignment.Circle</derivedcompoundref>
     <derivedcompoundref refid="class_a_s_e__assignment_1_1_rectangle" prot="public" virt="non-virtual">ASE_assignment.Rectangle</derivedcompoundref>
+    <derivedcompoundref refid="class_a_s_e__assignment_1_1_triangle" prot="public" virt="non-virtual">ASE_assignment.Triangle</derivedcompoundref>
     <sectiondef kind="property">
       <memberdef kind="property" id="class_a_s_e__assignment_1_1_shape_1add0c33be27ded76dd89bbfe6f7f32fbf" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
         <type>bool</type>
@@ -173,6 +174,12 @@
       <node id="3">
         <label>ASE_assignment.Rectangle</label>
         <link refid="class_a_s_e__assignment_1_1_rectangle"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>ASE_assignment.Triangle</label>
+        <link refid="class_a_s_e__assignment_1_1_triangle"/>
         <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>

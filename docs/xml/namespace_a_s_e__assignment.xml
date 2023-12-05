@@ -13,6 +13,7 @@
     <innerclass refid="class_a_s_e__assignment_1_1_rectangle" prot="package">ASE_assignment::Rectangle</innerclass>
     <innerclass refid="class_a_s_e__assignment_1_1_run_command" prot="package">ASE_assignment::RunCommand</innerclass>
     <innerclass refid="class_a_s_e__assignment_1_1_shape" prot="public">ASE_assignment::Shape</innerclass>
+    <innerclass refid="class_a_s_e__assignment_1_1_triangle" prot="public">ASE_assignment::Triangle</innerclass>
     <briefdescription>
     </briefdescription>
     <detaileddescription>

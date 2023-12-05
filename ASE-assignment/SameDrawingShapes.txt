@@ -1,0 +1,11 @@
+pen green
+triangle 45
+fill on
+drawto 250,100
+triangle 28
+pen red
+drawto 500,500
+circle 25
+pen blue
+drawto 500,100
+rectangle 50,25

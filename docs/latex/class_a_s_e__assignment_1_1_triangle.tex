@@ -1,0 +1,111 @@
+\doxysection{ASE\+\_\+assignment.\+Triangle Class Reference}
+\hypertarget{class_a_s_e__assignment_1_1_triangle}{}\label{class_a_s_e__assignment_1_1_triangle}\index{ASE\_assignment.Triangle@{ASE\_assignment.Triangle}}
+
+
+Triangle class that extends the shape class to draw a equilateral triangle onto the canvass.  
+
+
+Inheritance diagram for ASE\+\_\+assignment.\+Triangle\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_a_s_e__assignment_1_1_triangle}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_a_s_e__assignment_1_1_triangle_aa5e76d822c2a057e2dd401a9e5aaf5d3}{Triangle}} (int sides\+Length)
+\begin{DoxyCompactList}\small\item\em Draws an equilateral triangle with all sides the same length onto the canvass. \end{DoxyCompactList}\item 
+override void \mbox{\hyperlink{class_a_s_e__assignment_1_1_triangle_a95036b32dbc8ed46a875f46484ca69e0}{Draw}} (Graphics graphics, Pen pen, int x, int y)
+\begin{DoxyCompactList}\small\item\em Draw an outline of a triangle using the formula for an equilateral triangle height sides × √3 / 2 calculated using Pythagoras theorem. \end{DoxyCompactList}\item 
+override void \mbox{\hyperlink{class_a_s_e__assignment_1_1_triangle_a5854cb3a56904f1f890b3a31919cfdb9}{Fill}} (Graphics graphics, Brush brush, int x, int y)
+\begin{DoxyCompactList}\small\item\em Draw an outline of a triangle using the formula for an equilateral triangle height sides × √3 / 2 calculated using Pythagoras theorem. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_a_s_e__assignment_1_1_shape}{ASE\+\_\+assignment.\+Shape}}}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_a_s_e__assignment_1_1_shape_a6bb21024ef15686aa32c25733de9f56e}{Draw}} (Graphics graphics, Pen pen, int x, int y)
+\begin{DoxyCompactList}\small\item\em Abstract method to draw shape outlines, to be overriden in the class for each specific shape. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_a_s_e__assignment_1_1_shape_a967d0bc8edb9161499e0dc7cb0bb4833}{Fill}} (Graphics graphics, Brush brush, int x, int y)
+\begin{DoxyCompactList}\small\item\em Abstract method to draw solid fill shapes, to be overriden in the class for each specific shape. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_a_s_e__assignment_1_1_triangle_aa4bdaf7905a17aac287c673345bc8fd2}\label{class_a_s_e__assignment_1_1_triangle_aa4bdaf7905a17aac287c673345bc8fd2} 
+int {\bfseries Sides}\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties inherited from \mbox{\hyperlink{class_a_s_e__assignment_1_1_shape}{ASE\+\_\+assignment.\+Shape}}}
+\begin{DoxyCompactItemize}
+\item 
+bool {\bfseries Shape\+Fill} = false\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Accessor for the boolean to change between pen or brush fill. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Triangle class that extends the shape class to draw a equilateral triangle onto the canvass. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_a_s_e__assignment_1_1_triangle_aa5e76d822c2a057e2dd401a9e5aaf5d3}\label{class_a_s_e__assignment_1_1_triangle_aa5e76d822c2a057e2dd401a9e5aaf5d3} 
+\index{ASE\_assignment.Triangle@{ASE\_assignment.Triangle}!Triangle@{Triangle}}
+\index{Triangle@{Triangle}!ASE\_assignment.Triangle@{ASE\_assignment.Triangle}}
+\doxysubsubsection{\texorpdfstring{Triangle()}{Triangle()}}
+{\footnotesize\ttfamily ASE\+\_\+assignment.\+Triangle.\+Triangle (\begin{DoxyParamCaption}\item[{int}]{sides\+Length }\end{DoxyParamCaption})}
+
+
+
+Draws an equilateral triangle with all sides the same length onto the canvass. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sides\+Length} & The length of each side of the triangle\\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_a_s_e__assignment_1_1_triangle_a95036b32dbc8ed46a875f46484ca69e0}\label{class_a_s_e__assignment_1_1_triangle_a95036b32dbc8ed46a875f46484ca69e0} 
+\index{ASE\_assignment.Triangle@{ASE\_assignment.Triangle}!Draw@{Draw}}
+\index{Draw@{Draw}!ASE\_assignment.Triangle@{ASE\_assignment.Triangle}}
+\doxysubsubsection{\texorpdfstring{Draw()}{Draw()}}
+{\footnotesize\ttfamily override void ASE\+\_\+assignment.\+Triangle.\+Draw (\begin{DoxyParamCaption}\item[{Graphics}]{graphics,  }\item[{Pen}]{pen,  }\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+Draw an outline of a triangle using the formula for an equilateral triangle height sides × √3 / 2 calculated using Pythagoras theorem. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em graphics} & The image to draw onto\\
+\hline
+{\em pen} & The pen used to draw hollow shapes\\
+\hline
+{\em x} & The x (left and right) coordinate to draw on the bitmap\\
+\hline
+{\em y} & The y (up and down) coordinate to draw on the bitmap\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_a_s_e__assignment_1_1_triangle_a5854cb3a56904f1f890b3a31919cfdb9}\label{class_a_s_e__assignment_1_1_triangle_a5854cb3a56904f1f890b3a31919cfdb9} 
+\index{ASE\_assignment.Triangle@{ASE\_assignment.Triangle}!Fill@{Fill}}
+\index{Fill@{Fill}!ASE\_assignment.Triangle@{ASE\_assignment.Triangle}}
+\doxysubsubsection{\texorpdfstring{Fill()}{Fill()}}
+{\footnotesize\ttfamily override void ASE\+\_\+assignment.\+Triangle.\+Fill (\begin{DoxyParamCaption}\item[{Graphics}]{graphics,  }\item[{Brush}]{brush,  }\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+Draw an outline of a triangle using the formula for an equilateral triangle height sides × √3 / 2 calculated using Pythagoras theorem. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em graphics} & The image to draw onto\\
+\hline
+{\em brush} & The brush used to draw solid shapes\\
+\hline
+{\em x} & The x (left and right) coordinate to draw on the bitmap\\
+\hline
+{\em y} & The y (up and down) coordinate to draw on the bitmap\\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+ASE-\/assignment/Triangle.\+cs\end{DoxyCompactItemize}

@@ -27,6 +27,25 @@ namespace ASE_Assignment_Tests
                 // Act 
                 Assert.Throws<ArgumentException>(() => runCommand.RunLines(parsedLine));
 
-            }
+        }
+        /// <summary>
+        /// Tests the rectangle command and throws an exception when parameters are incorrectly entered
+        /// </summary>
+        [Fact]
+        public void Rectangle_InvalidValue()
+        {
+
+            Canvass testBitmap = new Canvass(100, 100);
+            PenController controller = new PenController(testBitmap);
+            CommandParser parse = new CommandParser();
+            RunCommand runCommand = new RunCommand(controller, testBitmap);
+
+            // Assert
+            var parsedLine = parse.ParseLine("rectangle 50,50,100,100");
+
+            // Act 
+            Assert.Throws<ArgumentException>(() => runCommand.RunLines(parsedLine));
+
+        }
     }
 }

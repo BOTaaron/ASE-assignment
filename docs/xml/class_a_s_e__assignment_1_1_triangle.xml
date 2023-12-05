@@ -1,0 +1,221 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="class_a_s_e__assignment_1_1_triangle" kind="class" language="C#" prot="public">
+    <compoundname>ASE_assignment::Triangle</compoundname>
+    <basecompoundref refid="class_a_s_e__assignment_1_1_shape" prot="public" virt="non-virtual">ASE_assignment.Shape</basecompoundref>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="class_a_s_e__assignment_1_1_triangle_1aa4bdaf7905a17aac287c673345bc8fd2" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="yes" protectedsettable="no">
+        <type>int</type>
+        <definition>int ASE_assignment.Triangle.Sides</definition>
+        <argsstring></argsstring>
+        <name>Sides</name>
+        <qualifiedname>ASE_assignment.Triangle.Sides</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ASE-assignment/Triangle.cs" line="16" column="20" bodyfile="ASE-assignment/Triangle.cs" bodystart="16" bodyend="16"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_a_s_e__assignment_1_1_triangle_1aa5e76d822c2a057e2dd401a9e5aaf5d3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ASE_assignment.Triangle.Triangle</definition>
+        <argsstring>(int sidesLength)</argsstring>
+        <name>Triangle</name>
+        <qualifiedname>ASE_assignment.Triangle.Triangle</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>sidesLength</declname>
+        </param>
+        <briefdescription>
+<para>Draws an equilateral triangle with all sides the same length onto the canvass. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sidesLength</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The length of each side of the triangle</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ASE-assignment/Triangle.cs" line="22" column="16" bodyfile="ASE-assignment/Triangle.cs" bodystart="22" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_s_e__assignment_1_1_triangle_1a95036b32dbc8ed46a875f46484ca69e0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void ASE_assignment.Triangle.Draw</definition>
+        <argsstring>(Graphics graphics, Pen pen, int x, int y)</argsstring>
+        <name>Draw</name>
+        <qualifiedname>ASE_assignment.Triangle.Draw</qualifiedname>
+        <param>
+          <type>Graphics</type>
+          <declname>graphics</declname>
+        </param>
+        <param>
+          <type>Pen</type>
+          <declname>pen</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+<para>Draw an outline of a triangle using the formula for an equilateral triangle height sides × √3 / 2 calculated using Pythagoras theorem. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>graphics</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The image to draw onto</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pen</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The pen used to draw hollow shapes</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The x (left and right) coordinate to draw on the bitmap</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The y (up and down) coordinate to draw on the bitmap</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ASE-assignment/Triangle.cs" line="34" column="30" bodyfile="ASE-assignment/Triangle.cs" bodystart="34" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_s_e__assignment_1_1_triangle_1a5854cb3a56904f1f890b3a31919cfdb9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void ASE_assignment.Triangle.Fill</definition>
+        <argsstring>(Graphics graphics, Brush brush, int x, int y)</argsstring>
+        <name>Fill</name>
+        <qualifiedname>ASE_assignment.Triangle.Fill</qualifiedname>
+        <param>
+          <type>Graphics</type>
+          <declname>graphics</declname>
+        </param>
+        <param>
+          <type>Brush</type>
+          <declname>brush</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+<para>Draw an outline of a triangle using the formula for an equilateral triangle height sides × √3 / 2 calculated using Pythagoras theorem. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>graphics</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The image to draw onto</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>brush</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The brush used to draw solid shapes</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The x (left and right) coordinate to draw on the bitmap</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The y (up and down) coordinate to draw on the bitmap</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ASE-assignment/Triangle.cs" line="57" column="30" bodyfile="ASE-assignment/Triangle.cs" bodystart="57" bodyend="70"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Triangle class that extends the shape class to draw a equilateral triangle onto the canvass. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>ASE_assignment.Triangle</label>
+        <link refid="class_a_s_e__assignment_1_1_triangle"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Shape</label>
+        <link refid="class_a_s_e__assignment_1_1_shape"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>ASE_assignment.Triangle</label>
+        <link refid="class_a_s_e__assignment_1_1_triangle"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Shape</label>
+        <link refid="class_a_s_e__assignment_1_1_shape"/>
+      </node>
+    </collaborationgraph>
+    <location file="ASE-assignment/Triangle.cs" line="14" column="11" bodyfile="ASE-assignment/Triangle.cs" bodystart="15" bodyend="71"/>
+    <listofallmembers>
+      <member refid="class_a_s_e__assignment_1_1_triangle_1a95036b32dbc8ed46a875f46484ca69e0" prot="public" virt="non-virtual"><scope>ASE_assignment::Triangle</scope><name>Draw</name></member>
+      <member refid="class_a_s_e__assignment_1_1_triangle_1a5854cb3a56904f1f890b3a31919cfdb9" prot="public" virt="non-virtual"><scope>ASE_assignment::Triangle</scope><name>Fill</name></member>
+      <member refid="class_a_s_e__assignment_1_1_shape_1add0c33be27ded76dd89bbfe6f7f32fbf" prot="public" virt="non-virtual"><scope>ASE_assignment::Triangle</scope><name>ShapeFill</name></member>
+      <member refid="class_a_s_e__assignment_1_1_triangle_1aa4bdaf7905a17aac287c673345bc8fd2" prot="public" virt="non-virtual"><scope>ASE_assignment::Triangle</scope><name>Sides</name></member>
+      <member refid="class_a_s_e__assignment_1_1_triangle_1aa5e76d822c2a057e2dd401a9e5aaf5d3" prot="public" virt="non-virtual"><scope>ASE_assignment::Triangle</scope><name>Triangle</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

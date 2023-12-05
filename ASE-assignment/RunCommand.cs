@@ -73,7 +73,7 @@ namespace ASE_assignment
             }
             else if (parsedLine.ParsedCommand[0].Equals("reset"))
             {
-                if (parsedLine.StringParam.Count == 0 && parsedLine.StringParam.Count == 2)
+                if (parsedLine.IntParams.Count == 0 && parsedLine.StringParam.Count == 0)
                 {
                     controller.PositionPen(0, 0); 
                 }
@@ -109,7 +109,15 @@ namespace ASE_assignment
             }
             else if (parsedLine.ParsedCommand[0].Equals("triangle"))
             {
-                throw new NotImplementedException("Not implemented");
+                if (parsedLine.ParsedCommand.Count == 1 && parsedLine.StringParam.Count == 0)
+                {
+                controller.DrawShape(new Triangle(parsedLine.IntParams[0]));
+                }
+                else
+                {
+                    throw new ArgumentException("Invalid parameter entered");
+                }
+
             }
             else if (parsedLine.ParsedCommand[0].Equals("pen"))
             {
