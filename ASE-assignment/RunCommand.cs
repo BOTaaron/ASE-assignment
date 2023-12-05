@@ -61,7 +61,15 @@ namespace ASE_assignment
             }
             else if (parsedLine.ParsedCommand[0].Equals("clear"))
             {
-                canvass.ClearCanvas();
+                if (parsedLine.IntParams.Count == 0 && parsedLine.StringParam.Count == 0)
+                {
+                    canvass.ClearCanvas();
+                }
+                else
+                {
+                    throw new ArgumentException("Unexpected parameter entered");
+                }
+
             }
             else if (parsedLine.ParsedCommand[0].Equals("reset"))
             {
