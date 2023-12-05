@@ -14,8 +14,8 @@ namespace ASE_assignment
     /// </summary>
     internal class PenController
     {  
-        private int currentX = 0;
-        private int currentY = 0;
+        public int currentX = 0;
+        public int currentY = 0;
         private Canvass canvass;
         private Pen pen;
         private Color penColour;
