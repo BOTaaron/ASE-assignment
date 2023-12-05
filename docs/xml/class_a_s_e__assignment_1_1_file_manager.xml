@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
-  <compounddef id="class_a_s_e__assignment_1_1_file_manager" kind="class" language="C#" prot="package">
+  <compounddef id="class_a_s_e__assignment_1_1_file_manager" kind="class" language="C#" prot="public">
     <compoundname>ASE_assignment::FileManager</compoundname>
     <sectiondef kind="public-func">
       <memberdef kind="function" id="class_a_s_e__assignment_1_1_file_manager_1aea3a25fc934be0aede763745030b99b7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
@@ -44,37 +44,6 @@
         </inbodydescription>
         <location file="ASE-assignment/FileManager.cs" line="24" column="21" bodyfile="ASE-assignment/FileManager.cs" bodystart="24" bodyend="35"/>
       </memberdef>
-      <memberdef kind="function" id="class_a_s_e__assignment_1_1_file_manager_1aae51c4b5e6b8ca2d291e0ef6d132c1ac" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>List&lt; System.Windows.Forms.Label &gt;</type>
-        <definition>List&lt; System.Windows.Forms.Label &gt; ASE_assignment.FileManager.DisplayFile</definition>
-        <argsstring>(string path)</argsstring>
-        <name>DisplayFile</name>
-        <qualifiedname>ASE_assignment.FileManager.DisplayFile</qualifiedname>
-        <param>
-          <type>string</type>
-          <declname>path</declname>
-        </param>
-        <briefdescription>
-<para>Takes text from a text file and adds each line to a list, split at each new line. Adds each line from the list to a new label. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>path</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>The path of the file to be opened</para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-<simplesect kind="return"><para>Returns a label containing the text</para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="ASE-assignment/FileManager.cs" line="41" column="21" bodyfile="ASE-assignment/FileManager.cs" bodystart="41" bodyend="65"/>
-      </memberdef>
       <memberdef kind="function" id="class_a_s_e__assignment_1_1_file_manager_1af093fbb48fbfd819a82a7036f337fe81" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>List&lt; string &gt;</type>
         <definition>List&lt; string &gt; ASE_assignment.FileManager.ReadFile</definition>
@@ -104,7 +73,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ASE-assignment/FileManager.cs" line="71" column="21" bodyfile="ASE-assignment/FileManager.cs" bodystart="71" bodyend="85"/>
+        <location file="ASE-assignment/FileManager.cs" line="41" column="21" bodyfile="ASE-assignment/FileManager.cs" bodystart="41" bodyend="55"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -112,9 +81,8 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="ASE-assignment/FileManager.cs" line="17" column="13" bodyfile="ASE-assignment/FileManager.cs" bodystart="18" bodyend="89"/>
+    <location file="ASE-assignment/FileManager.cs" line="17" column="11" bodyfile="ASE-assignment/FileManager.cs" bodystart="18" bodyend="59"/>
     <listofallmembers>
-      <member refid="class_a_s_e__assignment_1_1_file_manager_1aae51c4b5e6b8ca2d291e0ef6d132c1ac" prot="public" virt="non-virtual"><scope>ASE_assignment::FileManager</scope><name>DisplayFile</name></member>
       <member refid="class_a_s_e__assignment_1_1_file_manager_1af093fbb48fbfd819a82a7036f337fe81" prot="public" virt="non-virtual"><scope>ASE_assignment::FileManager</scope><name>ReadFile</name></member>
       <member refid="class_a_s_e__assignment_1_1_file_manager_1aea3a25fc934be0aede763745030b99b7" prot="public" virt="non-virtual"><scope>ASE_assignment::FileManager</scope><name>SaveFile</name></member>
     </listofallmembers>

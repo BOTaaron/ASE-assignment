@@ -27,7 +27,6 @@
   </compound>
   <compound refid="class_a_s_e__assignment_1_1_file_manager" kind="class"><name>ASE_assignment::FileManager</name>
     <member refid="class_a_s_e__assignment_1_1_file_manager_1aea3a25fc934be0aede763745030b99b7" kind="function"><name>SaveFile</name></member>
-    <member refid="class_a_s_e__assignment_1_1_file_manager_1aae51c4b5e6b8ca2d291e0ef6d132c1ac" kind="function"><name>DisplayFile</name></member>
     <member refid="class_a_s_e__assignment_1_1_file_manager_1af093fbb48fbfd819a82a7036f337fe81" kind="function"><name>ReadFile</name></member>
   </compound>
   <compound refid="class_a_s_e__assignment_1_1_form1" kind="class"><name>ASE_assignment::Form1</name>
@@ -59,10 +58,11 @@
   <compound refid="class_a_s_e__assignment_1_1_pen_controller" kind="class"><name>ASE_assignment::PenController</name>
     <member refid="class_a_s_e__assignment_1_1_pen_controller_1a5a74a4f83631c5ef4a2aab2a2d66cbbd" kind="variable"><name>currentX</name></member>
     <member refid="class_a_s_e__assignment_1_1_pen_controller_1abdfe8d4ac4c25c972007b975221bc2a7" kind="variable"><name>currentY</name></member>
-    <member refid="class_a_s_e__assignment_1_1_pen_controller_1aa5e6658f9f0b2bb762ce3bde7ba9c3b4" kind="variable"><name>canvass</name></member>
+    <member refid="class_a_s_e__assignment_1_1_pen_controller_1ad342cfb33c46c73dfe715f666b23488d" kind="variable"><name>canvass</name></member>
     <member refid="class_a_s_e__assignment_1_1_pen_controller_1a3da8cdeb8ac18b12cf46cdaa7d7dccfb" kind="variable"><name>pen</name></member>
     <member refid="class_a_s_e__assignment_1_1_pen_controller_1a247bbb666989d8acffcbffe5bbae607b" kind="variable"><name>penColour</name></member>
     <member refid="class_a_s_e__assignment_1_1_pen_controller_1af1610253d9985aa1ff38082ac1deef56" kind="variable"><name>shapeFill</name></member>
+    <member refid="class_a_s_e__assignment_1_1_pen_controller_1a55b9a2c7a4a3739551eb109cabd02a31" kind="property"><name>CurrentPenColor</name></member>
     <member refid="class_a_s_e__assignment_1_1_pen_controller_1ac71f9f022d0c3883625b03779ed8fb9c" kind="function"><name>PenController</name></member>
     <member refid="class_a_s_e__assignment_1_1_pen_controller_1a457cfc2b6cee199a6173d2ef36f276fc" kind="function"><name>PositionPen</name></member>
     <member refid="class_a_s_e__assignment_1_1_pen_controller_1af59aaeb3d3a8ef3292f5bee5b5cab799" kind="function"><name>PenDraw</name></member>
@@ -113,6 +113,8 @@
   </compound>
   <compound refid="namespace_system_1_1_reflection_1_1_emit" kind="namespace"><name>System::Reflection::Emit</name>
   </compound>
+  <compound refid="namespace_system_1_1_runtime_1_1_compiler_services" kind="namespace"><name>System::Runtime::CompilerServices</name>
+  </compound>
   <compound refid="namespace_system_1_1_security_1_1_cryptography" kind="namespace"><name>System::Security::Cryptography</name>
   </compound>
   <compound refid="namespace_system_1_1_security_1_1_cryptography_1_1_x509_certificates" kind="namespace"><name>System::Security::Cryptography::X509Certificates</name>
@@ -136,8 +138,6 @@
   <compound refid="_form1_8cs" kind="file"><name>Form1.cs</name>
   </compound>
   <compound refid="_form1_8_designer_8cs" kind="file"><name>Form1.Designer.cs</name>
-  </compound>
-  <compound refid="mainpage_8dox" kind="file"><name>mainpage.dox</name>
   </compound>
   <compound refid="mainpage_8md" kind="file"><name>mainpage.md</name>
   </compound>

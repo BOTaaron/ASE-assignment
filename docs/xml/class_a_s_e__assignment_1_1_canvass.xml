@@ -116,7 +116,7 @@
 <parametername>width</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Width of PictureBox parent</para>
+<para>Width of parent container</para>
 </parameterdescription>
 </parameteritem>
 <parameteritem>
@@ -124,7 +124,7 @@
 <parametername>height</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Height of PictureBox parent</para>
+<para>Height of parent container</para>
 </parameterdescription>
 </parameteritem>
 </parameterlist>

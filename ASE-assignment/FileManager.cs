@@ -34,36 +34,6 @@ namespace ASE_assignment
             }
         }
         /// <summary>
-        /// Takes text from a text file and adds each line to a list, split at each new line. Adds each line from the list to a new label.
-        /// </summary>
-        /// <param name="path">The path of the file to be opened</param>
-        /// <returns>Returns a label containing the text</returns>
-        public List<System.Windows.Forms.Label> DisplayFile(string path)
-        {
-            // call the ReadFile function and pass in the location of the file to be read
-            List<string> commands = ReadFile(path);
-            List<System.Windows.Forms.Label> labels = new List<System.Windows.Forms.Label>();
-            int position = 0;
-
-            // foreach iterates through the list of lines in the file and adds each one to a label at the line break
-            // positions label against left side of panel
-            foreach (string command in commands)
-            {
-                System.Windows.Forms.Label label = new System.Windows.Forms.Label
-                {
-                    Text = command,
-                    AutoSize = true,
-                    Location = new Point(0, position)
-                };
-                labels.Add(label);
-            // position creates the label location directly under the previous one
-                position += label.Height;
-            }
-            
-
-            return labels;
-        }
-        /// <summary>
         /// Reads the text in a text file so that it can be inserted into labels and displayed in the form
         /// </summary>
         /// <param name="path">The path of the file to be read</param>

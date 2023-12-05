@@ -39,7 +39,7 @@ namespace ASE_assignment
             CommandBox.KeyDown += new KeyEventHandler(CommandBox_KeyDown);
             SyntaxButton.Click += new EventHandler(SyntaxButton_Click);
             RunButton.Click += new EventHandler(RunButton_Click);
-
+             
         }
       
         CommandParser parse = new CommandParser();
@@ -185,12 +185,19 @@ namespace ASE_assignment
                 if (ofd.ShowDialog() == DialogResult.OK)
                 {
                     FileManager fileManager = new FileManager();
-                    List<Label> labels = fileManager.DisplayFile(ofd.FileName);
-
+                    List<string> text = fileManager.ReadFile(ofd.FileName);
                     CommandPanel.Controls.Clear();
-                    foreach (Label label in labels)
+                    int position = 0;
+                    foreach (string line in text)
                     {
+                        Label label = new Label
+                        {
+                            Text = line,
+                            AutoSize = true,
+                            Location = new Point(0, position)
+                        };
                         CommandPanel.Controls.Add(label);
+                        position += label.Height;
                     }
                 }
             }
