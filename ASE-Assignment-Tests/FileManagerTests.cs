@@ -7,6 +7,9 @@ using ASE_assignment;
 
 namespace ASE_Assignment_Tests
 {
+    /// <summary>
+    /// Tests that a file can be saved and then reads the values to check it matches expected contents
+    /// </summary>
     public class FileManagerTests
     {
         [Fact]
@@ -24,5 +27,24 @@ namespace ASE_Assignment_Tests
             // Assert
             Assert.Equal(testInput, fileContent);
         }
+        /// <summary>
+        /// A test to check that text in a .txt file is read correctly. Checks a known file against a List of strings for equality
+        /// </summary>
+        [Fact]
+        public void ReadFile_Test()
+        {
+            // Arrange
+            FileManager fileMananager = new();
+            string filePath = "test_read_file.txt";
+            var expectedContent = new List<string> { "testvalue 1", "testvalue 2", "pass" };
+
+            // Act
+            var result = fileMananager.ReadFile(filePath);
+
+            // Assert
+            Assert.Equal(expectedContent, result);
+        }
     }
+
+
 }
