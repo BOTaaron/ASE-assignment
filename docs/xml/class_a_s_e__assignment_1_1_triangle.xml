@@ -16,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ASE-assignment/Triangle.cs" line="16" column="20" bodyfile="ASE-assignment/Triangle.cs" bodystart="16" bodyend="16"/>
+        <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Triangle.cs" line="16" column="20" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Triangle.cs" bodystart="16" bodyend="16"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-func">
@@ -47,7 +47,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ASE-assignment/Triangle.cs" line="22" column="16" bodyfile="ASE-assignment/Triangle.cs" bodystart="22" bodyend="25"/>
+        <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Triangle.cs" line="22" column="16" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Triangle.cs" bodystart="22" bodyend="25"/>
       </memberdef>
       <memberdef kind="function" id="class_a_s_e__assignment_1_1_triangle_1a95036b32dbc8ed46a875f46484ca69e0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>override void</type>
@@ -112,7 +112,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ASE-assignment/Triangle.cs" line="34" column="30" bodyfile="ASE-assignment/Triangle.cs" bodystart="34" bodyend="48"/>
+        <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Triangle.cs" line="34" column="30" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Triangle.cs" bodystart="34" bodyend="48"/>
       </memberdef>
       <memberdef kind="function" id="class_a_s_e__assignment_1_1_triangle_1a5854cb3a56904f1f890b3a31919cfdb9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>override void</type>
@@ -177,7 +177,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ASE-assignment/Triangle.cs" line="57" column="30" bodyfile="ASE-assignment/Triangle.cs" bodystart="57" bodyend="70"/>
+        <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Triangle.cs" line="57" column="30" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Triangle.cs" bodystart="57" bodyend="70"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -209,7 +209,7 @@
         <link refid="class_a_s_e__assignment_1_1_shape"/>
       </node>
     </collaborationgraph>
-    <location file="ASE-assignment/Triangle.cs" line="14" column="11" bodyfile="ASE-assignment/Triangle.cs" bodystart="15" bodyend="71"/>
+    <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Triangle.cs" line="14" column="11" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Triangle.cs" bodystart="15" bodyend="71"/>
     <listofallmembers>
       <member refid="class_a_s_e__assignment_1_1_triangle_1a95036b32dbc8ed46a875f46484ca69e0" prot="public" virt="non-virtual"><scope>ASE_assignment::Triangle</scope><name>Draw</name></member>
       <member refid="class_a_s_e__assignment_1_1_triangle_1a5854cb3a56904f1f890b3a31919cfdb9" prot="public" virt="non-virtual"><scope>ASE_assignment::Triangle</scope><name>Fill</name></member>

@@ -1,0 +1,539 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="class_a_s_e__assignment_1_1_command_processor" kind="class" language="C#" prot="package">
+    <compoundname>ASE_assignment::CommandProcessor</compoundname>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_a_s_e__assignment_1_1_command_processor_1ab94af3397a74a92011a113f479847973" prot="private" static="no" mutable="no">
+        <type><ref refid="class_a_s_e__assignment_1_1_pen_controller" kindref="compound">PenController</ref></type>
+        <definition>PenController ASE_assignment.CommandProcessor.controller</definition>
+        <argsstring></argsstring>
+        <name>controller</name>
+        <qualifiedname>ASE_assignment.CommandProcessor.controller</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/CommandProcessor.cs" line="16" column="31" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/CommandProcessor.cs" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_s_e__assignment_1_1_command_processor_1ae03862f713bd4dfe79b4e0db8485e220" prot="private" static="no" mutable="no">
+        <type><ref refid="class_a_s_e__assignment_1_1_canvass" kindref="compound">Canvass</ref></type>
+        <definition>Canvass ASE_assignment.CommandProcessor.canvass</definition>
+        <argsstring></argsstring>
+        <name>canvass</name>
+        <qualifiedname>ASE_assignment.CommandProcessor.canvass</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/CommandProcessor.cs" line="17" column="25" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/CommandProcessor.cs" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_s_e__assignment_1_1_command_processor_1ad8a32a96d60ebcf74ae7388eeade0336" prot="private" static="no" mutable="no">
+        <type>Dictionary&lt; string, CommandAction &gt;</type>
+        <definition>Dictionary&lt;string, CommandAction&gt; ASE_assignment.CommandProcessor.validCommands</definition>
+        <argsstring></argsstring>
+        <name>validCommands</name>
+        <qualifiedname>ASE_assignment.CommandProcessor.validCommands</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/CommandProcessor.cs" line="22" column="28" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/CommandProcessor.cs" bodystart="22" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_a_s_e__assignment_1_1_command_processor_1a3d6f361b55d24ea94449150f9bb7e598" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>delegate void</type>
+        <definition>delegate void ASE_assignment.CommandProcessor.CommandAction</definition>
+        <argsstring>(Command parsedLine)</argsstring>
+        <name>CommandAction</name>
+        <qualifiedname>ASE_assignment.CommandProcessor.CommandAction</qualifiedname>
+        <param>
+          <type><ref refid="class_a_s_e__assignment_1_1_command" kindref="compound">Command</ref></type>
+          <declname>parsedLine</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/CommandProcessor.cs" line="19" column="31"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_s_e__assignment_1_1_command_processor_1a803eb0608c8719458776fb7496d7c103" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ASE_assignment.CommandProcessor.MoveTo</definition>
+        <argsstring>(Command parsedLine)</argsstring>
+        <name>MoveTo</name>
+        <qualifiedname>ASE_assignment.CommandProcessor.MoveTo</qualifiedname>
+        <param>
+          <type><ref refid="class_a_s_e__assignment_1_1_command" kindref="compound">Command</ref></type>
+          <declname>parsedLine</declname>
+        </param>
+        <briefdescription>
+<para>Move the pen to the location specified by coordinates in the IntParms. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>parsedLine</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The parsed line containing the command and parameters</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>ArgumentException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Throws an exception when no coordinates are provided</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/CommandProcessor.cs" line="54" column="22" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/CommandProcessor.cs" bodystart="54" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_s_e__assignment_1_1_command_processor_1a9a84d55963e463e06f98213be6eba46f" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ASE_assignment.CommandProcessor.DrawTo</definition>
+        <argsstring>(Command parsedLine)</argsstring>
+        <name>DrawTo</name>
+        <qualifiedname>ASE_assignment.CommandProcessor.DrawTo</qualifiedname>
+        <param>
+          <type><ref refid="class_a_s_e__assignment_1_1_command" kindref="compound">Command</ref></type>
+          <declname>parsedLine</declname>
+        </param>
+        <briefdescription>
+<para>Draws a line from the previous location to a new location specified by the coordinates provided. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>parsedLine</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The parsed line containing the command and parameters</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>ArgumentException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Throws an exception when no coordinates are provided</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/CommandProcessor.cs" line="74" column="22" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/CommandProcessor.cs" bodystart="74" bodyend="87"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_s_e__assignment_1_1_command_processor_1ac964e0ade9000dc7ac2c5b91bb5a3e59" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ASE_assignment.CommandProcessor.Clear</definition>
+        <argsstring>(Command parsedLine)</argsstring>
+        <name>Clear</name>
+        <qualifiedname>ASE_assignment.CommandProcessor.Clear</qualifiedname>
+        <param>
+          <type><ref refid="class_a_s_e__assignment_1_1_command" kindref="compound">Command</ref></type>
+          <declname>parsedLine</declname>
+        </param>
+        <briefdescription>
+<para>Clears the bitmap canvas when the clear command is entered. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>parsedLine</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The parsed line that should contain the clear command</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>ArgumentException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Throws an exception when clear is combined with an unexpected parameter</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/CommandProcessor.cs" line="93" column="22" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/CommandProcessor.cs" bodystart="93" bodyend="104"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_s_e__assignment_1_1_command_processor_1ac3649982b3c9dd30490071e499df8759" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ASE_assignment.CommandProcessor.Reset</definition>
+        <argsstring>(Command parsedLine)</argsstring>
+        <name>Reset</name>
+        <qualifiedname>ASE_assignment.CommandProcessor.Reset</qualifiedname>
+        <param>
+          <type><ref refid="class_a_s_e__assignment_1_1_command" kindref="compound">Command</ref></type>
+          <declname>parsedLine</declname>
+        </param>
+        <briefdescription>
+<para>Resets the cursor to the 0,0 coordinate. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>parsedLine</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The parsed line that should contain the reset command</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>ArgumentException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Throws an exception when reset is combined with an unexpected parameter</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/CommandProcessor.cs" line="110" column="22" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/CommandProcessor.cs" bodystart="110" bodyend="121"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_s_e__assignment_1_1_command_processor_1ab4393568b26651cef0e95450044775dd" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ASE_assignment.CommandProcessor.DrawRectangle</definition>
+        <argsstring>(Command parsedLine)</argsstring>
+        <name>DrawRectangle</name>
+        <qualifiedname>ASE_assignment.CommandProcessor.DrawRectangle</qualifiedname>
+        <param>
+          <type><ref refid="class_a_s_e__assignment_1_1_command" kindref="compound">Command</ref></type>
+          <declname>parsedLine</declname>
+        </param>
+        <briefdescription>
+<para>Draws a rectangle with a width and height specified by coordinates in IntParams. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>parsedLine</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The parsed line that should contain the rectangle command and a set of coordinates</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>ArgumentException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Throws an exception if the parameters contain anything aside from two integers</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/CommandProcessor.cs" line="127" column="22" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/CommandProcessor.cs" bodystart="127" bodyend="138"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_s_e__assignment_1_1_command_processor_1a71fa6ea769bd00c54025fbb59b89137a" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ASE_assignment.CommandProcessor.DrawCircle</definition>
+        <argsstring>(Command parsedLine)</argsstring>
+        <name>DrawCircle</name>
+        <qualifiedname>ASE_assignment.CommandProcessor.DrawCircle</qualifiedname>
+        <param>
+          <type><ref refid="class_a_s_e__assignment_1_1_command" kindref="compound">Command</ref></type>
+          <declname>parsedLine</declname>
+        </param>
+        <briefdescription>
+<para>Draws a circle from a provided radius. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>parsedLine</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The parsed line that contains the circle command and an integer radius</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>ArgumentException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Throws an exception if anything but a single integer parameter is provuded</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/CommandProcessor.cs" line="144" column="22" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/CommandProcessor.cs" bodystart="144" bodyend="154"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_s_e__assignment_1_1_command_processor_1a5b8ec25b2996e26b8bc7e24df110a522" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ASE_assignment.CommandProcessor.DrawTriangle</definition>
+        <argsstring>(Command parsedLine)</argsstring>
+        <name>DrawTriangle</name>
+        <qualifiedname>ASE_assignment.CommandProcessor.DrawTriangle</qualifiedname>
+        <param>
+          <type><ref refid="class_a_s_e__assignment_1_1_command" kindref="compound">Command</ref></type>
+          <declname>parsedLine</declname>
+        </param>
+        <briefdescription>
+<para>Creates an equilateral triangle from a provided integer parameter. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>parsedLine</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The parsed line that contains the triangle command and an integer parameter for size</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>ArgumentException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Throws an exception if any parameter except a single integer is provided</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/CommandProcessor.cs" line="160" column="22" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/CommandProcessor.cs" bodystart="160" bodyend="171"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_s_e__assignment_1_1_command_processor_1a77e249ea02b9355c3f4722501ff8e4cd" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ASE_assignment.CommandProcessor.PenColor</definition>
+        <argsstring>(Command parsedLine)</argsstring>
+        <name>PenColor</name>
+        <qualifiedname>ASE_assignment.CommandProcessor.PenColor</qualifiedname>
+        <param>
+          <type><ref refid="class_a_s_e__assignment_1_1_command" kindref="compound">Command</ref></type>
+          <declname>parsedLine</declname>
+        </param>
+        <briefdescription>
+<para>Changes the pen colour based on the parameter colour that was entered. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>parsedLine</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The parsed line that should contain the pen command followed by one of the available colours</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>ArgumentException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Throws an exception if the colour is not available or the parameter is missing</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/CommandProcessor.cs" line="177" column="22" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/CommandProcessor.cs" bodystart="177" bodyend="207"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_s_e__assignment_1_1_command_processor_1aa7ebabb6e71ff0f372f7a9a166ad569b" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ASE_assignment.CommandProcessor.Fill</definition>
+        <argsstring>(Command parsedLine)</argsstring>
+        <name>Fill</name>
+        <qualifiedname>ASE_assignment.CommandProcessor.Fill</qualifiedname>
+        <param>
+          <type><ref refid="class_a_s_e__assignment_1_1_command" kindref="compound">Command</ref></type>
+          <declname>parsedLine</declname>
+        </param>
+        <briefdescription>
+<para>Enables shape fill to draw solid shapes instead of outlines. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>parsedLine</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The parsed line that contains the fill command followed by &apos;on&apos; or &apos;off&apos;</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>ArgumentException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Throws an exception if an invalid parameter is entered</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/CommandProcessor.cs" line="213" column="22" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/CommandProcessor.cs" bodystart="213" bodyend="228"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_a_s_e__assignment_1_1_command_processor_1a4e6d43f0b48b81e29860f343ac96f37e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ASE_assignment.CommandProcessor.CommandProcessor</definition>
+        <argsstring>(PenController controller, Canvass canvass)</argsstring>
+        <name>CommandProcessor</name>
+        <qualifiedname>ASE_assignment.CommandProcessor.CommandProcessor</qualifiedname>
+        <param>
+          <type><ref refid="class_a_s_e__assignment_1_1_pen_controller" kindref="compound">PenController</ref></type>
+          <declname>controller</declname>
+        </param>
+        <param>
+          <type><ref refid="class_a_s_e__assignment_1_1_canvass" kindref="compound">Canvass</ref></type>
+          <declname>canvass</declname>
+        </param>
+        <briefdescription>
+<para>Initialise a new instance of the CommandProcessor class. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>controller</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The pen controller, that defines how the pen behaves on the canvas</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>canvass</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The canvas is the bitmap to be drawn on</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/CommandProcessor.cs" line="29" column="16" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/CommandProcessor.cs" bodystart="29" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_s_e__assignment_1_1_command_processor_1a0c66d16f946ba5467f1da7546f73d212" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ASE_assignment.CommandProcessor.RunLines</definition>
+        <argsstring>(Command parsedLine)</argsstring>
+        <name>RunLines</name>
+        <qualifiedname>ASE_assignment.CommandProcessor.RunLines</qualifiedname>
+        <param>
+          <type><ref refid="class_a_s_e__assignment_1_1_command" kindref="compound">Command</ref></type>
+          <declname>parsedLine</declname>
+        </param>
+        <briefdescription>
+<para>Maps valid commands from the validCommands dictionary to their corresponding functions. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>parsedLine</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The parsed line, that contains both a command and the corresponding parameters</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>ArgumentException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Throws an exception if the command is not found in the validCommand dictionary</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/CommandProcessor.cs" line="234" column="21" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/CommandProcessor.cs" bodystart="234" bodyend="248"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Takes the parsed commands as parameters and runs the desired command by calling the correct function. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>ASE_assignment.CommandProcessor</label>
+        <link refid="class_a_s_e__assignment_1_1_command_processor"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>controller</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>canvass</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>ASE_assignment.Canvass</label>
+        <link refid="class_a_s_e__assignment_1_1_canvass"/>
+      </node>
+      <node id="2">
+        <label>ASE_assignment.PenController</label>
+        <link refid="class_a_s_e__assignment_1_1_pen_controller"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>canvass</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/CommandProcessor.cs" line="14" column="13" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/CommandProcessor.cs" bodystart="15" bodyend="249"/>
+    <listofallmembers>
+      <member refid="class_a_s_e__assignment_1_1_command_processor_1ae03862f713bd4dfe79b4e0db8485e220" prot="private" virt="non-virtual"><scope>ASE_assignment::CommandProcessor</scope><name>canvass</name></member>
+      <member refid="class_a_s_e__assignment_1_1_command_processor_1ac964e0ade9000dc7ac2c5b91bb5a3e59" prot="private" virt="non-virtual"><scope>ASE_assignment::CommandProcessor</scope><name>Clear</name></member>
+      <member refid="class_a_s_e__assignment_1_1_command_processor_1a3d6f361b55d24ea94449150f9bb7e598" prot="private" virt="non-virtual"><scope>ASE_assignment::CommandProcessor</scope><name>CommandAction</name></member>
+      <member refid="class_a_s_e__assignment_1_1_command_processor_1a4e6d43f0b48b81e29860f343ac96f37e" prot="public" virt="non-virtual"><scope>ASE_assignment::CommandProcessor</scope><name>CommandProcessor</name></member>
+      <member refid="class_a_s_e__assignment_1_1_command_processor_1ab94af3397a74a92011a113f479847973" prot="private" virt="non-virtual"><scope>ASE_assignment::CommandProcessor</scope><name>controller</name></member>
+      <member refid="class_a_s_e__assignment_1_1_command_processor_1a71fa6ea769bd00c54025fbb59b89137a" prot="private" virt="non-virtual"><scope>ASE_assignment::CommandProcessor</scope><name>DrawCircle</name></member>
+      <member refid="class_a_s_e__assignment_1_1_command_processor_1ab4393568b26651cef0e95450044775dd" prot="private" virt="non-virtual"><scope>ASE_assignment::CommandProcessor</scope><name>DrawRectangle</name></member>
+      <member refid="class_a_s_e__assignment_1_1_command_processor_1a9a84d55963e463e06f98213be6eba46f" prot="private" virt="non-virtual"><scope>ASE_assignment::CommandProcessor</scope><name>DrawTo</name></member>
+      <member refid="class_a_s_e__assignment_1_1_command_processor_1a5b8ec25b2996e26b8bc7e24df110a522" prot="private" virt="non-virtual"><scope>ASE_assignment::CommandProcessor</scope><name>DrawTriangle</name></member>
+      <member refid="class_a_s_e__assignment_1_1_command_processor_1aa7ebabb6e71ff0f372f7a9a166ad569b" prot="private" virt="non-virtual"><scope>ASE_assignment::CommandProcessor</scope><name>Fill</name></member>
+      <member refid="class_a_s_e__assignment_1_1_command_processor_1a803eb0608c8719458776fb7496d7c103" prot="private" virt="non-virtual"><scope>ASE_assignment::CommandProcessor</scope><name>MoveTo</name></member>
+      <member refid="class_a_s_e__assignment_1_1_command_processor_1a77e249ea02b9355c3f4722501ff8e4cd" prot="private" virt="non-virtual"><scope>ASE_assignment::CommandProcessor</scope><name>PenColor</name></member>
+      <member refid="class_a_s_e__assignment_1_1_command_processor_1ac3649982b3c9dd30490071e499df8759" prot="private" virt="non-virtual"><scope>ASE_assignment::CommandProcessor</scope><name>Reset</name></member>
+      <member refid="class_a_s_e__assignment_1_1_command_processor_1a0c66d16f946ba5467f1da7546f73d212" prot="public" virt="non-virtual"><scope>ASE_assignment::CommandProcessor</scope><name>RunLines</name></member>
+      <member refid="class_a_s_e__assignment_1_1_command_processor_1ad8a32a96d60ebcf74ae7388eeade0336" prot="private" virt="non-virtual"><scope>ASE_assignment::CommandProcessor</scope><name>validCommands</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

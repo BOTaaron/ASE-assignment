@@ -47,7 +47,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ASE-assignment/CommandParser.cs" line="24" column="24" bodyfile="ASE-assignment/CommandParser.cs" bodystart="24" bodyend="97"/>
+        <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/CommandParser.cs" line="24" column="24" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/CommandParser.cs" bodystart="24" bodyend="97"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -55,7 +55,7 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="ASE-assignment/CommandParser.cs" line="14" column="13" bodyfile="ASE-assignment/CommandParser.cs" bodystart="15" bodyend="99"/>
+    <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/CommandParser.cs" line="14" column="13" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/CommandParser.cs" bodystart="15" bodyend="99"/>
     <listofallmembers>
       <member refid="class_a_s_e__assignment_1_1_command_parser_1ae16170c7e29d7070320bc1b43a1783f9" prot="public" virt="non-virtual"><scope>ASE_assignment::CommandParser</scope><name>ParseLine</name></member>
     </listofallmembers>

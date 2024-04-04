@@ -25,6 +25,23 @@
   <compound refid="class_a_s_e__assignment_1_1_command_parser" kind="class"><name>ASE_assignment::CommandParser</name>
     <member refid="class_a_s_e__assignment_1_1_command_parser_1ae16170c7e29d7070320bc1b43a1783f9" kind="function"><name>ParseLine</name></member>
   </compound>
+  <compound refid="class_a_s_e__assignment_1_1_command_processor" kind="class"><name>ASE_assignment::CommandProcessor</name>
+    <member refid="class_a_s_e__assignment_1_1_command_processor_1ab94af3397a74a92011a113f479847973" kind="variable"><name>controller</name></member>
+    <member refid="class_a_s_e__assignment_1_1_command_processor_1ae03862f713bd4dfe79b4e0db8485e220" kind="variable"><name>canvass</name></member>
+    <member refid="class_a_s_e__assignment_1_1_command_processor_1ad8a32a96d60ebcf74ae7388eeade0336" kind="variable"><name>validCommands</name></member>
+    <member refid="class_a_s_e__assignment_1_1_command_processor_1a3d6f361b55d24ea94449150f9bb7e598" kind="function"><name>CommandAction</name></member>
+    <member refid="class_a_s_e__assignment_1_1_command_processor_1a803eb0608c8719458776fb7496d7c103" kind="function"><name>MoveTo</name></member>
+    <member refid="class_a_s_e__assignment_1_1_command_processor_1a9a84d55963e463e06f98213be6eba46f" kind="function"><name>DrawTo</name></member>
+    <member refid="class_a_s_e__assignment_1_1_command_processor_1ac964e0ade9000dc7ac2c5b91bb5a3e59" kind="function"><name>Clear</name></member>
+    <member refid="class_a_s_e__assignment_1_1_command_processor_1ac3649982b3c9dd30490071e499df8759" kind="function"><name>Reset</name></member>
+    <member refid="class_a_s_e__assignment_1_1_command_processor_1ab4393568b26651cef0e95450044775dd" kind="function"><name>DrawRectangle</name></member>
+    <member refid="class_a_s_e__assignment_1_1_command_processor_1a71fa6ea769bd00c54025fbb59b89137a" kind="function"><name>DrawCircle</name></member>
+    <member refid="class_a_s_e__assignment_1_1_command_processor_1a5b8ec25b2996e26b8bc7e24df110a522" kind="function"><name>DrawTriangle</name></member>
+    <member refid="class_a_s_e__assignment_1_1_command_processor_1a77e249ea02b9355c3f4722501ff8e4cd" kind="function"><name>PenColor</name></member>
+    <member refid="class_a_s_e__assignment_1_1_command_processor_1aa7ebabb6e71ff0f372f7a9a166ad569b" kind="function"><name>Fill</name></member>
+    <member refid="class_a_s_e__assignment_1_1_command_processor_1a4e6d43f0b48b81e29860f343ac96f37e" kind="function"><name>CommandProcessor</name></member>
+    <member refid="class_a_s_e__assignment_1_1_command_processor_1a0c66d16f946ba5467f1da7546f73d212" kind="function"><name>RunLines</name></member>
+  </compound>
   <compound refid="class_a_s_e__assignment_1_1_file_manager" kind="class"><name>ASE_assignment::FileManager</name>
     <member refid="class_a_s_e__assignment_1_1_file_manager_1aea3a25fc934be0aede763745030b99b7" kind="function"><name>SaveFile</name></member>
     <member refid="class_a_s_e__assignment_1_1_file_manager_1af093fbb48fbfd819a82a7036f337fe81" kind="function"><name>ReadFile</name></member>
@@ -32,7 +49,7 @@
   <compound refid="class_a_s_e__assignment_1_1_form1" kind="class"><name>ASE_assignment::Form1</name>
     <member refid="class_a_s_e__assignment_1_1_form1_1a39d44a6d44067ea95994566c25515be4" kind="variable"><name>canvass</name></member>
     <member refid="class_a_s_e__assignment_1_1_form1_1a714d2d52d0beb78d95bf5df044de727e" kind="variable"><name>penController</name></member>
-    <member refid="class_a_s_e__assignment_1_1_form1_1a4d2946159dda349c36701e69332dd460" kind="variable"><name>runCommand</name></member>
+    <member refid="class_a_s_e__assignment_1_1_form1_1aaf933891740631505d8695e9b02f96d0" kind="variable"><name>runCommand</name></member>
     <member refid="class_a_s_e__assignment_1_1_form1_1a671bd7fd07f81843a50c6795b9203ab6" kind="variable"><name>parse</name></member>
     <member refid="class_a_s_e__assignment_1_1_form1_1abe508e24a52c4232296d9fc975d05329" kind="variable"><name>components</name></member>
     <member refid="class_a_s_e__assignment_1_1_form1_1aa9ef00ba926c299ba32dc690d1941115" kind="variable"><name>SyntaxButton</name></member>
@@ -79,12 +96,6 @@
     <member refid="class_a_s_e__assignment_1_1_rectangle_1a9582cbbf0d4e93a85c1c15d066d0f18b" kind="function"><name>Rectangle</name></member>
     <member refid="class_a_s_e__assignment_1_1_rectangle_1a636ae94c3325330db9f223e5866f79f1" kind="function"><name>Draw</name></member>
     <member refid="class_a_s_e__assignment_1_1_rectangle_1a60ce2a00418e22105605cb9e31f784ee" kind="function"><name>Fill</name></member>
-  </compound>
-  <compound refid="class_a_s_e__assignment_1_1_run_command" kind="class"><name>ASE_assignment::RunCommand</name>
-    <member refid="class_a_s_e__assignment_1_1_run_command_1ac9e327c6a81eaf2c1e5963713a696ac6" kind="variable"><name>controller</name></member>
-    <member refid="class_a_s_e__assignment_1_1_run_command_1a98c0babcb7a78f677f5123259ef6e058" kind="variable"><name>canvass</name></member>
-    <member refid="class_a_s_e__assignment_1_1_run_command_1adc1dbba4033dd2a760a727f9918097ff" kind="function"><name>RunCommand</name></member>
-    <member refid="class_a_s_e__assignment_1_1_run_command_1a54a6f7a5d08e288a81d624976b53d1ca" kind="function"><name>RunLines</name></member>
   </compound>
   <compound refid="class_a_s_e__assignment_1_1_shape" kind="class"><name>ASE_assignment::Shape</name>
     <member refid="class_a_s_e__assignment_1_1_shape_1add0c33be27ded76dd89bbfe6f7f32fbf" kind="property"><name>ShapeFill</name></member>
@@ -141,6 +152,8 @@
   </compound>
   <compound refid="_command_parser_8cs" kind="file"><name>CommandParser.cs</name>
   </compound>
+  <compound refid="_command_processor_8cs" kind="file"><name>CommandProcessor.cs</name>
+  </compound>
   <compound refid="_file_manager_8cs" kind="file"><name>FileManager.cs</name>
   </compound>
   <compound refid="_form1_8cs" kind="file"><name>Form1.cs</name>
@@ -155,13 +168,15 @@
   </compound>
   <compound refid="_rectangle_8cs" kind="file"><name>Rectangle.cs</name>
   </compound>
-  <compound refid="_run_command_8cs" kind="file"><name>RunCommand.cs</name>
-  </compound>
   <compound refid="_shape_8cs" kind="file"><name>Shape.cs</name>
   </compound>
   <compound refid="_triangle_8cs" kind="file"><name>Triangle.cs</name>
   </compound>
-  <compound refid="dir_bd5ca8e636c4aa900e7121e801a91082" kind="dir"><name>ASE-assignment</name>
+  <compound refid="dir_294cfc04d1e18851b6bed3e5e219636a" kind="dir"><name>D:/GitHub-Repos/ASE-assignment</name>
+  </compound>
+  <compound refid="dir_443175120e77b0b330f73475e8ad784d" kind="dir"><name>D:/GitHub-Repos/ASE-assignment/ASE-assignment</name>
+  </compound>
+  <compound refid="dir_e797ebdb1fc8b120a2bb462ba73df079" kind="dir"><name>D:/GitHub-Repos</name>
   </compound>
   <compound refid="indexpage" kind="page"><name>index</name>
   </compound>

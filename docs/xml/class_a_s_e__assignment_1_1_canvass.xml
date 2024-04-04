@@ -15,7 +15,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ASE-assignment/Canvass.cs" line="17" column="24" bodyfile="ASE-assignment/Canvass.cs" bodystart="17" bodyend="-1"/>
+        <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Canvass.cs" line="17" column="24" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Canvass.cs" bodystart="17" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_a_s_e__assignment_1_1_canvass_1a1f38356fb423e1160444a8d3ed5c0303" prot="private" static="no" mutable="no">
         <type>Bitmap</type>
@@ -29,7 +29,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ASE-assignment/Canvass.cs" line="18" column="24" bodyfile="ASE-assignment/Canvass.cs" bodystart="18" bodyend="-1"/>
+        <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Canvass.cs" line="18" column="24" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Canvass.cs" bodystart="18" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_a_s_e__assignment_1_1_canvass_1ac7662465bdc4c4c0d80b9c2b5a1e2349" prot="private" static="no" mutable="no">
         <type>Graphics</type>
@@ -43,7 +43,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ASE-assignment/Canvass.cs" line="19" column="26" bodyfile="ASE-assignment/Canvass.cs" bodystart="19" bodyend="-1"/>
+        <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Canvass.cs" line="19" column="26" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Canvass.cs" bodystart="19" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_a_s_e__assignment_1_1_canvass_1a6e4ab1a7176f91124ba0ab5e9bbccee2" prot="private" static="no" mutable="no">
         <type>Graphics</type>
@@ -57,7 +57,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ASE-assignment/Canvass.cs" line="20" column="26" bodyfile="ASE-assignment/Canvass.cs" bodystart="20" bodyend="-1"/>
+        <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Canvass.cs" line="20" column="26" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Canvass.cs" bodystart="20" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="property">
@@ -74,7 +74,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ASE-assignment/Canvass.cs" line="63" column="25" bodyfile="ASE-assignment/Canvass.cs" bodystart="63" bodyend="-1"/>
+        <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Canvass.cs" line="63" column="25" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Canvass.cs" bodystart="63" bodyend="-1"/>
       </memberdef>
       <memberdef kind="property" id="class_a_s_e__assignment_1_1_canvass_1a2218a2139faa919ba8af51d86d8d23ab" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
         <type>Graphics</type>
@@ -89,7 +89,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ASE-assignment/Canvass.cs" line="67" column="25" bodyfile="ASE-assignment/Canvass.cs" bodystart="67" bodyend="-1"/>
+        <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Canvass.cs" line="67" column="25" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Canvass.cs" bodystart="67" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-func">
@@ -132,7 +132,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ASE-assignment/Canvass.cs" line="28" column="16" bodyfile="ASE-assignment/Canvass.cs" bodystart="28" bodyend="34"/>
+        <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Canvass.cs" line="28" column="16" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Canvass.cs" bodystart="28" bodyend="34"/>
       </memberdef>
       <memberdef kind="function" id="class_a_s_e__assignment_1_1_canvass_1a181afa7ab407bc36ccd47ba3dddda3ed" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>Bitmap</type>
@@ -150,7 +150,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ASE-assignment/Canvass.cs" line="40" column="23" bodyfile="ASE-assignment/Canvass.cs" bodystart="40" bodyend="50"/>
+        <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Canvass.cs" line="40" column="23" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Canvass.cs" bodystart="40" bodyend="50"/>
       </memberdef>
       <memberdef kind="function" id="class_a_s_e__assignment_1_1_canvass_1a749800420c13feb719c69d21cd2646bf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -165,7 +165,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ASE-assignment/Canvass.cs" line="54" column="21" bodyfile="ASE-assignment/Canvass.cs" bodystart="54" bodyend="58"/>
+        <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Canvass.cs" line="54" column="21" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Canvass.cs" bodystart="54" bodyend="58"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -173,7 +173,7 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="ASE-assignment/Canvass.cs" line="14" column="11" bodyfile="ASE-assignment/Canvass.cs" bodystart="15" bodyend="68"/>
+    <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Canvass.cs" line="14" column="11" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Canvass.cs" bodystart="15" bodyend="68"/>
     <listofallmembers>
       <member refid="class_a_s_e__assignment_1_1_canvass_1abeaf1c7fe91b532a2525e2da10507ba5" prot="public" virt="non-virtual"><scope>ASE_assignment::Canvass</scope><name>Canvass</name></member>
       <member refid="class_a_s_e__assignment_1_1_canvass_1a749800420c13feb719c69d21cd2646bf" prot="public" virt="non-virtual"><scope>ASE_assignment::Canvass</scope><name>ClearCanvas</name></member>

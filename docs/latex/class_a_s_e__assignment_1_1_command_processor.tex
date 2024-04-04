@@ -1,0 +1,281 @@
+\doxysection{ASE\+\_\+assignment.\+Command\+Processor Class Reference}
+\hypertarget{class_a_s_e__assignment_1_1_command_processor}{}\label{class_a_s_e__assignment_1_1_command_processor}\index{ASE\_assignment.CommandProcessor@{ASE\_assignment.CommandProcessor}}
+
+
+Takes the parsed commands as parameters and runs the desired command by calling the correct function.  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_a_s_e__assignment_1_1_command_processor_a4e6d43f0b48b81e29860f343ac96f37e}{Command\+Processor}} (\mbox{\hyperlink{class_a_s_e__assignment_1_1_pen_controller}{Pen\+Controller}} controller, \mbox{\hyperlink{class_a_s_e__assignment_1_1_canvass}{Canvass}} canvass)
+\begin{DoxyCompactList}\small\item\em Initialise a new instance of the Command\+Processor class. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_a_s_e__assignment_1_1_command_processor_a0c66d16f946ba5467f1da7546f73d212}{Run\+Lines}} (\mbox{\hyperlink{class_a_s_e__assignment_1_1_command}{Command}} parsed\+Line)
+\begin{DoxyCompactList}\small\item\em Maps valid commands from the valid\+Commands dictionary to their corresponding functions. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_a_s_e__assignment_1_1_command_processor_a3d6f361b55d24ea94449150f9bb7e598}\label{class_a_s_e__assignment_1_1_command_processor_a3d6f361b55d24ea94449150f9bb7e598} 
+delegate void {\bfseries Command\+Action} (\mbox{\hyperlink{class_a_s_e__assignment_1_1_command}{Command}} parsed\+Line)
+\item 
+void \mbox{\hyperlink{class_a_s_e__assignment_1_1_command_processor_a803eb0608c8719458776fb7496d7c103}{Move\+To}} (\mbox{\hyperlink{class_a_s_e__assignment_1_1_command}{Command}} parsed\+Line)
+\begin{DoxyCompactList}\small\item\em Move the pen to the location specified by coordinates in the Int\+Parms. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_a_s_e__assignment_1_1_command_processor_a9a84d55963e463e06f98213be6eba46f}{Draw\+To}} (\mbox{\hyperlink{class_a_s_e__assignment_1_1_command}{Command}} parsed\+Line)
+\begin{DoxyCompactList}\small\item\em Draws a line from the previous location to a new location specified by the coordinates provided. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_a_s_e__assignment_1_1_command_processor_ac964e0ade9000dc7ac2c5b91bb5a3e59}{Clear}} (\mbox{\hyperlink{class_a_s_e__assignment_1_1_command}{Command}} parsed\+Line)
+\begin{DoxyCompactList}\small\item\em Clears the bitmap canvas when the clear command is entered. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_a_s_e__assignment_1_1_command_processor_ac3649982b3c9dd30490071e499df8759}{Reset}} (\mbox{\hyperlink{class_a_s_e__assignment_1_1_command}{Command}} parsed\+Line)
+\begin{DoxyCompactList}\small\item\em Resets the cursor to the 0,0 coordinate. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_a_s_e__assignment_1_1_command_processor_ab4393568b26651cef0e95450044775dd}{Draw\+Rectangle}} (\mbox{\hyperlink{class_a_s_e__assignment_1_1_command}{Command}} parsed\+Line)
+\begin{DoxyCompactList}\small\item\em Draws a rectangle with a width and height specified by coordinates in Int\+Params. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_a_s_e__assignment_1_1_command_processor_a71fa6ea769bd00c54025fbb59b89137a}{Draw\+Circle}} (\mbox{\hyperlink{class_a_s_e__assignment_1_1_command}{Command}} parsed\+Line)
+\begin{DoxyCompactList}\small\item\em Draws a circle from a provided radius. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_a_s_e__assignment_1_1_command_processor_a5b8ec25b2996e26b8bc7e24df110a522}{Draw\+Triangle}} (\mbox{\hyperlink{class_a_s_e__assignment_1_1_command}{Command}} parsed\+Line)
+\begin{DoxyCompactList}\small\item\em Creates an equilateral triangle from a provided integer parameter. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_a_s_e__assignment_1_1_command_processor_a77e249ea02b9355c3f4722501ff8e4cd}{Pen\+Color}} (\mbox{\hyperlink{class_a_s_e__assignment_1_1_command}{Command}} parsed\+Line)
+\begin{DoxyCompactList}\small\item\em Changes the pen colour based on the parameter colour that was entered. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_a_s_e__assignment_1_1_command_processor_aa7ebabb6e71ff0f372f7a9a166ad569b}{Fill}} (\mbox{\hyperlink{class_a_s_e__assignment_1_1_command}{Command}} parsed\+Line)
+\begin{DoxyCompactList}\small\item\em Enables shape fill to draw solid shapes instead of outlines. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_a_s_e__assignment_1_1_command_processor_ab94af3397a74a92011a113f479847973}\label{class_a_s_e__assignment_1_1_command_processor_ab94af3397a74a92011a113f479847973} 
+\mbox{\hyperlink{class_a_s_e__assignment_1_1_pen_controller}{Pen\+Controller}} {\bfseries controller}
+\item 
+\Hypertarget{class_a_s_e__assignment_1_1_command_processor_ae03862f713bd4dfe79b4e0db8485e220}\label{class_a_s_e__assignment_1_1_command_processor_ae03862f713bd4dfe79b4e0db8485e220} 
+\mbox{\hyperlink{class_a_s_e__assignment_1_1_canvass}{Canvass}} {\bfseries canvass}
+\item 
+\Hypertarget{class_a_s_e__assignment_1_1_command_processor_ad8a32a96d60ebcf74ae7388eeade0336}\label{class_a_s_e__assignment_1_1_command_processor_ad8a32a96d60ebcf74ae7388eeade0336} 
+Dictionary$<$ string, Command\+Action $>$ {\bfseries valid\+Commands}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Takes the parsed commands as parameters and runs the desired command by calling the correct function. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_a_s_e__assignment_1_1_command_processor_a4e6d43f0b48b81e29860f343ac96f37e}\label{class_a_s_e__assignment_1_1_command_processor_a4e6d43f0b48b81e29860f343ac96f37e} 
+\index{ASE\_assignment.CommandProcessor@{ASE\_assignment.CommandProcessor}!CommandProcessor@{CommandProcessor}}
+\index{CommandProcessor@{CommandProcessor}!ASE\_assignment.CommandProcessor@{ASE\_assignment.CommandProcessor}}
+\doxysubsubsection{\texorpdfstring{CommandProcessor()}{CommandProcessor()}}
+{\footnotesize\ttfamily ASE\+\_\+assignment.\+Command\+Processor.\+Command\+Processor (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_a_s_e__assignment_1_1_pen_controller}{Pen\+Controller}}}]{controller,  }\item[{\mbox{\hyperlink{class_a_s_e__assignment_1_1_canvass}{Canvass}}}]{canvass }\end{DoxyParamCaption})}
+
+
+
+Initialise a new instance of the Command\+Processor class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em controller} & The pen controller, that defines how the pen behaves on the canvas\\
+\hline
+{\em canvass} & The canvas is the bitmap to be drawn on\\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_a_s_e__assignment_1_1_command_processor_ac964e0ade9000dc7ac2c5b91bb5a3e59}\label{class_a_s_e__assignment_1_1_command_processor_ac964e0ade9000dc7ac2c5b91bb5a3e59} 
+\index{ASE\_assignment.CommandProcessor@{ASE\_assignment.CommandProcessor}!Clear@{Clear}}
+\index{Clear@{Clear}!ASE\_assignment.CommandProcessor@{ASE\_assignment.CommandProcessor}}
+\doxysubsubsection{\texorpdfstring{Clear()}{Clear()}}
+{\footnotesize\ttfamily void ASE\+\_\+assignment.\+Command\+Processor.\+Clear (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_a_s_e__assignment_1_1_command}{Command}}}]{parsed\+Line }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Clears the bitmap canvas when the clear command is entered. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parsed\+Line} & The parsed line that should contain the clear command\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Argument\+Exception} & Throws an exception when clear is combined with an unexpected parameter\\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_a_s_e__assignment_1_1_command_processor_a71fa6ea769bd00c54025fbb59b89137a}\label{class_a_s_e__assignment_1_1_command_processor_a71fa6ea769bd00c54025fbb59b89137a} 
+\index{ASE\_assignment.CommandProcessor@{ASE\_assignment.CommandProcessor}!DrawCircle@{DrawCircle}}
+\index{DrawCircle@{DrawCircle}!ASE\_assignment.CommandProcessor@{ASE\_assignment.CommandProcessor}}
+\doxysubsubsection{\texorpdfstring{DrawCircle()}{DrawCircle()}}
+{\footnotesize\ttfamily void ASE\+\_\+assignment.\+Command\+Processor.\+Draw\+Circle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_a_s_e__assignment_1_1_command}{Command}}}]{parsed\+Line }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Draws a circle from a provided radius. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parsed\+Line} & The parsed line that contains the circle command and an integer radius\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Argument\+Exception} & Throws an exception if anything but a single integer parameter is provuded\\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_a_s_e__assignment_1_1_command_processor_ab4393568b26651cef0e95450044775dd}\label{class_a_s_e__assignment_1_1_command_processor_ab4393568b26651cef0e95450044775dd} 
+\index{ASE\_assignment.CommandProcessor@{ASE\_assignment.CommandProcessor}!DrawRectangle@{DrawRectangle}}
+\index{DrawRectangle@{DrawRectangle}!ASE\_assignment.CommandProcessor@{ASE\_assignment.CommandProcessor}}
+\doxysubsubsection{\texorpdfstring{DrawRectangle()}{DrawRectangle()}}
+{\footnotesize\ttfamily void ASE\+\_\+assignment.\+Command\+Processor.\+Draw\+Rectangle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_a_s_e__assignment_1_1_command}{Command}}}]{parsed\+Line }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Draws a rectangle with a width and height specified by coordinates in Int\+Params. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parsed\+Line} & The parsed line that should contain the rectangle command and a set of coordinates\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Argument\+Exception} & Throws an exception if the parameters contain anything aside from two integers\\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_a_s_e__assignment_1_1_command_processor_a9a84d55963e463e06f98213be6eba46f}\label{class_a_s_e__assignment_1_1_command_processor_a9a84d55963e463e06f98213be6eba46f} 
+\index{ASE\_assignment.CommandProcessor@{ASE\_assignment.CommandProcessor}!DrawTo@{DrawTo}}
+\index{DrawTo@{DrawTo}!ASE\_assignment.CommandProcessor@{ASE\_assignment.CommandProcessor}}
+\doxysubsubsection{\texorpdfstring{DrawTo()}{DrawTo()}}
+{\footnotesize\ttfamily void ASE\+\_\+assignment.\+Command\+Processor.\+Draw\+To (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_a_s_e__assignment_1_1_command}{Command}}}]{parsed\+Line }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Draws a line from the previous location to a new location specified by the coordinates provided. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parsed\+Line} & The parsed line containing the command and parameters\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Argument\+Exception} & Throws an exception when no coordinates are provided\\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_a_s_e__assignment_1_1_command_processor_a5b8ec25b2996e26b8bc7e24df110a522}\label{class_a_s_e__assignment_1_1_command_processor_a5b8ec25b2996e26b8bc7e24df110a522} 
+\index{ASE\_assignment.CommandProcessor@{ASE\_assignment.CommandProcessor}!DrawTriangle@{DrawTriangle}}
+\index{DrawTriangle@{DrawTriangle}!ASE\_assignment.CommandProcessor@{ASE\_assignment.CommandProcessor}}
+\doxysubsubsection{\texorpdfstring{DrawTriangle()}{DrawTriangle()}}
+{\footnotesize\ttfamily void ASE\+\_\+assignment.\+Command\+Processor.\+Draw\+Triangle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_a_s_e__assignment_1_1_command}{Command}}}]{parsed\+Line }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Creates an equilateral triangle from a provided integer parameter. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parsed\+Line} & The parsed line that contains the triangle command and an integer parameter for size\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Argument\+Exception} & Throws an exception if any parameter except a single integer is provided\\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_a_s_e__assignment_1_1_command_processor_aa7ebabb6e71ff0f372f7a9a166ad569b}\label{class_a_s_e__assignment_1_1_command_processor_aa7ebabb6e71ff0f372f7a9a166ad569b} 
+\index{ASE\_assignment.CommandProcessor@{ASE\_assignment.CommandProcessor}!Fill@{Fill}}
+\index{Fill@{Fill}!ASE\_assignment.CommandProcessor@{ASE\_assignment.CommandProcessor}}
+\doxysubsubsection{\texorpdfstring{Fill()}{Fill()}}
+{\footnotesize\ttfamily void ASE\+\_\+assignment.\+Command\+Processor.\+Fill (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_a_s_e__assignment_1_1_command}{Command}}}]{parsed\+Line }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Enables shape fill to draw solid shapes instead of outlines. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parsed\+Line} & The parsed line that contains the fill command followed by \textquotesingle{}on\textquotesingle{} or \textquotesingle{}off\textquotesingle{}\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Argument\+Exception} & Throws an exception if an invalid parameter is entered\\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_a_s_e__assignment_1_1_command_processor_a803eb0608c8719458776fb7496d7c103}\label{class_a_s_e__assignment_1_1_command_processor_a803eb0608c8719458776fb7496d7c103} 
+\index{ASE\_assignment.CommandProcessor@{ASE\_assignment.CommandProcessor}!MoveTo@{MoveTo}}
+\index{MoveTo@{MoveTo}!ASE\_assignment.CommandProcessor@{ASE\_assignment.CommandProcessor}}
+\doxysubsubsection{\texorpdfstring{MoveTo()}{MoveTo()}}
+{\footnotesize\ttfamily void ASE\+\_\+assignment.\+Command\+Processor.\+Move\+To (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_a_s_e__assignment_1_1_command}{Command}}}]{parsed\+Line }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Move the pen to the location specified by coordinates in the Int\+Parms. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parsed\+Line} & The parsed line containing the command and parameters\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Argument\+Exception} & Throws an exception when no coordinates are provided\\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_a_s_e__assignment_1_1_command_processor_a77e249ea02b9355c3f4722501ff8e4cd}\label{class_a_s_e__assignment_1_1_command_processor_a77e249ea02b9355c3f4722501ff8e4cd} 
+\index{ASE\_assignment.CommandProcessor@{ASE\_assignment.CommandProcessor}!PenColor@{PenColor}}
+\index{PenColor@{PenColor}!ASE\_assignment.CommandProcessor@{ASE\_assignment.CommandProcessor}}
+\doxysubsubsection{\texorpdfstring{PenColor()}{PenColor()}}
+{\footnotesize\ttfamily void ASE\+\_\+assignment.\+Command\+Processor.\+Pen\+Color (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_a_s_e__assignment_1_1_command}{Command}}}]{parsed\+Line }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Changes the pen colour based on the parameter colour that was entered. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parsed\+Line} & The parsed line that should contain the pen command followed by one of the available colours\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Argument\+Exception} & Throws an exception if the colour is not available or the parameter is missing\\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_a_s_e__assignment_1_1_command_processor_ac3649982b3c9dd30490071e499df8759}\label{class_a_s_e__assignment_1_1_command_processor_ac3649982b3c9dd30490071e499df8759} 
+\index{ASE\_assignment.CommandProcessor@{ASE\_assignment.CommandProcessor}!Reset@{Reset}}
+\index{Reset@{Reset}!ASE\_assignment.CommandProcessor@{ASE\_assignment.CommandProcessor}}
+\doxysubsubsection{\texorpdfstring{Reset()}{Reset()}}
+{\footnotesize\ttfamily void ASE\+\_\+assignment.\+Command\+Processor.\+Reset (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_a_s_e__assignment_1_1_command}{Command}}}]{parsed\+Line }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Resets the cursor to the 0,0 coordinate. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parsed\+Line} & The parsed line that should contain the reset command\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Argument\+Exception} & Throws an exception when reset is combined with an unexpected parameter\\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_a_s_e__assignment_1_1_command_processor_a0c66d16f946ba5467f1da7546f73d212}\label{class_a_s_e__assignment_1_1_command_processor_a0c66d16f946ba5467f1da7546f73d212} 
+\index{ASE\_assignment.CommandProcessor@{ASE\_assignment.CommandProcessor}!RunLines@{RunLines}}
+\index{RunLines@{RunLines}!ASE\_assignment.CommandProcessor@{ASE\_assignment.CommandProcessor}}
+\doxysubsubsection{\texorpdfstring{RunLines()}{RunLines()}}
+{\footnotesize\ttfamily void ASE\+\_\+assignment.\+Command\+Processor.\+Run\+Lines (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_a_s_e__assignment_1_1_command}{Command}}}]{parsed\+Line }\end{DoxyParamCaption})}
+
+
+
+Maps valid commands from the valid\+Commands dictionary to their corresponding functions. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parsed\+Line} & The parsed line, that contains both a command and the corresponding parameters\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Argument\+Exception} & Throws an exception if the command is not found in the valid\+Command dictionary\\
+\hline
+\end{DoxyExceptions}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Git\+Hub-\/\+Repos/\+ASE-\/assignment/\+ASE-\/assignment/Command\+Processor.\+cs\end{DoxyCompactItemize}

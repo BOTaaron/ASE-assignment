@@ -20,7 +20,7 @@ namespace ASE_assignment
     {
         private Canvass canvass;
         private PenController penController;
-        private RunCommand runCommand;
+        private CommandProcessor runCommand;
         
         /// <summary>
         /// Initialise the form, and create objects required for functionality. Contains event handlers for buttons and set the DrawingPanel image to the combined bitmap 
@@ -31,14 +31,13 @@ namespace ASE_assignment
             InitializeComponent();
             canvass = new Canvass(DrawingPanel.Width, DrawingPanel.Height);
             penController = new PenController(canvass);
-            runCommand = new RunCommand(penController, canvass);
+            runCommand = new CommandProcessor(penController, canvass);
             DrawingPanel.Image = canvass.CombineCanvass();
 
 
             // event handlers for the buttons and text box
             CommandBox.KeyDown += new KeyEventHandler(CommandBox_KeyDown);
-            SyntaxButton.Click += new EventHandler(SyntaxButton_Click);
-            RunButton.Click += new EventHandler(RunButton_Click);
+
              
         }
       
