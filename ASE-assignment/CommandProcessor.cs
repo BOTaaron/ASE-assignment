@@ -40,7 +40,9 @@ namespace ASE_assignment
                 {"triangle", DrawTriangle},
                 {"pen" , PenColor},
                 {"fill", Fill},
-                {"var", Var}
+                {"var", Var},
+                {"if", If},
+                {"endif", EndIf}
                 // further commands can be added by creating methods and adding to the dictionary
             };
         }
@@ -225,6 +227,18 @@ namespace ASE_assignment
             }
 
         }
+        private void If(Command parsedLine)
+        {
+
+            string stringParam = parsedLine.StringParam[0];
+            
+
+        }
+        private void EndIf(Command parsedLine)
+        {
+           
+
+        }
         private void Var(Command parsedLine)
         {
            string stringParam = parsedLine.StringParam[0];
@@ -253,6 +267,7 @@ namespace ASE_assignment
                throw new ArgumentException($"Unknown command entered: {commandName}");
             }
         }
+
     }
 }
 

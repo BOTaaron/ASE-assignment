@@ -87,6 +87,12 @@ namespace ASE_assignment
                     string varExpression = string.Join(" ", line.Skip(1)); // rejoin the string's items after removing var
                     stringParams.Add(varExpression); // add everything after var to stringParams to be evaluated later
                 }
+                else if (line[0] == "if")
+                {
+                    command.Add(line[0]);
+                    string ifExpression = string.Join (" ", line.Skip(1));
+                    stringParams.Add(ifExpression);
+                }
             }
 
             // parsedCommand stores the parsed values and returns them so they can be accessed in the Command class
