@@ -15,10 +15,8 @@ namespace ASE_assignment
     {
         private PenController controller;
         private Canvass canvass;
-
         private delegate void CommandAction(Command parsedLine);
-
-        // Dictionary to map valid commands to their functions
+        private VariableManager variableManager = new VariableManager();
         private Dictionary<string, CommandAction> validCommands;
 
         /// <summary>
@@ -230,6 +228,8 @@ namespace ASE_assignment
         private void Var(Command parsedLine)
         {
            string stringParam = parsedLine.StringParam[0];
+
+            variableManager.DeclareVariable(stringParam);
 
         }
         /// <summary>
