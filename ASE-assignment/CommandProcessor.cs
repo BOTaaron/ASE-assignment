@@ -41,7 +41,8 @@ namespace ASE_assignment
                 {"circle", DrawCircle},
                 {"triangle", DrawTriangle},
                 {"pen" , PenColor},
-                {"fill", Fill}
+                {"fill", Fill},
+                {"var", Var}
                 // further commands can be added by creating methods and adding to the dictionary
             };
         }
@@ -224,6 +225,11 @@ namespace ASE_assignment
             {
                 throw new ArgumentException("Unexpected parameter");
             }
+
+        }
+        private void Var(Command parsedLine)
+        {
+           string stringParam = parsedLine.StringParam[0];
 
         }
         /// <summary>

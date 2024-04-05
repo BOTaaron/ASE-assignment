@@ -12,14 +12,51 @@ namespace ASE_assignment
         private Dictionary<string, object> variables = new Dictionary<string, object>();
         private DataTable dataTable = new DataTable();
 
+        /// <summary>
+        /// Logic for creating a variable and saving it to dictionary along with its value after checking for an expression
+        /// </summary>
+        /// <param name="stringParameter">The parsed string parameter, passed from CommandParser into CommandProcessor</param>
+        /// <exception cref="ArgumentException">Throws exception when variable incorrectly declared</exception>
         public void DeclareVariable(string stringParameter)
         {
+            var parts = stringParameter.Split(new[] {'='}, StringSplitOptions.RemoveEmptyEntries);
+            if (parts.Length != 2)
+            {
+                throw new ArgumentException("Invalid variable declaration");
+            }
+
+            string variableName = parts[0].Trim();
+            string expression = parts[1].Trim();
+
+            object value = EvaluateExpression(expression);
+
+            variables[variableName] = value;
 
         }
-        private void EvaluateExpression(string expression)
+        /// <summary>
+        /// Evaluates expressions on more complex variable declarations, for example completing arithmetic operations
+        /// </summary>
+        /// <param name="expression">The expression part of the variable, taken by splitting the line after the var command</param>
+        /// <returns>The result of the expression within the string</returns>
+        /// <exception cref="ArgumentException">Throws an exception if the exception was unable to be evaluated</exception>
+        private object EvaluateExpression(string expression)
         {
+            try
+            {
+                return dataTable.Compute(expression, string.Empty);
+            }
+            catch
+            {
+                throw new ArgumentException("Expression could not be evaluated");
+            }
             
         }
+        /// <summary>
+        /// Method that publicly returns the variable value
+        /// </summary>
+        /// <param name="name">The name of the variable of which value is needed</param>
+        /// <returns>The value of the provided variable</returns>
+        /// <exception cref="KeyNotFoundException">Exception thrown if the variable was not found, like does not exist or spelled wrong</exception>
         public object GetVariable(string name)
         {
             if (variables.TryGetValue(name, out object value))
