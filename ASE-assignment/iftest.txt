@@ -1,0 +1,7 @@
+1: drawto 100,100
+2: var a = 10
+3: if a < 5
+4: pen green
+5: endif
+6: drawto 200,200
+7: drawto 200,100

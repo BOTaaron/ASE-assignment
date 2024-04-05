@@ -16,18 +16,21 @@ namespace ASE_assignment
         private PenController controller;
         private Canvass canvass;
         private delegate void CommandAction(Command parsedLine);
-        private VariableManager variableManager = new VariableManager();
         private Dictionary<string, CommandAction> validCommands;
-
+        private Conditionals conditionals;
+        private VariableManager variableManager;
         /// <summary>
         /// Initialise a new instance of the CommandProcessor class
         /// </summary>
         /// <param name="controller">The pen controller, that defines how the pen behaves on the canvas</param>
         /// <param name="canvass">The canvas is the bitmap to be drawn on</param>
-        public CommandProcessor(PenController controller, Canvass canvass)
+        public CommandProcessor(PenController controller, Canvass canvass, VariableManager variableManager)
         {
             this.controller = controller;
             this.canvass = canvass;
+            this.variableManager = variableManager;
+            conditionals = new Conditionals(variableManager);
+
 
             validCommands = new Dictionary<string, CommandAction>
             {
@@ -226,19 +229,31 @@ namespace ASE_assignment
                 throw new ArgumentException($"Unexpected parameter. Expected: on/off. Entered: {parsedLine.StringParam[0]}");
             }
 
-        }
+        }/// <summary>
+        /// Calls the If method in the Conditionals class
+        /// </summary>
+        /// <param name="parsedLine">The parsed line of commands, for the string parameters to be passed in</param>
         private void If(Command parsedLine)
         {
 
             string stringParam = parsedLine.StringParam[0];
+            conditionals.If(stringParam);
             
 
         }
+        /// <summary>
+        /// Calls the EndIf method in the Conditionals class
+        /// </summary>
+        /// <param name="parsedLine">The parsed line of commands, for string parameters to be passed in</param>
         private void EndIf(Command parsedLine)
         {
-           
+            conditionals.EndIf();
 
         }
+        /// <summary>
+        /// Calls the DeclareVariable method in the VariableManager class to create a new variable
+        /// </summary>
+        /// <param name="parsedLine"></param>
         private void Var(Command parsedLine)
         {
            string stringParam = parsedLine.StringParam[0];
@@ -259,13 +274,21 @@ namespace ASE_assignment
             string commandName = parsedLine.ParsedCommand[0].ToLower();
             if (validCommands.TryGetValue(commandName, out CommandAction action))
             {
-                ;
-                action.Invoke(parsedLine);
+                if (commandName == "if" || commandName == "endif")
+                {
+                    action.Invoke(parsedLine);
+                }
+                else if (!conditionals.insideConditionalBlock || conditionals.executeBlock)
+                {
+                    action.Invoke(parsedLine);
+                }
+                
             }
             else
             {
-               throw new ArgumentException($"Unknown command entered: {commandName}");
+                throw new ArgumentException($"Unknown command entered: {commandName}");
             }
+
         }
 
     }

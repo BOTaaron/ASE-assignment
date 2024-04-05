@@ -21,6 +21,7 @@ namespace ASE_assignment
         private Canvass canvass;
         private PenController penController;
         private CommandProcessor runCommand;
+        private VariableManager variableManager = new VariableManager();
         int lineNumber = 1;
         
         /// <summary>
@@ -33,9 +34,9 @@ namespace ASE_assignment
             InitializeComponent();
             canvass = new Canvass(DrawingPanel.Width, DrawingPanel.Height);
             penController = new PenController(canvass);
-            runCommand = new CommandProcessor(penController, canvass);
+            runCommand = new CommandProcessor(penController, canvass, variableManager);
             DrawingPanel.Image = canvass.CombineCanvass();
-            VariableManager variableManager = new VariableManager();
+
 
 
             // event handlers for the buttons and text box
@@ -61,6 +62,7 @@ namespace ASE_assignment
             {               
                 if (CommandBox.Text.ToLower().Equals("run"))
                 {
+                    variableManager.ClearVariables();
                     RunMultiLines();
                 }
                 else
@@ -91,6 +93,7 @@ namespace ASE_assignment
         /// </summary>
         private void RunMultiLines()
         {
+            
             
             foreach (Control control in CommandPanel.Controls)
             {
