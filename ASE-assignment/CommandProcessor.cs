@@ -61,7 +61,7 @@ namespace ASE_assignment
                 }
                 else
                 {
-                    throw new ArgumentException("Not enough arguements provided");
+                    throw new ArgumentException("Not enough arguements provided. MoveTo expects coordinates with a comma delimiter.");
                 }
 
         }
@@ -80,7 +80,7 @@ namespace ASE_assignment
             }
             else
             {
-                throw new ArgumentException("Not enough arguements provided");
+                throw new ArgumentException("Not enough arguements provided. DrawTo expects coordinates with a comma delimiter.");
             }
 
         }
@@ -97,7 +97,7 @@ namespace ASE_assignment
             }
             else
             {
-                throw new ArgumentException("Unexpected parameter entered");
+                throw new ArgumentException("Unexpected parameter entered. Clear does not take any parameters.");
             }
 
         }
@@ -114,7 +114,7 @@ namespace ASE_assignment
             }
             else
             {
-                throw new ArgumentException("Unexpected parameter entered");
+                throw new ArgumentException("Unexpected parameter entered. Reset does not take any parameters.");
             }
 
         }
@@ -131,7 +131,7 @@ namespace ASE_assignment
             }
             else
             {
-                throw new ArgumentException("Invalid parameter entered");
+                throw new ArgumentException($"Invalid parameter entered. Valid parameters are two integers with a comma delimiter. Entered: {parsedLine.IntParams[0]},{parsedLine.IntParams[1]}");
             }
 
         }
@@ -148,7 +148,7 @@ namespace ASE_assignment
             }
             else
             {
-                throw new ArgumentException("Invalid parameter entered");
+                throw new ArgumentException($"Invalid parameter entered. Valid parameters are a single integer. Entered: {parsedLine.IntParams[0]}");
             }
         }
         /// <summary>
@@ -164,7 +164,7 @@ namespace ASE_assignment
             }
             else
             {
-                throw new ArgumentException("Invalid parameter entered");
+                throw new ArgumentException($"Invalid parameter entered. Valid parameters are a single integer. Entered: {parsedLine.IntParams[0]}");
             }
 
         }
@@ -194,7 +194,7 @@ namespace ASE_assignment
                         colour = Color.Black;
                         break;
                     default:
-                        throw new ArgumentException("Invalid colour");
+                        throw new ArgumentException($"Invalid colour. Available: red, blue, green, black. Entered: {parsedLine.StringParam[0]}");
                 }
                 controller.PenColour(colour);
             }
@@ -221,7 +221,7 @@ namespace ASE_assignment
             }
             else
             {
-                throw new ArgumentException("Unexpected parameter");
+                throw new ArgumentException($"Unexpected parameter. Expected: on/off. Entered: {parsedLine.StringParam[0]}");
             }
 
         }
@@ -245,6 +245,7 @@ namespace ASE_assignment
             string commandName = parsedLine.ParsedCommand[0].ToLower();
             if (validCommands.TryGetValue(commandName, out CommandAction action))
             {
+                ;
                 action.Invoke(parsedLine);
             }
             else

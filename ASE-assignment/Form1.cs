@@ -21,6 +21,7 @@ namespace ASE_assignment
         private Canvass canvass;
         private PenController penController;
         private CommandProcessor runCommand;
+        int lineNumber = 1;
         
         /// <summary>
         /// Initialise the form, and create objects required for functionality. Contains event handlers for buttons and set the DrawingPanel image to the combined bitmap 
@@ -33,6 +34,7 @@ namespace ASE_assignment
             penController = new PenController(canvass);
             runCommand = new CommandProcessor(penController, canvass);
             DrawingPanel.Image = canvass.CombineCanvass();
+            VariableManager variableManager = new VariableManager();
 
 
             // event handlers for the buttons and text box
@@ -88,6 +90,7 @@ namespace ASE_assignment
         /// </summary>
         private void RunMultiLines()
         {
+            
             foreach (Control control in CommandPanel.Controls)
             {
                 if (control is Label label)
@@ -100,17 +103,6 @@ namespace ASE_assignment
             DrawingPanel.Refresh();
             CommandBox.Clear();
         }
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void SyntaxButton_Click(object sender, EventArgs e)
-        {
-            // checks syntax is valid when the 'Syntax' button is clicked           
-            CommandBox.Clear();
-        }
-
 
         /// <summary>
         /// Checks that commands are not clearing or infinitely running the program.
@@ -120,12 +112,13 @@ namespace ASE_assignment
         private void DisplayInput(string line)
         {
             if (!line.Equals("clear") && !line.Equals("run") && !line.Equals("reset"))
-            { 
-            Label inputLabel = new Label();
-            inputLabel.Text = line;
-            CommandPanel.Controls.Add(inputLabel);
-            inputLabel.Width = CommandPanel.Width;
-            inputLabel.Location = new Point(0, CommandPanel.Controls.Count * inputLabel.Height);                
+            {              
+                Label inputLabel = new Label();
+                inputLabel.Text = $"{lineNumber}: {line}";
+                CommandPanel.Controls.Add(inputLabel);
+                inputLabel.Width = CommandPanel.Width;
+                inputLabel.Location = new Point(0, CommandPanel.Controls.Count * inputLabel.Height);
+                lineNumber++;
             }
         }
         /// <summary>
@@ -200,6 +193,44 @@ namespace ASE_assignment
                 }
             }
          }
+        /// <summary>
+        /// Event handler for the syntax button. Loops through user's code without affecting the bitmap, outputting any exceptions to the panel
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void SyntaxButton_Click(object sender, EventArgs e)
+        {
+            // checks syntax is valid when the 'Syntax' button is clicked
+            int lineCounter = 0;
+            foreach (Control control in CommandPanel.Controls)
+            {
+                lineCounter++;
+                try
+                {
+                    if (control is Label label)
+                    {
+                        var parsedLines = parse.ParseLine(label.Text);
+                        runCommand.RunLines(parsedLines);
+                    }
+                }
+                catch (Exception ex)
+                {
+                    ErrorLog(ex.Message, lineCounter);
+                }
+
+
+            }
+            CommandBox.Clear();
+        }
+        /// <summary>
+        /// Outputs an error message to the rich text box displaying any errors when the user clicks the syntax button
+        /// </summary>
+        /// <param name="message">The error message to show to the user</param>
+        /// <param name="lineNumber">The line number that the error occured</param>
+        private void ErrorLog(string message, int lineNumber)
+        {
+            ErrorBox.AppendText($"Error on line {lineNumber}: {message}\n");
+        }
 
         private void Form1_Load(object sender, EventArgs e)
         {

@@ -22,9 +22,10 @@ namespace ASE_assignment
         /// <exception cref="InvalidOperationException"></exception>
         /// <exception cref="FormatException"></exception>
         public Command ParseLine(string userInput)
-        {  
+        {
             // split user input into an array of strings divided by spaces
-            string[] line = userInput.Trim().ToLower().Split(' ');
+            string removedLineNumberInput = userInput.Substring(userInput.IndexOf(':') + 1).Trim();
+            string[] line = removedLineNumberInput.Trim().ToLower().Split(' ');
 
            
             // initialise a list to store each part of the line of user input depending on the format of the parameter

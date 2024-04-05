@@ -35,6 +35,7 @@
             this.DrawingPanel = new System.Windows.Forms.PictureBox();
             this.OpenButton = new System.Windows.Forms.Button();
             this.SaveButton = new System.Windows.Forms.Button();
+            this.ErrorBox = new System.Windows.Forms.RichTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.DrawingPanel)).BeginInit();
             this.SuspendLayout();
             // 
@@ -42,7 +43,7 @@
             // 
             this.SyntaxButton.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.SyntaxButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.SyntaxButton.Location = new System.Drawing.Point(384, 848);
+            this.SyntaxButton.Location = new System.Drawing.Point(473, 848);
             this.SyntaxButton.Name = "SyntaxButton";
             this.SyntaxButton.Size = new System.Drawing.Size(256, 45);
             this.SyntaxButton.TabIndex = 0;
@@ -52,7 +53,7 @@
             // 
             // RunButton
             // 
-            this.RunButton.Location = new System.Drawing.Point(69, 848);
+            this.RunButton.Location = new System.Drawing.Point(41, 848);
             this.RunButton.Name = "RunButton";
             this.RunButton.Size = new System.Drawing.Size(233, 45);
             this.RunButton.TabIndex = 1;
@@ -63,9 +64,9 @@
             // CommandBox
             // 
             this.CommandBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CommandBox.Location = new System.Drawing.Point(69, 757);
+            this.CommandBox.Location = new System.Drawing.Point(41, 757);
             this.CommandBox.Name = "CommandBox";
-            this.CommandBox.Size = new System.Drawing.Size(571, 29);
+            this.CommandBox.Size = new System.Drawing.Size(688, 29);
             this.CommandBox.TabIndex = 2;
             this.CommandBox.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
@@ -74,13 +75,13 @@
             this.CommandPanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.CommandPanel.Location = new System.Drawing.Point(41, 39);
             this.CommandPanel.Name = "CommandPanel";
-            this.CommandPanel.Size = new System.Drawing.Size(599, 538);
+            this.CommandPanel.Size = new System.Drawing.Size(688, 640);
             this.CommandPanel.TabIndex = 5;
             // 
             // DrawingPanel
             // 
             this.DrawingPanel.BackColor = System.Drawing.Color.Gray;
-            this.DrawingPanel.Location = new System.Drawing.Point(715, 39);
+            this.DrawingPanel.Location = new System.Drawing.Point(780, 39);
             this.DrawingPanel.Name = "DrawingPanel";
             this.DrawingPanel.Size = new System.Drawing.Size(784, 640);
             this.DrawingPanel.TabIndex = 6;
@@ -88,7 +89,7 @@
             // 
             // OpenButton
             // 
-            this.OpenButton.Location = new System.Drawing.Point(715, 848);
+            this.OpenButton.Location = new System.Drawing.Point(887, 848);
             this.OpenButton.Name = "OpenButton";
             this.OpenButton.Size = new System.Drawing.Size(256, 45);
             this.OpenButton.TabIndex = 8;
@@ -98,7 +99,7 @@
             // 
             // SaveButton
             // 
-            this.SaveButton.Location = new System.Drawing.Point(1052, 848);
+            this.SaveButton.Location = new System.Drawing.Point(1308, 848);
             this.SaveButton.Name = "SaveButton";
             this.SaveButton.Size = new System.Drawing.Size(256, 45);
             this.SaveButton.TabIndex = 9;
@@ -106,11 +107,23 @@
             this.SaveButton.UseVisualStyleBackColor = true;
             this.SaveButton.Click += new System.EventHandler(this.SaveButton_Click);
             // 
+            // ErrorBox
+            // 
+            this.ErrorBox.BackColor = System.Drawing.Color.Snow;
+            this.ErrorBox.ForeColor = System.Drawing.Color.IndianRed;
+            this.ErrorBox.Location = new System.Drawing.Point(41, 1005);
+            this.ErrorBox.Name = "ErrorBox";
+            this.ErrorBox.ReadOnly = true;
+            this.ErrorBox.Size = new System.Drawing.Size(1523, 179);
+            this.ErrorBox.TabIndex = 10;
+            this.ErrorBox.Text = "";
+            // 
             // Form1
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.SystemColors.Window;
-            this.ClientSize = new System.Drawing.Size(1593, 986);
+            this.ClientSize = new System.Drawing.Size(1593, 1235);
+            this.Controls.Add(this.ErrorBox);
             this.Controls.Add(this.SaveButton);
             this.Controls.Add(this.OpenButton);
             this.Controls.Add(this.DrawingPanel);
@@ -137,6 +150,7 @@
         private System.Windows.Forms.PictureBox DrawingPanel;
         private System.Windows.Forms.Button OpenButton;
         private System.Windows.Forms.Button SaveButton;
+        private System.Windows.Forms.RichTextBox ErrorBox;
     }
 }
 

@@ -52,7 +52,7 @@ namespace ASE_assignment
             }
             catch
             {
-                throw new ArgumentException("Expression could not be evaluated");
+                throw new ArgumentException($"Expression could not be evaluated. Check that the expression was correctly entered: {expression}");
             }
             
         }
@@ -72,6 +72,13 @@ namespace ASE_assignment
             {
                 throw new KeyNotFoundException($"Variable '{name}' is not declared");
             }
+        }
+        /// <summary>
+        /// Clears stored variables from the dictionary to prevent duplicates when running the code twice
+        /// </summary>
+        public void ClearVariables()
+        {
+            variables.Clear();
         }
     }
 }
