@@ -80,8 +80,12 @@ namespace ASE_assignment
             }
             else if ( line.Length > 2 ) 
             {
-                // command is too long, throw an exception. Can be modified later if processing more complex user inputs
-                throw new InvalidOperationException("Too many parameters entered");
+                if (line[0] == "var")
+                {
+                    command.Add(line[0]); // add 'var' as the command
+                    string varExpression = string.Join(" ", line.Skip(1)); // rejoin the string's items after removing var
+                    stringParams.Add(varExpression); // add everything after var to stringParams to be evaluated later
+                }
             }
 
             // parsedCommand stores the parsed values and returns them so they can be accessed in the Command class
