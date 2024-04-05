@@ -63,6 +63,7 @@
             // 
             // CommandBox
             // 
+            this.CommandBox.BackColor = System.Drawing.SystemColors.ControlDark;
             this.CommandBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CommandBox.Location = new System.Drawing.Point(41, 757);
             this.CommandBox.Name = "CommandBox";
@@ -72,7 +73,7 @@
             // 
             // CommandPanel
             // 
-            this.CommandPanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.CommandPanel.BackColor = System.Drawing.SystemColors.ControlDark;
             this.CommandPanel.Location = new System.Drawing.Point(41, 39);
             this.CommandPanel.Name = "CommandPanel";
             this.CommandPanel.Size = new System.Drawing.Size(688, 640);
@@ -109,7 +110,7 @@
             // 
             // ErrorBox
             // 
-            this.ErrorBox.BackColor = System.Drawing.Color.Snow;
+            this.ErrorBox.BackColor = System.Drawing.Color.PowderBlue;
             this.ErrorBox.ForeColor = System.Drawing.Color.IndianRed;
             this.ErrorBox.Location = new System.Drawing.Point(41, 1005);
             this.ErrorBox.Name = "ErrorBox";
@@ -122,6 +123,7 @@
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.SystemColors.Window;
+            this.BackgroundImage = global::ASE_assignment.Properties.Resources.Circuit_Board;
             this.ClientSize = new System.Drawing.Size(1593, 1235);
             this.Controls.Add(this.ErrorBox);
             this.Controls.Add(this.SaveButton);

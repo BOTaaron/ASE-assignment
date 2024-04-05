@@ -28,7 +28,8 @@ namespace ASE_assignment
         /// </summary>
         public Form1()
         {
-            
+            // background image generated at https://bgjar.com/circuit-board
+
             InitializeComponent();
             canvass = new Canvass(DrawingPanel.Width, DrawingPanel.Height);
             penController = new PenController(canvass);
@@ -118,6 +119,9 @@ namespace ASE_assignment
                 CommandPanel.Controls.Add(inputLabel);
                 inputLabel.Width = CommandPanel.Width;
                 inputLabel.Location = new Point(0, CommandPanel.Controls.Count * inputLabel.Height);
+
+                // set font size pretty high to fit high resolution monitor
+                inputLabel.Font = new Font("Consolas", 16, FontStyle.Regular);
                 lineNumber++;
             }
         }
