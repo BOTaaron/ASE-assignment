@@ -15,6 +15,7 @@ namespace ASE_assignment
     {
         private VariableManager variableManager;
         private DataTable dataTable = new DataTable();
+        private Stack<bool> executionStack = new Stack<bool>();
         // variables to state whether execution is currently inside a conditional block, defaulting to false
         public bool insideConditionalBlock { get; private set; } = false;
         public bool executeBlock { get; private set; } = false;
@@ -27,6 +28,9 @@ namespace ASE_assignment
         {
             this.variableManager = variableManager;
         }
+        // comment todo
+        public bool IsExecutionAllowed => executionStack.All(x => x);
+
         /// <summary>
         /// Removes operators from the string and split at spaces. Uses the DataTable.Compute method to evaluate condition string as a mathematical expression.
         /// Evaluated to a boolean and stored in insideConditionalBlock. 
@@ -37,7 +41,6 @@ namespace ASE_assignment
         {
 
             var parts = condition.Split(new[] { ' ', '+', '-', '*', '/', '<', '>', '=', '!' }, StringSplitOptions.RemoveEmptyEntries);
-
             foreach (var part in parts)
             {
                 try
@@ -48,7 +51,7 @@ namespace ASE_assignment
                 }
                 catch (KeyNotFoundException)
                 {
-
+                    //
                 }
             }
             try
@@ -60,14 +63,20 @@ namespace ASE_assignment
             {
                 throw new ArgumentException("Failed to evaluate the condition: " + ex.Message, ex);
 
-            }           
+            }
+            executionStack.Push(executeBlock);
         }
         /// <summary>
         /// Sets the insideConditionBlock flag to false to tell the program the if statement is finished and can continue normal execution
         /// </summary>
         public void EndIf()
         {
-            insideConditionalBlock = false;           
+            if (executionStack.Count > 0)
+            {
+                insideConditionalBlock = false;
+                executionStack.Pop();
+            }
+                    
         }
     }
 

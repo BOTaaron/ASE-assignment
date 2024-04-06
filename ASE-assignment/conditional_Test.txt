@@ -1,0 +1,17 @@
+1: var a = 10
+2: var b = 20
+3: if a < b
+4:     drawto a,b
+5:     var c = 30
+6:     if c < 20
+7:         drawto 100,100
+8:         fill on
+9:         circle 40
+10:     endif
+11:     drawto 400,200
+12:     fill off
+13:     rectangle a,b
+14: endif
+15: pen blue
+16: moveto 500,500
+17: triangle 45
