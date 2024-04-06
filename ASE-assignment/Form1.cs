@@ -22,7 +22,8 @@ namespace ASE_assignment
         private PenController penController;
         private CommandProcessor runCommand;
         private VariableManager variableManager = new VariableManager();
-        int lineNumber = 1;
+        private int lineNumber = 1;
+        private int indentationLevel = 0;
         
         /// <summary>
         /// Initialise the form, and create objects required for functionality. Contains event handlers for buttons and set the DrawingPanel image to the combined bitmap 
@@ -115,10 +116,16 @@ namespace ASE_assignment
         /// <param name="line">Text entered by the user into the TextBox when the Enter/Return key is pressed</param>
         private void DisplayInput(string line)
         {
+            if (line.Trim().StartsWith("endif") && indentationLevel > 0)
+            {
+                indentationLevel--;
+            }
+            // indents with 4 spaces for each level of indentation
+            string indentation = new string(' ', indentationLevel * 4);
             if (!line.Equals("clear") && !line.Equals("run") && !line.Equals("reset"))
             {              
                 Label inputLabel = new Label();
-                inputLabel.Text = $"{lineNumber}: {line}";
+                inputLabel.Text = $"{lineNumber}: {indentation}{line}";
                 CommandPanel.Controls.Add(inputLabel);
                 inputLabel.Width = CommandPanel.Width;
                 inputLabel.Location = new Point(0, CommandPanel.Controls.Count * inputLabel.Height);
@@ -126,6 +133,10 @@ namespace ASE_assignment
                 // set font size pretty high to fit high resolution monitor
                 inputLabel.Font = new Font("Consolas", 16, FontStyle.Regular);
                 lineNumber++;
+            }
+            if (line.Trim().StartsWith("if"))
+            {
+                indentationLevel++;
             }
         }
         /// <summary>
