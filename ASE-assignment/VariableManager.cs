@@ -33,7 +33,20 @@ namespace ASE_assignment
                 throw new ArgumentException($"Variable '{variableName}' already exists");
             }
 
-            object value = EvaluateExpression(expression);
+            foreach (var variable in variables)
+            {
+                expression = expression.Replace(variable.Key, variable.Value.ToString());
+            }
+
+            object value;
+            try
+            {
+                value = dataTable.Compute(expression, string.Empty);
+            }
+            catch
+            {
+                throw new ArgumentException("Expression could not be evaluated");
+            }
 
             variables[variableName] = value;
 

@@ -31,6 +31,7 @@ namespace ASE_assignment
         public Form1()
         {
             // background image generated at https://bgjar.com/circuit-board
+            // button images generates at https://bggenerator.com/
 
             InitializeComponent();
             canvass = new Canvass(DrawingPanel.Width, DrawingPanel.Height);
@@ -203,8 +204,10 @@ namespace ASE_assignment
                         {
                             Text = line,
                             AutoSize = true,
-                            Location = new Point(0, position)
-                        };
+                            Location = new Point(0, position),
+                            Font = new Font("Consolas", 16, FontStyle.Regular)
+
+                    };
                         CommandPanel.Controls.Add(label);
                         position += label.Height;
                     }
@@ -220,6 +223,7 @@ namespace ASE_assignment
         {
             // checks syntax is valid when the 'Syntax' button is clicked
             int lineCounter = 0;
+            variableManager.ClearVariables();
             foreach (Control control in CommandPanel.Controls)
             {
                 lineCounter++;
@@ -255,6 +259,16 @@ namespace ASE_assignment
             // adds a scroll bar if the text exceeds the height of the panel
             CommandPanel.AutoScroll = true;
         }
+        /// <summary>
+        /// Reset the program without needing to restart
+        /// </summary>
+        private void ClearAll()
+        {
+            CommandPanel.Controls.Clear();
+            variableManager.ClearVariables();
+            indentationLevel = 0;
+            lineNumber = 1;
+        }
 
 
 
@@ -263,6 +277,11 @@ namespace ASE_assignment
 
 
             
+        }
+
+        private void RestartButton_Click(object sender, EventArgs e)
+        {
+            ClearAll();
         }
     }
 }

@@ -95,5 +95,20 @@
   <ItemGroup>
     <None Include="Resources\Circuit Board.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button5.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

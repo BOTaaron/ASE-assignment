@@ -1,0 +1,5 @@
+1: var count = 10
+2: var size = count * 10
+3: moveto 100,100
+4: fill on
+5: circle size

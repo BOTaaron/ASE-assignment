@@ -36,13 +36,16 @@
             this.OpenButton = new System.Windows.Forms.Button();
             this.SaveButton = new System.Windows.Forms.Button();
             this.ErrorBox = new System.Windows.Forms.RichTextBox();
+            this.RestartButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.DrawingPanel)).BeginInit();
             this.SuspendLayout();
             // 
             // SyntaxButton
             // 
             this.SyntaxButton.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.SyntaxButton.BackgroundImage = global::ASE_assignment.Properties.Resources.button2;
             this.SyntaxButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.SyntaxButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SyntaxButton.Location = new System.Drawing.Point(473, 848);
             this.SyntaxButton.Name = "SyntaxButton";
             this.SyntaxButton.Size = new System.Drawing.Size(256, 45);
@@ -53,6 +56,8 @@
             // 
             // RunButton
             // 
+            this.RunButton.BackgroundImage = global::ASE_assignment.Properties.Resources.button1;
+            this.RunButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RunButton.Location = new System.Drawing.Point(41, 848);
             this.RunButton.Name = "RunButton";
             this.RunButton.Size = new System.Drawing.Size(233, 45);
@@ -90,6 +95,8 @@
             // 
             // OpenButton
             // 
+            this.OpenButton.BackgroundImage = global::ASE_assignment.Properties.Resources.button3;
+            this.OpenButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.OpenButton.Location = new System.Drawing.Point(887, 848);
             this.OpenButton.Name = "OpenButton";
             this.OpenButton.Size = new System.Drawing.Size(256, 45);
@@ -100,6 +107,8 @@
             // 
             // SaveButton
             // 
+            this.SaveButton.BackgroundImage = global::ASE_assignment.Properties.Resources.button4;
+            this.SaveButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SaveButton.Location = new System.Drawing.Point(1308, 848);
             this.SaveButton.Name = "SaveButton";
             this.SaveButton.Size = new System.Drawing.Size(256, 45);
@@ -119,12 +128,25 @@
             this.ErrorBox.TabIndex = 10;
             this.ErrorBox.Text = "";
             // 
+            // RestartButton
+            // 
+            this.RestartButton.BackgroundImage = global::ASE_assignment.Properties.Resources.button5;
+            this.RestartButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RestartButton.Location = new System.Drawing.Point(1308, 745);
+            this.RestartButton.Name = "RestartButton";
+            this.RestartButton.Size = new System.Drawing.Size(256, 45);
+            this.RestartButton.TabIndex = 11;
+            this.RestartButton.Text = "Restart";
+            this.RestartButton.UseVisualStyleBackColor = true;
+            this.RestartButton.Click += new System.EventHandler(this.RestartButton_Click);
+            // 
             // Form1
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.SystemColors.Window;
             this.BackgroundImage = global::ASE_assignment.Properties.Resources.Circuit_Board;
             this.ClientSize = new System.Drawing.Size(1593, 1235);
+            this.Controls.Add(this.RestartButton);
             this.Controls.Add(this.ErrorBox);
             this.Controls.Add(this.SaveButton);
             this.Controls.Add(this.OpenButton);
@@ -153,6 +175,7 @@
         private System.Windows.Forms.Button OpenButton;
         private System.Windows.Forms.Button SaveButton;
         private System.Windows.Forms.RichTextBox ErrorBox;
+        private System.Windows.Forms.Button RestartButton;
     }
 }
 
