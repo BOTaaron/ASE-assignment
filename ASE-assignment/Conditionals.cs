@@ -28,7 +28,8 @@ namespace ASE_assignment
         {
             this.variableManager = variableManager;
         }
-        // comment todo
+        // checks whether any if statements in the stack evaluated to false, and returns false. 
+        // if all statements are true, returns true
         public bool IsExecutionAllowed => executionStack.All(x => x);
 
         /// <summary>
@@ -39,19 +40,19 @@ namespace ASE_assignment
         /// <exception cref="ArgumentException">if the condition cannot be evaluated an exception will be thrown</exception>
         public void If(string condition)
         {
-
+            // split expression into parts and loop through to see if it corresponds to variable
             var parts = condition.Split(new[] { ' ', '+', '-', '*', '/', '<', '>', '=', '!' }, StringSplitOptions.RemoveEmptyEntries);
             foreach (var part in parts)
             {
                 try
                 {
-                    // c
+                    
                     object value = variableManager.GetVariable(part);
                     condition = condition.Replace(part, value.ToString());
                 }
                 catch (KeyNotFoundException)
                 {
-                    //
+                    throw new Exception("Unable to evaluate");
                 }
             }
             try
