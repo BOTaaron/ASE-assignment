@@ -19,7 +19,9 @@ namespace ASE_Assignment_Tests
                 Canvass testBitmap = new Canvass(100, 100);
                 PenController controller = new PenController(testBitmap);
                 CommandParser parse = new CommandParser();
-                CommandProcessor runCommand = new CommandProcessor(controller, testBitmap);
+                VariableManager variableManager = new VariableManager();
+                CommandProcessor runCommand = new CommandProcessor(controller, testBitmap, variableManager);
+            
 
                 // Assert
                 var parsedLine = parse.ParseLine("circle 50,50");
@@ -38,7 +40,8 @@ namespace ASE_Assignment_Tests
             Canvass testBitmap = new Canvass(100, 100);
             PenController controller = new PenController(testBitmap);
             CommandParser parse = new CommandParser();
-            CommandProcessor runCommand = new CommandProcessor(controller, testBitmap);
+            VariableManager variableManager = new VariableManager();
+            CommandProcessor runCommand = new CommandProcessor(controller, testBitmap, variableManager);
 
             // Assert
             var parsedLine = parse.ParseLine("rectangle 50,50,100,100");
@@ -57,7 +60,8 @@ namespace ASE_Assignment_Tests
             Canvass testBitmap = new Canvass(100, 100);
             PenController controller = new PenController(testBitmap);
             CommandParser parse = new CommandParser();
-            CommandProcessor runCommand = new CommandProcessor(controller, testBitmap);
+            VariableManager variableManager = new VariableManager();
+            CommandProcessor runCommand = new CommandProcessor(controller, testBitmap, variableManager);
 
             // Assert
             var parsedLine = parse.ParseLine("triangle 30,30,30");

@@ -17,19 +17,6 @@ namespace ASE_Assignment_Tests
             Assert.Throws<InvalidOperationException>(() => parse.ParseLine(commandLine));
         }
         /// <summary>
-        /// Test to ensure the parser correctly handles invalid parameter data types
-        /// </summary>
-        [Fact]
-        public void ParseLine_InvalidParamaterType()
-        {
-            // Arrange
-            ASE_assignment.CommandParser parser = new();
-            string commandLine = "moveto ten,ten";
-
-            // Act and assert
-            Assert.Throws<FormatException>(() => parser.ParseLine(commandLine));
-        }
-        /// <summary>
         /// Test to ensure that the parser correctly parses a valid command
         /// </summary>
         [Fact]

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Drawing;
+using System.Drawing.Design;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -130,9 +131,16 @@ namespace ASE_assignment
         /// <exception cref="ArgumentException">Throws an exception if the parameters contain anything aside from two integers</exception>
         private void DrawRectangle(Command parsedLine) 
         {
-            if (parsedLine.IntParams.Count == 2 && parsedLine.StringParam.Count == 0)
+            if (parsedLine.IntParams.Count == 2)
             {
                 controller.DrawShape(new Rectangle(parsedLine.IntParams[0], parsedLine.IntParams[1]));
+            }
+            else if (parsedLine.StringParam.Count >= 1)
+            {
+                // checks if there is a string parameter and tries to resolve it to its variable parameter
+                int x = ResolveParam(parsedLine.StringParam.Count > 0 ? parsedLine.StringParam[0] : null);
+                int y = ResolveParam(parsedLine.StringParam.Count > 1 ? parsedLine.StringParam[1] : parsedLine.IntParams.Count > 0 ? parsedLine.IntParams[0].ToString() : null);
+                controller.DrawShape(new Rectangle(x, y));
             }
             else
             {
@@ -151,6 +159,28 @@ namespace ASE_assignment
             {
                 controller.DrawShape(new Circle(parsedLine.IntParams[0]));
             }
+            else if (parsedLine.StringParam.Count == 1)               
+            {
+                string variable = parsedLine.StringParam[0];
+                try
+                {
+                    // if the parameter is a string, check if it matches to a variable and throw exception if not
+                    object variableValue = variableManager.GetVariable(variable);
+                    if (variableValue is int intValue)
+                    {
+                        controller.DrawShape(new Circle(intValue));
+                    }
+                    else
+                    {
+                        throw new ArgumentException($"Variable '{variable}' is not a single integer value");
+                    }
+                }
+                catch (KeyNotFoundException)
+                {
+                    throw new ArgumentException($"Variable '{variable}' was not found");
+                }
+
+            }
             else
             {
                 throw new ArgumentException($"Invalid parameter entered. Valid parameters are a single integer. Entered: {parsedLine.IntParams[0]}");
@@ -166,6 +196,28 @@ namespace ASE_assignment
             if (parsedLine.ParsedCommand.Count == 1 && parsedLine.IntParams.Count == 1)
             {
                 controller.DrawShape(new Triangle(parsedLine.IntParams[0]));
+            }
+            else if (parsedLine.StringParam.Count == 1)
+            {
+                // if the parameter for the triangle is a string, check if it matches a variable and throw an exception if not
+                string variable = parsedLine.StringParam[0];
+                try
+                {
+                    object variableValue = variableManager.GetVariable(variable);
+                    if (variableValue is int intValue)
+                    {
+                        controller.DrawShape(new Circle(intValue));
+                    }
+                    else
+                    {
+                        throw new ArgumentException($"Variable '{variable}' is not a single integer value");
+                    }
+                }
+                catch (KeyNotFoundException)
+                {
+                    throw new ArgumentException($"Variable '{variable}' was not found");
+                }
+
             }
             else
             {
@@ -281,14 +333,47 @@ namespace ASE_assignment
                 else if (!conditionals.insideConditionalBlock || conditionals.executeBlock)
                 {
                     action.Invoke(parsedLine);
-                }
-                
+                }            
             }
             else
             {
                 throw new ArgumentException($"Unknown command entered: {commandName}");
             }
 
+        }
+        /// <summary>
+        /// Resolves parameters entered into a command to a variable, eg. when using DrawTo a,100 will match a to the correct value
+        /// </summary>
+        /// <param name="parameter">The parameters following the command</param>
+        /// <returns>An integer value matched to the variable used in parameter</returns>
+        /// <exception cref="ArgumentException">Throws exception if the incorrect format of parameter is given</exception>
+        private int ResolveParam(string parameter)
+        {
+            if (parameter == null)
+            {
+                throw new ArgumentException("Parameter cannot be null");
+            }
+
+            if (int.TryParse(parameter, out int param))
+            {
+                return param;
+            }
+            try
+            {
+                object value = variableManager.GetVariable(parameter);
+                if (value is int variableValue)
+                {
+                    return variableValue;
+                }
+                else
+                {
+                    throw new ArgumentException($"Variable '{parameter}' is not an integer");
+                }
+            }
+            catch (KeyNotFoundException)
+            {
+                throw new ArgumentException($"Parameter '{parameter}' is not the correct format");
+            }
         }
 
     }

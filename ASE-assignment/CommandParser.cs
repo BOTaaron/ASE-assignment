@@ -23,8 +23,10 @@ namespace ASE_assignment
         /// <exception cref="FormatException"></exception>
         public Command ParseLine(string userInput)
         {
-            // split user input into an array of strings divided by spaces
+
+            // removes the line number prefix before parsing each line
             string removedLineNumberInput = userInput.Substring(userInput.IndexOf(':') + 1).Trim();
+            // split user input into an array of strings divided by spaces
             string[] line = removedLineNumberInput.Trim().ToLower().Split(' ');
 
            
@@ -62,11 +64,11 @@ namespace ASE_assignment
                         }
                         else
                         {
-                            throw new FormatException($"Invalid format of '{param}'");
+                            stringParams.Add(param);
                         }
                     }
                     
-                } 
+                }
                 else if (int.TryParse(line[1], out int param))
                 {
                     // statement returns true and runs if parameter is a number, and then gets added to intParams list
@@ -81,18 +83,19 @@ namespace ASE_assignment
             }
             else if ( line.Length > 2 ) 
             {
-                if (line[0] == "var")
+                bool invalidIntegerParams = line.Skip(1) // Skip the command itself
+                    .Any(param => int.TryParse(param, out _)); // Check if any parameter is an integer
+                if (line[0] == "var" || line[0] == "if")
                 {
-                    command.Add(line[0]); // add 'var' as the command
-                    string varExpression = string.Join(" ", line.Skip(1)); // rejoin the string's items after removing var
-                    stringParams.Add(varExpression); // add everything after var to stringParams to be evaluated later
+                    command.Add(line[0]); // add 'var' or 'if' as the command
+                    string expression = string.Join(" ", line.Skip(1)); // rejoin the string's items after removing the command
+                    stringParams.Add(expression); // add everything after var to stringParams to be evaluated later
                 }
-                else if (line[0] == "if")
+                else if (invalidIntegerParams)
                 {
-                    command.Add(line[0]);
-                    string ifExpression = string.Join (" ", line.Skip(1));
-                    stringParams.Add(ifExpression);
+                    throw new InvalidOperationException("Invalid parameter format");
                 }
+                
             }
 
             // parsedCommand stores the parsed values and returns them so they can be accessed in the Command class
