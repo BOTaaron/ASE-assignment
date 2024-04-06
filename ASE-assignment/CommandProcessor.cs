@@ -65,7 +65,14 @@ namespace ASE_assignment
                     int y = parsedLine.IntParams[1];
                     controller.PositionPen(x, y);
                 }
-                else
+            else if (parsedLine.StringParam.Count >= 1)
+            {
+                // checks if there is a string parameter and tries to resolve it to its variable parameter
+                int x = ResolveParam(parsedLine.StringParam.Count > 0 ? parsedLine.StringParam[0] : null);
+                int y = ResolveParam(parsedLine.StringParam.Count > 1 ? parsedLine.StringParam[1] : parsedLine.IntParams.Count > 0 ? parsedLine.IntParams[0].ToString() : null);
+                controller.PositionPen(x, y);
+            }
+            else
                 {
                     throw new ArgumentException("Not enough arguements provided. MoveTo expects coordinates with a comma delimiter.");
                 }
@@ -82,6 +89,13 @@ namespace ASE_assignment
             {
                 int x = parsedLine.IntParams[0];
                 int y = parsedLine.IntParams[1];
+                controller.PenDraw(x, y);
+            }
+            else if (parsedLine.StringParam.Count >= 1)
+            {
+                // checks if there is a string parameter and tries to resolve it to its variable parameter
+                int x = ResolveParam(parsedLine.StringParam.Count > 0 ? parsedLine.StringParam[0] : null);
+                int y = ResolveParam(parsedLine.StringParam.Count > 1 ? parsedLine.StringParam[1] : parsedLine.IntParams.Count > 0 ? parsedLine.IntParams[0].ToString() : null);
                 controller.PenDraw(x, y);
             }
             else
