@@ -49,6 +49,7 @@
     <Compile Include="Canvass.cs" />
     <Compile Include="Circle.cs" />
     <Compile Include="Conditionals.cs" />
+    <Compile Include="Loops.cs" />
     <Compile Include="PenController.cs" />
     <Compile Include="Command.cs" />
     <Compile Include="CommandParser.cs" />

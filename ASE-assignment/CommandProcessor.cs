@@ -20,6 +20,7 @@ namespace ASE_assignment
         private Dictionary<string, CommandAction> validCommands;
         private Conditionals conditionals;
         private VariableManager variableManager;
+        
         /// <summary>
         /// Initialise a new instance of the CommandProcessor class
         /// </summary>
@@ -31,6 +32,7 @@ namespace ASE_assignment
             this.canvass = canvass;
             this.variableManager = variableManager;
             conditionals = new Conditionals(variableManager);
+            Loops loop = new Loops(variableManager);
 
 
             validCommands = new Dictionary<string, CommandAction>
@@ -46,7 +48,8 @@ namespace ASE_assignment
                 {"fill", Fill},
                 {"var", Var},
                 {"if", If},
-                {"endif", EndIf}
+                {"endif", EndIf},
+                {"while", While}
                 // further commands can be added by creating methods and adding to the dictionary
             };
         }
@@ -388,6 +391,10 @@ namespace ASE_assignment
             {
                 throw new ArgumentException($"Parameter '{parameter}' is not the correct format");
             }
+        }
+        public void While(string parameter)
+        {
+
         }
 
     }
