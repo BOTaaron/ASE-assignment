@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
-  <compounddef id="namespace_system_1_1_data" kind="namespace" language="C#">
-    <compoundname>System::Data</compoundname>
+  <compounddef id="namespace_system_1_1_drawing_1_1_design" kind="namespace" language="C#">
+    <compoundname>System::Drawing::Design</compoundname>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Conditionals.cs" line="3" column="18"/>
+    <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/CommandProcessor.cs" line="4" column="28"/>
   </compounddef>
 </doxygen>

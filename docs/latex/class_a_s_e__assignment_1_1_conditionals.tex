@@ -1,0 +1,84 @@
+\doxysection{ASE\+\_\+assignment.\+Conditionals Class Reference}
+\hypertarget{class_a_s_e__assignment_1_1_conditionals}{}\label{class_a_s_e__assignment_1_1_conditionals}\index{ASE\_assignment.Conditionals@{ASE\_assignment.Conditionals}}
+
+
+Class that handles behaviour for the \textquotesingle{}if\textquotesingle{} command, so the user can create conditional statements that only execute when evaluation is true.  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_a_s_e__assignment_1_1_conditionals_a7ad392cab882983358235d61e8e7394a}{Conditionals}} (\mbox{\hyperlink{class_a_s_e__assignment_1_1_variable_manager}{Variable\+Manager}} variable\+Manager)
+\begin{DoxyCompactList}\small\item\em Constructor for the Conditionals class. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_a_s_e__assignment_1_1_conditionals_ab34cc532cff64f9bd637e17fcb4b512c}{If}} (string condition)
+\begin{DoxyCompactList}\small\item\em Removes operators from the string and split at spaces. Uses the Data\+Table.\+Compute method to evaluate condition string as a mathematical expression. Evaluated to a boolean and stored in inside\+Conditional\+Block. \end{DoxyCompactList}\item 
+\Hypertarget{class_a_s_e__assignment_1_1_conditionals_a156f1c9ca2d9bf8da3d375e0ee1a39d2}\label{class_a_s_e__assignment_1_1_conditionals_a156f1c9ca2d9bf8da3d375e0ee1a39d2} 
+void {\bfseries End\+If} ()
+\begin{DoxyCompactList}\small\item\em Sets the inside\+Condition\+Block flag to false to tell the program the if statement is finished and can continue normal execution. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_a_s_e__assignment_1_1_conditionals_a048e30e8a3b5ceb8e5c9ad09fe5816d4}\label{class_a_s_e__assignment_1_1_conditionals_a048e30e8a3b5ceb8e5c9ad09fe5816d4} 
+bool {\bfseries inside\+Conditional\+Block} = false\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
+\item 
+\Hypertarget{class_a_s_e__assignment_1_1_conditionals_a1e3adfb48b9f2e3dd9d406821a381412}\label{class_a_s_e__assignment_1_1_conditionals_a1e3adfb48b9f2e3dd9d406821a381412} 
+bool {\bfseries execute\+Block} = false\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_a_s_e__assignment_1_1_conditionals_af62844df8fabdd16f7875fbce2795815}\label{class_a_s_e__assignment_1_1_conditionals_af62844df8fabdd16f7875fbce2795815} 
+\mbox{\hyperlink{class_a_s_e__assignment_1_1_variable_manager}{Variable\+Manager}} {\bfseries variable\+Manager}
+\item 
+\Hypertarget{class_a_s_e__assignment_1_1_conditionals_aca82fea7680058dbf2137a9bcc5473f3}\label{class_a_s_e__assignment_1_1_conditionals_aca82fea7680058dbf2137a9bcc5473f3} 
+Data\+Table {\bfseries data\+Table} = new Data\+Table()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class that handles behaviour for the \textquotesingle{}if\textquotesingle{} command, so the user can create conditional statements that only execute when evaluation is true. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_a_s_e__assignment_1_1_conditionals_a7ad392cab882983358235d61e8e7394a}\label{class_a_s_e__assignment_1_1_conditionals_a7ad392cab882983358235d61e8e7394a} 
+\index{ASE\_assignment.Conditionals@{ASE\_assignment.Conditionals}!Conditionals@{Conditionals}}
+\index{Conditionals@{Conditionals}!ASE\_assignment.Conditionals@{ASE\_assignment.Conditionals}}
+\doxysubsubsection{\texorpdfstring{Conditionals()}{Conditionals()}}
+{\footnotesize\ttfamily ASE\+\_\+assignment.\+Conditionals.\+Conditionals (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_a_s_e__assignment_1_1_variable_manager}{Variable\+Manager}}}]{variable\+Manager }\end{DoxyParamCaption})}
+
+
+
+Constructor for the Conditionals class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em variable\+Manager} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_a_s_e__assignment_1_1_conditionals_ab34cc532cff64f9bd637e17fcb4b512c}\label{class_a_s_e__assignment_1_1_conditionals_ab34cc532cff64f9bd637e17fcb4b512c} 
+\index{ASE\_assignment.Conditionals@{ASE\_assignment.Conditionals}!If@{If}}
+\index{If@{If}!ASE\_assignment.Conditionals@{ASE\_assignment.Conditionals}}
+\doxysubsubsection{\texorpdfstring{If()}{If()}}
+{\footnotesize\ttfamily void ASE\+\_\+assignment.\+Conditionals.\+If (\begin{DoxyParamCaption}\item[{string}]{condition }\end{DoxyParamCaption})}
+
+
+
+Removes operators from the string and split at spaces. Uses the Data\+Table.\+Compute method to evaluate condition string as a mathematical expression. Evaluated to a boolean and stored in inside\+Conditional\+Block. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em condition} & logical or mathematical expression to be evaluated\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Argument\+Exception} & if the condition cannot be evaluated an exception will be thrown\\
+\hline
+\end{DoxyExceptions}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Git\+Hub-\/\+Repos/\+ASE-\/assignment/\+ASE-\/assignment/Conditionals.\+cs\end{DoxyCompactItemize}

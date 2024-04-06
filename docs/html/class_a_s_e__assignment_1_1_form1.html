@@ -118,8 +118,6 @@ Private Member Functions</h2></td></tr>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>RunMultiLines</b> ()</td></tr>
 <tr class="memdesc:ac75050440a712696d7c870bbf3cee266"><td class="mdescLeft">&#160;</td><td class="mdescRight">Iterates through each label contained within the 'CommandPanel', parsing and running each line and refreshing the canvas. <br /></td></tr>
 <tr class="separator:ac75050440a712696d7c870bbf3cee266"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a302a619f9d1c2aa6338716b593798cc4" id="r_a302a619f9d1c2aa6338716b593798cc4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_s_e__assignment_1_1_form1.html#a302a619f9d1c2aa6338716b593798cc4">SyntaxButton_Click</a> (object sender, EventArgs e)</td></tr>
-<tr class="separator:a302a619f9d1c2aa6338716b593798cc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a19f88d0fb23d931f3bc8037840ae2392" id="r_a19f88d0fb23d931f3bc8037840ae2392"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_s_e__assignment_1_1_form1.html#a19f88d0fb23d931f3bc8037840ae2392">DisplayInput</a> (string line)</td></tr>
 <tr class="memdesc:a19f88d0fb23d931f3bc8037840ae2392"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks that commands are not clearing or infinitely running the program. Takes user input from the TextBox and adds each line to a label when called, directly below the previous label.  <br /></td></tr>
 <tr class="separator:a19f88d0fb23d931f3bc8037840ae2392"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -129,6 +127,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>RunMultiLines</b> ()<
 <tr class="memitem:af8574f43ea58023f6c1be37df34a9bbc" id="r_af8574f43ea58023f6c1be37df34a9bbc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_s_e__assignment_1_1_form1.html#af8574f43ea58023f6c1be37df34a9bbc">OpenButton_Click</a> (object sender, EventArgs e)</td></tr>
 <tr class="memdesc:af8574f43ea58023f6c1be37df34a9bbc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines behaviour when the 'open' button is clicked. Calls a dialog box to select the file to open from a list of text files.  <br /></td></tr>
 <tr class="separator:af8574f43ea58023f6c1be37df34a9bbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a302a619f9d1c2aa6338716b593798cc4" id="r_a302a619f9d1c2aa6338716b593798cc4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_s_e__assignment_1_1_form1.html#a302a619f9d1c2aa6338716b593798cc4">SyntaxButton_Click</a> (object sender, EventArgs e)</td></tr>
+<tr class="memdesc:a302a619f9d1c2aa6338716b593798cc4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event handler for the syntax button. Loops through user's code without affecting the bitmap, outputting any exceptions to the panel.  <br /></td></tr>
+<tr class="separator:a302a619f9d1c2aa6338716b593798cc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2fc725b28353bb233089b0b62550ef80" id="r_a2fc725b28353bb233089b0b62550ef80"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_s_e__assignment_1_1_form1.html#a2fc725b28353bb233089b0b62550ef80">ErrorLog</a> (string message, int lineNumber)</td></tr>
+<tr class="memdesc:a2fc725b28353bb233089b0b62550ef80"><td class="mdescLeft">&#160;</td><td class="mdescRight">Outputs an error message to the rich text box displaying any errors when the user clicks the syntax button.  <br /></td></tr>
+<tr class="separator:a2fc725b28353bb233089b0b62550ef80"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9057cd1a27c669e2eb373b4ab790af80" id="r_a9057cd1a27c669e2eb373b4ab790af80"><td class="memItemLeft" align="right" valign="top"><a id="a9057cd1a27c669e2eb373b4ab790af80" name="a9057cd1a27c669e2eb373b4ab790af80"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>Form1_Load</b> (object sender, EventArgs e)</td></tr>
 <tr class="separator:a9057cd1a27c669e2eb373b4ab790af80"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -151,6 +155,12 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:aaf933891740631505d8695e9b02f96d0" id="r_aaf933891740631505d8695e9b02f96d0"><td class="memItemLeft" align="right" valign="top"><a id="aaf933891740631505d8695e9b02f96d0" name="aaf933891740631505d8695e9b02f96d0"></a>
 <a class="el" href="class_a_s_e__assignment_1_1_command_processor.html">CommandProcessor</a>&#160;</td><td class="memItemRight" valign="bottom"><b>runCommand</b></td></tr>
 <tr class="separator:aaf933891740631505d8695e9b02f96d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a609be9c7ae3cae1ec0242a7ff908da6b" id="r_a609be9c7ae3cae1ec0242a7ff908da6b"><td class="memItemLeft" align="right" valign="top"><a id="a609be9c7ae3cae1ec0242a7ff908da6b" name="a609be9c7ae3cae1ec0242a7ff908da6b"></a>
+<a class="el" href="class_a_s_e__assignment_1_1_variable_manager.html">VariableManager</a>&#160;</td><td class="memItemRight" valign="bottom"><b>variableManager</b> = new <a class="el" href="class_a_s_e__assignment_1_1_variable_manager.html">VariableManager</a>()</td></tr>
+<tr class="separator:a609be9c7ae3cae1ec0242a7ff908da6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7ce495c9f28ba47fdcb9b9373a41322" id="r_af7ce495c9f28ba47fdcb9b9373a41322"><td class="memItemLeft" align="right" valign="top"><a id="af7ce495c9f28ba47fdcb9b9373a41322" name="af7ce495c9f28ba47fdcb9b9373a41322"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>lineNumber</b> = 1</td></tr>
+<tr class="separator:af7ce495c9f28ba47fdcb9b9373a41322"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a671bd7fd07f81843a50c6795b9203ab6" id="r_a671bd7fd07f81843a50c6795b9203ab6"><td class="memItemLeft" align="right" valign="top"><a id="a671bd7fd07f81843a50c6795b9203ab6" name="a671bd7fd07f81843a50c6795b9203ab6"></a>
 <a class="el" href="class_a_s_e__assignment_1_1_command_parser.html">CommandParser</a>&#160;</td><td class="memItemRight" valign="bottom"><b>parse</b> = new <a class="el" href="class_a_s_e__assignment_1_1_command_parser.html">CommandParser</a>()</td></tr>
 <tr class="separator:a671bd7fd07f81843a50c6795b9203ab6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -179,6 +189,9 @@ System.Windows.Forms.Button&#160;</td><td class="memItemRight" valign="bottom"><
 <tr class="memitem:aeaa935e8fad412c7622f9367eec1859d" id="r_aeaa935e8fad412c7622f9367eec1859d"><td class="memItemLeft" align="right" valign="top"><a id="aeaa935e8fad412c7622f9367eec1859d" name="aeaa935e8fad412c7622f9367eec1859d"></a>
 System.Windows.Forms.Button&#160;</td><td class="memItemRight" valign="bottom"><b>SaveButton</b></td></tr>
 <tr class="separator:aeaa935e8fad412c7622f9367eec1859d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1718a4172abf6ca0bf4160805ecb2867" id="r_a1718a4172abf6ca0bf4160805ecb2867"><td class="memItemLeft" align="right" valign="top"><a id="a1718a4172abf6ca0bf4160805ecb2867" name="a1718a4172abf6ca0bf4160805ecb2867"></a>
+System.Windows.Forms.RichTextBox&#160;</td><td class="memItemRight" valign="bottom"><b>ErrorBox</b></td></tr>
+<tr class="separator:a1718a4172abf6ca0bf4160805ecb2867"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Create the form for the main application. Contains all the methods for UI functionality such as buttons and panels for displaying the drawing. </p>
@@ -290,6 +303,51 @@ System.Windows.Forms.Button&#160;</td><td class="memItemRight" valign="bottom"><
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">disposing</td><td>true if managed resources should be disposed; otherwise, false.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a2fc725b28353bb233089b0b62550ef80" name="a2fc725b28353bb233089b0b62550ef80"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2fc725b28353bb233089b0b62550ef80">&#9670;&#160;</a></span>ErrorLog()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ASE_assignment.Form1.ErrorLog </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>message</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>lineNumber</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Outputs an error message to the rich text box displaying any errors when the user clicks the syntax button. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">message</td><td>The error message to show to the user</td></tr>
+    <tr><td class="paramname">lineNumber</td><td>The line number that the error occured</td></tr>
   </table>
   </dd>
 </dl>
@@ -464,6 +522,8 @@ System.Windows.Forms.Button&#160;</td><td class="memItemRight" valign="bottom"><
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Event handler for the syntax button. Loops through user's code without affecting the bitmap, outputting any exceptions to the panel. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">sender</td><td></td></tr>

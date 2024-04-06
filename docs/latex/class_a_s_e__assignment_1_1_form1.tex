@@ -32,14 +32,16 @@ void \mbox{\hyperlink{class_a_s_e__assignment_1_1_form1_a1c7d2c5dd4c703548600623
 \Hypertarget{class_a_s_e__assignment_1_1_form1_ac75050440a712696d7c870bbf3cee266}\label{class_a_s_e__assignment_1_1_form1_ac75050440a712696d7c870bbf3cee266} 
 void {\bfseries Run\+Multi\+Lines} ()
 \begin{DoxyCompactList}\small\item\em Iterates through each label contained within the \textquotesingle{}Command\+Panel\textquotesingle{}, parsing and running each line and refreshing the canvas. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{class_a_s_e__assignment_1_1_form1_a302a619f9d1c2aa6338716b593798cc4}{Syntax\+Button\+\_\+\+Click}} (object sender, Event\+Args e)
-\item 
 void \mbox{\hyperlink{class_a_s_e__assignment_1_1_form1_a19f88d0fb23d931f3bc8037840ae2392}{Display\+Input}} (string line)
 \begin{DoxyCompactList}\small\item\em Checks that commands are not clearing or infinitely running the program. Takes user input from the Text\+Box and adds each line to a label when called, directly below the previous label. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_a_s_e__assignment_1_1_form1_abbf12b0bfb420ad150e45eb98a03f93f}{Save\+Button\+\_\+\+Click}} (object sender, Event\+Args e)
 \begin{DoxyCompactList}\small\item\em Loop through each label and add the lines to a List. Save\+File\+Dialog prompts user to select a directory and saves to a directory in a text file when the user clicks \textquotesingle{}OK\textquotesingle{} in the prompt. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_a_s_e__assignment_1_1_form1_af8574f43ea58023f6c1be37df34a9bbc}{Open\+Button\+\_\+\+Click}} (object sender, Event\+Args e)
 \begin{DoxyCompactList}\small\item\em Defines behaviour when the \textquotesingle{}open\textquotesingle{} button is clicked. Calls a dialog box to select the file to open from a list of text files. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_a_s_e__assignment_1_1_form1_a302a619f9d1c2aa6338716b593798cc4}{Syntax\+Button\+\_\+\+Click}} (object sender, Event\+Args e)
+\begin{DoxyCompactList}\small\item\em Event handler for the syntax button. Loops through user\textquotesingle{}s code without affecting the bitmap, outputting any exceptions to the panel. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_a_s_e__assignment_1_1_form1_a2fc725b28353bb233089b0b62550ef80}{Error\+Log}} (string message, int line\+Number)
+\begin{DoxyCompactList}\small\item\em Outputs an error message to the rich text box displaying any errors when the user clicks the syntax button. \end{DoxyCompactList}\item 
 \Hypertarget{class_a_s_e__assignment_1_1_form1_a9057cd1a27c669e2eb373b4ab790af80}\label{class_a_s_e__assignment_1_1_form1_a9057cd1a27c669e2eb373b4ab790af80} 
 void {\bfseries Form1\+\_\+\+Load} (object sender, Event\+Args e)
 \item 
@@ -60,6 +62,12 @@ void {\bfseries Initialize\+Component} ()
 \item 
 \Hypertarget{class_a_s_e__assignment_1_1_form1_aaf933891740631505d8695e9b02f96d0}\label{class_a_s_e__assignment_1_1_form1_aaf933891740631505d8695e9b02f96d0} 
 \mbox{\hyperlink{class_a_s_e__assignment_1_1_command_processor}{Command\+Processor}} {\bfseries run\+Command}
+\item 
+\Hypertarget{class_a_s_e__assignment_1_1_form1_a609be9c7ae3cae1ec0242a7ff908da6b}\label{class_a_s_e__assignment_1_1_form1_a609be9c7ae3cae1ec0242a7ff908da6b} 
+\mbox{\hyperlink{class_a_s_e__assignment_1_1_variable_manager}{Variable\+Manager}} {\bfseries variable\+Manager} = new \mbox{\hyperlink{class_a_s_e__assignment_1_1_variable_manager}{Variable\+Manager}}()
+\item 
+\Hypertarget{class_a_s_e__assignment_1_1_form1_af7ce495c9f28ba47fdcb9b9373a41322}\label{class_a_s_e__assignment_1_1_form1_af7ce495c9f28ba47fdcb9b9373a41322} 
+int {\bfseries line\+Number} = 1
 \item 
 \Hypertarget{class_a_s_e__assignment_1_1_form1_a671bd7fd07f81843a50c6795b9203ab6}\label{class_a_s_e__assignment_1_1_form1_a671bd7fd07f81843a50c6795b9203ab6} 
 \mbox{\hyperlink{class_a_s_e__assignment_1_1_command_parser}{Command\+Parser}} {\bfseries parse} = new \mbox{\hyperlink{class_a_s_e__assignment_1_1_command_parser}{Command\+Parser}}()
@@ -87,6 +95,9 @@ System.\+Windows.\+Forms.\+Button {\bfseries Open\+Button}
 \item 
 \Hypertarget{class_a_s_e__assignment_1_1_form1_aeaa935e8fad412c7622f9367eec1859d}\label{class_a_s_e__assignment_1_1_form1_aeaa935e8fad412c7622f9367eec1859d} 
 System.\+Windows.\+Forms.\+Button {\bfseries Save\+Button}
+\item 
+\Hypertarget{class_a_s_e__assignment_1_1_form1_a1718a4172abf6ca0bf4160805ecb2867}\label{class_a_s_e__assignment_1_1_form1_a1718a4172abf6ca0bf4160805ecb2867} 
+System.\+Windows.\+Forms.\+Rich\+Text\+Box {\bfseries Error\+Box}
 \end{DoxyCompactItemize}
 
 
@@ -139,6 +150,23 @@ Clean up any resources being used.
 
 \begin{DoxyParams}{Parameters}
 {\em disposing} & true if managed resources should be disposed; otherwise, false.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_a_s_e__assignment_1_1_form1_a2fc725b28353bb233089b0b62550ef80}\label{class_a_s_e__assignment_1_1_form1_a2fc725b28353bb233089b0b62550ef80} 
+\index{ASE\_assignment.Form1@{ASE\_assignment.Form1}!ErrorLog@{ErrorLog}}
+\index{ErrorLog@{ErrorLog}!ASE\_assignment.Form1@{ASE\_assignment.Form1}}
+\doxysubsubsection{\texorpdfstring{ErrorLog()}{ErrorLog()}}
+{\footnotesize\ttfamily void ASE\+\_\+assignment.\+Form1.\+Error\+Log (\begin{DoxyParamCaption}\item[{string}]{message,  }\item[{int}]{line\+Number }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Outputs an error message to the rich text box displaying any errors when the user clicks the syntax button. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em message} & The error message to show to the user\\
+\hline
+{\em line\+Number} & The line number that the error occured\\
 \hline
 \end{DoxyParams}
 \Hypertarget{class_a_s_e__assignment_1_1_form1_af8574f43ea58023f6c1be37df34a9bbc}\label{class_a_s_e__assignment_1_1_form1_af8574f43ea58023f6c1be37df34a9bbc} 
@@ -197,6 +225,10 @@ Loop through each label and add the lines to a List. Save\+File\+Dialog prompts 
 \index{SyntaxButton\_Click@{SyntaxButton\_Click}!ASE\_assignment.Form1@{ASE\_assignment.Form1}}
 \doxysubsubsection{\texorpdfstring{SyntaxButton\_Click()}{SyntaxButton\_Click()}}
 {\footnotesize\ttfamily void ASE\+\_\+assignment.\+Form1.\+Syntax\+Button\+\_\+\+Click (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Event handler for the syntax button. Loops through user\textquotesingle{}s code without affecting the bitmap, outputting any exceptions to the panel. 
 
 
 \begin{DoxyParams}{Parameters}

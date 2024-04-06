@@ -29,6 +29,8 @@
     <member refid="class_a_s_e__assignment_1_1_command_processor_1ab94af3397a74a92011a113f479847973" kind="variable"><name>controller</name></member>
     <member refid="class_a_s_e__assignment_1_1_command_processor_1ae03862f713bd4dfe79b4e0db8485e220" kind="variable"><name>canvass</name></member>
     <member refid="class_a_s_e__assignment_1_1_command_processor_1ad8a32a96d60ebcf74ae7388eeade0336" kind="variable"><name>validCommands</name></member>
+    <member refid="class_a_s_e__assignment_1_1_command_processor_1a6ee2f3d82eb70daf089f7b88e28eb315" kind="variable"><name>conditionals</name></member>
+    <member refid="class_a_s_e__assignment_1_1_command_processor_1a3e7155240dd2d3c260bf52af136b698c" kind="variable"><name>variableManager</name></member>
     <member refid="class_a_s_e__assignment_1_1_command_processor_1a3d6f361b55d24ea94449150f9bb7e598" kind="function"><name>CommandAction</name></member>
     <member refid="class_a_s_e__assignment_1_1_command_processor_1a803eb0608c8719458776fb7496d7c103" kind="function"><name>MoveTo</name></member>
     <member refid="class_a_s_e__assignment_1_1_command_processor_1a9a84d55963e463e06f98213be6eba46f" kind="function"><name>DrawTo</name></member>
@@ -39,8 +41,21 @@
     <member refid="class_a_s_e__assignment_1_1_command_processor_1a5b8ec25b2996e26b8bc7e24df110a522" kind="function"><name>DrawTriangle</name></member>
     <member refid="class_a_s_e__assignment_1_1_command_processor_1a77e249ea02b9355c3f4722501ff8e4cd" kind="function"><name>PenColor</name></member>
     <member refid="class_a_s_e__assignment_1_1_command_processor_1aa7ebabb6e71ff0f372f7a9a166ad569b" kind="function"><name>Fill</name></member>
-    <member refid="class_a_s_e__assignment_1_1_command_processor_1a4e6d43f0b48b81e29860f343ac96f37e" kind="function"><name>CommandProcessor</name></member>
+    <member refid="class_a_s_e__assignment_1_1_command_processor_1a7079b18f0627acb95355c2edc4676ccd" kind="function"><name>If</name></member>
+    <member refid="class_a_s_e__assignment_1_1_command_processor_1a645bd0bf9348af9bc7dbade5aa97ca69" kind="function"><name>EndIf</name></member>
+    <member refid="class_a_s_e__assignment_1_1_command_processor_1aa1110fc7aabf91fde5340c5de6076152" kind="function"><name>Var</name></member>
+    <member refid="class_a_s_e__assignment_1_1_command_processor_1a58a47f15c7e98fb0802e6eff8fe5fc21" kind="function"><name>ResolveParam</name></member>
+    <member refid="class_a_s_e__assignment_1_1_command_processor_1a329fb5753072556705eec0052132c757" kind="function"><name>CommandProcessor</name></member>
     <member refid="class_a_s_e__assignment_1_1_command_processor_1a0c66d16f946ba5467f1da7546f73d212" kind="function"><name>RunLines</name></member>
+  </compound>
+  <compound refid="class_a_s_e__assignment_1_1_conditionals" kind="class"><name>ASE_assignment::Conditionals</name>
+    <member refid="class_a_s_e__assignment_1_1_conditionals_1af62844df8fabdd16f7875fbce2795815" kind="variable"><name>variableManager</name></member>
+    <member refid="class_a_s_e__assignment_1_1_conditionals_1aca82fea7680058dbf2137a9bcc5473f3" kind="variable"><name>dataTable</name></member>
+    <member refid="class_a_s_e__assignment_1_1_conditionals_1a048e30e8a3b5ceb8e5c9ad09fe5816d4" kind="property"><name>insideConditionalBlock</name></member>
+    <member refid="class_a_s_e__assignment_1_1_conditionals_1a1e3adfb48b9f2e3dd9d406821a381412" kind="property"><name>executeBlock</name></member>
+    <member refid="class_a_s_e__assignment_1_1_conditionals_1a7ad392cab882983358235d61e8e7394a" kind="function"><name>Conditionals</name></member>
+    <member refid="class_a_s_e__assignment_1_1_conditionals_1ab34cc532cff64f9bd637e17fcb4b512c" kind="function"><name>If</name></member>
+    <member refid="class_a_s_e__assignment_1_1_conditionals_1a156f1c9ca2d9bf8da3d375e0ee1a39d2" kind="function"><name>EndIf</name></member>
   </compound>
   <compound refid="class_a_s_e__assignment_1_1_file_manager" kind="class"><name>ASE_assignment::FileManager</name>
     <member refid="class_a_s_e__assignment_1_1_file_manager_1aea3a25fc934be0aede763745030b99b7" kind="function"><name>SaveFile</name></member>
@@ -50,6 +65,8 @@
     <member refid="class_a_s_e__assignment_1_1_form1_1a39d44a6d44067ea95994566c25515be4" kind="variable"><name>canvass</name></member>
     <member refid="class_a_s_e__assignment_1_1_form1_1a714d2d52d0beb78d95bf5df044de727e" kind="variable"><name>penController</name></member>
     <member refid="class_a_s_e__assignment_1_1_form1_1aaf933891740631505d8695e9b02f96d0" kind="variable"><name>runCommand</name></member>
+    <member refid="class_a_s_e__assignment_1_1_form1_1a609be9c7ae3cae1ec0242a7ff908da6b" kind="variable"><name>variableManager</name></member>
+    <member refid="class_a_s_e__assignment_1_1_form1_1af7ce495c9f28ba47fdcb9b9373a41322" kind="variable"><name>lineNumber</name></member>
     <member refid="class_a_s_e__assignment_1_1_form1_1a671bd7fd07f81843a50c6795b9203ab6" kind="variable"><name>parse</name></member>
     <member refid="class_a_s_e__assignment_1_1_form1_1abe508e24a52c4232296d9fc975d05329" kind="variable"><name>components</name></member>
     <member refid="class_a_s_e__assignment_1_1_form1_1aa9ef00ba926c299ba32dc690d1941115" kind="variable"><name>SyntaxButton</name></member>
@@ -59,14 +76,16 @@
     <member refid="class_a_s_e__assignment_1_1_form1_1a06a611c4acbc1aa32e22761fc1f5fb9b" kind="variable"><name>DrawingPanel</name></member>
     <member refid="class_a_s_e__assignment_1_1_form1_1ac5e0e06b64363422d693c30012301142" kind="variable"><name>OpenButton</name></member>
     <member refid="class_a_s_e__assignment_1_1_form1_1aeaa935e8fad412c7622f9367eec1859d" kind="variable"><name>SaveButton</name></member>
+    <member refid="class_a_s_e__assignment_1_1_form1_1a1718a4172abf6ca0bf4160805ecb2867" kind="variable"><name>ErrorBox</name></member>
     <member refid="class_a_s_e__assignment_1_1_form1_1a25861b5bd71e0159a84334363ab02185" kind="function"><name>Form1</name></member>
     <member refid="class_a_s_e__assignment_1_1_form1_1a95ab37574cf5687eae3b72087e5a2bb5" kind="function"><name>CommandBox_KeyDown</name></member>
     <member refid="class_a_s_e__assignment_1_1_form1_1a1c7d2c5dd4c703548600623b94ae1996" kind="function"><name>RunButton_Click</name></member>
     <member refid="class_a_s_e__assignment_1_1_form1_1ac75050440a712696d7c870bbf3cee266" kind="function"><name>RunMultiLines</name></member>
-    <member refid="class_a_s_e__assignment_1_1_form1_1a302a619f9d1c2aa6338716b593798cc4" kind="function"><name>SyntaxButton_Click</name></member>
     <member refid="class_a_s_e__assignment_1_1_form1_1a19f88d0fb23d931f3bc8037840ae2392" kind="function"><name>DisplayInput</name></member>
     <member refid="class_a_s_e__assignment_1_1_form1_1abbf12b0bfb420ad150e45eb98a03f93f" kind="function"><name>SaveButton_Click</name></member>
     <member refid="class_a_s_e__assignment_1_1_form1_1af8574f43ea58023f6c1be37df34a9bbc" kind="function"><name>OpenButton_Click</name></member>
+    <member refid="class_a_s_e__assignment_1_1_form1_1a302a619f9d1c2aa6338716b593798cc4" kind="function"><name>SyntaxButton_Click</name></member>
+    <member refid="class_a_s_e__assignment_1_1_form1_1a2fc725b28353bb233089b0b62550ef80" kind="function"><name>ErrorLog</name></member>
     <member refid="class_a_s_e__assignment_1_1_form1_1a9057cd1a27c669e2eb373b4ab790af80" kind="function"><name>Form1_Load</name></member>
     <member refid="class_a_s_e__assignment_1_1_form1_1aed302fe4407728a6a15b771f2dd5e3d7" kind="function"><name>textBox1_TextChanged</name></member>
     <member refid="class_a_s_e__assignment_1_1_form1_1add15d22660df69b707702dc700149475" kind="function"><name>InitializeComponent</name></member>
@@ -108,6 +127,14 @@
     <member refid="class_a_s_e__assignment_1_1_triangle_1a95036b32dbc8ed46a875f46484ca69e0" kind="function"><name>Draw</name></member>
     <member refid="class_a_s_e__assignment_1_1_triangle_1a5854cb3a56904f1f890b3a31919cfdb9" kind="function"><name>Fill</name></member>
   </compound>
+  <compound refid="class_a_s_e__assignment_1_1_variable_manager" kind="class"><name>ASE_assignment::VariableManager</name>
+    <member refid="class_a_s_e__assignment_1_1_variable_manager_1ad0109232d28a833c21905e27e67053ec" kind="variable"><name>variables</name></member>
+    <member refid="class_a_s_e__assignment_1_1_variable_manager_1a237eb415045a615104a3dd7e3dd07372" kind="variable"><name>dataTable</name></member>
+    <member refid="class_a_s_e__assignment_1_1_variable_manager_1a7fbf0e694da7ca1c86614df817033b8c" kind="function"><name>DeclareVariable</name></member>
+    <member refid="class_a_s_e__assignment_1_1_variable_manager_1ad7747571f146871172040d1393ca7400" kind="function"><name>GetVariable</name></member>
+    <member refid="class_a_s_e__assignment_1_1_variable_manager_1afc6822e94a1161943555b42b61736728" kind="function"><name>ClearVariables</name></member>
+    <member refid="class_a_s_e__assignment_1_1_variable_manager_1afde8e60a64a1d7cb03c2eb9a45285ad0" kind="function"><name>EvaluateExpression</name></member>
+  </compound>
   <compound refid="namespace_a_s_e__assignment" kind="namespace"><name>ASE_assignment</name>
   </compound>
   <compound refid="namespace_system" kind="namespace"><name>System</name>
@@ -121,6 +148,8 @@
   <compound refid="namespace_system_1_1_data" kind="namespace"><name>System::Data</name>
   </compound>
   <compound refid="namespace_system_1_1_drawing" kind="namespace"><name>System::Drawing</name>
+  </compound>
+  <compound refid="namespace_system_1_1_drawing_1_1_design" kind="namespace"><name>System::Drawing::Design</name>
   </compound>
   <compound refid="namespace_system_1_1_drawing_1_1_drawing2_d" kind="namespace"><name>System::Drawing::Drawing2D</name>
   </compound>
@@ -154,6 +183,8 @@
   </compound>
   <compound refid="_command_processor_8cs" kind="file"><name>CommandProcessor.cs</name>
   </compound>
+  <compound refid="_conditionals_8cs" kind="file"><name>Conditionals.cs</name>
+  </compound>
   <compound refid="_file_manager_8cs" kind="file"><name>FileManager.cs</name>
   </compound>
   <compound refid="_form1_8cs" kind="file"><name>Form1.cs</name>
@@ -171,6 +202,8 @@
   <compound refid="_shape_8cs" kind="file"><name>Shape.cs</name>
   </compound>
   <compound refid="_triangle_8cs" kind="file"><name>Triangle.cs</name>
+  </compound>
+  <compound refid="_variable_manager_8cs" kind="file"><name>VariableManager.cs</name>
   </compound>
   <compound refid="dir_294cfc04d1e18851b6bed3e5e219636a" kind="dir"><name>D:/GitHub-Repos/ASE-assignment</name>
   </compound>

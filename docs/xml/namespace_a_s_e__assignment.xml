@@ -7,6 +7,7 @@
     <innerclass refid="class_a_s_e__assignment_1_1_command" prot="package">ASE_assignment::Command</innerclass>
     <innerclass refid="class_a_s_e__assignment_1_1_command_parser" prot="package">ASE_assignment::CommandParser</innerclass>
     <innerclass refid="class_a_s_e__assignment_1_1_command_processor" prot="package">ASE_assignment::CommandProcessor</innerclass>
+    <innerclass refid="class_a_s_e__assignment_1_1_conditionals" prot="package">ASE_assignment::Conditionals</innerclass>
     <innerclass refid="class_a_s_e__assignment_1_1_file_manager" prot="public">ASE_assignment::FileManager</innerclass>
     <innerclass refid="class_a_s_e__assignment_1_1_form1" prot="public">ASE_assignment::Form1</innerclass>
     <innerclass refid="class_a_s_e__assignment_1_1_pen_controller" prot="package">ASE_assignment::PenController</innerclass>
@@ -14,6 +15,7 @@
     <innerclass refid="class_a_s_e__assignment_1_1_rectangle" prot="package">ASE_assignment::Rectangle</innerclass>
     <innerclass refid="class_a_s_e__assignment_1_1_shape" prot="public">ASE_assignment::Shape</innerclass>
     <innerclass refid="class_a_s_e__assignment_1_1_triangle" prot="public">ASE_assignment::Triangle</innerclass>
+    <innerclass refid="class_a_s_e__assignment_1_1_variable_manager" prot="package">ASE_assignment::VariableManager</innerclass>
     <briefdescription>
     </briefdescription>
     <detaileddescription>

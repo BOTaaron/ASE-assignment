@@ -15,7 +15,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/CommandProcessor.cs" line="16" column="31" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/CommandProcessor.cs" bodystart="16" bodyend="-1"/>
+        <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/CommandProcessor.cs" line="17" column="31" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/CommandProcessor.cs" bodystart="17" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_a_s_e__assignment_1_1_command_processor_1ae03862f713bd4dfe79b4e0db8485e220" prot="private" static="no" mutable="no">
         <type><ref refid="class_a_s_e__assignment_1_1_canvass" kindref="compound">Canvass</ref></type>
@@ -29,7 +29,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/CommandProcessor.cs" line="17" column="25" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/CommandProcessor.cs" bodystart="17" bodyend="-1"/>
+        <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/CommandProcessor.cs" line="18" column="25" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/CommandProcessor.cs" bodystart="18" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_a_s_e__assignment_1_1_command_processor_1ad8a32a96d60ebcf74ae7388eeade0336" prot="private" static="no" mutable="no">
         <type>Dictionary&lt; string, CommandAction &gt;</type>
@@ -43,7 +43,35 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/CommandProcessor.cs" line="22" column="28" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/CommandProcessor.cs" bodystart="22" bodyend="-1"/>
+        <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/CommandProcessor.cs" line="20" column="28" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/CommandProcessor.cs" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_s_e__assignment_1_1_command_processor_1a6ee2f3d82eb70daf089f7b88e28eb315" prot="private" static="no" mutable="no">
+        <type><ref refid="class_a_s_e__assignment_1_1_conditionals" kindref="compound">Conditionals</ref></type>
+        <definition>Conditionals ASE_assignment.CommandProcessor.conditionals</definition>
+        <argsstring></argsstring>
+        <name>conditionals</name>
+        <qualifiedname>ASE_assignment.CommandProcessor.conditionals</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/CommandProcessor.cs" line="21" column="30" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/CommandProcessor.cs" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_s_e__assignment_1_1_command_processor_1a3e7155240dd2d3c260bf52af136b698c" prot="private" static="no" mutable="no">
+        <type><ref refid="class_a_s_e__assignment_1_1_variable_manager" kindref="compound">VariableManager</ref></type>
+        <definition>VariableManager ASE_assignment.CommandProcessor.variableManager</definition>
+        <argsstring></argsstring>
+        <name>variableManager</name>
+        <qualifiedname>ASE_assignment.CommandProcessor.variableManager</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/CommandProcessor.cs" line="22" column="33" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/CommandProcessor.cs" bodystart="22" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="private-func">
@@ -101,7 +129,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/CommandProcessor.cs" line="54" column="22" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/CommandProcessor.cs" bodystart="54" bodyend="68"/>
+        <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/CommandProcessor.cs" line="59" column="22" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/CommandProcessor.cs" bodystart="59" bodyend="73"/>
       </memberdef>
       <memberdef kind="function" id="class_a_s_e__assignment_1_1_command_processor_1a9a84d55963e463e06f98213be6eba46f" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -139,7 +167,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/CommandProcessor.cs" line="74" column="22" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/CommandProcessor.cs" bodystart="74" bodyend="87"/>
+        <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/CommandProcessor.cs" line="79" column="22" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/CommandProcessor.cs" bodystart="79" bodyend="92"/>
       </memberdef>
       <memberdef kind="function" id="class_a_s_e__assignment_1_1_command_processor_1ac964e0ade9000dc7ac2c5b91bb5a3e59" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -177,7 +205,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/CommandProcessor.cs" line="93" column="22" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/CommandProcessor.cs" bodystart="93" bodyend="104"/>
+        <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/CommandProcessor.cs" line="98" column="22" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/CommandProcessor.cs" bodystart="98" bodyend="109"/>
       </memberdef>
       <memberdef kind="function" id="class_a_s_e__assignment_1_1_command_processor_1ac3649982b3c9dd30490071e499df8759" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -215,7 +243,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/CommandProcessor.cs" line="110" column="22" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/CommandProcessor.cs" bodystart="110" bodyend="121"/>
+        <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/CommandProcessor.cs" line="115" column="22" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/CommandProcessor.cs" bodystart="115" bodyend="126"/>
       </memberdef>
       <memberdef kind="function" id="class_a_s_e__assignment_1_1_command_processor_1ab4393568b26651cef0e95450044775dd" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -253,7 +281,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/CommandProcessor.cs" line="127" column="22" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/CommandProcessor.cs" bodystart="127" bodyend="138"/>
+        <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/CommandProcessor.cs" line="132" column="22" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/CommandProcessor.cs" bodystart="132" bodyend="150"/>
       </memberdef>
       <memberdef kind="function" id="class_a_s_e__assignment_1_1_command_processor_1a71fa6ea769bd00c54025fbb59b89137a" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -291,7 +319,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/CommandProcessor.cs" line="144" column="22" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/CommandProcessor.cs" bodystart="144" bodyend="154"/>
+        <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/CommandProcessor.cs" line="156" column="22" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/CommandProcessor.cs" bodystart="156" bodyend="188"/>
       </memberdef>
       <memberdef kind="function" id="class_a_s_e__assignment_1_1_command_processor_1a5b8ec25b2996e26b8bc7e24df110a522" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -329,7 +357,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/CommandProcessor.cs" line="160" column="22" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/CommandProcessor.cs" bodystart="160" bodyend="171"/>
+        <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/CommandProcessor.cs" line="194" column="22" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/CommandProcessor.cs" bodystart="194" bodyend="227"/>
       </memberdef>
       <memberdef kind="function" id="class_a_s_e__assignment_1_1_command_processor_1a77e249ea02b9355c3f4722501ff8e4cd" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -367,7 +395,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/CommandProcessor.cs" line="177" column="22" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/CommandProcessor.cs" bodystart="177" bodyend="207"/>
+        <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/CommandProcessor.cs" line="233" column="22" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/CommandProcessor.cs" bodystart="233" bodyend="263"/>
       </memberdef>
       <memberdef kind="function" id="class_a_s_e__assignment_1_1_command_processor_1aa7ebabb6e71ff0f372f7a9a166ad569b" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -405,14 +433,140 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/CommandProcessor.cs" line="213" column="22" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/CommandProcessor.cs" bodystart="213" bodyend="228"/>
+        <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/CommandProcessor.cs" line="269" column="22" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/CommandProcessor.cs" bodystart="269" bodyend="284"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_s_e__assignment_1_1_command_processor_1a7079b18f0627acb95355c2edc4676ccd" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ASE_assignment.CommandProcessor.If</definition>
+        <argsstring>(Command parsedLine)</argsstring>
+        <name>If</name>
+        <qualifiedname>ASE_assignment.CommandProcessor.If</qualifiedname>
+        <param>
+          <type><ref refid="class_a_s_e__assignment_1_1_command" kindref="compound">Command</ref></type>
+          <declname>parsedLine</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Calls the If method in the Conditionals class</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>parsedLine</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The parsed line of commands, for the string parameters to be passed in</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/CommandProcessor.cs" line="288" column="22" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/CommandProcessor.cs" bodystart="288" bodyend="295"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_s_e__assignment_1_1_command_processor_1a645bd0bf9348af9bc7dbade5aa97ca69" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ASE_assignment.CommandProcessor.EndIf</definition>
+        <argsstring>(Command parsedLine)</argsstring>
+        <name>EndIf</name>
+        <qualifiedname>ASE_assignment.CommandProcessor.EndIf</qualifiedname>
+        <param>
+          <type><ref refid="class_a_s_e__assignment_1_1_command" kindref="compound">Command</ref></type>
+          <declname>parsedLine</declname>
+        </param>
+        <briefdescription>
+<para>Calls the EndIf method in the Conditionals class. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>parsedLine</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The parsed line of commands, for string parameters to be passed in</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/CommandProcessor.cs" line="300" column="22" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/CommandProcessor.cs" bodystart="300" bodyend="304"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_s_e__assignment_1_1_command_processor_1aa1110fc7aabf91fde5340c5de6076152" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ASE_assignment.CommandProcessor.Var</definition>
+        <argsstring>(Command parsedLine)</argsstring>
+        <name>Var</name>
+        <qualifiedname>ASE_assignment.CommandProcessor.Var</qualifiedname>
+        <param>
+          <type><ref refid="class_a_s_e__assignment_1_1_command" kindref="compound">Command</ref></type>
+          <declname>parsedLine</declname>
+        </param>
+        <briefdescription>
+<para>Calls the DeclareVariable method in the VariableManager class to create a new variable. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>parsedLine</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/CommandProcessor.cs" line="309" column="22" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/CommandProcessor.cs" bodystart="309" bodyend="315"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_s_e__assignment_1_1_command_processor_1a58a47f15c7e98fb0802e6eff8fe5fc21" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int ASE_assignment.CommandProcessor.ResolveParam</definition>
+        <argsstring>(string parameter)</argsstring>
+        <name>ResolveParam</name>
+        <qualifiedname>ASE_assignment.CommandProcessor.ResolveParam</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>parameter</declname>
+        </param>
+        <briefdescription>
+<para>Resolves parameters entered into a command to a variable, eg. when using DrawTo a,100 will match a to the correct value. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>parameter</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The parameters following the command</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>An integer value matched to the variable used in parameter</para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>ArgumentException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Throws exception if the incorrect format of parameter is given</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/CommandProcessor.cs" line="350" column="21" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/CommandProcessor.cs" bodystart="350" bodyend="377"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-func">
-      <memberdef kind="function" id="class_a_s_e__assignment_1_1_command_processor_1a4e6d43f0b48b81e29860f343ac96f37e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+      <memberdef kind="function" id="class_a_s_e__assignment_1_1_command_processor_1a329fb5753072556705eec0052132c757" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
         <definition>ASE_assignment.CommandProcessor.CommandProcessor</definition>
-        <argsstring>(PenController controller, Canvass canvass)</argsstring>
+        <argsstring>(PenController controller, Canvass canvass, VariableManager variableManager)</argsstring>
         <name>CommandProcessor</name>
         <qualifiedname>ASE_assignment.CommandProcessor.CommandProcessor</qualifiedname>
         <param>
@@ -422,6 +576,10 @@
         <param>
           <type><ref refid="class_a_s_e__assignment_1_1_canvass" kindref="compound">Canvass</ref></type>
           <declname>canvass</declname>
+        </param>
+        <param>
+          <type><ref refid="class_a_s_e__assignment_1_1_variable_manager" kindref="compound">VariableManager</ref></type>
+          <declname>variableManager</declname>
         </param>
         <briefdescription>
 <para>Initialise a new instance of the CommandProcessor class. </para>
@@ -448,7 +606,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/CommandProcessor.cs" line="29" column="16" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/CommandProcessor.cs" bodystart="29" bodyend="47"/>
+        <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/CommandProcessor.cs" line="28" column="16" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/CommandProcessor.cs" bodystart="28" bodyend="52"/>
       </memberdef>
       <memberdef kind="function" id="class_a_s_e__assignment_1_1_command_processor_1a0c66d16f946ba5467f1da7546f73d212" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -486,7 +644,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/CommandProcessor.cs" line="234" column="21" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/CommandProcessor.cs" bodystart="234" bodyend="248"/>
+        <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/CommandProcessor.cs" line="321" column="21" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/CommandProcessor.cs" bodystart="321" bodyend="343"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -504,10 +662,23 @@
         <childnode refid="3" relation="usage">
           <edgelabel>canvass</edgelabel>
         </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>conditionals</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>variableManager</edgelabel>
+        </childnode>
       </node>
       <node id="3">
         <label>ASE_assignment.Canvass</label>
         <link refid="class_a_s_e__assignment_1_1_canvass"/>
+      </node>
+      <node id="4">
+        <label>ASE_assignment.Conditionals</label>
+        <link refid="class_a_s_e__assignment_1_1_conditionals"/>
+        <childnode refid="5" relation="usage">
+          <edgelabel>variableManager</edgelabel>
+        </childnode>
       </node>
       <node id="2">
         <label>ASE_assignment.PenController</label>
@@ -516,24 +687,34 @@
           <edgelabel>canvass</edgelabel>
         </childnode>
       </node>
+      <node id="5">
+        <label>ASE_assignment.VariableManager</label>
+        <link refid="class_a_s_e__assignment_1_1_variable_manager"/>
+      </node>
     </collaborationgraph>
-    <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/CommandProcessor.cs" line="14" column="13" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/CommandProcessor.cs" bodystart="15" bodyend="249"/>
+    <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/CommandProcessor.cs" line="15" column="13" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/CommandProcessor.cs" bodystart="16" bodyend="379"/>
     <listofallmembers>
       <member refid="class_a_s_e__assignment_1_1_command_processor_1ae03862f713bd4dfe79b4e0db8485e220" prot="private" virt="non-virtual"><scope>ASE_assignment::CommandProcessor</scope><name>canvass</name></member>
       <member refid="class_a_s_e__assignment_1_1_command_processor_1ac964e0ade9000dc7ac2c5b91bb5a3e59" prot="private" virt="non-virtual"><scope>ASE_assignment::CommandProcessor</scope><name>Clear</name></member>
       <member refid="class_a_s_e__assignment_1_1_command_processor_1a3d6f361b55d24ea94449150f9bb7e598" prot="private" virt="non-virtual"><scope>ASE_assignment::CommandProcessor</scope><name>CommandAction</name></member>
-      <member refid="class_a_s_e__assignment_1_1_command_processor_1a4e6d43f0b48b81e29860f343ac96f37e" prot="public" virt="non-virtual"><scope>ASE_assignment::CommandProcessor</scope><name>CommandProcessor</name></member>
+      <member refid="class_a_s_e__assignment_1_1_command_processor_1a329fb5753072556705eec0052132c757" prot="public" virt="non-virtual"><scope>ASE_assignment::CommandProcessor</scope><name>CommandProcessor</name></member>
+      <member refid="class_a_s_e__assignment_1_1_command_processor_1a6ee2f3d82eb70daf089f7b88e28eb315" prot="private" virt="non-virtual"><scope>ASE_assignment::CommandProcessor</scope><name>conditionals</name></member>
       <member refid="class_a_s_e__assignment_1_1_command_processor_1ab94af3397a74a92011a113f479847973" prot="private" virt="non-virtual"><scope>ASE_assignment::CommandProcessor</scope><name>controller</name></member>
       <member refid="class_a_s_e__assignment_1_1_command_processor_1a71fa6ea769bd00c54025fbb59b89137a" prot="private" virt="non-virtual"><scope>ASE_assignment::CommandProcessor</scope><name>DrawCircle</name></member>
       <member refid="class_a_s_e__assignment_1_1_command_processor_1ab4393568b26651cef0e95450044775dd" prot="private" virt="non-virtual"><scope>ASE_assignment::CommandProcessor</scope><name>DrawRectangle</name></member>
       <member refid="class_a_s_e__assignment_1_1_command_processor_1a9a84d55963e463e06f98213be6eba46f" prot="private" virt="non-virtual"><scope>ASE_assignment::CommandProcessor</scope><name>DrawTo</name></member>
       <member refid="class_a_s_e__assignment_1_1_command_processor_1a5b8ec25b2996e26b8bc7e24df110a522" prot="private" virt="non-virtual"><scope>ASE_assignment::CommandProcessor</scope><name>DrawTriangle</name></member>
+      <member refid="class_a_s_e__assignment_1_1_command_processor_1a645bd0bf9348af9bc7dbade5aa97ca69" prot="private" virt="non-virtual"><scope>ASE_assignment::CommandProcessor</scope><name>EndIf</name></member>
       <member refid="class_a_s_e__assignment_1_1_command_processor_1aa7ebabb6e71ff0f372f7a9a166ad569b" prot="private" virt="non-virtual"><scope>ASE_assignment::CommandProcessor</scope><name>Fill</name></member>
+      <member refid="class_a_s_e__assignment_1_1_command_processor_1a7079b18f0627acb95355c2edc4676ccd" prot="private" virt="non-virtual"><scope>ASE_assignment::CommandProcessor</scope><name>If</name></member>
       <member refid="class_a_s_e__assignment_1_1_command_processor_1a803eb0608c8719458776fb7496d7c103" prot="private" virt="non-virtual"><scope>ASE_assignment::CommandProcessor</scope><name>MoveTo</name></member>
       <member refid="class_a_s_e__assignment_1_1_command_processor_1a77e249ea02b9355c3f4722501ff8e4cd" prot="private" virt="non-virtual"><scope>ASE_assignment::CommandProcessor</scope><name>PenColor</name></member>
       <member refid="class_a_s_e__assignment_1_1_command_processor_1ac3649982b3c9dd30490071e499df8759" prot="private" virt="non-virtual"><scope>ASE_assignment::CommandProcessor</scope><name>Reset</name></member>
+      <member refid="class_a_s_e__assignment_1_1_command_processor_1a58a47f15c7e98fb0802e6eff8fe5fc21" prot="private" virt="non-virtual"><scope>ASE_assignment::CommandProcessor</scope><name>ResolveParam</name></member>
       <member refid="class_a_s_e__assignment_1_1_command_processor_1a0c66d16f946ba5467f1da7546f73d212" prot="public" virt="non-virtual"><scope>ASE_assignment::CommandProcessor</scope><name>RunLines</name></member>
       <member refid="class_a_s_e__assignment_1_1_command_processor_1ad8a32a96d60ebcf74ae7388eeade0336" prot="private" virt="non-virtual"><scope>ASE_assignment::CommandProcessor</scope><name>validCommands</name></member>
+      <member refid="class_a_s_e__assignment_1_1_command_processor_1aa1110fc7aabf91fde5340c5de6076152" prot="private" virt="non-virtual"><scope>ASE_assignment::CommandProcessor</scope><name>Var</name></member>
+      <member refid="class_a_s_e__assignment_1_1_command_processor_1a3e7155240dd2d3c260bf52af136b698c" prot="private" virt="non-virtual"><scope>ASE_assignment::CommandProcessor</scope><name>variableManager</name></member>
     </listofallmembers>
   </compounddef>
 </doxygen>

@@ -7,6 +7,7 @@
     <innerfile refid="_command_8cs">Command.cs</innerfile>
     <innerfile refid="_command_parser_8cs">CommandParser.cs</innerfile>
     <innerfile refid="_command_processor_8cs">CommandProcessor.cs</innerfile>
+    <innerfile refid="_conditionals_8cs">Conditionals.cs</innerfile>
     <innerfile refid="_file_manager_8cs">FileManager.cs</innerfile>
     <innerfile refid="_form1_8cs">Form1.cs</innerfile>
     <innerfile refid="_form1_8_designer_8cs">Form1.Designer.cs</innerfile>
@@ -15,6 +16,7 @@
     <innerfile refid="_rectangle_8cs">Rectangle.cs</innerfile>
     <innerfile refid="_shape_8cs">Shape.cs</innerfile>
     <innerfile refid="_triangle_8cs">Triangle.cs</innerfile>
+    <innerfile refid="_variable_manager_8cs">VariableManager.cs</innerfile>
     <briefdescription>
     </briefdescription>
     <detaileddescription>

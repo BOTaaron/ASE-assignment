@@ -1,0 +1,188 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="class_a_s_e__assignment_1_1_variable_manager" kind="class" language="C#" prot="package">
+    <compoundname>ASE_assignment::VariableManager</compoundname>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_a_s_e__assignment_1_1_variable_manager_1ad0109232d28a833c21905e27e67053ec" prot="private" static="no" mutable="no">
+        <type>Dictionary&lt; string, object &gt;</type>
+        <definition>Dictionary&lt;string, object&gt; ASE_assignment.VariableManager.variables</definition>
+        <argsstring></argsstring>
+        <name>variables</name>
+        <qualifiedname>ASE_assignment.VariableManager.variables</qualifiedname>
+        <initializer>= new Dictionary&lt;string, object&gt;()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/VariableManager.cs" line="12" column="28" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/VariableManager.cs" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_s_e__assignment_1_1_variable_manager_1a237eb415045a615104a3dd7e3dd07372" prot="private" static="no" mutable="no">
+        <type>DataTable</type>
+        <definition>DataTable ASE_assignment.VariableManager.dataTable</definition>
+        <argsstring></argsstring>
+        <name>dataTable</name>
+        <qualifiedname>ASE_assignment.VariableManager.dataTable</qualifiedname>
+        <initializer>= new DataTable()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/VariableManager.cs" line="13" column="27" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/VariableManager.cs" bodystart="13" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_a_s_e__assignment_1_1_variable_manager_1a7fbf0e694da7ca1c86614df817033b8c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ASE_assignment.VariableManager.DeclareVariable</definition>
+        <argsstring>(string stringParameter)</argsstring>
+        <name>DeclareVariable</name>
+        <qualifiedname>ASE_assignment.VariableManager.DeclareVariable</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>stringParameter</declname>
+        </param>
+        <briefdescription>
+<para>Logic for creating a variable and saving it to dictionary along with its value after checking for an expression. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>stringParameter</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The parsed string parameter, passed from CommandParser into CommandProcessor</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>ArgumentException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Throws exception when variable incorrectly declared</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/VariableManager.cs" line="20" column="21" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/VariableManager.cs" bodystart="20" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_s_e__assignment_1_1_variable_manager_1ad7747571f146871172040d1393ca7400" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>object</type>
+        <definition>object ASE_assignment.VariableManager.GetVariable</definition>
+        <argsstring>(string name)</argsstring>
+        <name>GetVariable</name>
+        <qualifiedname>ASE_assignment.VariableManager.GetVariable</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Method that publicly returns the variable value. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The name of the variable of which value is needed</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The value of the provided variable</para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>KeyNotFoundException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Exception thrown if the variable was not found, like does not exist or spelled wrong</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/VariableManager.cs" line="65" column="23" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/VariableManager.cs" bodystart="65" bodyend="75"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_s_e__assignment_1_1_variable_manager_1afc6822e94a1161943555b42b61736728" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ASE_assignment.VariableManager.ClearVariables</definition>
+        <argsstring>()</argsstring>
+        <name>ClearVariables</name>
+        <qualifiedname>ASE_assignment.VariableManager.ClearVariables</qualifiedname>
+        <briefdescription>
+<para>Clears stored variables from the dictionary to prevent duplicates when running the code twice. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/VariableManager.cs" line="79" column="21" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/VariableManager.cs" bodystart="79" bodyend="82"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_a_s_e__assignment_1_1_variable_manager_1afde8e60a64a1d7cb03c2eb9a45285ad0" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>object</type>
+        <definition>object ASE_assignment.VariableManager.EvaluateExpression</definition>
+        <argsstring>(string expression)</argsstring>
+        <name>EvaluateExpression</name>
+        <qualifiedname>ASE_assignment.VariableManager.EvaluateExpression</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>expression</declname>
+        </param>
+        <briefdescription>
+<para>Evaluates expressions on more complex variable declarations, for example completing arithmetic operations. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>expression</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The expression part of the variable, taken by splitting the line after the var command</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The result of the expression within the string</para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>ArgumentException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Throws an exception if the exception was unable to be evaluated</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/VariableManager.cs" line="47" column="24" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/VariableManager.cs" bodystart="47" bodyend="58"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/VariableManager.cs" line="10" column="13" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/VariableManager.cs" bodystart="11" bodyend="83"/>
+    <listofallmembers>
+      <member refid="class_a_s_e__assignment_1_1_variable_manager_1afc6822e94a1161943555b42b61736728" prot="public" virt="non-virtual"><scope>ASE_assignment::VariableManager</scope><name>ClearVariables</name></member>
+      <member refid="class_a_s_e__assignment_1_1_variable_manager_1a237eb415045a615104a3dd7e3dd07372" prot="private" virt="non-virtual"><scope>ASE_assignment::VariableManager</scope><name>dataTable</name></member>
+      <member refid="class_a_s_e__assignment_1_1_variable_manager_1a7fbf0e694da7ca1c86614df817033b8c" prot="public" virt="non-virtual"><scope>ASE_assignment::VariableManager</scope><name>DeclareVariable</name></member>
+      <member refid="class_a_s_e__assignment_1_1_variable_manager_1afde8e60a64a1d7cb03c2eb9a45285ad0" prot="private" virt="non-virtual"><scope>ASE_assignment::VariableManager</scope><name>EvaluateExpression</name></member>
+      <member refid="class_a_s_e__assignment_1_1_variable_manager_1ad7747571f146871172040d1393ca7400" prot="public" virt="non-virtual"><scope>ASE_assignment::VariableManager</scope><name>GetVariable</name></member>
+      <member refid="class_a_s_e__assignment_1_1_variable_manager_1ad0109232d28a833c21905e27e67053ec" prot="private" virt="non-virtual"><scope>ASE_assignment::VariableManager</scope><name>variables</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

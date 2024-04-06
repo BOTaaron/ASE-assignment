@@ -8,7 +8,7 @@ Takes the parsed commands as parameters and runs the desired command by calling 
 \doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{class_a_s_e__assignment_1_1_command_processor_a4e6d43f0b48b81e29860f343ac96f37e}{Command\+Processor}} (\mbox{\hyperlink{class_a_s_e__assignment_1_1_pen_controller}{Pen\+Controller}} controller, \mbox{\hyperlink{class_a_s_e__assignment_1_1_canvass}{Canvass}} canvass)
+\mbox{\hyperlink{class_a_s_e__assignment_1_1_command_processor_a329fb5753072556705eec0052132c757}{Command\+Processor}} (\mbox{\hyperlink{class_a_s_e__assignment_1_1_pen_controller}{Pen\+Controller}} controller, \mbox{\hyperlink{class_a_s_e__assignment_1_1_canvass}{Canvass}} canvass, \mbox{\hyperlink{class_a_s_e__assignment_1_1_variable_manager}{Variable\+Manager}} variable\+Manager)
 \begin{DoxyCompactList}\small\item\em Initialise a new instance of the Command\+Processor class. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_a_s_e__assignment_1_1_command_processor_a0c66d16f946ba5467f1da7546f73d212}{Run\+Lines}} (\mbox{\hyperlink{class_a_s_e__assignment_1_1_command}{Command}} parsed\+Line)
 \begin{DoxyCompactList}\small\item\em Maps valid commands from the valid\+Commands dictionary to their corresponding functions. \end{DoxyCompactList}\end{DoxyCompactItemize}
@@ -35,7 +35,15 @@ void \mbox{\hyperlink{class_a_s_e__assignment_1_1_command_processor_a5b8ec25b299
 void \mbox{\hyperlink{class_a_s_e__assignment_1_1_command_processor_a77e249ea02b9355c3f4722501ff8e4cd}{Pen\+Color}} (\mbox{\hyperlink{class_a_s_e__assignment_1_1_command}{Command}} parsed\+Line)
 \begin{DoxyCompactList}\small\item\em Changes the pen colour based on the parameter colour that was entered. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_a_s_e__assignment_1_1_command_processor_aa7ebabb6e71ff0f372f7a9a166ad569b}{Fill}} (\mbox{\hyperlink{class_a_s_e__assignment_1_1_command}{Command}} parsed\+Line)
-\begin{DoxyCompactList}\small\item\em Enables shape fill to draw solid shapes instead of outlines. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Enables shape fill to draw solid shapes instead of outlines. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_a_s_e__assignment_1_1_command_processor_a7079b18f0627acb95355c2edc4676ccd}{If}} (\mbox{\hyperlink{class_a_s_e__assignment_1_1_command}{Command}} parsed\+Line)
+\item 
+void \mbox{\hyperlink{class_a_s_e__assignment_1_1_command_processor_a645bd0bf9348af9bc7dbade5aa97ca69}{End\+If}} (\mbox{\hyperlink{class_a_s_e__assignment_1_1_command}{Command}} parsed\+Line)
+\begin{DoxyCompactList}\small\item\em Calls the End\+If method in the Conditionals class. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_a_s_e__assignment_1_1_command_processor_aa1110fc7aabf91fde5340c5de6076152}{Var}} (\mbox{\hyperlink{class_a_s_e__assignment_1_1_command}{Command}} parsed\+Line)
+\begin{DoxyCompactList}\small\item\em Calls the Declare\+Variable method in the Variable\+Manager class to create a new variable. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_a_s_e__assignment_1_1_command_processor_a58a47f15c7e98fb0802e6eff8fe5fc21}{Resolve\+Param}} (string parameter)
+\begin{DoxyCompactList}\small\item\em Resolves parameters entered into a command to a variable, eg. when using Draw\+To a,100 will match a to the correct value. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
@@ -47,6 +55,12 @@ void \mbox{\hyperlink{class_a_s_e__assignment_1_1_command_processor_aa7ebabb6e71
 \item 
 \Hypertarget{class_a_s_e__assignment_1_1_command_processor_ad8a32a96d60ebcf74ae7388eeade0336}\label{class_a_s_e__assignment_1_1_command_processor_ad8a32a96d60ebcf74ae7388eeade0336} 
 Dictionary$<$ string, Command\+Action $>$ {\bfseries valid\+Commands}
+\item 
+\Hypertarget{class_a_s_e__assignment_1_1_command_processor_a6ee2f3d82eb70daf089f7b88e28eb315}\label{class_a_s_e__assignment_1_1_command_processor_a6ee2f3d82eb70daf089f7b88e28eb315} 
+\mbox{\hyperlink{class_a_s_e__assignment_1_1_conditionals}{Conditionals}} {\bfseries conditionals}
+\item 
+\Hypertarget{class_a_s_e__assignment_1_1_command_processor_a3e7155240dd2d3c260bf52af136b698c}\label{class_a_s_e__assignment_1_1_command_processor_a3e7155240dd2d3c260bf52af136b698c} 
+\mbox{\hyperlink{class_a_s_e__assignment_1_1_variable_manager}{Variable\+Manager}} {\bfseries variable\+Manager}
 \end{DoxyCompactItemize}
 
 
@@ -54,11 +68,11 @@ Dictionary$<$ string, Command\+Action $>$ {\bfseries valid\+Commands}
 Takes the parsed commands as parameters and runs the desired command by calling the correct function. 
 
 \doxysubsection{Constructor \& Destructor Documentation}
-\Hypertarget{class_a_s_e__assignment_1_1_command_processor_a4e6d43f0b48b81e29860f343ac96f37e}\label{class_a_s_e__assignment_1_1_command_processor_a4e6d43f0b48b81e29860f343ac96f37e} 
+\Hypertarget{class_a_s_e__assignment_1_1_command_processor_a329fb5753072556705eec0052132c757}\label{class_a_s_e__assignment_1_1_command_processor_a329fb5753072556705eec0052132c757} 
 \index{ASE\_assignment.CommandProcessor@{ASE\_assignment.CommandProcessor}!CommandProcessor@{CommandProcessor}}
 \index{CommandProcessor@{CommandProcessor}!ASE\_assignment.CommandProcessor@{ASE\_assignment.CommandProcessor}}
 \doxysubsubsection{\texorpdfstring{CommandProcessor()}{CommandProcessor()}}
-{\footnotesize\ttfamily ASE\+\_\+assignment.\+Command\+Processor.\+Command\+Processor (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_a_s_e__assignment_1_1_pen_controller}{Pen\+Controller}}}]{controller,  }\item[{\mbox{\hyperlink{class_a_s_e__assignment_1_1_canvass}{Canvass}}}]{canvass }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily ASE\+\_\+assignment.\+Command\+Processor.\+Command\+Processor (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_a_s_e__assignment_1_1_pen_controller}{Pen\+Controller}}}]{controller,  }\item[{\mbox{\hyperlink{class_a_s_e__assignment_1_1_canvass}{Canvass}}}]{canvass,  }\item[{\mbox{\hyperlink{class_a_s_e__assignment_1_1_variable_manager}{Variable\+Manager}}}]{variable\+Manager }\end{DoxyParamCaption})}
 
 
 
@@ -174,6 +188,21 @@ Creates an equilateral triangle from a provided integer parameter.
 {\em Argument\+Exception} & Throws an exception if any parameter except a single integer is provided\\
 \hline
 \end{DoxyExceptions}
+\Hypertarget{class_a_s_e__assignment_1_1_command_processor_a645bd0bf9348af9bc7dbade5aa97ca69}\label{class_a_s_e__assignment_1_1_command_processor_a645bd0bf9348af9bc7dbade5aa97ca69} 
+\index{ASE\_assignment.CommandProcessor@{ASE\_assignment.CommandProcessor}!EndIf@{EndIf}}
+\index{EndIf@{EndIf}!ASE\_assignment.CommandProcessor@{ASE\_assignment.CommandProcessor}}
+\doxysubsubsection{\texorpdfstring{EndIf()}{EndIf()}}
+{\footnotesize\ttfamily void ASE\+\_\+assignment.\+Command\+Processor.\+End\+If (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_a_s_e__assignment_1_1_command}{Command}}}]{parsed\+Line }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Calls the End\+If method in the Conditionals class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parsed\+Line} & The parsed line of commands, for string parameters to be passed in\\
+\hline
+\end{DoxyParams}
 \Hypertarget{class_a_s_e__assignment_1_1_command_processor_aa7ebabb6e71ff0f372f7a9a166ad569b}\label{class_a_s_e__assignment_1_1_command_processor_aa7ebabb6e71ff0f372f7a9a166ad569b} 
 \index{ASE\_assignment.CommandProcessor@{ASE\_assignment.CommandProcessor}!Fill@{Fill}}
 \index{Fill@{Fill}!ASE\_assignment.CommandProcessor@{ASE\_assignment.CommandProcessor}}
@@ -194,6 +223,19 @@ Enables shape fill to draw solid shapes instead of outlines.
 {\em Argument\+Exception} & Throws an exception if an invalid parameter is entered\\
 \hline
 \end{DoxyExceptions}
+\Hypertarget{class_a_s_e__assignment_1_1_command_processor_a7079b18f0627acb95355c2edc4676ccd}\label{class_a_s_e__assignment_1_1_command_processor_a7079b18f0627acb95355c2edc4676ccd} 
+\index{ASE\_assignment.CommandProcessor@{ASE\_assignment.CommandProcessor}!If@{If}}
+\index{If@{If}!ASE\_assignment.CommandProcessor@{ASE\_assignment.CommandProcessor}}
+\doxysubsubsection{\texorpdfstring{If()}{If()}}
+{\footnotesize\ttfamily void ASE\+\_\+assignment.\+Command\+Processor.\+If (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_a_s_e__assignment_1_1_command}{Command}}}]{parsed\+Line }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Calls the If method in the Conditionals class
+
+
+\begin{DoxyParams}{Parameters}
+{\em parsed\+Line} & The parsed line of commands, for the string parameters to be passed in\\
+\hline
+\end{DoxyParams}
 \Hypertarget{class_a_s_e__assignment_1_1_command_processor_a803eb0608c8719458776fb7496d7c103}\label{class_a_s_e__assignment_1_1_command_processor_a803eb0608c8719458776fb7496d7c103} 
 \index{ASE\_assignment.CommandProcessor@{ASE\_assignment.CommandProcessor}!MoveTo@{MoveTo}}
 \index{MoveTo@{MoveTo}!ASE\_assignment.CommandProcessor@{ASE\_assignment.CommandProcessor}}
@@ -254,6 +296,29 @@ Resets the cursor to the 0,0 coordinate.
 {\em Argument\+Exception} & Throws an exception when reset is combined with an unexpected parameter\\
 \hline
 \end{DoxyExceptions}
+\Hypertarget{class_a_s_e__assignment_1_1_command_processor_a58a47f15c7e98fb0802e6eff8fe5fc21}\label{class_a_s_e__assignment_1_1_command_processor_a58a47f15c7e98fb0802e6eff8fe5fc21} 
+\index{ASE\_assignment.CommandProcessor@{ASE\_assignment.CommandProcessor}!ResolveParam@{ResolveParam}}
+\index{ResolveParam@{ResolveParam}!ASE\_assignment.CommandProcessor@{ASE\_assignment.CommandProcessor}}
+\doxysubsubsection{\texorpdfstring{ResolveParam()}{ResolveParam()}}
+{\footnotesize\ttfamily int ASE\+\_\+assignment.\+Command\+Processor.\+Resolve\+Param (\begin{DoxyParamCaption}\item[{string}]{parameter }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Resolves parameters entered into a command to a variable, eg. when using Draw\+To a,100 will match a to the correct value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parameter} & The parameters following the command\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An integer value matched to the variable used in parameter
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Argument\+Exception} & Throws exception if the incorrect format of parameter is given\\
+\hline
+\end{DoxyExceptions}
 \Hypertarget{class_a_s_e__assignment_1_1_command_processor_a0c66d16f946ba5467f1da7546f73d212}\label{class_a_s_e__assignment_1_1_command_processor_a0c66d16f946ba5467f1da7546f73d212} 
 \index{ASE\_assignment.CommandProcessor@{ASE\_assignment.CommandProcessor}!RunLines@{RunLines}}
 \index{RunLines@{RunLines}!ASE\_assignment.CommandProcessor@{ASE\_assignment.CommandProcessor}}
@@ -274,6 +339,21 @@ Maps valid commands from the valid\+Commands dictionary to their corresponding f
 {\em Argument\+Exception} & Throws an exception if the command is not found in the valid\+Command dictionary\\
 \hline
 \end{DoxyExceptions}
+\Hypertarget{class_a_s_e__assignment_1_1_command_processor_aa1110fc7aabf91fde5340c5de6076152}\label{class_a_s_e__assignment_1_1_command_processor_aa1110fc7aabf91fde5340c5de6076152} 
+\index{ASE\_assignment.CommandProcessor@{ASE\_assignment.CommandProcessor}!Var@{Var}}
+\index{Var@{Var}!ASE\_assignment.CommandProcessor@{ASE\_assignment.CommandProcessor}}
+\doxysubsubsection{\texorpdfstring{Var()}{Var()}}
+{\footnotesize\ttfamily void ASE\+\_\+assignment.\+Command\+Processor.\+Var (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_a_s_e__assignment_1_1_command}{Command}}}]{parsed\+Line }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Calls the Declare\+Variable method in the Variable\+Manager class to create a new variable. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parsed\+Line} & \\
+\hline
+\end{DoxyParams}
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}

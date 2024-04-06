@@ -1,0 +1,180 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="class_a_s_e__assignment_1_1_conditionals" kind="class" language="C#" prot="package">
+    <compoundname>ASE_assignment::Conditionals</compoundname>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_a_s_e__assignment_1_1_conditionals_1af62844df8fabdd16f7875fbce2795815" prot="private" static="no" mutable="no">
+        <type><ref refid="class_a_s_e__assignment_1_1_variable_manager" kindref="compound">VariableManager</ref></type>
+        <definition>VariableManager ASE_assignment.Conditionals.variableManager</definition>
+        <argsstring></argsstring>
+        <name>variableManager</name>
+        <qualifiedname>ASE_assignment.Conditionals.variableManager</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Conditionals.cs" line="16" column="33" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Conditionals.cs" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_s_e__assignment_1_1_conditionals_1aca82fea7680058dbf2137a9bcc5473f3" prot="private" static="no" mutable="no">
+        <type>DataTable</type>
+        <definition>DataTable ASE_assignment.Conditionals.dataTable</definition>
+        <argsstring></argsstring>
+        <name>dataTable</name>
+        <qualifiedname>ASE_assignment.Conditionals.dataTable</qualifiedname>
+        <initializer>= new DataTable()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Conditionals.cs" line="17" column="27" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Conditionals.cs" bodystart="17" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="class_a_s_e__assignment_1_1_conditionals_1a048e30e8a3b5ceb8e5c9ad09fe5816d4" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="yes" protectedsettable="no">
+        <type>bool</type>
+        <definition>bool ASE_assignment.Conditionals.insideConditionalBlock</definition>
+        <argsstring></argsstring>
+        <name>insideConditionalBlock</name>
+        <qualifiedname>ASE_assignment.Conditionals.insideConditionalBlock</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Conditionals.cs" line="19" column="21" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Conditionals.cs" bodystart="19" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="property" id="class_a_s_e__assignment_1_1_conditionals_1a1e3adfb48b9f2e3dd9d406821a381412" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="yes" protectedsettable="no">
+        <type>bool</type>
+        <definition>bool ASE_assignment.Conditionals.executeBlock</definition>
+        <argsstring></argsstring>
+        <name>executeBlock</name>
+        <qualifiedname>ASE_assignment.Conditionals.executeBlock</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Conditionals.cs" line="20" column="21" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Conditionals.cs" bodystart="20" bodyend="20"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_a_s_e__assignment_1_1_conditionals_1a7ad392cab882983358235d61e8e7394a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ASE_assignment.Conditionals.Conditionals</definition>
+        <argsstring>(VariableManager variableManager)</argsstring>
+        <name>Conditionals</name>
+        <qualifiedname>ASE_assignment.Conditionals.Conditionals</qualifiedname>
+        <param>
+          <type><ref refid="class_a_s_e__assignment_1_1_variable_manager" kindref="compound">VariableManager</ref></type>
+          <declname>variableManager</declname>
+        </param>
+        <briefdescription>
+<para>Constructor for the Conditionals class. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>variableManager</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Conditionals.cs" line="26" column="16" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Conditionals.cs" bodystart="26" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_s_e__assignment_1_1_conditionals_1ab34cc532cff64f9bd637e17fcb4b512c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ASE_assignment.Conditionals.If</definition>
+        <argsstring>(string condition)</argsstring>
+        <name>If</name>
+        <qualifiedname>ASE_assignment.Conditionals.If</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>condition</declname>
+        </param>
+        <briefdescription>
+<para>Removes operators from the string and split at spaces. Uses the DataTable.Compute method to evaluate condition string as a mathematical expression. Evaluated to a boolean and stored in insideConditionalBlock. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>condition</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>logical or mathematical expression to be evaluated</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>ArgumentException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if the condition cannot be evaluated an exception will be thrown</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Conditionals.cs" line="36" column="21" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Conditionals.cs" bodystart="36" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_s_e__assignment_1_1_conditionals_1a156f1c9ca2d9bf8da3d375e0ee1a39d2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ASE_assignment.Conditionals.EndIf</definition>
+        <argsstring>()</argsstring>
+        <name>EndIf</name>
+        <qualifiedname>ASE_assignment.Conditionals.EndIf</qualifiedname>
+        <briefdescription>
+<para>Sets the insideConditionBlock flag to false to tell the program the if statement is finished and can continue normal execution. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Conditionals.cs" line="68" column="21" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Conditionals.cs" bodystart="68" bodyend="71"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Class that handles behaviour for the &apos;if&apos; command, so the user can create conditional statements that only execute when evaluation is true. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>ASE_assignment.Conditionals</label>
+        <link refid="class_a_s_e__assignment_1_1_conditionals"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>variableManager</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>ASE_assignment.VariableManager</label>
+        <link refid="class_a_s_e__assignment_1_1_variable_manager"/>
+      </node>
+    </collaborationgraph>
+    <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Conditionals.cs" line="14" column="13" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Conditionals.cs" bodystart="15" bodyend="72"/>
+    <listofallmembers>
+      <member refid="class_a_s_e__assignment_1_1_conditionals_1a7ad392cab882983358235d61e8e7394a" prot="public" virt="non-virtual"><scope>ASE_assignment::Conditionals</scope><name>Conditionals</name></member>
+      <member refid="class_a_s_e__assignment_1_1_conditionals_1aca82fea7680058dbf2137a9bcc5473f3" prot="private" virt="non-virtual"><scope>ASE_assignment::Conditionals</scope><name>dataTable</name></member>
+      <member refid="class_a_s_e__assignment_1_1_conditionals_1a156f1c9ca2d9bf8da3d375e0ee1a39d2" prot="public" virt="non-virtual"><scope>ASE_assignment::Conditionals</scope><name>EndIf</name></member>
+      <member refid="class_a_s_e__assignment_1_1_conditionals_1a1e3adfb48b9f2e3dd9d406821a381412" prot="public" virt="non-virtual"><scope>ASE_assignment::Conditionals</scope><name>executeBlock</name></member>
+      <member refid="class_a_s_e__assignment_1_1_conditionals_1ab34cc532cff64f9bd637e17fcb4b512c" prot="public" virt="non-virtual"><scope>ASE_assignment::Conditionals</scope><name>If</name></member>
+      <member refid="class_a_s_e__assignment_1_1_conditionals_1a048e30e8a3b5ceb8e5c9ad09fe5816d4" prot="public" virt="non-virtual"><scope>ASE_assignment::Conditionals</scope><name>insideConditionalBlock</name></member>
+      <member refid="class_a_s_e__assignment_1_1_conditionals_1af62844df8fabdd16f7875fbce2795815" prot="private" virt="non-virtual"><scope>ASE_assignment::Conditionals</scope><name>variableManager</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
