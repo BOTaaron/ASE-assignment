@@ -120,6 +120,7 @@
             // ErrorBox
             // 
             this.ErrorBox.BackColor = System.Drawing.Color.PowderBlue;
+            this.ErrorBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ErrorBox.ForeColor = System.Drawing.Color.IndianRed;
             this.ErrorBox.Location = new System.Drawing.Point(41, 1005);
             this.ErrorBox.Name = "ErrorBox";

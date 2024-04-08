@@ -52,7 +52,7 @@ namespace ASE_assignment
                 }
                 catch (KeyNotFoundException)
                 {
-                    throw new Exception("Unable to evaluate");
+                    //throw new Exception("Unable to evaluate");
                 }
             }
             try

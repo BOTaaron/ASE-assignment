@@ -252,6 +252,7 @@ namespace ASE_assignment
         private void ErrorLog(string message, int lineNumber)
         {
             ErrorBox.AppendText($"Error on line {lineNumber}: {message}\n");
+
         }
 
         private void Form1_Load(object sender, EventArgs e)

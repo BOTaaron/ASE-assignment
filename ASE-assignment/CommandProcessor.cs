@@ -20,6 +20,7 @@ namespace ASE_assignment
         private Dictionary<string, CommandAction> validCommands;
         private Conditionals conditionals;
         private VariableManager variableManager;
+        private Loops loops;
         
         /// <summary>
         /// Initialise a new instance of the CommandProcessor class
@@ -32,7 +33,7 @@ namespace ASE_assignment
             this.canvass = canvass;
             this.variableManager = variableManager;
             conditionals = new Conditionals(variableManager);
-            Loops loop = new Loops(variableManager);
+            loops = new Loops(variableManager, RunLines);
 
 
             validCommands = new Dictionary<string, CommandAction>
@@ -49,7 +50,8 @@ namespace ASE_assignment
                 {"var", Var},
                 {"if", If},
                 {"endif", EndIf},
-                {"while", While}
+                {"while", While},
+                {"endwhile", While }
                 // further commands can be added by creating methods and adding to the dictionary
             };
         }
@@ -340,7 +342,34 @@ namespace ASE_assignment
             if (parsedLine == null || parsedLine.ParsedCommand.Count == 0)
                 throw new ArgumentException("Command cannot be empty");
 
+
             string commandName = parsedLine.ParsedCommand[0].ToLower();
+
+            // Handling direct variable assignment or update
+            if (parsedLine.StringParam.Count > 0 && parsedLine.StringParam[0].Contains("="))
+            {
+                string[] parts = parsedLine.StringParam[0].Split('=');
+                if (parts.Length == 2)
+                {
+                    string variableName = parts[0].Trim();
+                    string expression = parts[1].Trim();
+
+                    try
+                    {
+                        // Attempt to get the variable to determine if it needs updating
+                        variableManager.GetVariable(variableName);
+                        // If no exception is thrown, the variable exists and can be updated
+                        variableManager.UpdateVariable(variableName, expression);
+                    }
+                    catch (KeyNotFoundException)
+                    {
+                        // Variable does not exist, so declare a new one
+                        variableManager.DeclareVariable(parsedLine.StringParam[0]);
+                    }
+                    return; // Skip further processing
+                }
+            }
+
             if (validCommands.TryGetValue(commandName, out CommandAction action))
             {
                 if (commandName == "if" || commandName == "endif")
@@ -392,11 +421,40 @@ namespace ASE_assignment
                 throw new ArgumentException($"Parameter '{parameter}' is not the correct format");
             }
         }
-        public void While(string parameter)
+        public void While(Command parsedLine)
         {
 
-        }
 
+            switch (parsedLine.ParsedCommand[0])
+            {
+                case "while":
+                    // Start capturing commands if "while" is encountered and not already capturing
+                    if (!loops.captureCommand)
+                    {
+                        loops.StartLoop(parsedLine.StringParam[0]);
+                    }
+                    break;
+                case "endwhile":
+                    // If "endwhile" is encountered and currently capturing, stop capturing and execute the loop
+                    if (loops.captureCommand)
+                    {
+                        loops.ExecuteLoop();
+                    }
+                    break;
+                default:
+                    // If we are in capturing mode, add the command to the loop commands list
+                    if (loops.captureCommand)
+                    {
+                        loops.AddLine(parsedLine);
+                    }
+                    else
+                    {
+                        // If not capturing, execute the command immediately (normal command execution outside of loops)
+                        RunLines(parsedLine);
+                    }
+                    break;
+            }
+        }
     }
 }
 

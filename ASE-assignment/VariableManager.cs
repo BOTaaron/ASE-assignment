@@ -52,22 +52,34 @@ namespace ASE_assignment
 
         }
         /// <summary>
-        /// Evaluates expressions on more complex variable declarations, for example completing arithmetic operations
+        /// 
         /// </summary>
-        /// <param name="expression">The expression part of the variable, taken by splitting the line after the var command</param>
-        /// <returns>The result of the expression within the string</returns>
-        /// <exception cref="ArgumentException">Throws an exception if the exception was unable to be evaluated</exception>
-        private object EvaluateExpression(string expression)
+        /// <param name="variableName"></param>
+        /// <param name="expression"></param>
+        /// <exception cref="ArgumentException"></exception>
+        public void UpdateVariable(string variableName, string expression)
         {
+            if (!variables.ContainsKey(variableName))
+            {
+                throw new ArgumentException($"Variable '{variableName}' does not exist.");
+            }
+
+            foreach (var variable in variables)
+            {
+                expression = expression.Replace(variable.Key, variable.Value.ToString());
+            }
+
+            object value;
             try
             {
-                return dataTable.Compute(expression, string.Empty);
+                value = dataTable.Compute(expression, string.Empty);
             }
             catch
             {
-                throw new ArgumentException($"Expression could not be evaluated. Check that the expression was correctly entered: {expression}");
+                throw new ArgumentException("Expression could not be evaluated.");
             }
-            
+
+            variables[variableName] = value;
         }
         /// <summary>
         /// Method that publicly returns the variable value
@@ -93,5 +105,6 @@ namespace ASE_assignment
         {
             variables.Clear();
         }
+
     }
 }
