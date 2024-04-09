@@ -49,6 +49,8 @@
     <Compile Include="Canvass.cs" />
     <Compile Include="Circle.cs" />
     <Compile Include="Conditionals.cs" />
+    <Compile Include="CustomShape.cs" />
+    <Compile Include="Methods.cs" />
     <Compile Include="ShapeFactory.cs" />
     <Compile Include="SyntaxException.cs" />
     <Compile Include="Loops.cs" />

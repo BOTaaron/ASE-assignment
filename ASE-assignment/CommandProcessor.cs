@@ -45,6 +45,7 @@ namespace ASE_assignment
                 {"rectangle", DrawRectangle},
                 {"circle", DrawCircle},
                 {"triangle", DrawTriangle},
+                {"polygon", DrawPolygon},
                 {"pen" , PenColor},
                 {"fill", Fill},
                 {"var", Var},
@@ -159,7 +160,8 @@ namespace ASE_assignment
                 // checks if there is a string parameter and tries to resolve it to its variable parameter
                 int x = ResolveParam(parsedLine.StringParam.Count > 0 ? parsedLine.StringParam[0] : null);
                 int y = ResolveParam(parsedLine.StringParam.Count > 1 ? parsedLine.StringParam[1] : parsedLine.IntParams.Count > 0 ? parsedLine.IntParams[0].ToString() : null);
-                controller.DrawShape(new Rectangle(x, y));
+                Shape rectangle = ShapeFactory.GetShape(ShapeFactory.ShapeType.Rectangle, x, y);
+                controller.DrawShape(rectangle);
             }
             else
             {
@@ -226,7 +228,8 @@ namespace ASE_assignment
                     object variableValue = variableManager.GetVariable(variable);
                     if (variableValue is int intValue)
                     {
-                        controller.DrawShape(new Triangle(intValue));
+                        Shape triangle = ShapeFactory.GetShape(ShapeFactory.ShapeType.Triangle, intValue);
+                        controller.DrawShape(triangle);
                     }
                     else
                     {
@@ -244,6 +247,44 @@ namespace ASE_assignment
                 throw new SyntaxException($"Invalid parameter entered. Must be either integer coordinates with comma delimiter, or variables", "");
             }
 
+        }
+        /// <summary>
+        /// Draw a polygon with a custom number of sides
+        /// </summary>
+        /// <param name="parsedLine">The parsed line containing the command, number of sides, and size</param>
+        /// <exception cref="ArgumentException"></exception>
+        /// <exception cref="SyntaxException"></exception>
+        private void DrawPolygon(Command parsedLine)
+        {
+            if (parsedLine.IntParams.Count == 2) 
+            {
+                // define the number of sides and size of the shape
+                int size = parsedLine.IntParams[0];
+                int sides = parsedLine.IntParams[1];
+                Shape customShape = ShapeFactory.GetShape(ShapeFactory.ShapeType.Custom, size, sides);
+                controller.DrawShape(customShape);
+            }
+            else if (parsedLine.StringParam.Count == 2) 
+            {
+                try
+                {
+                    // if parameters are strings, try to get numerical values from variables
+                    string sizeVariable = parsedLine.StringParam[0];
+                    string sidesVariable = parsedLine.StringParam[1];
+                    int size = Convert.ToInt32(variableManager.GetVariable(sizeVariable));
+                    int sides = Convert.ToInt32(variableManager.GetVariable(sidesVariable));
+                    Shape customShape = ShapeFactory.GetShape(ShapeFactory.ShapeType.Custom, size, sides);
+                    controller.DrawShape(customShape);
+                }
+                catch (Exception ex)
+                {
+                    throw new SyntaxException("Parameters entered incorrectly", "");
+                }
+            }
+            else
+            {
+                throw new SyntaxException("Invalid parameter count for custom shape. Two parameters required: size and number of sides.", "");
+            }
         }
         /// <summary>
         /// Changes the pen colour based on the parameter colour that was entered
