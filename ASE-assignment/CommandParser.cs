@@ -83,18 +83,18 @@ namespace ASE_assignment
             }
             else if ( line.Length > 2 ) 
             {
-              //  bool invalidIntegerParams = line.Skip(1) // Skip the command itself
-                //    .Any(param => int.TryParse(param, out _)); // Check if any parameter is an integer
+                bool invalidIntegerParams = line.Skip(1) // Skip the command itself
+                    .Any(param => int.TryParse(param, out _)); // Check if any parameter is an integer
                 if (line[0] == "var" || line[0] == "if" || line[0] == "while")
                 {
                     command.Add(line[0]); // add 'var' or 'if' as the command
                     string expression = string.Join(" ", line.Skip(1)); // rejoin the string's items after removing the command
                     stringParams.Add(expression); // add everything after var to stringParams to be evaluated later
                 }
-               // else if (invalidIntegerParams)
-               // {
-              //      throw new InvalidOperationException("Invalid parameter format");
-              //  }
+                else if (invalidIntegerParams)
+                {
+                    throw new InvalidOperationException("Invalid parameter format");
+                }
                 
             }
 

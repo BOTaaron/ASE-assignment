@@ -50,8 +50,7 @@ namespace ASE_assignment
                 {"var", Var},
                 {"if", If},
                 {"endif", EndIf},
-                {"while", While},
-                {"endwhile", While }
+                {"while", While}
                 // further commands can be added by creating methods and adding to the dictionary
             };
         }
@@ -344,9 +343,17 @@ namespace ASE_assignment
 
 
             string commandName = parsedLine.ParsedCommand[0].ToLower();
+            if (commandName == "endloop")
+            {
+                if (loops.captureCommand)
+                {
+                    loops.ExecuteLoop();
+                    return;
+                }
+            }
 
             // Handling direct variable assignment or update
-            if (parsedLine.StringParam.Count > 0 && parsedLine.StringParam[0].Contains("="))
+            if (parsedLine.StringParam.Count > 0 && parsedLine.StringParam[0].Contains("=") && !loops.captureCommand)
             {
                 string[] parts = parsedLine.StringParam[0].Split('=');
                 if (parts.Length == 2)
@@ -370,11 +377,22 @@ namespace ASE_assignment
                 }
             }
 
-            if (validCommands.TryGetValue(commandName, out CommandAction action))
+
+            if (validCommands.TryGetValue(commandName, out CommandAction action) || commandName == "endloop")
             {
                 if (commandName == "if" || commandName == "endif")
                 {
                     action.Invoke(parsedLine);
+                }
+                else if (loops.captureCommand && commandName != "while")
+                {
+                    loops.AddLine(parsedLine);                    
+                    return;
+                }
+                else if (commandName == "endloop")
+                {
+                    loops.ExecuteLoop();
+                    return;
                 }
                 else if (!conditionals.insideConditionalBlock || conditionals.executeBlock)
                 {
@@ -425,35 +443,8 @@ namespace ASE_assignment
         {
 
 
-            switch (parsedLine.ParsedCommand[0])
-            {
-                case "while":
-                    // Start capturing commands if "while" is encountered and not already capturing
-                    if (!loops.captureCommand)
-                    {
-                        loops.StartLoop(parsedLine.StringParam[0]);
-                    }
-                    break;
-                case "endwhile":
-                    // If "endwhile" is encountered and currently capturing, stop capturing and execute the loop
-                    if (loops.captureCommand)
-                    {
-                        loops.ExecuteLoop();
-                    }
-                    break;
-                default:
-                    // If we are in capturing mode, add the command to the loop commands list
-                    if (loops.captureCommand)
-                    {
-                        loops.AddLine(parsedLine);
-                    }
-                    else
-                    {
-                        // If not capturing, execute the command immediately (normal command execution outside of loops)
-                        RunLines(parsedLine);
-                    }
-                    break;
-            }
+            loops.StartLoop(parsedLine.StringParam[0]);
+            
         }
     }
 }

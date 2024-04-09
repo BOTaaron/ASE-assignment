@@ -26,6 +26,7 @@ namespace ASE_assignment
         public Loops(VariableManager variableManager, Action<Command> executeCommands)
         {
             this.variableManager = variableManager;
+            this.executeCommands = executeCommands;
         }
 
         public void StartLoop(string command)
@@ -45,12 +46,6 @@ namespace ASE_assignment
             }
 
         }
-        public void EndLoop()
-        {
-            captureCommand = false;
-            ExecuteLoop();
-            commands.Clear();
-        }
 
         public void ExecuteLoop()
         {
@@ -62,9 +57,11 @@ namespace ASE_assignment
 
             while (conditionResult)
             {
-                foreach (var command in commands)
+                for (int i = 0; i < commands.Count; i++)
                 {
-                    executeCommands(command);
+                    captureCommand = false;
+                    executeCommands(commands[i]);
+                    captureCommand = true;
                 }
                 conditionResult = EvaluateCondition(loopCondition);
             }
