@@ -42,8 +42,13 @@ namespace ASE_assignment
         {
             // split expression into parts and loop through to see if it corresponds to variable
             var parts = condition.Split(new[] { ' ', '+', '-', '*', '/', '<', '>', '=', '!' }, StringSplitOptions.RemoveEmptyEntries);
+            // list of operators to ignore when matching to variables
+            var operators = new HashSet<string> { "+", "-", "*", "/", "<", ">", "=", "!" };
+
             foreach (var part in parts)
             {
+                // ignore numerical values so only variables are checked
+                if (decimal.TryParse(part, out _) || operators.Contains(part)) continue;
                 try
                 {
                     
@@ -52,7 +57,7 @@ namespace ASE_assignment
                 }
                 catch (KeyNotFoundException)
                 {
-                    //throw new Exception("Unable to evaluate");
+                    throw new Exception("Unable to evaluate");
                 }
             }
             try

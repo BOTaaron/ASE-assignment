@@ -1,7 +1,23 @@
 1: drawto 100,100
 2: var a = 10
-3: if a > 5
-4: pen green
-5: endif
-6: drawto 200,200
-7: drawto 200,100
+3: var b = 20
+4: var c = 30
+5: if a < 20
+6:     pen blue
+7:     circle 45
+8:     if b > 5
+9:         pen green
+10:         drawto 200,200
+11:         triangle 50
+12:         if c < 20
+13:             drawto 300,300
+14:             triangle 100
+15:         endif
+16:         pen blue
+17:         moveto 150,150
+18:         circle 40
+19:     endif
+20:     pen red
+21:     moveto 250,250
+22:     rectangle 10,10
+23: endif
