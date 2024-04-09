@@ -187,7 +187,8 @@ namespace ASE_assignment
                     object variableValue = variableManager.GetVariable(variable);
                     if (variableValue is int intValue)
                     {
-                        controller.DrawShape(new Circle(intValue));
+                        Shape circle = ShapeFactory.GetShape(ShapeFactory.ShapeType.Circle, intValue);
+                        controller.DrawShape(circle);
                     }
                     else
                     {
@@ -225,7 +226,7 @@ namespace ASE_assignment
                     object variableValue = variableManager.GetVariable(variable);
                     if (variableValue is int intValue)
                     {
-                        controller.DrawShape(new Circle(intValue));
+                        controller.DrawShape(new Triangle(intValue));
                     }
                     else
                     {
