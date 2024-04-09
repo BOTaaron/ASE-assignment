@@ -62,13 +62,13 @@ namespace ASE_assignment
         /// <exception cref="ArgumentException">Throws an exception when no coordinates are provided</exception>
         private void MoveTo(Command parsedLine)
         {
-                if (parsedLine.IntParams.Count == 2)
-                {
-                    // Positions the pen to the x and y coordinates
-                    int x = parsedLine.IntParams[0];
-                    int y = parsedLine.IntParams[1];
-                    controller.PositionPen(x, y);
-                }
+            if (parsedLine.IntParams.Count == 2)
+            {
+                // Positions the pen to the x and y coordinates
+                int x = parsedLine.IntParams[0];
+                int y = parsedLine.IntParams[1];
+                controller.PositionPen(x, y);
+            }
             else if (parsedLine.StringParam.Count >= 1)
             {
                 // checks if there is a string parameter and tries to resolve it to its variable parameter
@@ -77,9 +77,9 @@ namespace ASE_assignment
                 controller.PositionPen(x, y);
             }
             else
-                {
-                    throw new ArgumentException("Not enough arguements provided. MoveTo expects coordinates with a comma delimiter.");
-                }
+            {
+                throw new SyntaxException($"Not enough arguements provided. MoveTo expects coordinates with a comma delimiter. Provided: {parsedLine.StringParam[0]}", parsedLine.StringParam[0]);
+            }
 
         }
         /// <summary>
@@ -104,7 +104,7 @@ namespace ASE_assignment
             }
             else
             {
-                throw new ArgumentException("Not enough arguements provided. DrawTo expects coordinates with a comma delimiter.");
+                throw new SyntaxException($"Not enough arguements provided. DrawTo expects coordinates with a comma delimiter. Provided: {parsedLine.StringParam[0]}", parsedLine.StringParam[0]);
             }
 
         }
@@ -121,7 +121,8 @@ namespace ASE_assignment
             }
             else
             {
-                throw new ArgumentException("Unexpected parameter entered. Clear does not take any parameters.");
+
+                throw new SyntaxException($"Unexpected parameter entered. Clear takes no parameters.", "");
             }
 
         }
@@ -138,7 +139,7 @@ namespace ASE_assignment
             }
             else
             {
-                throw new ArgumentException("Unexpected parameter entered. Reset does not take any parameters.");
+                throw new SyntaxException($"Unexpected parameter entered. Reset takes no parameters.", "");
             }
 
         }
@@ -162,7 +163,7 @@ namespace ASE_assignment
             }
             else
             {
-                throw new ArgumentException($"Invalid parameter entered. Valid parameters are two integers with a comma delimiter. Entered: {parsedLine.IntParams[0]},{parsedLine.IntParams[1]}");
+                throw new SyntaxException($"Invalid parameter entered. Must be either integer coordinates with comma delimiter, or variables", "");
             }
 
         }
@@ -201,7 +202,7 @@ namespace ASE_assignment
             }
             else
             {
-                throw new ArgumentException($"Invalid parameter entered. Valid parameters are a single integer. Entered: {parsedLine.IntParams[0]}");
+                throw new SyntaxException($"Invalid parameter entered. Must be either integer coordinates with comma delimiter, or variables", "");
             }
         }
         /// <summary>
@@ -239,7 +240,7 @@ namespace ASE_assignment
             }
             else
             {
-                throw new ArgumentException($"Invalid parameter entered. Valid parameters are a single integer. Entered: {parsedLine.IntParams[0]}");
+                throw new SyntaxException($"Invalid parameter entered. Must be either integer coordinates with comma delimiter, or variables", "");
             }
 
         }
@@ -269,13 +270,14 @@ namespace ASE_assignment
                         colour = Color.Black;
                         break;
                     default:
-                        throw new ArgumentException($"Invalid colour. Available: red, blue, green, black. Entered: {parsedLine.StringParam[0]}");
+                       
+                        throw new SyntaxException($"Invalid colour. Available: red, blue, green, black. Entered: {parsedLine.StringParam[0]}", parsedLine.StringParam[0]);
                 }
                 controller.PenColour(colour);
             }
             else
             {
-                throw new ArgumentException("Missing colour parameter");
+                throw new SyntaxException("Missing colour parameter", "");
             }
 
         }
@@ -296,7 +298,7 @@ namespace ASE_assignment
             }
             else
             {
-                throw new ArgumentException($"Unexpected parameter. Expected: on/off. Entered: {parsedLine.StringParam[0]}");
+                throw new SyntaxException($"Unexpected parameter. Expected on/off. Got: {parsedLine.StringParam[0]}", parsedLine.StringParam[0]);
             }
 
         }/// <summary>
@@ -339,7 +341,7 @@ namespace ASE_assignment
         public void RunLines(Command parsedLine)
         {
             if (parsedLine == null || parsedLine.ParsedCommand.Count == 0)
-                throw new ArgumentException("Command cannot be empty");
+                throw new SyntaxException($"Command cannot be empty", "");
 
 
             string commandName = parsedLine.ParsedCommand[0].ToLower();
@@ -415,7 +417,7 @@ namespace ASE_assignment
         {
             if (parameter == null)
             {
-                throw new ArgumentException("Parameter cannot be null");
+                throw new SyntaxException($"Parameter cannot be null", "");
             }
 
             if (int.TryParse(parameter, out int param))
@@ -431,12 +433,12 @@ namespace ASE_assignment
                 }
                 else
                 {
-                    throw new ArgumentException($"Variable '{parameter}' is not an integer");
+                    throw new SyntaxException($"Variable {parameter} is not an integer", parameter);
                 }
             }
             catch (KeyNotFoundException)
             {
-                throw new ArgumentException($"Parameter '{parameter}' is not the correct format");
+                throw new SyntaxException($"Variable {parameter} is not the correct format", parameter);
             }
         }
         public void While(Command parsedLine)
