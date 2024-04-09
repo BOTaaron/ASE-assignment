@@ -117,7 +117,7 @@ namespace ASE_assignment
         /// <param name="line">Text entered by the user into the TextBox when the Enter/Return key is pressed</param>
         private void DisplayInput(string line)
         {
-            if (line.Trim().StartsWith("endif") && indentationLevel > 0)
+            if (line.Trim().StartsWith("endif") && indentationLevel > 0 || line.Trim().StartsWith("endloop") && indentationLevel > 0)
             {
                 indentationLevel--;
             }
@@ -135,7 +135,7 @@ namespace ASE_assignment
                 inputLabel.Font = new Font("Consolas", 16, FontStyle.Regular);
                 lineNumber++;
             }
-            if (line.Trim().StartsWith("if"))
+            if (line.Trim().StartsWith("if") || line.Trim().StartsWith("while"))
             {
                 indentationLevel++;
             }
@@ -252,6 +252,7 @@ namespace ASE_assignment
         private void ErrorLog(string message, int lineNumber)
         {
             ErrorBox.AppendText($"Error on line {lineNumber}: {message}\n");
+
         }
 
         private void Form1_Load(object sender, EventArgs e)

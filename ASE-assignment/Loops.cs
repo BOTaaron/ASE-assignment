@@ -14,15 +14,62 @@ namespace ASE_assignment
     {
         private VariableManager variableManager;
         private DataTable dataTable = new DataTable();
+        private List<Command> commands = new List<Command>();
+        public bool captureCommand { get; private set; } = false;
+        private string loopCondition;
+        private Action<Command> executeCommands;
 
         /// <summary>
         /// Constructor for the Loops class
         /// </summary>
         /// <param name="variableManager">The variable manager that manages the names and values of variables</param>
-        public Loops(VariableManager variableManager)
+        public Loops(VariableManager variableManager, Action<Command> executeCommands)
         {
             this.variableManager = variableManager;
+            this.executeCommands = executeCommands;
         }
+
+        public void StartLoop(string command)
+        {
+            loopCondition = command;
+            commands.Clear();
+            captureCommand = true;
+           
+           
+        }
+        public void AddLine(Command line)
+        {
+            if (captureCommand)
+            {
+                Console.WriteLine($"Adding command: {line}");
+                commands.Add(line);                
+            }
+
+        }
+
+        public void ExecuteLoop()
+        {
+            if (string.IsNullOrEmpty(loopCondition))
+            {
+                throw new ArgumentException("Loop condition is not set or is invalid.");
+            }
+            bool conditionResult = EvaluateCondition(loopCondition);
+
+            while (conditionResult)
+            {
+                for (int i = 0; i < commands.Count; i++)
+                {
+                    captureCommand = false;
+                    executeCommands(commands[i]);
+                    captureCommand = true;
+                }
+                conditionResult = EvaluateCondition(loopCondition);
+            }
+            commands.Clear();
+            loopCondition = null;
+            captureCommand = false;
+        }
+
         /// <summary>
         /// Evaluates the condition within the loop by iterating over each part and checking the variable exists
         /// </summary>
@@ -31,11 +78,13 @@ namespace ASE_assignment
         /// <exception cref="ArgumentException">Throws an exception if it was now possible to evaluate the expression</exception>
         private bool EvaluateCondition(string condition)
         {
+            var operators = new HashSet<string> { "+", "-", "*", "/", "<", ">", "=", "!" };
             var parts = condition.Split(new[] { ' ', '+', '-', '*', '/', '<', '>', '=', '!' },
                 StringSplitOptions.RemoveEmptyEntries);
 
             foreach (var part in parts)
             {
+                if (decimal.TryParse(part, out _) || operators.Contains(part)) continue;
                 try
                 {
                     // get the name of each variable and throw an exception if not found
@@ -44,7 +93,7 @@ namespace ASE_assignment
                 }
                 catch
                 {
-                    throw new ArgumentException("variable parameter not found");
+                    throw new ArgumentException($"variable parameter {condition} not found");
                 }
             }
 
@@ -59,5 +108,6 @@ namespace ASE_assignment
                 throw new ArgumentException($"Failed to evaluate condition: {ex.Message}", ex);
             }
         }
+
     }
 }
