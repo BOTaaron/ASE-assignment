@@ -422,25 +422,28 @@ namespace ASE_assignment
             // Handling direct variable assignment or update
             else if (parsedLine.StringParam.Count > 0 && parsedLine.StringParam[0].Contains("=") && !loops.captureCommand)
             {
-                string[] parts = parsedLine.StringParam[0].Split('=');
-                if (parts.Length == 2)
-                {
-                    string variableName = parts[0].Trim();
-                    string expression = parts[1].Trim();
+                if (!conditionals.insideConditionalBlock || conditionals.executeBlock)
+                { 
+                    string[] parts = parsedLine.StringParam[0].Split('=');
+                    if (parts.Length == 2)
+                    {
+                        string variableName = parts[0].Trim();
+                        string expression = parts[1].Trim();
 
-                    try
-                    {
-                        // Attempt to get the variable to determine if it needs updating
-                        variableManager.GetVariable(variableName);
-                        // If no exception is thrown, the variable exists and can be updated
-                        variableManager.UpdateVariable(variableName, expression);
+                        try
+                        {
+                            // Attempt to get the variable to determine if it needs updating
+                            variableManager.GetVariable(variableName);
+                            // If no exception is thrown, the variable exists and can be updated
+                            variableManager.UpdateVariable(variableName, expression);
+                        }
+                        catch (KeyNotFoundException)
+                        {
+                            // Variable does not exist, so declare a new one
+                            variableManager.DeclareVariable(parsedLine.StringParam[0]);
+                        }
+                        return; // Skip further processing
                     }
-                    catch (KeyNotFoundException)
-                    {
-                        // Variable does not exist, so declare a new one
-                        variableManager.DeclareVariable(parsedLine.StringParam[0]);
-                    }
-                    return; // Skip further processing
                 }
             }
 
