@@ -28,10 +28,6 @@ namespace ASE_assignment
             string variableName = parts[0].Trim();
             string expression = parts[1].Trim();
 
-            if (variables.ContainsKey(variableName))
-            {
-                throw new ArgumentException($"Variable '{variableName}' already exists");
-            }
 
             foreach (var variable in variables)
             {

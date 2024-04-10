@@ -46,6 +46,11 @@ namespace ASE_assignment
                 // if the line array only contains one value, parse it as a command
                 command.Add(line[0]);
             }
+            else if (line[0] == "method" && line.Length > 1)
+            {
+                command.Add(line[0]);
+                stringParams.Add(line[1]);
+            }
             else if ( line.Length == 2 )
             {
                 command.Add(line[0]);

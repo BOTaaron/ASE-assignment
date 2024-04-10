@@ -28,7 +28,10 @@ namespace ASE_assignment
             this.variableManager = variableManager;
             this.executeCommands = executeCommands;
         }
-
+        /// <summary>
+        /// once the loop is started, change the flag to true to capture each line and add to the list
+        /// </summary>
+        /// <param name="command">The parsed line of commands</param>
         public void StartLoop(string command)
         {
             loopCondition = command;
@@ -37,16 +40,23 @@ namespace ASE_assignment
            
            
         }
+        /// <summary>
+        /// Adds each line within the loop body to a list for running later
+        /// </summary>
+        /// <param name="line">the parsed command line</param>
         public void AddLine(Command line)
         {
             if (captureCommand)
             {
-                Console.WriteLine($"Adding command: {line}");
+                
                 commands.Add(line);                
             }
 
         }
-
+        /// <summary>
+        /// Begin executing the loop until its condition evaluates to true. Commands will be read from the list and ran line by line
+        /// </summary>
+        /// <exception cref="ArgumentException">Throws an exception if there is no condition to evaluate</exception>
         public void ExecuteLoop()
         {
             if (string.IsNullOrEmpty(loopCondition))

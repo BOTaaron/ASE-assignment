@@ -1,0 +1,22 @@
+1: var a = 20
+2: var b = 30
+3: var c = 60
+4: var d = 10
+5: method incrementCircles()
+6:     while a < 25
+7:         var a = a + 1
+8:         circle c
+9:         var c = c + 10
+10:     endloop
+11:     moveto 100,100
+12: endmethod
+13: method incrementRectangles()
+14:     moveto 450,400
+15:     while d < 15
+16:         var d = d + 1
+17:         rectangle b,b
+18:         var b = b + 20
+19:     endloop
+20: endmethod
+21: incrementCircles()
+22: incrementRectangles()

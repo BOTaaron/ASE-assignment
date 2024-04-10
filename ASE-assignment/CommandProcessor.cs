@@ -21,6 +21,7 @@ namespace ASE_assignment
         private Conditionals conditionals;
         private VariableManager variableManager;
         private Loops loops;
+        private Methods methods;
         
         /// <summary>
         /// Initialise a new instance of the CommandProcessor class
@@ -30,10 +31,11 @@ namespace ASE_assignment
         public CommandProcessor(PenController controller, Canvas canvas, VariableManager variableManager)
         {
             this.controller = controller;
-            this.canvas = this.canvas;
             this.variableManager = variableManager;
             conditionals = new Conditionals(variableManager);
             loops = new Loops(variableManager, RunLines);
+            methods = new Methods(variableManager, RunLines);
+            this.canvas = canvas;
 
 
             validCommands = new Dictionary<string, CommandAction>
@@ -52,7 +54,6 @@ namespace ASE_assignment
                 {"if", If},
                 {"endif", EndIf},
                 {"while", While},
-                {"text", DrawText}
                 // further commands can be added by creating methods and adding to the dictionary
             };
         }
@@ -250,25 +251,6 @@ namespace ASE_assignment
 
         }
 
-        public void DrawText(Command parsedLine)
-        {
-            if (parsedLine.ParsedCommand[0] == "text" && parsedLine.StringParam.Count == 1)
-            {
-                string text = parsedLine.StringParam[0];
-                Point location = new Point(controller.currentX, controller.currentY);
-
-                // Assuming you have a method to get the current Graphics object or Bitmap.
-                using (Graphics g = Graphics.FromImage(canvas.drawingCanvas))
-                {
-                    g.DrawString(text, new Font("Arial", 12), Brushes.Black, location);
-                }
-
-            }
-            else
-            {
-                throw new ArgumentException("Invalid parameters for text command.");
-            }
-        }
         /// <summary>
         /// Draw a polygon with a custom number of sides
         /// </summary>
@@ -416,9 +398,29 @@ namespace ASE_assignment
                     return;
                 }
             }
+            if (commandName == "method" && parsedLine.StringParam.Count == 1)
+            {
+                methods.MethodDeclaration(parsedLine.StringParam[0]);
+                return;
+            }
+            else if (commandName == "endmethod")
+            {
+                methods.EndMethodDeclaration();
+                return;
+            }
+            else if (methods.IsMethod(commandName))
+            {
+                methods.ExecuteMethod(commandName);
+                return;
+            }
+            else if (methods.IsCapturing)
+            {
+                methods.AddCommandToMethod(parsedLine);
+                return;
+            }
 
             // Handling direct variable assignment or update
-            if (parsedLine.StringParam.Count > 0 && parsedLine.StringParam[0].Contains("=") && !loops.captureCommand)
+            else if (parsedLine.StringParam.Count > 0 && parsedLine.StringParam[0].Contains("=") && !loops.captureCommand)
             {
                 string[] parts = parsedLine.StringParam[0].Split('=');
                 if (parts.Length == 2)
@@ -442,8 +444,7 @@ namespace ASE_assignment
                 }
             }
 
-
-            if (validCommands.TryGetValue(commandName, out CommandAction action) || commandName == "endloop")
+            else if (validCommands.TryGetValue(commandName, out CommandAction action) || commandName == "endloop")
             {
                 if (commandName == "if" || commandName == "endif")
                 {
@@ -456,6 +457,7 @@ namespace ASE_assignment
                 }
                 else if (commandName == "endloop")
                 {
+                    // executes the loop once endloop is found
                     loops.ExecuteLoop();
                     return;
                 }
@@ -463,7 +465,7 @@ namespace ASE_assignment
                 {
                     action.Invoke(parsedLine);
                 }            
-            }
+            }  
             else
             {
                 throw new ArgumentException($"Unknown command entered: {commandName}");
@@ -504,6 +506,10 @@ namespace ASE_assignment
                 throw new SyntaxException($"Variable {parameter} is not the correct format", parameter);
             }
         }
+        /// <summary>
+        /// Begin a while loop 
+        /// </summary>
+        /// <param name="parsedLine">The parsed line from the Command object</param>
         public void While(Command parsedLine)
         {
 
@@ -511,6 +517,8 @@ namespace ASE_assignment
             loops.StartLoop(parsedLine.StringParam[0]);
             
         }
+
+
     }
 }
 
