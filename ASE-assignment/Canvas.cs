@@ -11,13 +11,14 @@ namespace ASE_assignment
     /// Generates the bitmaps used for drawing. Initialises bitmaps outside of local scope and contains 
     /// functions necessary to manipulate them
     /// </summary>
-    public class Canvass
+    public class Canvas
     {
         // initialise the bitmaps and graphics 
         private Bitmap drawingCanvass;
         private Bitmap cursorCanvass;
         private Graphics drawingGraphics;
         private Graphics cursorGraphics;
+        public Bitmap drawingCanvas { get; set; }
 
         /// <summary>
         /// Creates the bitmaps and graphics used for drawing inside the 'DrawingPanel' PictureBox control
@@ -25,7 +26,7 @@ namespace ASE_assignment
         /// </summary>
         /// <param name="width">Width of parent container</param>
         /// <param name="height">Height of parent container</param>
-        public Canvass(int width, int height)
+        public Canvas(int width, int height)
         {
             drawingCanvass = new Bitmap(width, height);
             cursorCanvass = new Bitmap(width, height);

@@ -16,7 +16,7 @@ namespace ASE_Assignment_Tests
         public void Circle_InvalidValue()
         {
 
-                Canvass testBitmap = new Canvass(100, 100);
+                Canvas testBitmap = new Canvas(100, 100);
                 PenController controller = new PenController(testBitmap);
                 CommandParser parse = new CommandParser();
                 VariableManager variableManager = new VariableManager();
@@ -37,7 +37,7 @@ namespace ASE_Assignment_Tests
         public void Rectangle_InvalidValue()
         {
 
-            Canvass testBitmap = new Canvass(100, 100);
+            Canvas testBitmap = new Canvas(100, 100);
             PenController controller = new PenController(testBitmap);
             CommandParser parse = new CommandParser();
             VariableManager variableManager = new VariableManager();
@@ -57,7 +57,7 @@ namespace ASE_Assignment_Tests
         public void Triangle_InvalidValue()
         {
 
-            Canvass testBitmap = new Canvass(100, 100);
+            Canvas testBitmap = new Canvas(100, 100);
             PenController controller = new PenController(testBitmap);
             CommandParser parse = new CommandParser();
             VariableManager variableManager = new VariableManager();

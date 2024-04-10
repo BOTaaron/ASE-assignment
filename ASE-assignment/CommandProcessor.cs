@@ -15,7 +15,7 @@ namespace ASE_assignment
     internal class CommandProcessor
     {
         private PenController controller;
-        private Canvass canvass;
+        private Canvas canvas;
         private delegate void CommandAction(Command parsedLine);
         private Dictionary<string, CommandAction> validCommands;
         private Conditionals conditionals;
@@ -26,11 +26,11 @@ namespace ASE_assignment
         /// Initialise a new instance of the CommandProcessor class
         /// </summary>
         /// <param name="controller">The pen controller, that defines how the pen behaves on the canvas</param>
-        /// <param name="canvass">The canvas is the bitmap to be drawn on</param>
-        public CommandProcessor(PenController controller, Canvass canvass, VariableManager variableManager)
+        /// <param name="canvas">The canvas is the bitmap to be drawn on</param>
+        public CommandProcessor(PenController controller, Canvas canvas, VariableManager variableManager)
         {
             this.controller = controller;
-            this.canvass = canvass;
+            this.canvas = this.canvas;
             this.variableManager = variableManager;
             conditionals = new Conditionals(variableManager);
             loops = new Loops(variableManager, RunLines);
@@ -51,7 +51,8 @@ namespace ASE_assignment
                 {"var", Var},
                 {"if", If},
                 {"endif", EndIf},
-                {"while", While}
+                {"while", While},
+                {"text", DrawText}
                 // further commands can be added by creating methods and adding to the dictionary
             };
         }
@@ -118,7 +119,7 @@ namespace ASE_assignment
         {
             if (parsedLine.IntParams.Count == 0 && parsedLine.StringParam.Count == 0)
             {
-                canvass.ClearCanvas();
+                canvas.ClearCanvas();
             }
             else
             {
@@ -247,6 +248,26 @@ namespace ASE_assignment
                 throw new SyntaxException($"Invalid parameter entered. Must be either integer coordinates with comma delimiter, or variables", "");
             }
 
+        }
+
+        public void DrawText(Command parsedLine)
+        {
+            if (parsedLine.ParsedCommand[0] == "text" && parsedLine.StringParam.Count == 1)
+            {
+                string text = parsedLine.StringParam[0];
+                Point location = new Point(controller.currentX, controller.currentY);
+
+                // Assuming you have a method to get the current Graphics object or Bitmap.
+                using (Graphics g = Graphics.FromImage(canvas.drawingCanvas))
+                {
+                    g.DrawString(text, new Font("Arial", 12), Brushes.Black, location);
+                }
+
+            }
+            else
+            {
+                throw new ArgumentException("Invalid parameters for text command.");
+            }
         }
         /// <summary>
         /// Draw a polygon with a custom number of sides

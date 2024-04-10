@@ -92,6 +92,9 @@
             this.DrawingPanel.Size = new System.Drawing.Size(784, 640);
             this.DrawingPanel.TabIndex = 6;
             this.DrawingPanel.TabStop = false;
+            this.DrawingPanel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.canvas_MouseDown);
+            this.DrawingPanel.MouseMove += new System.Windows.Forms.MouseEventHandler(this.canvas_MouseMove);
+            this.DrawingPanel.MouseUp += new System.Windows.Forms.MouseEventHandler(this.canvas_MouseUp);
             // 
             // OpenButton
             // 

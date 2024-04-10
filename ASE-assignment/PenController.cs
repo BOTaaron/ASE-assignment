@@ -16,7 +16,7 @@ namespace ASE_assignment
     {  
         public int currentX = 0;
         public int currentY = 0;
-        private Canvass canvass;
+        private Canvas canvas;
         private Pen pen;
         private Color penColour;
         private bool shapeFill;
@@ -25,10 +25,10 @@ namespace ASE_assignment
         /// <summary>
         /// Default setings for the canvass when the application is launched
         /// </summary>
-        /// <param name="canvass">The bitmap canvas that all operations take place on</param>
-        public PenController(Canvass canvass)
+        /// <param name="canvas">The bitmap canvas that all operations take place on</param>
+        public PenController(Canvas canvas)
         {
-            this.canvass = canvass;
+            this.canvas = canvas;
             // set default pen colour to black
             this.penColour = Color.Black;
             this.pen = new Pen(penColour);
@@ -41,8 +41,8 @@ namespace ASE_assignment
         /// <param name="y">The new y (up/down) coordinate of the pen</param>
         public void PositionPen(int x, int y)
         {
-            canvass.CursorGraphics.Clear(Color.Transparent);
-            canvass.CursorGraphics.DrawEllipse(pen, x - 5, y - 5, 10, 10);
+            canvas.CursorGraphics.Clear(Color.Transparent);
+            canvas.CursorGraphics.DrawEllipse(pen, x - 5, y - 5, 10, 10);
             currentX = x;
             currentY = y;
         }
@@ -54,7 +54,7 @@ namespace ASE_assignment
         /// <param name="y">The new y (left/right) coordinate of the pen</param>
         public void PenDraw(int x, int y)
         {
-            canvass.DrawingGraphics.DrawLine(pen, currentX, currentY, x, y); 
+            canvas.DrawingGraphics.DrawLine(pen, currentX, currentY, x, y); 
             PositionPen(x, y);
             currentX = x;
             currentY = y;    
@@ -67,7 +67,7 @@ namespace ASE_assignment
         public void DrawShape(Shape shape)
         {
             shape.ShapeFill = shapeFill;
-            shape.Draw(canvass.DrawingGraphics, pen, currentX, currentY);
+            shape.Draw(canvas.DrawingGraphics, pen, currentX, currentY);
         }
         /// <summary>
         /// The colour of the pen to be used when drawing on the bitmap

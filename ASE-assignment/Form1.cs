@@ -18,13 +18,15 @@ namespace ASE_assignment
     /// </summary>
     public partial class Form1 : Form 
     {
-        private Canvass canvass;
+        private Canvas canvas;
         private PenController penController;
         private CommandProcessor runCommand;
         private VariableManager variableManager = new VariableManager();
         private int lineNumber = 1;
         private int indentationLevel = 0;
-        
+        private Point lastPoint = Point.Empty;
+        private bool isMouseDown = false;
+
         /// <summary>
         /// Initialise the form, and create objects required for functionality. Contains event handlers for buttons and set the DrawingPanel image to the combined bitmap 
         /// </summary>
@@ -34,10 +36,10 @@ namespace ASE_assignment
             // button images generates at https://bggenerator.com/
 
             InitializeComponent();
-            canvass = new Canvass(DrawingPanel.Width, DrawingPanel.Height);
-            penController = new PenController(canvass);
-            runCommand = new CommandProcessor(penController, canvass, variableManager);
-            DrawingPanel.Image = canvass.CombineCanvass();
+            canvas = new Canvas(DrawingPanel.Width, DrawingPanel.Height);
+            penController = new PenController(canvas);
+            runCommand = new CommandProcessor(penController, canvas, variableManager);
+            DrawingPanel.Image = canvas.CombineCanvass();
 
 
 
@@ -86,7 +88,7 @@ namespace ASE_assignment
             // clears the text box and refreshes the bitmap
             var parsedLine = parse.ParseLine(CommandBox.Text.Trim());
             runCommand.RunLines(parsedLine);
-            DrawingPanel.Image = canvass.CombineCanvass();
+            DrawingPanel.Image = canvas.CombineCanvass();
             DrawingPanel.Refresh();
             CommandBox.Clear();           
         }
@@ -105,7 +107,7 @@ namespace ASE_assignment
                     runCommand.RunLines(parsedLines);
                 }
             }
-            DrawingPanel.Image = canvass.CombineCanvass();
+            DrawingPanel.Image = canvas.CombineCanvass();
             DrawingPanel.Refresh();
             CommandBox.Clear();
         }
@@ -269,6 +271,33 @@ namespace ASE_assignment
             variableManager.ClearVariables();
             indentationLevel = 0;
             lineNumber = 1;
+        }
+        private void canvas_MouseDown(object sender, MouseEventArgs e)
+        {
+            lastPoint = e.Location;
+            isMouseDown = true;
+        }
+
+        private void canvas_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (isMouseDown)
+            {
+                using (Graphics g = Graphics.FromImage(DrawingPanel.Image))
+                {
+                    using (Pen pen = new Pen(penController.CurrentPenColor))
+                    {
+                        g.DrawLine(pen, lastPoint, e.Location);
+                    }
+
+                }
+                DrawingPanel.Invalidate();
+                lastPoint = e.Location;
+            }
+        }
+
+        private void canvas_MouseUp(object sender, MouseEventArgs e)
+        {
+            isMouseDown = false;
         }
 
 

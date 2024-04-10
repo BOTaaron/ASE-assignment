@@ -46,7 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Canvass.cs" />
+    <Compile Include="Canvas.cs" />
     <Compile Include="Circle.cs" />
     <Compile Include="Conditionals.cs" />
     <Compile Include="CustomShape.cs" />
