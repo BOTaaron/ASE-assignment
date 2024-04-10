@@ -14,7 +14,7 @@ namespace ASE_assignment
     {
         private VariableManager variableManager;
         private DataTable dataTable = new DataTable();
-        private List<Command> commands = new List<Command>();
+        internal List<Command> commands = new List<Command>();
         public bool captureCommand { get; private set; } = false;
         private string loopCondition;
         private Action<Command> executeCommands;
@@ -86,7 +86,7 @@ namespace ASE_assignment
         /// <param name="condition">The condition for the while loop to run</param>
         /// <returns>A boolean to tell the loop to continue execution</returns>
         /// <exception cref="ArgumentException">Throws an exception if it was now possible to evaluate the expression</exception>
-        private bool EvaluateCondition(string condition)
+        internal bool EvaluateCondition(string condition)
         {
             var operators = new HashSet<string> { "+", "-", "*", "/", "<", ">", "=", "!" };
             var parts = condition.Split(new[] { ' ', '+', '-', '*', '/', '<', '>', '=', '!' },

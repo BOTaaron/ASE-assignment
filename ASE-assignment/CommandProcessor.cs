@@ -478,7 +478,7 @@ namespace ASE_assignment
         /// <param name="parameter">The parameters following the command</param>
         /// <returns>An integer value matched to the variable used in parameter</returns>
         /// <exception cref="ArgumentException">Throws exception if the incorrect format of parameter is given</exception>
-        private int ResolveParam(string parameter)
+        public int ResolveParam(string parameter)
         {
             if (parameter == null)
             {
