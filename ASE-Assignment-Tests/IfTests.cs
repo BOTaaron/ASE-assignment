@@ -9,6 +9,9 @@ namespace ASE_Assignment_Tests
 {
     public class IfTests
     {
+        /// <summary>
+        /// Test to ensure that variable value within if block is changed when if statement evaluates to true
+        /// </summary>
         [Fact]
         public void IfStatement_EvaluatesTrue_Correctly()
         {
@@ -33,7 +36,9 @@ namespace ASE_Assignment_Tests
             // Assert
             Assert.Equal(20, resolvedValueB);
         }
-
+        /// <summary>
+        /// test to ensure that variable value within if block is unchanged when if statement evaluates to false
+        /// </summary>
         [Fact]
         public void IfStatement_EvaluatesFalse_Correctly()
         {
