@@ -1,0 +1,304 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="class_a_s_e__assignment_1_1_methods" kind="class" language="C#" prot="package">
+    <compoundname>ASE_assignment::Methods</compoundname>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_a_s_e__assignment_1_1_methods_1a60ff61aa491317326c47be6b0c9a4a24" prot="private" static="no" mutable="no">
+        <type><ref refid="class_a_s_e__assignment_1_1_variable_manager" kindref="compound">VariableManager</ref></type>
+        <definition>VariableManager ASE_assignment.Methods.variableManager</definition>
+        <argsstring></argsstring>
+        <name>variableManager</name>
+        <qualifiedname>ASE_assignment.Methods.variableManager</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Methods.cs" line="11" column="33" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Methods.cs" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_s_e__assignment_1_1_methods_1acfb3dcbcfbd9c8c22b65f86ef6148d3c" prot="private" static="no" mutable="no">
+        <type>Action&lt; <ref refid="class_a_s_e__assignment_1_1_command" kindref="compound">Command</ref> &gt;</type>
+        <definition>Action&lt;Command&gt; ASE_assignment.Methods.executeCommand</definition>
+        <argsstring></argsstring>
+        <name>executeCommand</name>
+        <qualifiedname>ASE_assignment.Methods.executeCommand</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Methods.cs" line="12" column="24" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Methods.cs" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_s_e__assignment_1_1_methods_1ab4f9cfc3c98d8f65b03b6ecad4bfb270" prot="private" static="no" mutable="no">
+        <type>Dictionary&lt; string, List&lt; <ref refid="class_a_s_e__assignment_1_1_command" kindref="compound">Command</ref> &gt; &gt;</type>
+        <definition>Dictionary&lt;string, List&lt;Command&gt; &gt; ASE_assignment.Methods.methods</definition>
+        <argsstring></argsstring>
+        <name>methods</name>
+        <qualifiedname>ASE_assignment.Methods.methods</qualifiedname>
+        <initializer>= new Dictionary&lt;string, List&lt;<ref refid="class_a_s_e__assignment_1_1_command" kindref="compound">Command</ref>&gt;&gt;()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Methods.cs" line="13" column="28" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Methods.cs" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_s_e__assignment_1_1_methods_1a13bf86466f0e68f97a42d8b470830005" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string ASE_assignment.Methods.currentMethodName</definition>
+        <argsstring></argsstring>
+        <name>currentMethodName</name>
+        <qualifiedname>ASE_assignment.Methods.currentMethodName</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Methods.cs" line="14" column="24" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Methods.cs" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_s_e__assignment_1_1_methods_1ac7c4d9ce0b4b00d95f57a8fd999ca678" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool ASE_assignment.Methods.isCapturing</definition>
+        <argsstring></argsstring>
+        <name>isCapturing</name>
+        <qualifiedname>ASE_assignment.Methods.isCapturing</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Methods.cs" line="15" column="22" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Methods.cs" bodystart="15" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="class_a_s_e__assignment_1_1_methods_1ac2dcbf849cfa5c7fd75ad4abd53f452e" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>bool</type>
+        <definition>bool ASE_assignment.Methods.IsCapturing</definition>
+        <argsstring></argsstring>
+        <name>IsCapturing</name>
+        <qualifiedname>ASE_assignment.Methods.IsCapturing</qualifiedname>
+        <briefdescription>
+<para>Boolean flag to declare that the method is being captured, inside lines will not run until the method is called. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Methods.cs" line="20" column="21" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Methods.cs" bodystart="21" bodyend="23"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_a_s_e__assignment_1_1_methods_1a9544049cb6990de4dae542ff6e78ad99" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ASE_assignment.Methods.Methods</definition>
+        <argsstring>(VariableManager variableManager, Action&lt; Command &gt; executeCommand)</argsstring>
+        <name>Methods</name>
+        <qualifiedname>ASE_assignment.Methods.Methods</qualifiedname>
+        <param>
+          <type><ref refid="class_a_s_e__assignment_1_1_variable_manager" kindref="compound">VariableManager</ref></type>
+          <declname>variableManager</declname>
+        </param>
+        <param>
+          <type>Action&lt; <ref refid="class_a_s_e__assignment_1_1_command" kindref="compound">Command</ref> &gt;</type>
+          <declname>executeCommand</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Methods.cs" line="25" column="16" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Methods.cs" bodystart="25" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_s_e__assignment_1_1_methods_1a1ee8ed5ca9ed94ecae5bcb8f922b6456" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ASE_assignment.Methods.MethodDeclaration</definition>
+        <argsstring>(string methodName)</argsstring>
+        <name>MethodDeclaration</name>
+        <qualifiedname>ASE_assignment.Methods.MethodDeclaration</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>methodName</declname>
+        </param>
+        <briefdescription>
+<para>Checks a method with the same name does not exist, and creates a list with the name of the method to store method commands. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>methodName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The name of the method to create</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>SyntaxException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>throws an exception if the method already exists</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Methods.cs" line="36" column="21" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Methods.cs" bodystart="36" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_s_e__assignment_1_1_methods_1a54cc80771e82716e2bc65bc45842e6a4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ASE_assignment.Methods.AddCommandToMethod</definition>
+        <argsstring>(Command command)</argsstring>
+        <name>AddCommandToMethod</name>
+        <qualifiedname>ASE_assignment.Methods.AddCommandToMethod</qualifiedname>
+        <param>
+          <type><ref refid="class_a_s_e__assignment_1_1_command" kindref="compound">Command</ref></type>
+          <declname>command</declname>
+        </param>
+        <briefdescription>
+<para>Adds each line between the method declaration and end of method declaration to a list to run later. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>command</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The line of parsed commands</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Methods.cs" line="50" column="21" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Methods.cs" bodystart="50" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_s_e__assignment_1_1_methods_1afa2ab48d2d1f8b8971c888f53cc72629" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ASE_assignment.Methods.IsMethod</definition>
+        <argsstring>(string methodName)</argsstring>
+        <name>IsMethod</name>
+        <qualifiedname>ASE_assignment.Methods.IsMethod</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>methodName</declname>
+        </param>
+        <briefdescription>
+<para>Checks whether the command is a method if not found in the list of valid commands by CommandProcessor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>methodName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The name of the method to test</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Returns true if the method exists</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Methods.cs" line="62" column="21" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Methods.cs" bodystart="62" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_s_e__assignment_1_1_methods_1aa5415f947b5472d82b9e35f4a32f446c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ASE_assignment.Methods.EndMethodDeclaration</definition>
+        <argsstring>()</argsstring>
+        <name>EndMethodDeclaration</name>
+        <qualifiedname>ASE_assignment.Methods.EndMethodDeclaration</qualifiedname>
+        <briefdescription>
+<para>endmethod command was found, stop capturing lines within the method </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Methods.cs" line="69" column="21" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Methods.cs" bodystart="69" bodyend="73"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_s_e__assignment_1_1_methods_1ad859f2316dea3287b44379ec27331b06" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ASE_assignment.Methods.ExecuteMethod</definition>
+        <argsstring>(string methodName)</argsstring>
+        <name>ExecuteMethod</name>
+        <qualifiedname>ASE_assignment.Methods.ExecuteMethod</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>methodName</declname>
+        </param>
+        <briefdescription>
+<para>Execute the lines found within the list one by one. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>methodName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The name of the method to execute</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>ArgumentException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Throws an exception if the method was not found</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Methods.cs" line="79" column="21" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Methods.cs" bodystart="79" bodyend="92"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>ASE_assignment.Methods</label>
+        <link refid="class_a_s_e__assignment_1_1_methods"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>variableManager</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>ASE_assignment.VariableManager</label>
+        <link refid="class_a_s_e__assignment_1_1_variable_manager"/>
+      </node>
+    </collaborationgraph>
+    <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Methods.cs" line="9" column="13" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Methods.cs" bodystart="10" bodyend="93"/>
+    <listofallmembers>
+      <member refid="class_a_s_e__assignment_1_1_methods_1a54cc80771e82716e2bc65bc45842e6a4" prot="public" virt="non-virtual"><scope>ASE_assignment::Methods</scope><name>AddCommandToMethod</name></member>
+      <member refid="class_a_s_e__assignment_1_1_methods_1a13bf86466f0e68f97a42d8b470830005" prot="private" virt="non-virtual"><scope>ASE_assignment::Methods</scope><name>currentMethodName</name></member>
+      <member refid="class_a_s_e__assignment_1_1_methods_1aa5415f947b5472d82b9e35f4a32f446c" prot="public" virt="non-virtual"><scope>ASE_assignment::Methods</scope><name>EndMethodDeclaration</name></member>
+      <member refid="class_a_s_e__assignment_1_1_methods_1acfb3dcbcfbd9c8c22b65f86ef6148d3c" prot="private" virt="non-virtual"><scope>ASE_assignment::Methods</scope><name>executeCommand</name></member>
+      <member refid="class_a_s_e__assignment_1_1_methods_1ad859f2316dea3287b44379ec27331b06" prot="public" virt="non-virtual"><scope>ASE_assignment::Methods</scope><name>ExecuteMethod</name></member>
+      <member refid="class_a_s_e__assignment_1_1_methods_1ac7c4d9ce0b4b00d95f57a8fd999ca678" prot="private" virt="non-virtual"><scope>ASE_assignment::Methods</scope><name>isCapturing</name></member>
+      <member refid="class_a_s_e__assignment_1_1_methods_1ac2dcbf849cfa5c7fd75ad4abd53f452e" prot="public" virt="non-virtual"><scope>ASE_assignment::Methods</scope><name>IsCapturing</name></member>
+      <member refid="class_a_s_e__assignment_1_1_methods_1afa2ab48d2d1f8b8971c888f53cc72629" prot="public" virt="non-virtual"><scope>ASE_assignment::Methods</scope><name>IsMethod</name></member>
+      <member refid="class_a_s_e__assignment_1_1_methods_1a1ee8ed5ca9ed94ecae5bcb8f922b6456" prot="public" virt="non-virtual"><scope>ASE_assignment::Methods</scope><name>MethodDeclaration</name></member>
+      <member refid="class_a_s_e__assignment_1_1_methods_1ab4f9cfc3c98d8f65b03b6ecad4bfb270" prot="private" virt="non-virtual"><scope>ASE_assignment::Methods</scope><name>methods</name></member>
+      <member refid="class_a_s_e__assignment_1_1_methods_1a9544049cb6990de4dae542ff6e78ad99" prot="public" virt="non-virtual"><scope>ASE_assignment::Methods</scope><name>Methods</name></member>
+      <member refid="class_a_s_e__assignment_1_1_methods_1a60ff61aa491317326c47be6b0c9a4a24" prot="private" virt="non-virtual"><scope>ASE_assignment::Methods</scope><name>variableManager</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

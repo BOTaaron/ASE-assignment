@@ -8,10 +8,14 @@ Takes the parsed commands as parameters and runs the desired command by calling 
 \doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{class_a_s_e__assignment_1_1_command_processor_a329fb5753072556705eec0052132c757}{Command\+Processor}} (\mbox{\hyperlink{class_a_s_e__assignment_1_1_pen_controller}{Pen\+Controller}} controller, \mbox{\hyperlink{class_a_s_e__assignment_1_1_canvass}{Canvass}} canvass, \mbox{\hyperlink{class_a_s_e__assignment_1_1_variable_manager}{Variable\+Manager}} variable\+Manager)
+\mbox{\hyperlink{class_a_s_e__assignment_1_1_command_processor_a90cc14a7065e49919c1a5cbdab6d4cd5}{Command\+Processor}} (\mbox{\hyperlink{class_a_s_e__assignment_1_1_pen_controller}{Pen\+Controller}} controller, \mbox{\hyperlink{class_a_s_e__assignment_1_1_canvas}{Canvas}} canvas, \mbox{\hyperlink{class_a_s_e__assignment_1_1_variable_manager}{Variable\+Manager}} variable\+Manager)
 \begin{DoxyCompactList}\small\item\em Initialise a new instance of the Command\+Processor class. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_a_s_e__assignment_1_1_command_processor_a0c66d16f946ba5467f1da7546f73d212}{Run\+Lines}} (\mbox{\hyperlink{class_a_s_e__assignment_1_1_command}{Command}} parsed\+Line)
-\begin{DoxyCompactList}\small\item\em Maps valid commands from the valid\+Commands dictionary to their corresponding functions. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Maps valid commands from the valid\+Commands dictionary to their corresponding functions. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_a_s_e__assignment_1_1_command_processor_a58a47f15c7e98fb0802e6eff8fe5fc21}{Resolve\+Param}} (string parameter)
+\begin{DoxyCompactList}\small\item\em Resolves parameters entered into a command to a variable, eg. when using Draw\+To a,100 will match a to the correct value. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_a_s_e__assignment_1_1_command_processor_a1fea1ff5170dbb6e6b9d3887eff06124}{While}} (\mbox{\hyperlink{class_a_s_e__assignment_1_1_command}{Command}} parsed\+Line)
+\begin{DoxyCompactList}\small\item\em Begin a while loop. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Private Member Functions}
 \begin{DoxyCompactItemize}
 \item 
@@ -32,6 +36,8 @@ void \mbox{\hyperlink{class_a_s_e__assignment_1_1_command_processor_a71fa6ea769b
 \begin{DoxyCompactList}\small\item\em Draws a circle from a provided radius. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_a_s_e__assignment_1_1_command_processor_a5b8ec25b2996e26b8bc7e24df110a522}{Draw\+Triangle}} (\mbox{\hyperlink{class_a_s_e__assignment_1_1_command}{Command}} parsed\+Line)
 \begin{DoxyCompactList}\small\item\em Creates an equilateral triangle from a provided integer parameter. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_a_s_e__assignment_1_1_command_processor_a04a4e649b3bde84b3833cb0157a84515}{Draw\+Polygon}} (\mbox{\hyperlink{class_a_s_e__assignment_1_1_command}{Command}} parsed\+Line)
+\begin{DoxyCompactList}\small\item\em Draw a polygon with a custom number of sides. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_a_s_e__assignment_1_1_command_processor_a77e249ea02b9355c3f4722501ff8e4cd}{Pen\+Color}} (\mbox{\hyperlink{class_a_s_e__assignment_1_1_command}{Command}} parsed\+Line)
 \begin{DoxyCompactList}\small\item\em Changes the pen colour based on the parameter colour that was entered. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_a_s_e__assignment_1_1_command_processor_aa7ebabb6e71ff0f372f7a9a166ad569b}{Fill}} (\mbox{\hyperlink{class_a_s_e__assignment_1_1_command}{Command}} parsed\+Line)
@@ -41,17 +47,15 @@ void \mbox{\hyperlink{class_a_s_e__assignment_1_1_command_processor_a7079b18f062
 void \mbox{\hyperlink{class_a_s_e__assignment_1_1_command_processor_a645bd0bf9348af9bc7dbade5aa97ca69}{End\+If}} (\mbox{\hyperlink{class_a_s_e__assignment_1_1_command}{Command}} parsed\+Line)
 \begin{DoxyCompactList}\small\item\em Calls the End\+If method in the Conditionals class. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_a_s_e__assignment_1_1_command_processor_aa1110fc7aabf91fde5340c5de6076152}{Var}} (\mbox{\hyperlink{class_a_s_e__assignment_1_1_command}{Command}} parsed\+Line)
-\begin{DoxyCompactList}\small\item\em Calls the Declare\+Variable method in the Variable\+Manager class to create a new variable. \end{DoxyCompactList}\item 
-int \mbox{\hyperlink{class_a_s_e__assignment_1_1_command_processor_a58a47f15c7e98fb0802e6eff8fe5fc21}{Resolve\+Param}} (string parameter)
-\begin{DoxyCompactList}\small\item\em Resolves parameters entered into a command to a variable, eg. when using Draw\+To a,100 will match a to the correct value. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Calls the Declare\+Variable method in the Variable\+Manager class to create a new variable. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
 \Hypertarget{class_a_s_e__assignment_1_1_command_processor_ab94af3397a74a92011a113f479847973}\label{class_a_s_e__assignment_1_1_command_processor_ab94af3397a74a92011a113f479847973} 
 \mbox{\hyperlink{class_a_s_e__assignment_1_1_pen_controller}{Pen\+Controller}} {\bfseries controller}
 \item 
-\Hypertarget{class_a_s_e__assignment_1_1_command_processor_ae03862f713bd4dfe79b4e0db8485e220}\label{class_a_s_e__assignment_1_1_command_processor_ae03862f713bd4dfe79b4e0db8485e220} 
-\mbox{\hyperlink{class_a_s_e__assignment_1_1_canvass}{Canvass}} {\bfseries canvass}
+\Hypertarget{class_a_s_e__assignment_1_1_command_processor_a9293d6241aac023ff259eb9f85752df0}\label{class_a_s_e__assignment_1_1_command_processor_a9293d6241aac023ff259eb9f85752df0} 
+\mbox{\hyperlink{class_a_s_e__assignment_1_1_canvas}{Canvas}} {\bfseries canvas}
 \item 
 \Hypertarget{class_a_s_e__assignment_1_1_command_processor_ad8a32a96d60ebcf74ae7388eeade0336}\label{class_a_s_e__assignment_1_1_command_processor_ad8a32a96d60ebcf74ae7388eeade0336} 
 Dictionary$<$ string, Command\+Action $>$ {\bfseries valid\+Commands}
@@ -61,6 +65,12 @@ Dictionary$<$ string, Command\+Action $>$ {\bfseries valid\+Commands}
 \item 
 \Hypertarget{class_a_s_e__assignment_1_1_command_processor_a3e7155240dd2d3c260bf52af136b698c}\label{class_a_s_e__assignment_1_1_command_processor_a3e7155240dd2d3c260bf52af136b698c} 
 \mbox{\hyperlink{class_a_s_e__assignment_1_1_variable_manager}{Variable\+Manager}} {\bfseries variable\+Manager}
+\item 
+\Hypertarget{class_a_s_e__assignment_1_1_command_processor_a9ed7645149c46f5e765b1ed58c4850a6}\label{class_a_s_e__assignment_1_1_command_processor_a9ed7645149c46f5e765b1ed58c4850a6} 
+\mbox{\hyperlink{class_a_s_e__assignment_1_1_loops}{Loops}} {\bfseries loops}
+\item 
+\Hypertarget{class_a_s_e__assignment_1_1_command_processor_a200ab35aa7bb40b5df3c99a6858ca058}\label{class_a_s_e__assignment_1_1_command_processor_a200ab35aa7bb40b5df3c99a6858ca058} 
+\mbox{\hyperlink{class_a_s_e__assignment_1_1_methods}{Methods}} {\bfseries methods}
 \end{DoxyCompactItemize}
 
 
@@ -68,11 +78,11 @@ Dictionary$<$ string, Command\+Action $>$ {\bfseries valid\+Commands}
 Takes the parsed commands as parameters and runs the desired command by calling the correct function. 
 
 \doxysubsection{Constructor \& Destructor Documentation}
-\Hypertarget{class_a_s_e__assignment_1_1_command_processor_a329fb5753072556705eec0052132c757}\label{class_a_s_e__assignment_1_1_command_processor_a329fb5753072556705eec0052132c757} 
+\Hypertarget{class_a_s_e__assignment_1_1_command_processor_a90cc14a7065e49919c1a5cbdab6d4cd5}\label{class_a_s_e__assignment_1_1_command_processor_a90cc14a7065e49919c1a5cbdab6d4cd5} 
 \index{ASE\_assignment.CommandProcessor@{ASE\_assignment.CommandProcessor}!CommandProcessor@{CommandProcessor}}
 \index{CommandProcessor@{CommandProcessor}!ASE\_assignment.CommandProcessor@{ASE\_assignment.CommandProcessor}}
 \doxysubsubsection{\texorpdfstring{CommandProcessor()}{CommandProcessor()}}
-{\footnotesize\ttfamily ASE\+\_\+assignment.\+Command\+Processor.\+Command\+Processor (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_a_s_e__assignment_1_1_pen_controller}{Pen\+Controller}}}]{controller,  }\item[{\mbox{\hyperlink{class_a_s_e__assignment_1_1_canvass}{Canvass}}}]{canvass,  }\item[{\mbox{\hyperlink{class_a_s_e__assignment_1_1_variable_manager}{Variable\+Manager}}}]{variable\+Manager }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily ASE\+\_\+assignment.\+Command\+Processor.\+Command\+Processor (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_a_s_e__assignment_1_1_pen_controller}{Pen\+Controller}}}]{controller,  }\item[{\mbox{\hyperlink{class_a_s_e__assignment_1_1_canvas}{Canvas}}}]{canvas,  }\item[{\mbox{\hyperlink{class_a_s_e__assignment_1_1_variable_manager}{Variable\+Manager}}}]{variable\+Manager }\end{DoxyParamCaption})}
 
 
 
@@ -82,7 +92,7 @@ Initialise a new instance of the Command\+Processor class.
 \begin{DoxyParams}{Parameters}
 {\em controller} & The pen controller, that defines how the pen behaves on the canvas\\
 \hline
-{\em canvass} & The canvas is the bitmap to be drawn on\\
+{\em canvas} & The canvas is the bitmap to be drawn on\\
 \hline
 \end{DoxyParams}
 
@@ -126,6 +136,28 @@ Draws a circle from a provided radius.
 
 \begin{DoxyExceptions}{Exceptions}
 {\em Argument\+Exception} & Throws an exception if anything but a single integer parameter is provuded\\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_a_s_e__assignment_1_1_command_processor_a04a4e649b3bde84b3833cb0157a84515}\label{class_a_s_e__assignment_1_1_command_processor_a04a4e649b3bde84b3833cb0157a84515} 
+\index{ASE\_assignment.CommandProcessor@{ASE\_assignment.CommandProcessor}!DrawPolygon@{DrawPolygon}}
+\index{DrawPolygon@{DrawPolygon}!ASE\_assignment.CommandProcessor@{ASE\_assignment.CommandProcessor}}
+\doxysubsubsection{\texorpdfstring{DrawPolygon()}{DrawPolygon()}}
+{\footnotesize\ttfamily void ASE\+\_\+assignment.\+Command\+Processor.\+Draw\+Polygon (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_a_s_e__assignment_1_1_command}{Command}}}]{parsed\+Line }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Draw a polygon with a custom number of sides. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parsed\+Line} & The parsed line containing the command, number of sides, and size\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Argument\+Exception} & \\
+\hline
+{\em Syntax\+Exception} & \\
 \hline
 \end{DoxyExceptions}
 \Hypertarget{class_a_s_e__assignment_1_1_command_processor_ab4393568b26651cef0e95450044775dd}\label{class_a_s_e__assignment_1_1_command_processor_ab4393568b26651cef0e95450044775dd} 
@@ -300,7 +332,7 @@ Resets the cursor to the 0,0 coordinate.
 \index{ASE\_assignment.CommandProcessor@{ASE\_assignment.CommandProcessor}!ResolveParam@{ResolveParam}}
 \index{ResolveParam@{ResolveParam}!ASE\_assignment.CommandProcessor@{ASE\_assignment.CommandProcessor}}
 \doxysubsubsection{\texorpdfstring{ResolveParam()}{ResolveParam()}}
-{\footnotesize\ttfamily int ASE\+\_\+assignment.\+Command\+Processor.\+Resolve\+Param (\begin{DoxyParamCaption}\item[{string}]{parameter }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily int ASE\+\_\+assignment.\+Command\+Processor.\+Resolve\+Param (\begin{DoxyParamCaption}\item[{string}]{parameter }\end{DoxyParamCaption})}
 
 
 
@@ -352,6 +384,21 @@ Calls the Declare\+Variable method in the Variable\+Manager class to create a ne
 
 \begin{DoxyParams}{Parameters}
 {\em parsed\+Line} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_a_s_e__assignment_1_1_command_processor_a1fea1ff5170dbb6e6b9d3887eff06124}\label{class_a_s_e__assignment_1_1_command_processor_a1fea1ff5170dbb6e6b9d3887eff06124} 
+\index{ASE\_assignment.CommandProcessor@{ASE\_assignment.CommandProcessor}!While@{While}}
+\index{While@{While}!ASE\_assignment.CommandProcessor@{ASE\_assignment.CommandProcessor}}
+\doxysubsubsection{\texorpdfstring{While()}{While()}}
+{\footnotesize\ttfamily void ASE\+\_\+assignment.\+Command\+Processor.\+While (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_a_s_e__assignment_1_1_command}{Command}}}]{parsed\+Line }\end{DoxyParamCaption})}
+
+
+
+Begin a while loop. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parsed\+Line} & The parsed line from the Command object\\
 \hline
 \end{DoxyParams}
 

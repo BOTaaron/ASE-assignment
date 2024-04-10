@@ -1,0 +1,290 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="class_a_s_e__assignment_1_1_loops" kind="class" language="C#" prot="package">
+    <compoundname>ASE_assignment::Loops</compoundname>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_a_s_e__assignment_1_1_loops_1aa9c71dfddacb6689c51befad5f3c7a3e" prot="private" static="no" mutable="no">
+        <type><ref refid="class_a_s_e__assignment_1_1_variable_manager" kindref="compound">VariableManager</ref></type>
+        <definition>VariableManager ASE_assignment.Loops.variableManager</definition>
+        <argsstring></argsstring>
+        <name>variableManager</name>
+        <qualifiedname>ASE_assignment.Loops.variableManager</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Loops.cs" line="15" column="33" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Loops.cs" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_s_e__assignment_1_1_loops_1a39372db570327f5fe020e57c88fbe305" prot="private" static="no" mutable="no">
+        <type>DataTable</type>
+        <definition>DataTable ASE_assignment.Loops.dataTable</definition>
+        <argsstring></argsstring>
+        <name>dataTable</name>
+        <qualifiedname>ASE_assignment.Loops.dataTable</qualifiedname>
+        <initializer>= new DataTable()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Loops.cs" line="16" column="27" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Loops.cs" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_s_e__assignment_1_1_loops_1a08cc9edb3b2f72d5f67ea94fba66765b" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string ASE_assignment.Loops.loopCondition</definition>
+        <argsstring></argsstring>
+        <name>loopCondition</name>
+        <qualifiedname>ASE_assignment.Loops.loopCondition</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Loops.cs" line="19" column="24" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Loops.cs" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_s_e__assignment_1_1_loops_1a4b59fca8e4238f692bbdeed4f58aaeb7" prot="private" static="no" mutable="no">
+        <type>Action&lt; <ref refid="class_a_s_e__assignment_1_1_command" kindref="compound">Command</ref> &gt;</type>
+        <definition>Action&lt;Command&gt; ASE_assignment.Loops.executeCommands</definition>
+        <argsstring></argsstring>
+        <name>executeCommands</name>
+        <qualifiedname>ASE_assignment.Loops.executeCommands</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Loops.cs" line="20" column="24" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Loops.cs" bodystart="20" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="package-attrib">
+      <memberdef kind="variable" id="class_a_s_e__assignment_1_1_loops_1ac82054696cb628d658c6ed298a7b7616" prot="package" static="no" mutable="no">
+        <type>List&lt; <ref refid="class_a_s_e__assignment_1_1_command" kindref="compound">Command</ref> &gt;</type>
+        <definition>List&lt;Command&gt; ASE_assignment.Loops.commands</definition>
+        <argsstring></argsstring>
+        <name>commands</name>
+        <qualifiedname>ASE_assignment.Loops.commands</qualifiedname>
+        <initializer>= new List&lt;<ref refid="class_a_s_e__assignment_1_1_command" kindref="compound">Command</ref>&gt;()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Loops.cs" line="17" column="23" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Loops.cs" bodystart="17" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="class_a_s_e__assignment_1_1_loops_1adc2e74d7b83b4bbfefa8ab13f8624c13" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="yes" protectedsettable="no">
+        <type>bool</type>
+        <definition>bool ASE_assignment.Loops.captureCommand</definition>
+        <argsstring></argsstring>
+        <name>captureCommand</name>
+        <qualifiedname>ASE_assignment.Loops.captureCommand</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Loops.cs" line="18" column="21" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Loops.cs" bodystart="18" bodyend="18"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_a_s_e__assignment_1_1_loops_1adecbe3976aa6d108bffaa01dc07da1b2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ASE_assignment.Loops.Loops</definition>
+        <argsstring>(VariableManager variableManager, Action&lt; Command &gt; executeCommands)</argsstring>
+        <name>Loops</name>
+        <qualifiedname>ASE_assignment.Loops.Loops</qualifiedname>
+        <param>
+          <type><ref refid="class_a_s_e__assignment_1_1_variable_manager" kindref="compound">VariableManager</ref></type>
+          <declname>variableManager</declname>
+        </param>
+        <param>
+          <type>Action&lt; <ref refid="class_a_s_e__assignment_1_1_command" kindref="compound">Command</ref> &gt;</type>
+          <declname>executeCommands</declname>
+        </param>
+        <briefdescription>
+<para>Constructor for the Loops class. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>variableManager</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The variable manager that manages the names and values of variables</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Loops.cs" line="26" column="16" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Loops.cs" bodystart="26" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_s_e__assignment_1_1_loops_1ad200f51f5263a10b1ec20190776a0c27" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ASE_assignment.Loops.StartLoop</definition>
+        <argsstring>(string command)</argsstring>
+        <name>StartLoop</name>
+        <qualifiedname>ASE_assignment.Loops.StartLoop</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>command</declname>
+        </param>
+        <briefdescription>
+<para>once the loop is started, change the flag to true to capture each line and add to the list </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>command</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The parsed line of commands</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Loops.cs" line="35" column="21" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Loops.cs" bodystart="35" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_s_e__assignment_1_1_loops_1a6ff04dfcf2a0e8afab37d49774e9f5a4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ASE_assignment.Loops.AddLine</definition>
+        <argsstring>(Command line)</argsstring>
+        <name>AddLine</name>
+        <qualifiedname>ASE_assignment.Loops.AddLine</qualifiedname>
+        <param>
+          <type><ref refid="class_a_s_e__assignment_1_1_command" kindref="compound">Command</ref></type>
+          <declname>line</declname>
+        </param>
+        <briefdescription>
+<para>Adds each line within the loop body to a list for running later. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>line</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the parsed command line</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Loops.cs" line="47" column="21" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Loops.cs" bodystart="47" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_s_e__assignment_1_1_loops_1a27a769730a56444fa7c9cafd139f917b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ASE_assignment.Loops.ExecuteLoop</definition>
+        <argsstring>()</argsstring>
+        <name>ExecuteLoop</name>
+        <qualifiedname>ASE_assignment.Loops.ExecuteLoop</qualifiedname>
+        <briefdescription>
+<para>Begin executing the loop until its condition evaluates to true. Commands will be read from the list and ran line by line. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>ArgumentException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Throws an exception if there is no condition to evaluate</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Loops.cs" line="60" column="21" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Loops.cs" bodystart="60" bodyend="81"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="package-func">
+      <memberdef kind="function" id="class_a_s_e__assignment_1_1_loops_1af7cc364287dd8a306c2ecb560691c172" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ASE_assignment.Loops.EvaluateCondition</definition>
+        <argsstring>(string condition)</argsstring>
+        <name>EvaluateCondition</name>
+        <qualifiedname>ASE_assignment.Loops.EvaluateCondition</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>condition</declname>
+        </param>
+        <briefdescription>
+<para>Evaluates the condition within the loop by iterating over each part and checking the variable exists. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>condition</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The condition for the while loop to run</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A boolean to tell the loop to continue execution</para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>ArgumentException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Throws an exception if it was now possible to evaluate the expression</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Loops.cs" line="89" column="23" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Loops.cs" bodystart="89" bodyend="120"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>ASE_assignment.Loops</label>
+        <link refid="class_a_s_e__assignment_1_1_loops"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>variableManager</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>ASE_assignment.VariableManager</label>
+        <link refid="class_a_s_e__assignment_1_1_variable_manager"/>
+      </node>
+    </collaborationgraph>
+    <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Loops.cs" line="13" column="13" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Loops.cs" bodystart="14" bodyend="122"/>
+    <listofallmembers>
+      <member refid="class_a_s_e__assignment_1_1_loops_1a6ff04dfcf2a0e8afab37d49774e9f5a4" prot="public" virt="non-virtual"><scope>ASE_assignment::Loops</scope><name>AddLine</name></member>
+      <member refid="class_a_s_e__assignment_1_1_loops_1adc2e74d7b83b4bbfefa8ab13f8624c13" prot="public" virt="non-virtual"><scope>ASE_assignment::Loops</scope><name>captureCommand</name></member>
+      <member refid="class_a_s_e__assignment_1_1_loops_1ac82054696cb628d658c6ed298a7b7616" prot="package" virt="non-virtual"><scope>ASE_assignment::Loops</scope><name>commands</name></member>
+      <member refid="class_a_s_e__assignment_1_1_loops_1a39372db570327f5fe020e57c88fbe305" prot="private" virt="non-virtual"><scope>ASE_assignment::Loops</scope><name>dataTable</name></member>
+      <member refid="class_a_s_e__assignment_1_1_loops_1af7cc364287dd8a306c2ecb560691c172" prot="package" virt="non-virtual"><scope>ASE_assignment::Loops</scope><name>EvaluateCondition</name></member>
+      <member refid="class_a_s_e__assignment_1_1_loops_1a4b59fca8e4238f692bbdeed4f58aaeb7" prot="private" virt="non-virtual"><scope>ASE_assignment::Loops</scope><name>executeCommands</name></member>
+      <member refid="class_a_s_e__assignment_1_1_loops_1a27a769730a56444fa7c9cafd139f917b" prot="public" virt="non-virtual"><scope>ASE_assignment::Loops</scope><name>ExecuteLoop</name></member>
+      <member refid="class_a_s_e__assignment_1_1_loops_1a08cc9edb3b2f72d5f67ea94fba66765b" prot="private" virt="non-virtual"><scope>ASE_assignment::Loops</scope><name>loopCondition</name></member>
+      <member refid="class_a_s_e__assignment_1_1_loops_1adecbe3976aa6d108bffaa01dc07da1b2" prot="public" virt="non-virtual"><scope>ASE_assignment::Loops</scope><name>Loops</name></member>
+      <member refid="class_a_s_e__assignment_1_1_loops_1ad200f51f5263a10b1ec20190776a0c27" prot="public" virt="non-virtual"><scope>ASE_assignment::Loops</scope><name>StartLoop</name></member>
+      <member refid="class_a_s_e__assignment_1_1_loops_1aa9c71dfddacb6689c51befad5f3c7a3e" prot="private" virt="non-virtual"><scope>ASE_assignment::Loops</scope><name>variableManager</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,324 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="class_a_s_e__assignment_1_1_custom_shape" kind="class" language="C#" prot="package">
+    <compoundname>ASE_assignment::CustomShape</compoundname>
+    <basecompoundref refid="class_a_s_e__assignment_1_1_shape" prot="public" virt="non-virtual">ASE_assignment.Shape</basecompoundref>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="class_a_s_e__assignment_1_1_custom_shape_1a69ad592dae4b79ec0d86adbd37926da0" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="yes" protectedsettable="no">
+        <type>int</type>
+        <definition>int ASE_assignment.CustomShape.Sides</definition>
+        <argsstring></argsstring>
+        <name>Sides</name>
+        <qualifiedname>ASE_assignment.CustomShape.Sides</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/CustomShape.cs" line="13" column="20" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/CustomShape.cs" bodystart="13" bodyend="13"/>
+      </memberdef>
+      <memberdef kind="property" id="class_a_s_e__assignment_1_1_custom_shape_1ab4ce668f8932c7d0703a810a755c557a" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="yes" protectedsettable="no">
+        <type>int</type>
+        <definition>int ASE_assignment.CustomShape.Size</definition>
+        <argsstring></argsstring>
+        <name>Size</name>
+        <qualifiedname>ASE_assignment.CustomShape.Size</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/CustomShape.cs" line="14" column="20" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/CustomShape.cs" bodystart="14" bodyend="14"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_a_s_e__assignment_1_1_custom_shape_1a7c169205429ac3bb49d659aba51776d2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ASE_assignment.CustomShape.CustomShape</definition>
+        <argsstring>(int size, int sides)</argsstring>
+        <name>CustomShape</name>
+        <qualifiedname>ASE_assignment.CustomShape.CustomShape</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>sides</declname>
+        </param>
+        <briefdescription>
+<para>Draws a custom shape defined by the user, in a circular shape but with a custom number of sides for example 6 sides for a hexagon, 8 sides for a octagon, etc. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The size of the polygon</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>sides</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number of sides, between 3 and 10</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>ArgumentOutOfRangeException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Throws an exception if user defines more than 10 sides or less than 3</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/CustomShape.cs" line="22" column="16" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/CustomShape.cs" bodystart="22" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_s_e__assignment_1_1_custom_shape_1a0648dabfe31e08c8c1b3b3cd1353887c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void ASE_assignment.CustomShape.Draw</definition>
+        <argsstring>(Graphics graphics, Pen pen, int x, int y)</argsstring>
+        <name>Draw</name>
+        <qualifiedname>ASE_assignment.CustomShape.Draw</qualifiedname>
+        <param>
+          <type>Graphics</type>
+          <declname>graphics</declname>
+        </param>
+        <param>
+          <type>Pen</type>
+          <declname>pen</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+<para>Draw a hollow shape on the bitmap. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>graphics</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The bitmap to draw on</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pen</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The pen that draws the shape</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the x location of the shape to draw</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the y location of the shape to draw</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/CustomShape.cs" line="39" column="30" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/CustomShape.cs" bodystart="39" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_s_e__assignment_1_1_custom_shape_1adb3e3d8d708f0870f199e5609aff3b0d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void ASE_assignment.CustomShape.Fill</definition>
+        <argsstring>(Graphics graphics, Brush brush, int x, int y)</argsstring>
+        <name>Fill</name>
+        <qualifiedname>ASE_assignment.CustomShape.Fill</qualifiedname>
+        <param>
+          <type>Graphics</type>
+          <declname>graphics</declname>
+        </param>
+        <param>
+          <type>Brush</type>
+          <declname>brush</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+<para>Draw a solid shape on the bitmap. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>graphics</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The bitmap to draw on</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>brush</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The brush that draws the solid shape</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the x location of the shape to draw</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the y location of the shame to draw</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/CustomShape.cs" line="57" column="30" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/CustomShape.cs" bodystart="57" bodyend="67"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_a_s_e__assignment_1_1_custom_shape_1ae89d6f347839a1c6e6640539deef8c24" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Point[]</type>
+        <definition>Point[] ASE_assignment.CustomShape.CalculateVertices</definition>
+        <argsstring>(int centerX, int centerY, int size, int sides)</argsstring>
+        <name>CalculateVertices</name>
+        <qualifiedname>ASE_assignment.CustomShape.CalculateVertices</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>centerX</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>centerY</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>sides</declname>
+        </param>
+        <briefdescription>
+<para>Calculate the structure of the polygon. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>centerX</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>centerY</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>size of the polygon</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>sides</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of sides to the polygon</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>returns the array of vertices</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/CustomShape.cs" line="76" column="23" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/CustomShape.cs" bodystart="76" bodyend="90"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>ASE_assignment.CustomShape</label>
+        <link refid="class_a_s_e__assignment_1_1_custom_shape"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Shape</label>
+        <link refid="class_a_s_e__assignment_1_1_shape"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>ASE_assignment.CustomShape</label>
+        <link refid="class_a_s_e__assignment_1_1_custom_shape"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Shape</label>
+        <link refid="class_a_s_e__assignment_1_1_shape"/>
+      </node>
+    </collaborationgraph>
+    <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/CustomShape.cs" line="11" column="13" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/CustomShape.cs" bodystart="12" bodyend="93"/>
+    <listofallmembers>
+      <member refid="class_a_s_e__assignment_1_1_custom_shape_1ae89d6f347839a1c6e6640539deef8c24" prot="private" virt="non-virtual"><scope>ASE_assignment::CustomShape</scope><name>CalculateVertices</name></member>
+      <member refid="class_a_s_e__assignment_1_1_custom_shape_1a7c169205429ac3bb49d659aba51776d2" prot="public" virt="non-virtual"><scope>ASE_assignment::CustomShape</scope><name>CustomShape</name></member>
+      <member refid="class_a_s_e__assignment_1_1_custom_shape_1a0648dabfe31e08c8c1b3b3cd1353887c" prot="public" virt="non-virtual"><scope>ASE_assignment::CustomShape</scope><name>Draw</name></member>
+      <member refid="class_a_s_e__assignment_1_1_custom_shape_1adb3e3d8d708f0870f199e5609aff3b0d" prot="public" virt="non-virtual"><scope>ASE_assignment::CustomShape</scope><name>Fill</name></member>
+      <member refid="class_a_s_e__assignment_1_1_shape_1add0c33be27ded76dd89bbfe6f7f32fbf" prot="public" virt="non-virtual"><scope>ASE_assignment::CustomShape</scope><name>ShapeFill</name></member>
+      <member refid="class_a_s_e__assignment_1_1_custom_shape_1a69ad592dae4b79ec0d86adbd37926da0" prot="public" virt="non-virtual"><scope>ASE_assignment::CustomShape</scope><name>Sides</name></member>
+      <member refid="class_a_s_e__assignment_1_1_custom_shape_1ab4ce668f8932c7d0703a810a755c557a" prot="public" virt="non-virtual"><scope>ASE_assignment::CustomShape</scope><name>Size</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

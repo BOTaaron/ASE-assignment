@@ -1,0 +1,139 @@
+\doxysection{ASE\+\_\+assignment.\+Loops Class Reference}
+\hypertarget{class_a_s_e__assignment_1_1_loops}{}\label{class_a_s_e__assignment_1_1_loops}\index{ASE\_assignment.Loops@{ASE\_assignment.Loops}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_a_s_e__assignment_1_1_loops_adecbe3976aa6d108bffaa01dc07da1b2}{Loops}} (\mbox{\hyperlink{class_a_s_e__assignment_1_1_variable_manager}{Variable\+Manager}} variable\+Manager, Action$<$ \mbox{\hyperlink{class_a_s_e__assignment_1_1_command}{Command}} $>$ execute\+Commands)
+\begin{DoxyCompactList}\small\item\em Constructor for the Loops class. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_a_s_e__assignment_1_1_loops_ad200f51f5263a10b1ec20190776a0c27}{Start\+Loop}} (string command)
+\begin{DoxyCompactList}\small\item\em once the loop is started, change the flag to true to capture each line and add to the list \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_a_s_e__assignment_1_1_loops_a6ff04dfcf2a0e8afab37d49774e9f5a4}{Add\+Line}} (\mbox{\hyperlink{class_a_s_e__assignment_1_1_command}{Command}} line)
+\begin{DoxyCompactList}\small\item\em Adds each line within the loop body to a list for running later. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_a_s_e__assignment_1_1_loops_a27a769730a56444fa7c9cafd139f917b}{Execute\+Loop}} ()
+\begin{DoxyCompactList}\small\item\em Begin executing the loop until its condition evaluates to true. Commands will be read from the list and ran line by line. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Package Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_a_s_e__assignment_1_1_loops_af7cc364287dd8a306c2ecb560691c172}{Evaluate\+Condition}} (string condition)
+\begin{DoxyCompactList}\small\item\em Evaluates the condition within the loop by iterating over each part and checking the variable exists. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Package Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_a_s_e__assignment_1_1_loops_ac82054696cb628d658c6ed298a7b7616}\label{class_a_s_e__assignment_1_1_loops_ac82054696cb628d658c6ed298a7b7616} 
+List$<$ \mbox{\hyperlink{class_a_s_e__assignment_1_1_command}{Command}} $>$ {\bfseries commands} = new List$<$\mbox{\hyperlink{class_a_s_e__assignment_1_1_command}{Command}}$>$()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_a_s_e__assignment_1_1_loops_adc2e74d7b83b4bbfefa8ab13f8624c13}\label{class_a_s_e__assignment_1_1_loops_adc2e74d7b83b4bbfefa8ab13f8624c13} 
+bool {\bfseries capture\+Command} = false\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_a_s_e__assignment_1_1_loops_aa9c71dfddacb6689c51befad5f3c7a3e}\label{class_a_s_e__assignment_1_1_loops_aa9c71dfddacb6689c51befad5f3c7a3e} 
+\mbox{\hyperlink{class_a_s_e__assignment_1_1_variable_manager}{Variable\+Manager}} {\bfseries variable\+Manager}
+\item 
+\Hypertarget{class_a_s_e__assignment_1_1_loops_a39372db570327f5fe020e57c88fbe305}\label{class_a_s_e__assignment_1_1_loops_a39372db570327f5fe020e57c88fbe305} 
+Data\+Table {\bfseries data\+Table} = new Data\+Table()
+\item 
+\Hypertarget{class_a_s_e__assignment_1_1_loops_a08cc9edb3b2f72d5f67ea94fba66765b}\label{class_a_s_e__assignment_1_1_loops_a08cc9edb3b2f72d5f67ea94fba66765b} 
+string {\bfseries loop\+Condition}
+\item 
+\Hypertarget{class_a_s_e__assignment_1_1_loops_a4b59fca8e4238f692bbdeed4f58aaeb7}\label{class_a_s_e__assignment_1_1_loops_a4b59fca8e4238f692bbdeed4f58aaeb7} 
+Action$<$ \mbox{\hyperlink{class_a_s_e__assignment_1_1_command}{Command}} $>$ {\bfseries execute\+Commands}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_a_s_e__assignment_1_1_loops_adecbe3976aa6d108bffaa01dc07da1b2}\label{class_a_s_e__assignment_1_1_loops_adecbe3976aa6d108bffaa01dc07da1b2} 
+\index{ASE\_assignment.Loops@{ASE\_assignment.Loops}!Loops@{Loops}}
+\index{Loops@{Loops}!ASE\_assignment.Loops@{ASE\_assignment.Loops}}
+\doxysubsubsection{\texorpdfstring{Loops()}{Loops()}}
+{\footnotesize\ttfamily ASE\+\_\+assignment.\+Loops.\+Loops (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_a_s_e__assignment_1_1_variable_manager}{Variable\+Manager}}}]{variable\+Manager,  }\item[{Action$<$ \mbox{\hyperlink{class_a_s_e__assignment_1_1_command}{Command}} $>$}]{execute\+Commands }\end{DoxyParamCaption})}
+
+
+
+Constructor for the Loops class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em variable\+Manager} & The variable manager that manages the names and values of variables\\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_a_s_e__assignment_1_1_loops_a6ff04dfcf2a0e8afab37d49774e9f5a4}\label{class_a_s_e__assignment_1_1_loops_a6ff04dfcf2a0e8afab37d49774e9f5a4} 
+\index{ASE\_assignment.Loops@{ASE\_assignment.Loops}!AddLine@{AddLine}}
+\index{AddLine@{AddLine}!ASE\_assignment.Loops@{ASE\_assignment.Loops}}
+\doxysubsubsection{\texorpdfstring{AddLine()}{AddLine()}}
+{\footnotesize\ttfamily void ASE\+\_\+assignment.\+Loops.\+Add\+Line (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_a_s_e__assignment_1_1_command}{Command}}}]{line }\end{DoxyParamCaption})}
+
+
+
+Adds each line within the loop body to a list for running later. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em line} & the parsed command line\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_a_s_e__assignment_1_1_loops_af7cc364287dd8a306c2ecb560691c172}\label{class_a_s_e__assignment_1_1_loops_af7cc364287dd8a306c2ecb560691c172} 
+\index{ASE\_assignment.Loops@{ASE\_assignment.Loops}!EvaluateCondition@{EvaluateCondition}}
+\index{EvaluateCondition@{EvaluateCondition}!ASE\_assignment.Loops@{ASE\_assignment.Loops}}
+\doxysubsubsection{\texorpdfstring{EvaluateCondition()}{EvaluateCondition()}}
+{\footnotesize\ttfamily bool ASE\+\_\+assignment.\+Loops.\+Evaluate\+Condition (\begin{DoxyParamCaption}\item[{string}]{condition }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [package]}}
+
+
+
+Evaluates the condition within the loop by iterating over each part and checking the variable exists. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em condition} & The condition for the while loop to run\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A boolean to tell the loop to continue execution
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Argument\+Exception} & Throws an exception if it was now possible to evaluate the expression\\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_a_s_e__assignment_1_1_loops_a27a769730a56444fa7c9cafd139f917b}\label{class_a_s_e__assignment_1_1_loops_a27a769730a56444fa7c9cafd139f917b} 
+\index{ASE\_assignment.Loops@{ASE\_assignment.Loops}!ExecuteLoop@{ExecuteLoop}}
+\index{ExecuteLoop@{ExecuteLoop}!ASE\_assignment.Loops@{ASE\_assignment.Loops}}
+\doxysubsubsection{\texorpdfstring{ExecuteLoop()}{ExecuteLoop()}}
+{\footnotesize\ttfamily void ASE\+\_\+assignment.\+Loops.\+Execute\+Loop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Begin executing the loop until its condition evaluates to true. Commands will be read from the list and ran line by line. 
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Argument\+Exception} & Throws an exception if there is no condition to evaluate\\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_a_s_e__assignment_1_1_loops_ad200f51f5263a10b1ec20190776a0c27}\label{class_a_s_e__assignment_1_1_loops_ad200f51f5263a10b1ec20190776a0c27} 
+\index{ASE\_assignment.Loops@{ASE\_assignment.Loops}!StartLoop@{StartLoop}}
+\index{StartLoop@{StartLoop}!ASE\_assignment.Loops@{ASE\_assignment.Loops}}
+\doxysubsubsection{\texorpdfstring{StartLoop()}{StartLoop()}}
+{\footnotesize\ttfamily void ASE\+\_\+assignment.\+Loops.\+Start\+Loop (\begin{DoxyParamCaption}\item[{string}]{command }\end{DoxyParamCaption})}
+
+
+
+once the loop is started, change the flag to true to capture each line and add to the list 
+
+
+\begin{DoxyParams}{Parameters}
+{\em command} & The parsed line of commands\\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Git\+Hub-\/\+Repos/\+ASE-\/assignment/\+ASE-\/assignment/Loops.\+cs\end{DoxyCompactItemize}

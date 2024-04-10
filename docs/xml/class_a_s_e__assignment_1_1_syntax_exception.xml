@@ -1,0 +1,79 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="class_a_s_e__assignment_1_1_syntax_exception" kind="class" language="C#" prot="public">
+    <compoundname>ASE_assignment::SyntaxException</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Exception</basecompoundref>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="class_a_s_e__assignment_1_1_syntax_exception_1abbd172afb7bab63c5241fc92540b0f00" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string ASE_assignment.SyntaxException.Value</definition>
+        <argsstring></argsstring>
+        <name>Value</name>
+        <qualifiedname>ASE_assignment.SyntaxException.Value</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/SyntaxException.cs" line="15" column="23" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/SyntaxException.cs" bodystart="15" bodyend="15"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_a_s_e__assignment_1_1_syntax_exception_1a9ee14956fe92a97d4c488bed838ce4bd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ASE_assignment.SyntaxException.SyntaxException</definition>
+        <argsstring>(string message, string value)</argsstring>
+        <name>SyntaxException</name>
+        <qualifiedname>ASE_assignment.SyntaxException.SyntaxException</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>message</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/SyntaxException.cs" line="16" column="16" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/SyntaxException.cs" bodystart="16" bodyend="20"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Custom exception class to check syntax of commands entered by the user. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>ASE_assignment.SyntaxException</label>
+        <link refid="class_a_s_e__assignment_1_1_syntax_exception"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Exception</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>ASE_assignment.SyntaxException</label>
+        <link refid="class_a_s_e__assignment_1_1_syntax_exception"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Exception</label>
+      </node>
+    </collaborationgraph>
+    <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/SyntaxException.cs" line="13" column="11" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/SyntaxException.cs" bodystart="14" bodyend="21"/>
+    <listofallmembers>
+      <member refid="class_a_s_e__assignment_1_1_syntax_exception_1a9ee14956fe92a97d4c488bed838ce4bd" prot="public" virt="non-virtual"><scope>ASE_assignment::SyntaxException</scope><name>SyntaxException</name></member>
+      <member refid="class_a_s_e__assignment_1_1_syntax_exception_1abbd172afb7bab63c5241fc92540b0f00" prot="public" virt="non-virtual"><scope>ASE_assignment::SyntaxException</scope><name>Value</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

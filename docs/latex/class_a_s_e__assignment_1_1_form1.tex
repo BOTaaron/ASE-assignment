@@ -45,8 +45,23 @@ void \mbox{\hyperlink{class_a_s_e__assignment_1_1_form1_a2fc725b28353bb233089b0b
 \Hypertarget{class_a_s_e__assignment_1_1_form1_a9057cd1a27c669e2eb373b4ab790af80}\label{class_a_s_e__assignment_1_1_form1_a9057cd1a27c669e2eb373b4ab790af80} 
 void {\bfseries Form1\+\_\+\+Load} (object sender, Event\+Args e)
 \item 
+\Hypertarget{class_a_s_e__assignment_1_1_form1_a5eaf284837d944a49f2f23baa6dfd622}\label{class_a_s_e__assignment_1_1_form1_a5eaf284837d944a49f2f23baa6dfd622} 
+void {\bfseries Clear\+All} ()
+\begin{DoxyCompactList}\small\item\em Reset the program without needing to restart. \end{DoxyCompactList}\item 
+\Hypertarget{class_a_s_e__assignment_1_1_form1_a9b94ef3437bd124776c280b546c1cb81}\label{class_a_s_e__assignment_1_1_form1_a9b94ef3437bd124776c280b546c1cb81} 
+void {\bfseries canvas\+\_\+\+Mouse\+Down} (object sender, Mouse\+Event\+Args e)
+\item 
+\Hypertarget{class_a_s_e__assignment_1_1_form1_a1e72045483134d9abc25990378cf6812}\label{class_a_s_e__assignment_1_1_form1_a1e72045483134d9abc25990378cf6812} 
+void {\bfseries canvas\+\_\+\+Mouse\+Move} (object sender, Mouse\+Event\+Args e)
+\item 
+\Hypertarget{class_a_s_e__assignment_1_1_form1_a0cc7ddc60d10f80c654618b4a860927f}\label{class_a_s_e__assignment_1_1_form1_a0cc7ddc60d10f80c654618b4a860927f} 
+void {\bfseries canvas\+\_\+\+Mouse\+Up} (object sender, Mouse\+Event\+Args e)
+\item 
 \Hypertarget{class_a_s_e__assignment_1_1_form1_aed302fe4407728a6a15b771f2dd5e3d7}\label{class_a_s_e__assignment_1_1_form1_aed302fe4407728a6a15b771f2dd5e3d7} 
 void {\bfseries text\+Box1\+\_\+\+Text\+Changed} (object sender, Event\+Args e)
+\item 
+\Hypertarget{class_a_s_e__assignment_1_1_form1_a0a82f59bcf6f7b3facc4aeb185419925}\label{class_a_s_e__assignment_1_1_form1_a0a82f59bcf6f7b3facc4aeb185419925} 
+void {\bfseries Restart\+Button\+\_\+\+Click} (object sender, Event\+Args e)
 \item 
 \Hypertarget{class_a_s_e__assignment_1_1_form1_add15d22660df69b707702dc700149475}\label{class_a_s_e__assignment_1_1_form1_add15d22660df69b707702dc700149475} 
 void {\bfseries Initialize\+Component} ()
@@ -54,8 +69,8 @@ void {\bfseries Initialize\+Component} ()
 \doxysubsubsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\Hypertarget{class_a_s_e__assignment_1_1_form1_a39d44a6d44067ea95994566c25515be4}\label{class_a_s_e__assignment_1_1_form1_a39d44a6d44067ea95994566c25515be4} 
-\mbox{\hyperlink{class_a_s_e__assignment_1_1_canvass}{Canvass}} {\bfseries canvass}
+\Hypertarget{class_a_s_e__assignment_1_1_form1_afbddaeaef4e99c2f736e6bae4fdeaff1}\label{class_a_s_e__assignment_1_1_form1_afbddaeaef4e99c2f736e6bae4fdeaff1} 
+\mbox{\hyperlink{class_a_s_e__assignment_1_1_canvas}{Canvas}} {\bfseries canvas}
 \item 
 \Hypertarget{class_a_s_e__assignment_1_1_form1_a714d2d52d0beb78d95bf5df044de727e}\label{class_a_s_e__assignment_1_1_form1_a714d2d52d0beb78d95bf5df044de727e} 
 \mbox{\hyperlink{class_a_s_e__assignment_1_1_pen_controller}{Pen\+Controller}} {\bfseries pen\+Controller}
@@ -68,6 +83,15 @@ void {\bfseries Initialize\+Component} ()
 \item 
 \Hypertarget{class_a_s_e__assignment_1_1_form1_af7ce495c9f28ba47fdcb9b9373a41322}\label{class_a_s_e__assignment_1_1_form1_af7ce495c9f28ba47fdcb9b9373a41322} 
 int {\bfseries line\+Number} = 1
+\item 
+\Hypertarget{class_a_s_e__assignment_1_1_form1_a12b17d37343b04f0e5ee5e7d76fbd788}\label{class_a_s_e__assignment_1_1_form1_a12b17d37343b04f0e5ee5e7d76fbd788} 
+int {\bfseries indentation\+Level} = 0
+\item 
+\Hypertarget{class_a_s_e__assignment_1_1_form1_afbb83a1f3b02afc00215e83ff53605c2}\label{class_a_s_e__assignment_1_1_form1_afbb83a1f3b02afc00215e83ff53605c2} 
+Point {\bfseries last\+Point} = Point.\+Empty
+\item 
+\Hypertarget{class_a_s_e__assignment_1_1_form1_a4d2218532b29d376f57f61591c59f21d}\label{class_a_s_e__assignment_1_1_form1_a4d2218532b29d376f57f61591c59f21d} 
+bool {\bfseries is\+Mouse\+Down} = false
 \item 
 \Hypertarget{class_a_s_e__assignment_1_1_form1_a671bd7fd07f81843a50c6795b9203ab6}\label{class_a_s_e__assignment_1_1_form1_a671bd7fd07f81843a50c6795b9203ab6} 
 \mbox{\hyperlink{class_a_s_e__assignment_1_1_command_parser}{Command\+Parser}} {\bfseries parse} = new \mbox{\hyperlink{class_a_s_e__assignment_1_1_command_parser}{Command\+Parser}}()
@@ -98,6 +122,9 @@ System.\+Windows.\+Forms.\+Button {\bfseries Save\+Button}
 \item 
 \Hypertarget{class_a_s_e__assignment_1_1_form1_a1718a4172abf6ca0bf4160805ecb2867}\label{class_a_s_e__assignment_1_1_form1_a1718a4172abf6ca0bf4160805ecb2867} 
 System.\+Windows.\+Forms.\+Rich\+Text\+Box {\bfseries Error\+Box}
+\item 
+\Hypertarget{class_a_s_e__assignment_1_1_form1_a0773738dcf0ad87bcfd1efb6f2971332}\label{class_a_s_e__assignment_1_1_form1_a0773738dcf0ad87bcfd1efb6f2971332} 
+System.\+Windows.\+Forms.\+Button {\bfseries Restart\+Button}
 \end{DoxyCompactItemize}
 
 

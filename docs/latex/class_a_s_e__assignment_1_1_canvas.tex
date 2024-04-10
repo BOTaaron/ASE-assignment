@@ -1,0 +1,88 @@
+\doxysection{ASE\+\_\+assignment.\+Canvas Class Reference}
+\hypertarget{class_a_s_e__assignment_1_1_canvas}{}\label{class_a_s_e__assignment_1_1_canvas}\index{ASE\_assignment.Canvas@{ASE\_assignment.Canvas}}
+
+
+Generates the bitmaps used for drawing. Initialises bitmaps outside of local scope and contains functions necessary to manipulate them.  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_a_s_e__assignment_1_1_canvas_ad88f8e537ec5785459e33a944dfa669a}{Canvas}} (int width, int height)
+\begin{DoxyCompactList}\small\item\em Creates the bitmaps and graphics used for drawing inside the \textquotesingle{}Drawing\+Panel\textquotesingle{} Picture\+Box control Takes width and height of the parent contained as parameters to set the bitmap size. \end{DoxyCompactList}\item 
+Bitmap \mbox{\hyperlink{class_a_s_e__assignment_1_1_canvas_aa6120db70c1fae19043e67ecea1d2985}{Combine\+Canvass}} ()
+\begin{DoxyCompactList}\small\item\em Combines the transparent bitmap for displaying the cursor with the bitmap used for drawing shapes allows for drawing without the cursor marking the drawing bitmap so that it may be cleared each time it moves. \end{DoxyCompactList}\item 
+\Hypertarget{class_a_s_e__assignment_1_1_canvas_a900d33b0f0474a8539ef8e06bc07bb2e}\label{class_a_s_e__assignment_1_1_canvas_a900d33b0f0474a8539ef8e06bc07bb2e} 
+void {\bfseries Clear\+Canvas} ()
+\begin{DoxyCompactList}\small\item\em Clears both bitmaps so that the user can start fresh. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_a_s_e__assignment_1_1_canvas_a3c8e7e65595238887fc6408cd204332d}\label{class_a_s_e__assignment_1_1_canvas_a3c8e7e65595238887fc6408cd204332d} 
+Bitmap {\bfseries drawing\+Canvas}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\Hypertarget{class_a_s_e__assignment_1_1_canvas_a612f01170a4a5a76de23789159d5b19f}\label{class_a_s_e__assignment_1_1_canvas_a612f01170a4a5a76de23789159d5b19f} 
+Graphics {\bfseries Drawing\+Graphics}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em publicly expose the graphics for drawing as a read-\/only property to be accessed elsewhere in the program \end{DoxyCompactList}\item 
+\Hypertarget{class_a_s_e__assignment_1_1_canvas_add5d7f30aef00ffc5d8ac88aadfddb0a}\label{class_a_s_e__assignment_1_1_canvas_add5d7f30aef00ffc5d8ac88aadfddb0a} 
+Graphics {\bfseries Cursor\+Graphics}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em publicly expose the graphics for the cursor as a read-\/only property to be accessed elsewhere in the program \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_a_s_e__assignment_1_1_canvas_adb09b954c8227e9681b786a91cb8b123}\label{class_a_s_e__assignment_1_1_canvas_adb09b954c8227e9681b786a91cb8b123} 
+Bitmap {\bfseries drawing\+Canvass}
+\item 
+\Hypertarget{class_a_s_e__assignment_1_1_canvas_a538868263aa58c2236916c36545fac58}\label{class_a_s_e__assignment_1_1_canvas_a538868263aa58c2236916c36545fac58} 
+Bitmap {\bfseries cursor\+Canvass}
+\item 
+\Hypertarget{class_a_s_e__assignment_1_1_canvas_a0a84b85dcfc7af646ac34fab79d9ae26}\label{class_a_s_e__assignment_1_1_canvas_a0a84b85dcfc7af646ac34fab79d9ae26} 
+Graphics {\bfseries drawing\+Graphics}
+\item 
+\Hypertarget{class_a_s_e__assignment_1_1_canvas_a532539a48c360e33fc14c9ce3f57997b}\label{class_a_s_e__assignment_1_1_canvas_a532539a48c360e33fc14c9ce3f57997b} 
+Graphics {\bfseries cursor\+Graphics}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Generates the bitmaps used for drawing. Initialises bitmaps outside of local scope and contains functions necessary to manipulate them. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_a_s_e__assignment_1_1_canvas_ad88f8e537ec5785459e33a944dfa669a}\label{class_a_s_e__assignment_1_1_canvas_ad88f8e537ec5785459e33a944dfa669a} 
+\index{ASE\_assignment.Canvas@{ASE\_assignment.Canvas}!Canvas@{Canvas}}
+\index{Canvas@{Canvas}!ASE\_assignment.Canvas@{ASE\_assignment.Canvas}}
+\doxysubsubsection{\texorpdfstring{Canvas()}{Canvas()}}
+{\footnotesize\ttfamily ASE\+\_\+assignment.\+Canvas.\+Canvas (\begin{DoxyParamCaption}\item[{int}]{width,  }\item[{int}]{height }\end{DoxyParamCaption})}
+
+
+
+Creates the bitmaps and graphics used for drawing inside the \textquotesingle{}Drawing\+Panel\textquotesingle{} Picture\+Box control Takes width and height of the parent contained as parameters to set the bitmap size. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em width} & Width of parent container\\
+\hline
+{\em height} & Height of parent container\\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_a_s_e__assignment_1_1_canvas_aa6120db70c1fae19043e67ecea1d2985}\label{class_a_s_e__assignment_1_1_canvas_aa6120db70c1fae19043e67ecea1d2985} 
+\index{ASE\_assignment.Canvas@{ASE\_assignment.Canvas}!CombineCanvass@{CombineCanvass}}
+\index{CombineCanvass@{CombineCanvass}!ASE\_assignment.Canvas@{ASE\_assignment.Canvas}}
+\doxysubsubsection{\texorpdfstring{CombineCanvass()}{CombineCanvass()}}
+{\footnotesize\ttfamily Bitmap ASE\+\_\+assignment.\+Canvas.\+Combine\+Canvass (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Combines the transparent bitmap for displaying the cursor with the bitmap used for drawing shapes allows for drawing without the cursor marking the drawing bitmap so that it may be cleared each time it moves. 
+
+\begin{DoxyReturn}{Returns}
+A combined bitmap to be drawn across in the Picture\+Box
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Git\+Hub-\/\+Repos/\+ASE-\/assignment/\+ASE-\/assignment/Canvas.\+cs\end{DoxyCompactItemize}

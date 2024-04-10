@@ -32,6 +32,21 @@
         </inbodydescription>
         <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Conditionals.cs" line="17" column="27" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Conditionals.cs" bodystart="17" bodyend="-1"/>
       </memberdef>
+      <memberdef kind="variable" id="class_a_s_e__assignment_1_1_conditionals_1adcc0a7ae91cd17091d049d636eb67afc" prot="private" static="no" mutable="no">
+        <type>Stack&lt; bool &gt;</type>
+        <definition>Stack&lt;bool&gt; ASE_assignment.Conditionals.executionStack</definition>
+        <argsstring></argsstring>
+        <name>executionStack</name>
+        <qualifiedname>ASE_assignment.Conditionals.executionStack</qualifiedname>
+        <initializer>= new Stack&lt;bool&gt;()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Conditionals.cs" line="18" column="23" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Conditionals.cs" bodystart="18" bodyend="-1"/>
+      </memberdef>
     </sectiondef>
     <sectiondef kind="property">
       <memberdef kind="property" id="class_a_s_e__assignment_1_1_conditionals_1a048e30e8a3b5ceb8e5c9ad09fe5816d4" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="yes" protectedsettable="no">
@@ -47,7 +62,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Conditionals.cs" line="19" column="21" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Conditionals.cs" bodystart="19" bodyend="19"/>
+        <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Conditionals.cs" line="20" column="21" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Conditionals.cs" bodystart="20" bodyend="20"/>
       </memberdef>
       <memberdef kind="property" id="class_a_s_e__assignment_1_1_conditionals_1a1e3adfb48b9f2e3dd9d406821a381412" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="yes" protectedsettable="no">
         <type>bool</type>
@@ -62,7 +77,21 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Conditionals.cs" line="20" column="21" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Conditionals.cs" bodystart="20" bodyend="20"/>
+        <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Conditionals.cs" line="21" column="21" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Conditionals.cs" bodystart="21" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="property" id="class_a_s_e__assignment_1_1_conditionals_1ac762d1180a5d0145989260eaa02977ed" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>bool</type>
+        <definition>bool ASE_assignment.Conditionals.IsExecutionAllowed</definition>
+        <argsstring></argsstring>
+        <name>IsExecutionAllowed</name>
+        <qualifiedname>ASE_assignment.Conditionals.IsExecutionAllowed</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Conditionals.cs" line="33" column="21" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Conditionals.cs" bodystart="33" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-func">
@@ -92,7 +121,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Conditionals.cs" line="26" column="16" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Conditionals.cs" bodystart="26" bodyend="29"/>
+        <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Conditionals.cs" line="27" column="16" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Conditionals.cs" bodystart="27" bodyend="30"/>
       </memberdef>
       <memberdef kind="function" id="class_a_s_e__assignment_1_1_conditionals_1ab34cc532cff64f9bd637e17fcb4b512c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -130,7 +159,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Conditionals.cs" line="36" column="21" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Conditionals.cs" bodystart="36" bodyend="64"/>
+        <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Conditionals.cs" line="41" column="21" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Conditionals.cs" bodystart="41" bodyend="74"/>
       </memberdef>
       <memberdef kind="function" id="class_a_s_e__assignment_1_1_conditionals_1a156f1c9ca2d9bf8da3d375e0ee1a39d2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -145,7 +174,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Conditionals.cs" line="68" column="21" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Conditionals.cs" bodystart="68" bodyend="71"/>
+        <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Conditionals.cs" line="78" column="21" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Conditionals.cs" bodystart="78" bodyend="86"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -166,14 +195,16 @@
         <link refid="class_a_s_e__assignment_1_1_variable_manager"/>
       </node>
     </collaborationgraph>
-    <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Conditionals.cs" line="14" column="13" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Conditionals.cs" bodystart="15" bodyend="72"/>
+    <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Conditionals.cs" line="14" column="13" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Conditionals.cs" bodystart="15" bodyend="87"/>
     <listofallmembers>
       <member refid="class_a_s_e__assignment_1_1_conditionals_1a7ad392cab882983358235d61e8e7394a" prot="public" virt="non-virtual"><scope>ASE_assignment::Conditionals</scope><name>Conditionals</name></member>
       <member refid="class_a_s_e__assignment_1_1_conditionals_1aca82fea7680058dbf2137a9bcc5473f3" prot="private" virt="non-virtual"><scope>ASE_assignment::Conditionals</scope><name>dataTable</name></member>
       <member refid="class_a_s_e__assignment_1_1_conditionals_1a156f1c9ca2d9bf8da3d375e0ee1a39d2" prot="public" virt="non-virtual"><scope>ASE_assignment::Conditionals</scope><name>EndIf</name></member>
       <member refid="class_a_s_e__assignment_1_1_conditionals_1a1e3adfb48b9f2e3dd9d406821a381412" prot="public" virt="non-virtual"><scope>ASE_assignment::Conditionals</scope><name>executeBlock</name></member>
+      <member refid="class_a_s_e__assignment_1_1_conditionals_1adcc0a7ae91cd17091d049d636eb67afc" prot="private" virt="non-virtual"><scope>ASE_assignment::Conditionals</scope><name>executionStack</name></member>
       <member refid="class_a_s_e__assignment_1_1_conditionals_1ab34cc532cff64f9bd637e17fcb4b512c" prot="public" virt="non-virtual"><scope>ASE_assignment::Conditionals</scope><name>If</name></member>
       <member refid="class_a_s_e__assignment_1_1_conditionals_1a048e30e8a3b5ceb8e5c9ad09fe5816d4" prot="public" virt="non-virtual"><scope>ASE_assignment::Conditionals</scope><name>insideConditionalBlock</name></member>
+      <member refid="class_a_s_e__assignment_1_1_conditionals_1ac762d1180a5d0145989260eaa02977ed" prot="public" virt="non-virtual"><scope>ASE_assignment::Conditionals</scope><name>IsExecutionAllowed</name></member>
       <member refid="class_a_s_e__assignment_1_1_conditionals_1af62844df8fabdd16f7875fbce2795815" prot="private" virt="non-virtual"><scope>ASE_assignment::Conditionals</scope><name>variableManager</name></member>
     </listofallmembers>
   </compounddef>

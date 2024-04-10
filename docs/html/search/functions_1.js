@@ -1,12 +1,15 @@
 var searchData=
 [
-  ['declarevariable_0',['DeclareVariable',['../class_a_s_e__assignment_1_1_variable_manager.html#a7fbf0e694da7ca1c86614df817033b8c',1,'ASE_assignment::VariableManager']]],
-  ['displayinput_1',['DisplayInput',['../class_a_s_e__assignment_1_1_form1.html#a19f88d0fb23d931f3bc8037840ae2392',1,'ASE_assignment::Form1']]],
-  ['dispose_2',['Dispose',['../class_a_s_e__assignment_1_1_form1.html#a6d52d48ab9b399e2504272c4ebe93769',1,'ASE_assignment::Form1']]],
-  ['draw_3',['draw',['../class_a_s_e__assignment_1_1_circle.html#ac108c2460fc84052d21b1ecfb7ebfd55',1,'ASE_assignment.Circle.Draw()'],['../class_a_s_e__assignment_1_1_rectangle.html#a636ae94c3325330db9f223e5866f79f1',1,'ASE_assignment.Rectangle.Draw()'],['../class_a_s_e__assignment_1_1_shape.html#a6bb21024ef15686aa32c25733de9f56e',1,'ASE_assignment.Shape.Draw()'],['../class_a_s_e__assignment_1_1_triangle.html#a95036b32dbc8ed46a875f46484ca69e0',1,'ASE_assignment.Triangle.Draw()']]],
-  ['drawcircle_4',['DrawCircle',['../class_a_s_e__assignment_1_1_command_processor.html#a71fa6ea769bd00c54025fbb59b89137a',1,'ASE_assignment::CommandProcessor']]],
-  ['drawrectangle_5',['DrawRectangle',['../class_a_s_e__assignment_1_1_command_processor.html#ab4393568b26651cef0e95450044775dd',1,'ASE_assignment::CommandProcessor']]],
-  ['drawshape_6',['DrawShape',['../class_a_s_e__assignment_1_1_pen_controller.html#ae329e23452b4f6104234271c2ea612e3',1,'ASE_assignment::PenController']]],
-  ['drawto_7',['DrawTo',['../class_a_s_e__assignment_1_1_command_processor.html#a9a84d55963e463e06f98213be6eba46f',1,'ASE_assignment::CommandProcessor']]],
-  ['drawtriangle_8',['DrawTriangle',['../class_a_s_e__assignment_1_1_command_processor.html#a5b8ec25b2996e26b8bc7e24df110a522',1,'ASE_assignment::CommandProcessor']]]
+  ['calculatevertices_0',['CalculateVertices',['../class_a_s_e__assignment_1_1_custom_shape.html#ae89d6f347839a1c6e6640539deef8c24',1,'ASE_assignment::CustomShape']]],
+  ['canvas_1',['Canvas',['../class_a_s_e__assignment_1_1_canvas.html#ad88f8e537ec5785459e33a944dfa669a',1,'ASE_assignment::Canvas']]],
+  ['circle_2',['Circle',['../class_a_s_e__assignment_1_1_circle.html#a05e0d07f42e10eef0975fd6105919ee6',1,'ASE_assignment::Circle']]],
+  ['clear_3',['Clear',['../class_a_s_e__assignment_1_1_command_processor.html#ac964e0ade9000dc7ac2c5b91bb5a3e59',1,'ASE_assignment::CommandProcessor']]],
+  ['clearall_4',['ClearAll',['../class_a_s_e__assignment_1_1_form1.html#a5eaf284837d944a49f2f23baa6dfd622',1,'ASE_assignment::Form1']]],
+  ['clearcanvas_5',['ClearCanvas',['../class_a_s_e__assignment_1_1_canvas.html#a900d33b0f0474a8539ef8e06bc07bb2e',1,'ASE_assignment::Canvas']]],
+  ['clearvariables_6',['ClearVariables',['../class_a_s_e__assignment_1_1_variable_manager.html#afc6822e94a1161943555b42b61736728',1,'ASE_assignment::VariableManager']]],
+  ['combinecanvass_7',['CombineCanvass',['../class_a_s_e__assignment_1_1_canvas.html#aa6120db70c1fae19043e67ecea1d2985',1,'ASE_assignment::Canvas']]],
+  ['commandbox_5fkeydown_8',['CommandBox_KeyDown',['../class_a_s_e__assignment_1_1_form1.html#a95ab37574cf5687eae3b72087e5a2bb5',1,'ASE_assignment::Form1']]],
+  ['commandprocessor_9',['CommandProcessor',['../class_a_s_e__assignment_1_1_command_processor.html#a90cc14a7065e49919c1a5cbdab6d4cd5',1,'ASE_assignment::CommandProcessor']]],
+  ['conditionals_10',['Conditionals',['../class_a_s_e__assignment_1_1_conditionals.html#a7ad392cab882983358235d61e8e7394a',1,'ASE_assignment::Conditionals']]],
+  ['customshape_11',['CustomShape',['../class_a_s_e__assignment_1_1_custom_shape.html#a7c169205429ac3bb49d659aba51776d2',1,'ASE_assignment::CustomShape']]]
 ];

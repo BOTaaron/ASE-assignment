@@ -4,7 +4,6 @@
     <compoundname>Triangle.cs</compoundname>
     <innerclass refid="class_a_s_e__assignment_1_1_triangle" prot="public">ASE_assignment::Triangle</innerclass>
     <innernamespace refid="namespace_a_s_e__assignment">ASE_assignment</innernamespace>
-    <innernamespace refid="namespace_system_1_1_drawing_1_1_drawing2_d">System::Drawing::Drawing2D</innernamespace>
     <briefdescription>
     </briefdescription>
     <detaileddescription>

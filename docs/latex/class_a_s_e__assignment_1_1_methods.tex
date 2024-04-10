@@ -1,0 +1,124 @@
+\doxysection{ASE\+\_\+assignment.\+Methods Class Reference}
+\hypertarget{class_a_s_e__assignment_1_1_methods}{}\label{class_a_s_e__assignment_1_1_methods}\index{ASE\_assignment.Methods@{ASE\_assignment.Methods}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_a_s_e__assignment_1_1_methods_a9544049cb6990de4dae542ff6e78ad99}\label{class_a_s_e__assignment_1_1_methods_a9544049cb6990de4dae542ff6e78ad99} 
+{\bfseries Methods} (\mbox{\hyperlink{class_a_s_e__assignment_1_1_variable_manager}{Variable\+Manager}} variable\+Manager, Action$<$ \mbox{\hyperlink{class_a_s_e__assignment_1_1_command}{Command}} $>$ execute\+Command)
+\item 
+void \mbox{\hyperlink{class_a_s_e__assignment_1_1_methods_a1ee8ed5ca9ed94ecae5bcb8f922b6456}{Method\+Declaration}} (string method\+Name)
+\begin{DoxyCompactList}\small\item\em Checks a method with the same name does not exist, and creates a list with the name of the method to store method commands. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_a_s_e__assignment_1_1_methods_a54cc80771e82716e2bc65bc45842e6a4}{Add\+Command\+To\+Method}} (\mbox{\hyperlink{class_a_s_e__assignment_1_1_command}{Command}} command)
+\begin{DoxyCompactList}\small\item\em Adds each line between the method declaration and end of method declaration to a list to run later. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_a_s_e__assignment_1_1_methods_afa2ab48d2d1f8b8971c888f53cc72629}{Is\+Method}} (string method\+Name)
+\begin{DoxyCompactList}\small\item\em Checks whether the command is a method if not found in the list of valid commands by Command\+Processor. \end{DoxyCompactList}\item 
+\Hypertarget{class_a_s_e__assignment_1_1_methods_aa5415f947b5472d82b9e35f4a32f446c}\label{class_a_s_e__assignment_1_1_methods_aa5415f947b5472d82b9e35f4a32f446c} 
+void {\bfseries End\+Method\+Declaration} ()
+\begin{DoxyCompactList}\small\item\em endmethod command was found, stop capturing lines within the method \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_a_s_e__assignment_1_1_methods_ad859f2316dea3287b44379ec27331b06}{Execute\+Method}} (string method\+Name)
+\begin{DoxyCompactList}\small\item\em Execute the lines found within the list one by one. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_a_s_e__assignment_1_1_methods_ac2dcbf849cfa5c7fd75ad4abd53f452e}\label{class_a_s_e__assignment_1_1_methods_ac2dcbf849cfa5c7fd75ad4abd53f452e} 
+bool {\bfseries Is\+Capturing}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Boolean flag to declare that the method is being captured, inside lines will not run until the method is called. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_a_s_e__assignment_1_1_methods_a60ff61aa491317326c47be6b0c9a4a24}\label{class_a_s_e__assignment_1_1_methods_a60ff61aa491317326c47be6b0c9a4a24} 
+\mbox{\hyperlink{class_a_s_e__assignment_1_1_variable_manager}{Variable\+Manager}} {\bfseries variable\+Manager}
+\item 
+\Hypertarget{class_a_s_e__assignment_1_1_methods_acfb3dcbcfbd9c8c22b65f86ef6148d3c}\label{class_a_s_e__assignment_1_1_methods_acfb3dcbcfbd9c8c22b65f86ef6148d3c} 
+Action$<$ \mbox{\hyperlink{class_a_s_e__assignment_1_1_command}{Command}} $>$ {\bfseries execute\+Command}
+\item 
+\Hypertarget{class_a_s_e__assignment_1_1_methods_ab4f9cfc3c98d8f65b03b6ecad4bfb270}\label{class_a_s_e__assignment_1_1_methods_ab4f9cfc3c98d8f65b03b6ecad4bfb270} 
+Dictionary$<$ string, List$<$ \mbox{\hyperlink{class_a_s_e__assignment_1_1_command}{Command}} $>$ $>$ {\bfseries methods} = new Dictionary$<$string, List$<$\mbox{\hyperlink{class_a_s_e__assignment_1_1_command}{Command}}$>$$>$()
+\item 
+\Hypertarget{class_a_s_e__assignment_1_1_methods_a13bf86466f0e68f97a42d8b470830005}\label{class_a_s_e__assignment_1_1_methods_a13bf86466f0e68f97a42d8b470830005} 
+string {\bfseries current\+Method\+Name}
+\item 
+\Hypertarget{class_a_s_e__assignment_1_1_methods_ac7c4d9ce0b4b00d95f57a8fd999ca678}\label{class_a_s_e__assignment_1_1_methods_ac7c4d9ce0b4b00d95f57a8fd999ca678} 
+bool {\bfseries is\+Capturing} = false
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_a_s_e__assignment_1_1_methods_a54cc80771e82716e2bc65bc45842e6a4}\label{class_a_s_e__assignment_1_1_methods_a54cc80771e82716e2bc65bc45842e6a4} 
+\index{ASE\_assignment.Methods@{ASE\_assignment.Methods}!AddCommandToMethod@{AddCommandToMethod}}
+\index{AddCommandToMethod@{AddCommandToMethod}!ASE\_assignment.Methods@{ASE\_assignment.Methods}}
+\doxysubsubsection{\texorpdfstring{AddCommandToMethod()}{AddCommandToMethod()}}
+{\footnotesize\ttfamily void ASE\+\_\+assignment.\+Methods.\+Add\+Command\+To\+Method (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_a_s_e__assignment_1_1_command}{Command}}}]{command }\end{DoxyParamCaption})}
+
+
+
+Adds each line between the method declaration and end of method declaration to a list to run later. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em command} & The line of parsed commands\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_a_s_e__assignment_1_1_methods_ad859f2316dea3287b44379ec27331b06}\label{class_a_s_e__assignment_1_1_methods_ad859f2316dea3287b44379ec27331b06} 
+\index{ASE\_assignment.Methods@{ASE\_assignment.Methods}!ExecuteMethod@{ExecuteMethod}}
+\index{ExecuteMethod@{ExecuteMethod}!ASE\_assignment.Methods@{ASE\_assignment.Methods}}
+\doxysubsubsection{\texorpdfstring{ExecuteMethod()}{ExecuteMethod()}}
+{\footnotesize\ttfamily void ASE\+\_\+assignment.\+Methods.\+Execute\+Method (\begin{DoxyParamCaption}\item[{string}]{method\+Name }\end{DoxyParamCaption})}
+
+
+
+Execute the lines found within the list one by one. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em method\+Name} & The name of the method to execute\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Argument\+Exception} & Throws an exception if the method was not found\\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_a_s_e__assignment_1_1_methods_afa2ab48d2d1f8b8971c888f53cc72629}\label{class_a_s_e__assignment_1_1_methods_afa2ab48d2d1f8b8971c888f53cc72629} 
+\index{ASE\_assignment.Methods@{ASE\_assignment.Methods}!IsMethod@{IsMethod}}
+\index{IsMethod@{IsMethod}!ASE\_assignment.Methods@{ASE\_assignment.Methods}}
+\doxysubsubsection{\texorpdfstring{IsMethod()}{IsMethod()}}
+{\footnotesize\ttfamily bool ASE\+\_\+assignment.\+Methods.\+Is\+Method (\begin{DoxyParamCaption}\item[{string}]{method\+Name }\end{DoxyParamCaption})}
+
+
+
+Checks whether the command is a method if not found in the list of valid commands by Command\+Processor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em method\+Name} & The name of the method to test\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns true if the method exists
+\end{DoxyReturn}
+\Hypertarget{class_a_s_e__assignment_1_1_methods_a1ee8ed5ca9ed94ecae5bcb8f922b6456}\label{class_a_s_e__assignment_1_1_methods_a1ee8ed5ca9ed94ecae5bcb8f922b6456} 
+\index{ASE\_assignment.Methods@{ASE\_assignment.Methods}!MethodDeclaration@{MethodDeclaration}}
+\index{MethodDeclaration@{MethodDeclaration}!ASE\_assignment.Methods@{ASE\_assignment.Methods}}
+\doxysubsubsection{\texorpdfstring{MethodDeclaration()}{MethodDeclaration()}}
+{\footnotesize\ttfamily void ASE\+\_\+assignment.\+Methods.\+Method\+Declaration (\begin{DoxyParamCaption}\item[{string}]{method\+Name }\end{DoxyParamCaption})}
+
+
+
+Checks a method with the same name does not exist, and creates a list with the name of the method to store method commands. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em method\+Name} & The name of the method to create\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Syntax\+Exception} & throws an exception if the method already exists\\
+\hline
+\end{DoxyExceptions}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Git\+Hub-\/\+Repos/\+ASE-\/assignment/\+ASE-\/assignment/Methods.\+cs\end{DoxyCompactItemize}

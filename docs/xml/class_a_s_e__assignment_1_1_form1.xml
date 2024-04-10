@@ -4,19 +4,19 @@
     <compoundname>ASE_assignment::Form1</compoundname>
     <basecompoundref prot="public" virt="non-virtual">Form</basecompoundref>
     <sectiondef kind="private-attrib">
-      <memberdef kind="variable" id="class_a_s_e__assignment_1_1_form1_1a39d44a6d44067ea95994566c25515be4" prot="private" static="no" mutable="no">
-        <type><ref refid="class_a_s_e__assignment_1_1_canvass" kindref="compound">Canvass</ref></type>
-        <definition>Canvass ASE_assignment.Form1.canvass</definition>
+      <memberdef kind="variable" id="class_a_s_e__assignment_1_1_form1_1afbddaeaef4e99c2f736e6bae4fdeaff1" prot="private" static="no" mutable="no">
+        <type><ref refid="class_a_s_e__assignment_1_1_canvas" kindref="compound">Canvas</ref></type>
+        <definition>Canvas ASE_assignment.Form1.canvas</definition>
         <argsstring></argsstring>
-        <name>canvass</name>
-        <qualifiedname>ASE_assignment.Form1.canvass</qualifiedname>
+        <name>canvas</name>
+        <qualifiedname>ASE_assignment.Form1.canvas</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Form1.cs" line="21" column="25" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Form1.cs" bodystart="21" bodyend="-1"/>
+        <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Form1.cs" line="21" column="24" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Form1.cs" bodystart="21" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_a_s_e__assignment_1_1_form1_1a714d2d52d0beb78d95bf5df044de727e" prot="private" static="no" mutable="no">
         <type><ref refid="class_a_s_e__assignment_1_1_pen_controller" kindref="compound">PenController</ref></type>
@@ -74,7 +74,52 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Form1.cs" line="25" column="13" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Form1.cs" bodystart="25" bodyend="-1"/>
+        <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Form1.cs" line="25" column="21" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Form1.cs" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_s_e__assignment_1_1_form1_1a12b17d37343b04f0e5ee5e7d76fbd788" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ASE_assignment.Form1.indentationLevel</definition>
+        <argsstring></argsstring>
+        <name>indentationLevel</name>
+        <qualifiedname>ASE_assignment.Form1.indentationLevel</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Form1.cs" line="26" column="21" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Form1.cs" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_s_e__assignment_1_1_form1_1afbb83a1f3b02afc00215e83ff53605c2" prot="private" static="no" mutable="no">
+        <type>Point</type>
+        <definition>Point ASE_assignment.Form1.lastPoint</definition>
+        <argsstring></argsstring>
+        <name>lastPoint</name>
+        <qualifiedname>ASE_assignment.Form1.lastPoint</qualifiedname>
+        <initializer>= Point.Empty</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Form1.cs" line="27" column="23" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Form1.cs" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_s_e__assignment_1_1_form1_1a4d2218532b29d376f57f61591c59f21d" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool ASE_assignment.Form1.isMouseDown</definition>
+        <argsstring></argsstring>
+        <name>isMouseDown</name>
+        <qualifiedname>ASE_assignment.Form1.isMouseDown</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Form1.cs" line="28" column="22" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Form1.cs" bodystart="28" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_a_s_e__assignment_1_1_form1_1a671bd7fd07f81843a50c6795b9203ab6" prot="private" static="no" mutable="no">
         <type><ref refid="class_a_s_e__assignment_1_1_command_parser" kindref="compound">CommandParser</ref></type>
@@ -89,7 +134,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Form1.cs" line="48" column="23" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Form1.cs" bodystart="48" bodyend="-1"/>
+        <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Form1.cs" line="52" column="23" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Form1.cs" bodystart="52" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_a_s_e__assignment_1_1_form1_1abe508e24a52c4232296d9fc975d05329" prot="private" static="no" mutable="no">
         <type>System.ComponentModel.IContainer</type>
@@ -119,7 +164,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Form1.Designer.cs" line="148" column="42" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Form1.Designer.cs" bodystart="148" bodyend="-1"/>
+        <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Form1.Designer.cs" line="174" column="42" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Form1.Designer.cs" bodystart="174" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_a_s_e__assignment_1_1_form1_1ab9626736f61e5b037ffb18adae622a70" prot="private" static="no" mutable="no">
         <type>System.Windows.Forms.Button</type>
@@ -133,7 +178,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Form1.Designer.cs" line="149" column="42" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Form1.Designer.cs" bodystart="149" bodyend="-1"/>
+        <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Form1.Designer.cs" line="175" column="42" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Form1.Designer.cs" bodystart="175" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_a_s_e__assignment_1_1_form1_1a7a3c08131e15dee758a625bf6d389156" prot="private" static="no" mutable="no">
         <type>System.Windows.Forms.TextBox</type>
@@ -147,7 +192,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Form1.Designer.cs" line="150" column="43" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Form1.Designer.cs" bodystart="150" bodyend="-1"/>
+        <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Form1.Designer.cs" line="176" column="43" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Form1.Designer.cs" bodystart="176" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_a_s_e__assignment_1_1_form1_1a1aa58a815a56261ed990a8d152d62eb8" prot="private" static="no" mutable="no">
         <type>System.Windows.Forms.Panel</type>
@@ -161,7 +206,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Form1.Designer.cs" line="151" column="41" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Form1.Designer.cs" bodystart="151" bodyend="-1"/>
+        <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Form1.Designer.cs" line="177" column="41" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Form1.Designer.cs" bodystart="177" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_a_s_e__assignment_1_1_form1_1a06a611c4acbc1aa32e22761fc1f5fb9b" prot="private" static="no" mutable="no">
         <type>System.Windows.Forms.PictureBox</type>
@@ -175,7 +220,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Form1.Designer.cs" line="152" column="46" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Form1.Designer.cs" bodystart="152" bodyend="-1"/>
+        <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Form1.Designer.cs" line="178" column="46" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Form1.Designer.cs" bodystart="178" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_a_s_e__assignment_1_1_form1_1ac5e0e06b64363422d693c30012301142" prot="private" static="no" mutable="no">
         <type>System.Windows.Forms.Button</type>
@@ -189,7 +234,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Form1.Designer.cs" line="153" column="42" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Form1.Designer.cs" bodystart="153" bodyend="-1"/>
+        <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Form1.Designer.cs" line="179" column="42" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Form1.Designer.cs" bodystart="179" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_a_s_e__assignment_1_1_form1_1aeaa935e8fad412c7622f9367eec1859d" prot="private" static="no" mutable="no">
         <type>System.Windows.Forms.Button</type>
@@ -203,7 +248,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Form1.Designer.cs" line="154" column="42" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Form1.Designer.cs" bodystart="154" bodyend="-1"/>
+        <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Form1.Designer.cs" line="180" column="42" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Form1.Designer.cs" bodystart="180" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_a_s_e__assignment_1_1_form1_1a1718a4172abf6ca0bf4160805ecb2867" prot="private" static="no" mutable="no">
         <type>System.Windows.Forms.RichTextBox</type>
@@ -217,7 +262,21 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Form1.Designer.cs" line="155" column="47" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Form1.Designer.cs" bodystart="155" bodyend="-1"/>
+        <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Form1.Designer.cs" line="181" column="47" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Form1.Designer.cs" bodystart="181" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_s_e__assignment_1_1_form1_1a0773738dcf0ad87bcfd1efb6f2971332" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.Button</type>
+        <definition>System.Windows.Forms.Button ASE_assignment.Form1.RestartButton</definition>
+        <argsstring></argsstring>
+        <name>RestartButton</name>
+        <qualifiedname>ASE_assignment.Form1.RestartButton</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Form1.Designer.cs" line="182" column="42" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Form1.Designer.cs" bodystart="182" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-func">
@@ -234,7 +293,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Form1.cs" line="30" column="16" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Form1.cs" bodystart="30" bodyend="46"/>
+        <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Form1.cs" line="33" column="16" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Form1.cs" bodystart="33" bodyend="50"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="private-func">
@@ -277,7 +336,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Form1.cs" line="57" column="22" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Form1.cs" bodystart="57" bodyend="75"/>
+        <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Form1.cs" line="61" column="22" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Form1.cs" bodystart="61" bodyend="79"/>
       </memberdef>
       <memberdef kind="function" id="class_a_s_e__assignment_1_1_form1_1a1c7d2c5dd4c703548600623b94ae1996" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -318,7 +377,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Form1.cs" line="81" column="22" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Form1.cs" bodystart="81" bodyend="90"/>
+        <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Form1.cs" line="85" column="22" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Form1.cs" bodystart="85" bodyend="94"/>
       </memberdef>
       <memberdef kind="function" id="class_a_s_e__assignment_1_1_form1_1ac75050440a712696d7c870bbf3cee266" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -333,7 +392,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Form1.cs" line="94" column="22" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Form1.cs" bodystart="94" bodyend="109"/>
+        <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Form1.cs" line="98" column="22" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Form1.cs" bodystart="98" bodyend="113"/>
       </memberdef>
       <memberdef kind="function" id="class_a_s_e__assignment_1_1_form1_1a19f88d0fb23d931f3bc8037840ae2392" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -362,7 +421,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Form1.cs" line="116" column="22" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Form1.cs" bodystart="116" bodyend="130"/>
+        <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Form1.cs" line="120" column="22" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Form1.cs" bodystart="120" bodyend="144"/>
       </memberdef>
       <memberdef kind="function" id="class_a_s_e__assignment_1_1_form1_1abbf12b0bfb420ad150e45eb98a03f93f" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -403,7 +462,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Form1.cs" line="137" column="22" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Form1.cs" bodystart="137" bodyend="170"/>
+        <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Form1.cs" line="151" column="22" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Form1.cs" bodystart="151" bodyend="184"/>
       </memberdef>
       <memberdef kind="function" id="class_a_s_e__assignment_1_1_form1_1af8574f43ea58023f6c1be37df34a9bbc" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -444,7 +503,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Form1.cs" line="176" column="23" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Form1.cs" bodystart="176" bodyend="202"/>
+        <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Form1.cs" line="190" column="23" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Form1.cs" bodystart="190" bodyend="218"/>
       </memberdef>
       <memberdef kind="function" id="class_a_s_e__assignment_1_1_form1_1a302a619f9d1c2aa6338716b593798cc4" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -483,7 +542,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Form1.cs" line="208" column="22" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Form1.cs" bodystart="208" bodyend="231"/>
+        <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Form1.cs" line="224" column="22" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Form1.cs" bodystart="224" bodyend="248"/>
       </memberdef>
       <memberdef kind="function" id="class_a_s_e__assignment_1_1_form1_1a2fc725b28353bb233089b0b62550ef80" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -524,7 +583,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Form1.cs" line="237" column="22" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Form1.cs" bodystart="237" bodyend="240"/>
+        <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Form1.cs" line="254" column="22" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Form1.cs" bodystart="254" bodyend="258"/>
       </memberdef>
       <memberdef kind="function" id="class_a_s_e__assignment_1_1_form1_1a9057cd1a27c669e2eb373b4ab790af80" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -546,7 +605,88 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Form1.cs" line="242" column="22" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Form1.cs" bodystart="242" bodyend="246"/>
+        <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Form1.cs" line="260" column="22" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Form1.cs" bodystart="260" bodyend="264"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_s_e__assignment_1_1_form1_1a5eaf284837d944a49f2f23baa6dfd622" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ASE_assignment.Form1.ClearAll</definition>
+        <argsstring>()</argsstring>
+        <name>ClearAll</name>
+        <qualifiedname>ASE_assignment.Form1.ClearAll</qualifiedname>
+        <briefdescription>
+<para>Reset the program without needing to restart. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Form1.cs" line="268" column="22" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Form1.cs" bodystart="268" bodyend="274"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_s_e__assignment_1_1_form1_1a9b94ef3437bd124776c280b546c1cb81" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ASE_assignment.Form1.canvas_MouseDown</definition>
+        <argsstring>(object sender, MouseEventArgs e)</argsstring>
+        <name>canvas_MouseDown</name>
+        <qualifiedname>ASE_assignment.Form1.canvas_MouseDown</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>MouseEventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Form1.cs" line="275" column="22" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Form1.cs" bodystart="275" bodyend="279"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_s_e__assignment_1_1_form1_1a1e72045483134d9abc25990378cf6812" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ASE_assignment.Form1.canvas_MouseMove</definition>
+        <argsstring>(object sender, MouseEventArgs e)</argsstring>
+        <name>canvas_MouseMove</name>
+        <qualifiedname>ASE_assignment.Form1.canvas_MouseMove</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>MouseEventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Form1.cs" line="281" column="22" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Form1.cs" bodystart="281" bodyend="296"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_s_e__assignment_1_1_form1_1a0cc7ddc60d10f80c654618b4a860927f" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ASE_assignment.Form1.canvas_MouseUp</definition>
+        <argsstring>(object sender, MouseEventArgs e)</argsstring>
+        <name>canvas_MouseUp</name>
+        <qualifiedname>ASE_assignment.Form1.canvas_MouseUp</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>MouseEventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Form1.cs" line="298" column="22" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Form1.cs" bodystart="298" bodyend="301"/>
       </memberdef>
       <memberdef kind="function" id="class_a_s_e__assignment_1_1_form1_1aed302fe4407728a6a15b771f2dd5e3d7" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -568,7 +708,29 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Form1.cs" line="250" column="22" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Form1.cs" bodystart="250" bodyend="255"/>
+        <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Form1.cs" line="305" column="22" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Form1.cs" bodystart="305" bodyend="310"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_s_e__assignment_1_1_form1_1a0a82f59bcf6f7b3facc4aeb185419925" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ASE_assignment.Form1.RestartButton_Click</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>RestartButton_Click</name>
+        <qualifiedname>ASE_assignment.Form1.RestartButton_Click</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Form1.cs" line="312" column="22" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Form1.cs" bodystart="312" bodyend="315"/>
       </memberdef>
       <memberdef kind="function" id="class_a_s_e__assignment_1_1_form1_1add15d22660df69b707702dc700149475" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -583,7 +745,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Form1.Designer.cs" line="29" column="22" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Form1.Designer.cs" bodystart="29" bodyend="144"/>
+        <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Form1.Designer.cs" line="29" column="22" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Form1.Designer.cs" bodystart="29" bodyend="170"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="protected-func">
@@ -640,7 +802,7 @@
         <childnode refid="2" relation="public-inheritance">
         </childnode>
         <childnode refid="3" relation="usage">
-          <edgelabel>canvass</edgelabel>
+          <edgelabel>canvas</edgelabel>
         </childnode>
         <childnode refid="4" relation="usage">
           <edgelabel>penController</edgelabel>
@@ -651,26 +813,28 @@
         <childnode refid="7" relation="usage">
           <edgelabel>variableManager</edgelabel>
         </childnode>
-        <childnode refid="8" relation="usage">
+        <childnode refid="10" relation="usage">
           <edgelabel>parse</edgelabel>
         </childnode>
-        <childnode refid="9" relation="usage">
+        <childnode refid="11" relation="usage">
           <edgelabel>CommandBox</edgelabel>
           <edgelabel>CommandPanel</edgelabel>
           <edgelabel>DrawingPanel</edgelabel>
           <edgelabel>ErrorBox</edgelabel>
           <edgelabel>OpenButton</edgelabel>
+          <edgelabel>RestartButton</edgelabel>
           <edgelabel>RunButton</edgelabel>
           <edgelabel>SaveButton</edgelabel>
           <edgelabel>SyntaxButton</edgelabel>
           <edgelabel>components</edgelabel>
+          <edgelabel>...</edgelabel>
         </childnode>
       </node>
       <node id="3">
-        <label>ASE_assignment.Canvass</label>
-        <link refid="class_a_s_e__assignment_1_1_canvass"/>
+        <label>ASE_assignment.Canvas</label>
+        <link refid="class_a_s_e__assignment_1_1_canvas"/>
       </node>
-      <node id="8">
+      <node id="10">
         <label>ASE_assignment.CommandParser</label>
         <link refid="class_a_s_e__assignment_1_1_command_parser"/>
       </node>
@@ -681,13 +845,19 @@
           <edgelabel>controller</edgelabel>
         </childnode>
         <childnode refid="3" relation="usage">
-          <edgelabel>canvass</edgelabel>
+          <edgelabel>canvas</edgelabel>
         </childnode>
         <childnode refid="6" relation="usage">
           <edgelabel>conditionals</edgelabel>
         </childnode>
         <childnode refid="7" relation="usage">
           <edgelabel>variableManager</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>loops</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>methods</edgelabel>
         </childnode>
       </node>
       <node id="6">
@@ -697,11 +867,25 @@
           <edgelabel>variableManager</edgelabel>
         </childnode>
       </node>
+      <node id="8">
+        <label>ASE_assignment.Loops</label>
+        <link refid="class_a_s_e__assignment_1_1_loops"/>
+        <childnode refid="7" relation="usage">
+          <edgelabel>variableManager</edgelabel>
+        </childnode>
+      </node>
+      <node id="9">
+        <label>ASE_assignment.Methods</label>
+        <link refid="class_a_s_e__assignment_1_1_methods"/>
+        <childnode refid="7" relation="usage">
+          <edgelabel>variableManager</edgelabel>
+        </childnode>
+      </node>
       <node id="4">
         <label>ASE_assignment.PenController</label>
         <link refid="class_a_s_e__assignment_1_1_pen_controller"/>
         <childnode refid="3" relation="usage">
-          <edgelabel>canvass</edgelabel>
+          <edgelabel>canvas</edgelabel>
         </childnode>
       </node>
       <node id="7">
@@ -711,13 +895,17 @@
       <node id="2">
         <label>Form</label>
       </node>
-      <node id="9">
+      <node id="11">
         <label>System</label>
       </node>
     </collaborationgraph>
-    <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Form1.cs" line="19" column="19" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Form1.cs" bodystart="20" bodyend="256"/>
+    <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Form1.cs" line="19" column="19" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Form1.cs" bodystart="20" bodyend="316"/>
     <listofallmembers>
-      <member refid="class_a_s_e__assignment_1_1_form1_1a39d44a6d44067ea95994566c25515be4" prot="private" virt="non-virtual"><scope>ASE_assignment::Form1</scope><name>canvass</name></member>
+      <member refid="class_a_s_e__assignment_1_1_form1_1afbddaeaef4e99c2f736e6bae4fdeaff1" prot="private" virt="non-virtual"><scope>ASE_assignment::Form1</scope><name>canvas</name></member>
+      <member refid="class_a_s_e__assignment_1_1_form1_1a9b94ef3437bd124776c280b546c1cb81" prot="private" virt="non-virtual"><scope>ASE_assignment::Form1</scope><name>canvas_MouseDown</name></member>
+      <member refid="class_a_s_e__assignment_1_1_form1_1a1e72045483134d9abc25990378cf6812" prot="private" virt="non-virtual"><scope>ASE_assignment::Form1</scope><name>canvas_MouseMove</name></member>
+      <member refid="class_a_s_e__assignment_1_1_form1_1a0cc7ddc60d10f80c654618b4a860927f" prot="private" virt="non-virtual"><scope>ASE_assignment::Form1</scope><name>canvas_MouseUp</name></member>
+      <member refid="class_a_s_e__assignment_1_1_form1_1a5eaf284837d944a49f2f23baa6dfd622" prot="private" virt="non-virtual"><scope>ASE_assignment::Form1</scope><name>ClearAll</name></member>
       <member refid="class_a_s_e__assignment_1_1_form1_1a7a3c08131e15dee758a625bf6d389156" prot="private" virt="non-virtual"><scope>ASE_assignment::Form1</scope><name>CommandBox</name></member>
       <member refid="class_a_s_e__assignment_1_1_form1_1a95ab37574cf5687eae3b72087e5a2bb5" prot="private" virt="non-virtual"><scope>ASE_assignment::Form1</scope><name>CommandBox_KeyDown</name></member>
       <member refid="class_a_s_e__assignment_1_1_form1_1a1aa58a815a56261ed990a8d152d62eb8" prot="private" virt="non-virtual"><scope>ASE_assignment::Form1</scope><name>CommandPanel</name></member>
@@ -729,12 +917,17 @@
       <member refid="class_a_s_e__assignment_1_1_form1_1a2fc725b28353bb233089b0b62550ef80" prot="private" virt="non-virtual"><scope>ASE_assignment::Form1</scope><name>ErrorLog</name></member>
       <member refid="class_a_s_e__assignment_1_1_form1_1a25861b5bd71e0159a84334363ab02185" prot="public" virt="non-virtual"><scope>ASE_assignment::Form1</scope><name>Form1</name></member>
       <member refid="class_a_s_e__assignment_1_1_form1_1a9057cd1a27c669e2eb373b4ab790af80" prot="private" virt="non-virtual"><scope>ASE_assignment::Form1</scope><name>Form1_Load</name></member>
+      <member refid="class_a_s_e__assignment_1_1_form1_1a12b17d37343b04f0e5ee5e7d76fbd788" prot="private" virt="non-virtual"><scope>ASE_assignment::Form1</scope><name>indentationLevel</name></member>
       <member refid="class_a_s_e__assignment_1_1_form1_1add15d22660df69b707702dc700149475" prot="private" virt="non-virtual"><scope>ASE_assignment::Form1</scope><name>InitializeComponent</name></member>
+      <member refid="class_a_s_e__assignment_1_1_form1_1a4d2218532b29d376f57f61591c59f21d" prot="private" virt="non-virtual"><scope>ASE_assignment::Form1</scope><name>isMouseDown</name></member>
+      <member refid="class_a_s_e__assignment_1_1_form1_1afbb83a1f3b02afc00215e83ff53605c2" prot="private" virt="non-virtual"><scope>ASE_assignment::Form1</scope><name>lastPoint</name></member>
       <member refid="class_a_s_e__assignment_1_1_form1_1af7ce495c9f28ba47fdcb9b9373a41322" prot="private" virt="non-virtual"><scope>ASE_assignment::Form1</scope><name>lineNumber</name></member>
       <member refid="class_a_s_e__assignment_1_1_form1_1ac5e0e06b64363422d693c30012301142" prot="private" virt="non-virtual"><scope>ASE_assignment::Form1</scope><name>OpenButton</name></member>
       <member refid="class_a_s_e__assignment_1_1_form1_1af8574f43ea58023f6c1be37df34a9bbc" prot="private" virt="non-virtual"><scope>ASE_assignment::Form1</scope><name>OpenButton_Click</name></member>
       <member refid="class_a_s_e__assignment_1_1_form1_1a671bd7fd07f81843a50c6795b9203ab6" prot="private" virt="non-virtual"><scope>ASE_assignment::Form1</scope><name>parse</name></member>
       <member refid="class_a_s_e__assignment_1_1_form1_1a714d2d52d0beb78d95bf5df044de727e" prot="private" virt="non-virtual"><scope>ASE_assignment::Form1</scope><name>penController</name></member>
+      <member refid="class_a_s_e__assignment_1_1_form1_1a0773738dcf0ad87bcfd1efb6f2971332" prot="private" virt="non-virtual"><scope>ASE_assignment::Form1</scope><name>RestartButton</name></member>
+      <member refid="class_a_s_e__assignment_1_1_form1_1a0a82f59bcf6f7b3facc4aeb185419925" prot="private" virt="non-virtual"><scope>ASE_assignment::Form1</scope><name>RestartButton_Click</name></member>
       <member refid="class_a_s_e__assignment_1_1_form1_1ab9626736f61e5b037ffb18adae622a70" prot="private" virt="non-virtual"><scope>ASE_assignment::Form1</scope><name>RunButton</name></member>
       <member refid="class_a_s_e__assignment_1_1_form1_1a1c7d2c5dd4c703548600623b94ae1996" prot="private" virt="non-virtual"><scope>ASE_assignment::Form1</scope><name>RunButton_Click</name></member>
       <member refid="class_a_s_e__assignment_1_1_form1_1aaf933891740631505d8695e9b02f96d0" prot="private" virt="non-virtual"><scope>ASE_assignment::Form1</scope><name>runCommand</name></member>

@@ -1,15 +1,16 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.9.8" xml:lang="en-US">
-  <compound refid="class_a_s_e__assignment_1_1_canvass" kind="class"><name>ASE_assignment::Canvass</name>
-    <member refid="class_a_s_e__assignment_1_1_canvass_1a31e14fba553b947eb4f9910942e63f51" kind="variable"><name>drawingCanvass</name></member>
-    <member refid="class_a_s_e__assignment_1_1_canvass_1a1f38356fb423e1160444a8d3ed5c0303" kind="variable"><name>cursorCanvass</name></member>
-    <member refid="class_a_s_e__assignment_1_1_canvass_1ac7662465bdc4c4c0d80b9c2b5a1e2349" kind="variable"><name>drawingGraphics</name></member>
-    <member refid="class_a_s_e__assignment_1_1_canvass_1a6e4ab1a7176f91124ba0ab5e9bbccee2" kind="variable"><name>cursorGraphics</name></member>
-    <member refid="class_a_s_e__assignment_1_1_canvass_1a89472c8fc3889e6f9d7d9e4b9c651496" kind="property"><name>DrawingGraphics</name></member>
-    <member refid="class_a_s_e__assignment_1_1_canvass_1a2218a2139faa919ba8af51d86d8d23ab" kind="property"><name>CursorGraphics</name></member>
-    <member refid="class_a_s_e__assignment_1_1_canvass_1abeaf1c7fe91b532a2525e2da10507ba5" kind="function"><name>Canvass</name></member>
-    <member refid="class_a_s_e__assignment_1_1_canvass_1a181afa7ab407bc36ccd47ba3dddda3ed" kind="function"><name>CombineCanvass</name></member>
-    <member refid="class_a_s_e__assignment_1_1_canvass_1a749800420c13feb719c69d21cd2646bf" kind="function"><name>ClearCanvas</name></member>
+  <compound refid="class_a_s_e__assignment_1_1_canvas" kind="class"><name>ASE_assignment::Canvas</name>
+    <member refid="class_a_s_e__assignment_1_1_canvas_1adb09b954c8227e9681b786a91cb8b123" kind="variable"><name>drawingCanvass</name></member>
+    <member refid="class_a_s_e__assignment_1_1_canvas_1a538868263aa58c2236916c36545fac58" kind="variable"><name>cursorCanvass</name></member>
+    <member refid="class_a_s_e__assignment_1_1_canvas_1a0a84b85dcfc7af646ac34fab79d9ae26" kind="variable"><name>drawingGraphics</name></member>
+    <member refid="class_a_s_e__assignment_1_1_canvas_1a532539a48c360e33fc14c9ce3f57997b" kind="variable"><name>cursorGraphics</name></member>
+    <member refid="class_a_s_e__assignment_1_1_canvas_1a3c8e7e65595238887fc6408cd204332d" kind="property"><name>drawingCanvas</name></member>
+    <member refid="class_a_s_e__assignment_1_1_canvas_1a612f01170a4a5a76de23789159d5b19f" kind="property"><name>DrawingGraphics</name></member>
+    <member refid="class_a_s_e__assignment_1_1_canvas_1add5d7f30aef00ffc5d8ac88aadfddb0a" kind="property"><name>CursorGraphics</name></member>
+    <member refid="class_a_s_e__assignment_1_1_canvas_1ad88f8e537ec5785459e33a944dfa669a" kind="function"><name>Canvas</name></member>
+    <member refid="class_a_s_e__assignment_1_1_canvas_1aa6120db70c1fae19043e67ecea1d2985" kind="function"><name>CombineCanvass</name></member>
+    <member refid="class_a_s_e__assignment_1_1_canvas_1a900d33b0f0474a8539ef8e06bc07bb2e" kind="function"><name>ClearCanvas</name></member>
   </compound>
   <compound refid="class_a_s_e__assignment_1_1_circle" kind="class"><name>ASE_assignment::Circle</name>
     <member refid="class_a_s_e__assignment_1_1_circle_1aa009b6314c43a84e7176fbe55c0b9cc8" kind="property"><name>Radius</name></member>
@@ -27,10 +28,12 @@
   </compound>
   <compound refid="class_a_s_e__assignment_1_1_command_processor" kind="class"><name>ASE_assignment::CommandProcessor</name>
     <member refid="class_a_s_e__assignment_1_1_command_processor_1ab94af3397a74a92011a113f479847973" kind="variable"><name>controller</name></member>
-    <member refid="class_a_s_e__assignment_1_1_command_processor_1ae03862f713bd4dfe79b4e0db8485e220" kind="variable"><name>canvass</name></member>
+    <member refid="class_a_s_e__assignment_1_1_command_processor_1a9293d6241aac023ff259eb9f85752df0" kind="variable"><name>canvas</name></member>
     <member refid="class_a_s_e__assignment_1_1_command_processor_1ad8a32a96d60ebcf74ae7388eeade0336" kind="variable"><name>validCommands</name></member>
     <member refid="class_a_s_e__assignment_1_1_command_processor_1a6ee2f3d82eb70daf089f7b88e28eb315" kind="variable"><name>conditionals</name></member>
     <member refid="class_a_s_e__assignment_1_1_command_processor_1a3e7155240dd2d3c260bf52af136b698c" kind="variable"><name>variableManager</name></member>
+    <member refid="class_a_s_e__assignment_1_1_command_processor_1a9ed7645149c46f5e765b1ed58c4850a6" kind="variable"><name>loops</name></member>
+    <member refid="class_a_s_e__assignment_1_1_command_processor_1a200ab35aa7bb40b5df3c99a6858ca058" kind="variable"><name>methods</name></member>
     <member refid="class_a_s_e__assignment_1_1_command_processor_1a3d6f361b55d24ea94449150f9bb7e598" kind="function"><name>CommandAction</name></member>
     <member refid="class_a_s_e__assignment_1_1_command_processor_1a803eb0608c8719458776fb7496d7c103" kind="function"><name>MoveTo</name></member>
     <member refid="class_a_s_e__assignment_1_1_command_processor_1a9a84d55963e463e06f98213be6eba46f" kind="function"><name>DrawTo</name></member>
@@ -39,34 +42,49 @@
     <member refid="class_a_s_e__assignment_1_1_command_processor_1ab4393568b26651cef0e95450044775dd" kind="function"><name>DrawRectangle</name></member>
     <member refid="class_a_s_e__assignment_1_1_command_processor_1a71fa6ea769bd00c54025fbb59b89137a" kind="function"><name>DrawCircle</name></member>
     <member refid="class_a_s_e__assignment_1_1_command_processor_1a5b8ec25b2996e26b8bc7e24df110a522" kind="function"><name>DrawTriangle</name></member>
+    <member refid="class_a_s_e__assignment_1_1_command_processor_1a04a4e649b3bde84b3833cb0157a84515" kind="function"><name>DrawPolygon</name></member>
     <member refid="class_a_s_e__assignment_1_1_command_processor_1a77e249ea02b9355c3f4722501ff8e4cd" kind="function"><name>PenColor</name></member>
     <member refid="class_a_s_e__assignment_1_1_command_processor_1aa7ebabb6e71ff0f372f7a9a166ad569b" kind="function"><name>Fill</name></member>
     <member refid="class_a_s_e__assignment_1_1_command_processor_1a7079b18f0627acb95355c2edc4676ccd" kind="function"><name>If</name></member>
     <member refid="class_a_s_e__assignment_1_1_command_processor_1a645bd0bf9348af9bc7dbade5aa97ca69" kind="function"><name>EndIf</name></member>
     <member refid="class_a_s_e__assignment_1_1_command_processor_1aa1110fc7aabf91fde5340c5de6076152" kind="function"><name>Var</name></member>
-    <member refid="class_a_s_e__assignment_1_1_command_processor_1a58a47f15c7e98fb0802e6eff8fe5fc21" kind="function"><name>ResolveParam</name></member>
-    <member refid="class_a_s_e__assignment_1_1_command_processor_1a329fb5753072556705eec0052132c757" kind="function"><name>CommandProcessor</name></member>
+    <member refid="class_a_s_e__assignment_1_1_command_processor_1a90cc14a7065e49919c1a5cbdab6d4cd5" kind="function"><name>CommandProcessor</name></member>
     <member refid="class_a_s_e__assignment_1_1_command_processor_1a0c66d16f946ba5467f1da7546f73d212" kind="function"><name>RunLines</name></member>
+    <member refid="class_a_s_e__assignment_1_1_command_processor_1a58a47f15c7e98fb0802e6eff8fe5fc21" kind="function"><name>ResolveParam</name></member>
+    <member refid="class_a_s_e__assignment_1_1_command_processor_1a1fea1ff5170dbb6e6b9d3887eff06124" kind="function"><name>While</name></member>
   </compound>
   <compound refid="class_a_s_e__assignment_1_1_conditionals" kind="class"><name>ASE_assignment::Conditionals</name>
     <member refid="class_a_s_e__assignment_1_1_conditionals_1af62844df8fabdd16f7875fbce2795815" kind="variable"><name>variableManager</name></member>
     <member refid="class_a_s_e__assignment_1_1_conditionals_1aca82fea7680058dbf2137a9bcc5473f3" kind="variable"><name>dataTable</name></member>
+    <member refid="class_a_s_e__assignment_1_1_conditionals_1adcc0a7ae91cd17091d049d636eb67afc" kind="variable"><name>executionStack</name></member>
     <member refid="class_a_s_e__assignment_1_1_conditionals_1a048e30e8a3b5ceb8e5c9ad09fe5816d4" kind="property"><name>insideConditionalBlock</name></member>
     <member refid="class_a_s_e__assignment_1_1_conditionals_1a1e3adfb48b9f2e3dd9d406821a381412" kind="property"><name>executeBlock</name></member>
+    <member refid="class_a_s_e__assignment_1_1_conditionals_1ac762d1180a5d0145989260eaa02977ed" kind="property"><name>IsExecutionAllowed</name></member>
     <member refid="class_a_s_e__assignment_1_1_conditionals_1a7ad392cab882983358235d61e8e7394a" kind="function"><name>Conditionals</name></member>
     <member refid="class_a_s_e__assignment_1_1_conditionals_1ab34cc532cff64f9bd637e17fcb4b512c" kind="function"><name>If</name></member>
     <member refid="class_a_s_e__assignment_1_1_conditionals_1a156f1c9ca2d9bf8da3d375e0ee1a39d2" kind="function"><name>EndIf</name></member>
+  </compound>
+  <compound refid="class_a_s_e__assignment_1_1_custom_shape" kind="class"><name>ASE_assignment::CustomShape</name>
+    <member refid="class_a_s_e__assignment_1_1_custom_shape_1a69ad592dae4b79ec0d86adbd37926da0" kind="property"><name>Sides</name></member>
+    <member refid="class_a_s_e__assignment_1_1_custom_shape_1ab4ce668f8932c7d0703a810a755c557a" kind="property"><name>Size</name></member>
+    <member refid="class_a_s_e__assignment_1_1_custom_shape_1a7c169205429ac3bb49d659aba51776d2" kind="function"><name>CustomShape</name></member>
+    <member refid="class_a_s_e__assignment_1_1_custom_shape_1a0648dabfe31e08c8c1b3b3cd1353887c" kind="function"><name>Draw</name></member>
+    <member refid="class_a_s_e__assignment_1_1_custom_shape_1adb3e3d8d708f0870f199e5609aff3b0d" kind="function"><name>Fill</name></member>
+    <member refid="class_a_s_e__assignment_1_1_custom_shape_1ae89d6f347839a1c6e6640539deef8c24" kind="function"><name>CalculateVertices</name></member>
   </compound>
   <compound refid="class_a_s_e__assignment_1_1_file_manager" kind="class"><name>ASE_assignment::FileManager</name>
     <member refid="class_a_s_e__assignment_1_1_file_manager_1aea3a25fc934be0aede763745030b99b7" kind="function"><name>SaveFile</name></member>
     <member refid="class_a_s_e__assignment_1_1_file_manager_1af093fbb48fbfd819a82a7036f337fe81" kind="function"><name>ReadFile</name></member>
   </compound>
   <compound refid="class_a_s_e__assignment_1_1_form1" kind="class"><name>ASE_assignment::Form1</name>
-    <member refid="class_a_s_e__assignment_1_1_form1_1a39d44a6d44067ea95994566c25515be4" kind="variable"><name>canvass</name></member>
+    <member refid="class_a_s_e__assignment_1_1_form1_1afbddaeaef4e99c2f736e6bae4fdeaff1" kind="variable"><name>canvas</name></member>
     <member refid="class_a_s_e__assignment_1_1_form1_1a714d2d52d0beb78d95bf5df044de727e" kind="variable"><name>penController</name></member>
     <member refid="class_a_s_e__assignment_1_1_form1_1aaf933891740631505d8695e9b02f96d0" kind="variable"><name>runCommand</name></member>
     <member refid="class_a_s_e__assignment_1_1_form1_1a609be9c7ae3cae1ec0242a7ff908da6b" kind="variable"><name>variableManager</name></member>
     <member refid="class_a_s_e__assignment_1_1_form1_1af7ce495c9f28ba47fdcb9b9373a41322" kind="variable"><name>lineNumber</name></member>
+    <member refid="class_a_s_e__assignment_1_1_form1_1a12b17d37343b04f0e5ee5e7d76fbd788" kind="variable"><name>indentationLevel</name></member>
+    <member refid="class_a_s_e__assignment_1_1_form1_1afbb83a1f3b02afc00215e83ff53605c2" kind="variable"><name>lastPoint</name></member>
+    <member refid="class_a_s_e__assignment_1_1_form1_1a4d2218532b29d376f57f61591c59f21d" kind="variable"><name>isMouseDown</name></member>
     <member refid="class_a_s_e__assignment_1_1_form1_1a671bd7fd07f81843a50c6795b9203ab6" kind="variable"><name>parse</name></member>
     <member refid="class_a_s_e__assignment_1_1_form1_1abe508e24a52c4232296d9fc975d05329" kind="variable"><name>components</name></member>
     <member refid="class_a_s_e__assignment_1_1_form1_1aa9ef00ba926c299ba32dc690d1941115" kind="variable"><name>SyntaxButton</name></member>
@@ -77,6 +95,7 @@
     <member refid="class_a_s_e__assignment_1_1_form1_1ac5e0e06b64363422d693c30012301142" kind="variable"><name>OpenButton</name></member>
     <member refid="class_a_s_e__assignment_1_1_form1_1aeaa935e8fad412c7622f9367eec1859d" kind="variable"><name>SaveButton</name></member>
     <member refid="class_a_s_e__assignment_1_1_form1_1a1718a4172abf6ca0bf4160805ecb2867" kind="variable"><name>ErrorBox</name></member>
+    <member refid="class_a_s_e__assignment_1_1_form1_1a0773738dcf0ad87bcfd1efb6f2971332" kind="variable"><name>RestartButton</name></member>
     <member refid="class_a_s_e__assignment_1_1_form1_1a25861b5bd71e0159a84334363ab02185" kind="function"><name>Form1</name></member>
     <member refid="class_a_s_e__assignment_1_1_form1_1a95ab37574cf5687eae3b72087e5a2bb5" kind="function"><name>CommandBox_KeyDown</name></member>
     <member refid="class_a_s_e__assignment_1_1_form1_1a1c7d2c5dd4c703548600623b94ae1996" kind="function"><name>RunButton_Click</name></member>
@@ -87,19 +106,51 @@
     <member refid="class_a_s_e__assignment_1_1_form1_1a302a619f9d1c2aa6338716b593798cc4" kind="function"><name>SyntaxButton_Click</name></member>
     <member refid="class_a_s_e__assignment_1_1_form1_1a2fc725b28353bb233089b0b62550ef80" kind="function"><name>ErrorLog</name></member>
     <member refid="class_a_s_e__assignment_1_1_form1_1a9057cd1a27c669e2eb373b4ab790af80" kind="function"><name>Form1_Load</name></member>
+    <member refid="class_a_s_e__assignment_1_1_form1_1a5eaf284837d944a49f2f23baa6dfd622" kind="function"><name>ClearAll</name></member>
+    <member refid="class_a_s_e__assignment_1_1_form1_1a9b94ef3437bd124776c280b546c1cb81" kind="function"><name>canvas_MouseDown</name></member>
+    <member refid="class_a_s_e__assignment_1_1_form1_1a1e72045483134d9abc25990378cf6812" kind="function"><name>canvas_MouseMove</name></member>
+    <member refid="class_a_s_e__assignment_1_1_form1_1a0cc7ddc60d10f80c654618b4a860927f" kind="function"><name>canvas_MouseUp</name></member>
     <member refid="class_a_s_e__assignment_1_1_form1_1aed302fe4407728a6a15b771f2dd5e3d7" kind="function"><name>textBox1_TextChanged</name></member>
+    <member refid="class_a_s_e__assignment_1_1_form1_1a0a82f59bcf6f7b3facc4aeb185419925" kind="function"><name>RestartButton_Click</name></member>
     <member refid="class_a_s_e__assignment_1_1_form1_1add15d22660df69b707702dc700149475" kind="function"><name>InitializeComponent</name></member>
     <member refid="class_a_s_e__assignment_1_1_form1_1a6d52d48ab9b399e2504272c4ebe93769" kind="function"><name>Dispose</name></member>
+  </compound>
+  <compound refid="class_a_s_e__assignment_1_1_loops" kind="class"><name>ASE_assignment::Loops</name>
+    <member refid="class_a_s_e__assignment_1_1_loops_1aa9c71dfddacb6689c51befad5f3c7a3e" kind="variable"><name>variableManager</name></member>
+    <member refid="class_a_s_e__assignment_1_1_loops_1a39372db570327f5fe020e57c88fbe305" kind="variable"><name>dataTable</name></member>
+    <member refid="class_a_s_e__assignment_1_1_loops_1a08cc9edb3b2f72d5f67ea94fba66765b" kind="variable"><name>loopCondition</name></member>
+    <member refid="class_a_s_e__assignment_1_1_loops_1a4b59fca8e4238f692bbdeed4f58aaeb7" kind="variable"><name>executeCommands</name></member>
+    <member refid="class_a_s_e__assignment_1_1_loops_1ac82054696cb628d658c6ed298a7b7616" kind="variable"><name>commands</name></member>
+    <member refid="class_a_s_e__assignment_1_1_loops_1adc2e74d7b83b4bbfefa8ab13f8624c13" kind="property"><name>captureCommand</name></member>
+    <member refid="class_a_s_e__assignment_1_1_loops_1adecbe3976aa6d108bffaa01dc07da1b2" kind="function"><name>Loops</name></member>
+    <member refid="class_a_s_e__assignment_1_1_loops_1ad200f51f5263a10b1ec20190776a0c27" kind="function"><name>StartLoop</name></member>
+    <member refid="class_a_s_e__assignment_1_1_loops_1a6ff04dfcf2a0e8afab37d49774e9f5a4" kind="function"><name>AddLine</name></member>
+    <member refid="class_a_s_e__assignment_1_1_loops_1a27a769730a56444fa7c9cafd139f917b" kind="function"><name>ExecuteLoop</name></member>
+    <member refid="class_a_s_e__assignment_1_1_loops_1af7cc364287dd8a306c2ecb560691c172" kind="function"><name>EvaluateCondition</name></member>
+  </compound>
+  <compound refid="class_a_s_e__assignment_1_1_methods" kind="class"><name>ASE_assignment::Methods</name>
+    <member refid="class_a_s_e__assignment_1_1_methods_1a60ff61aa491317326c47be6b0c9a4a24" kind="variable"><name>variableManager</name></member>
+    <member refid="class_a_s_e__assignment_1_1_methods_1acfb3dcbcfbd9c8c22b65f86ef6148d3c" kind="variable"><name>executeCommand</name></member>
+    <member refid="class_a_s_e__assignment_1_1_methods_1ab4f9cfc3c98d8f65b03b6ecad4bfb270" kind="variable"><name>methods</name></member>
+    <member refid="class_a_s_e__assignment_1_1_methods_1a13bf86466f0e68f97a42d8b470830005" kind="variable"><name>currentMethodName</name></member>
+    <member refid="class_a_s_e__assignment_1_1_methods_1ac7c4d9ce0b4b00d95f57a8fd999ca678" kind="variable"><name>isCapturing</name></member>
+    <member refid="class_a_s_e__assignment_1_1_methods_1ac2dcbf849cfa5c7fd75ad4abd53f452e" kind="property"><name>IsCapturing</name></member>
+    <member refid="class_a_s_e__assignment_1_1_methods_1a9544049cb6990de4dae542ff6e78ad99" kind="function"><name>Methods</name></member>
+    <member refid="class_a_s_e__assignment_1_1_methods_1a1ee8ed5ca9ed94ecae5bcb8f922b6456" kind="function"><name>MethodDeclaration</name></member>
+    <member refid="class_a_s_e__assignment_1_1_methods_1a54cc80771e82716e2bc65bc45842e6a4" kind="function"><name>AddCommandToMethod</name></member>
+    <member refid="class_a_s_e__assignment_1_1_methods_1afa2ab48d2d1f8b8971c888f53cc72629" kind="function"><name>IsMethod</name></member>
+    <member refid="class_a_s_e__assignment_1_1_methods_1aa5415f947b5472d82b9e35f4a32f446c" kind="function"><name>EndMethodDeclaration</name></member>
+    <member refid="class_a_s_e__assignment_1_1_methods_1ad859f2316dea3287b44379ec27331b06" kind="function"><name>ExecuteMethod</name></member>
   </compound>
   <compound refid="class_a_s_e__assignment_1_1_pen_controller" kind="class"><name>ASE_assignment::PenController</name>
     <member refid="class_a_s_e__assignment_1_1_pen_controller_1a5a74a4f83631c5ef4a2aab2a2d66cbbd" kind="variable"><name>currentX</name></member>
     <member refid="class_a_s_e__assignment_1_1_pen_controller_1abdfe8d4ac4c25c972007b975221bc2a7" kind="variable"><name>currentY</name></member>
-    <member refid="class_a_s_e__assignment_1_1_pen_controller_1ad342cfb33c46c73dfe715f666b23488d" kind="variable"><name>canvass</name></member>
+    <member refid="class_a_s_e__assignment_1_1_pen_controller_1a306b17b673d6da904a498393aea84c41" kind="variable"><name>canvas</name></member>
     <member refid="class_a_s_e__assignment_1_1_pen_controller_1a3da8cdeb8ac18b12cf46cdaa7d7dccfb" kind="variable"><name>pen</name></member>
     <member refid="class_a_s_e__assignment_1_1_pen_controller_1a247bbb666989d8acffcbffe5bbae607b" kind="variable"><name>penColour</name></member>
     <member refid="class_a_s_e__assignment_1_1_pen_controller_1af1610253d9985aa1ff38082ac1deef56" kind="variable"><name>shapeFill</name></member>
     <member refid="class_a_s_e__assignment_1_1_pen_controller_1a55b9a2c7a4a3739551eb109cabd02a31" kind="property"><name>CurrentPenColor</name></member>
-    <member refid="class_a_s_e__assignment_1_1_pen_controller_1ac71f9f022d0c3883625b03779ed8fb9c" kind="function"><name>PenController</name></member>
+    <member refid="class_a_s_e__assignment_1_1_pen_controller_1a23aed290dcecd6586246ce737833c141" kind="function"><name>PenController</name></member>
     <member refid="class_a_s_e__assignment_1_1_pen_controller_1a457cfc2b6cee199a6173d2ef36f276fc" kind="function"><name>PositionPen</name></member>
     <member refid="class_a_s_e__assignment_1_1_pen_controller_1af59aaeb3d3a8ef3292f5bee5b5cab799" kind="function"><name>PenDraw</name></member>
     <member refid="class_a_s_e__assignment_1_1_pen_controller_1ae329e23452b4f6104234271c2ea612e3" kind="function"><name>DrawShape</name></member>
@@ -121,6 +172,19 @@
     <member refid="class_a_s_e__assignment_1_1_shape_1a6bb21024ef15686aa32c25733de9f56e" kind="function"><name>Draw</name></member>
     <member refid="class_a_s_e__assignment_1_1_shape_1a967d0bc8edb9161499e0dc7cb0bb4833" kind="function"><name>Fill</name></member>
   </compound>
+  <compound refid="class_a_s_e__assignment_1_1_shape_factory" kind="class"><name>ASE_assignment::ShapeFactory</name>
+    <member refid="class_a_s_e__assignment_1_1_shape_factory_1a39806ab6ea999fef7bc320026895db95" kind="enum"><name>ShapeType</name></member>
+    <member refid="class_a_s_e__assignment_1_1_shape_factory_1a39806ab6ea999fef7bc320026895db95a30954d90085f6eaaf5817917fc5fecb3" kind="enumvalue"><name>Circle</name></member>
+    <member refid="class_a_s_e__assignment_1_1_shape_factory_1a39806ab6ea999fef7bc320026895db95ace9291906a4c3b042650b70d7f3b152e" kind="enumvalue"><name>Rectangle</name></member>
+    <member refid="class_a_s_e__assignment_1_1_shape_factory_1a39806ab6ea999fef7bc320026895db95a5e5500cb2b82eb72d550de644bd1b64b" kind="enumvalue"><name>Triangle</name></member>
+    <member refid="class_a_s_e__assignment_1_1_shape_factory_1a39806ab6ea999fef7bc320026895db95a90589c47f06eb971d548591f23c285af" kind="enumvalue"><name>Custom</name></member>
+    <member refid="class_a_s_e__assignment_1_1_shape_factory_1ab676d3abeef22d78cfe8c6a88bcc9f4b" kind="function"><name>GetShape</name></member>
+    <member refid="class_a_s_e__assignment_1_1_shape_factory_1a75ef5e8dba39fae18483e0a0eec04bbe" kind="function"><name>GetShape</name></member>
+  </compound>
+  <compound refid="class_a_s_e__assignment_1_1_syntax_exception" kind="class"><name>ASE_assignment::SyntaxException</name>
+    <member refid="class_a_s_e__assignment_1_1_syntax_exception_1abbd172afb7bab63c5241fc92540b0f00" kind="property"><name>Value</name></member>
+    <member refid="class_a_s_e__assignment_1_1_syntax_exception_1a9ee14956fe92a97d4c488bed838ce4bd" kind="function"><name>SyntaxException</name></member>
+  </compound>
   <compound refid="class_a_s_e__assignment_1_1_triangle" kind="class"><name>ASE_assignment::Triangle</name>
     <member refid="class_a_s_e__assignment_1_1_triangle_1aa4bdaf7905a17aac287c673345bc8fd2" kind="property"><name>Sides</name></member>
     <member refid="class_a_s_e__assignment_1_1_triangle_1aa5e76d822c2a057e2dd401a9e5aaf5d3" kind="function"><name>Triangle</name></member>
@@ -131,9 +195,9 @@
     <member refid="class_a_s_e__assignment_1_1_variable_manager_1ad0109232d28a833c21905e27e67053ec" kind="variable"><name>variables</name></member>
     <member refid="class_a_s_e__assignment_1_1_variable_manager_1a237eb415045a615104a3dd7e3dd07372" kind="variable"><name>dataTable</name></member>
     <member refid="class_a_s_e__assignment_1_1_variable_manager_1a7fbf0e694da7ca1c86614df817033b8c" kind="function"><name>DeclareVariable</name></member>
+    <member refid="class_a_s_e__assignment_1_1_variable_manager_1ae122257a0ce5b1bc2576269c1353b939" kind="function"><name>UpdateVariable</name></member>
     <member refid="class_a_s_e__assignment_1_1_variable_manager_1ad7747571f146871172040d1393ca7400" kind="function"><name>GetVariable</name></member>
     <member refid="class_a_s_e__assignment_1_1_variable_manager_1afc6822e94a1161943555b42b61736728" kind="function"><name>ClearVariables</name></member>
-    <member refid="class_a_s_e__assignment_1_1_variable_manager_1afde8e60a64a1d7cb03c2eb9a45285ad0" kind="function"><name>EvaluateExpression</name></member>
   </compound>
   <compound refid="namespace_a_s_e__assignment" kind="namespace"><name>ASE_assignment</name>
   </compound>
@@ -159,6 +223,8 @@
   </compound>
   <compound refid="namespace_system_1_1_linq" kind="namespace"><name>System::Linq</name>
   </compound>
+  <compound refid="namespace_system_1_1_reflection" kind="namespace"><name>System::Reflection</name>
+  </compound>
   <compound refid="namespace_system_1_1_reflection_1_1_emit" kind="namespace"><name>System::Reflection::Emit</name>
   </compound>
   <compound refid="namespace_system_1_1_runtime_1_1_compiler_services" kind="namespace"><name>System::Runtime::CompilerServices</name>
@@ -173,7 +239,7 @@
   </compound>
   <compound refid="namespace_system_1_1_windows_1_1_forms" kind="namespace"><name>System::Windows::Forms</name>
   </compound>
-  <compound refid="_canvass_8cs" kind="file"><name>Canvass.cs</name>
+  <compound refid="_canvas_8cs" kind="file"><name>Canvas.cs</name>
   </compound>
   <compound refid="_circle_8cs" kind="file"><name>Circle.cs</name>
   </compound>
@@ -185,13 +251,19 @@
   </compound>
   <compound refid="_conditionals_8cs" kind="file"><name>Conditionals.cs</name>
   </compound>
+  <compound refid="_custom_shape_8cs" kind="file"><name>CustomShape.cs</name>
+  </compound>
   <compound refid="_file_manager_8cs" kind="file"><name>FileManager.cs</name>
   </compound>
   <compound refid="_form1_8cs" kind="file"><name>Form1.cs</name>
   </compound>
   <compound refid="_form1_8_designer_8cs" kind="file"><name>Form1.Designer.cs</name>
   </compound>
+  <compound refid="_loops_8cs" kind="file"><name>Loops.cs</name>
+  </compound>
   <compound refid="mainpage_8md" kind="file"><name>mainpage.md</name>
+  </compound>
+  <compound refid="_methods_8cs" kind="file"><name>Methods.cs</name>
   </compound>
   <compound refid="_pen_controller_8cs" kind="file"><name>PenController.cs</name>
   </compound>
@@ -200,6 +272,10 @@
   <compound refid="_rectangle_8cs" kind="file"><name>Rectangle.cs</name>
   </compound>
   <compound refid="_shape_8cs" kind="file"><name>Shape.cs</name>
+  </compound>
+  <compound refid="_shape_factory_8cs" kind="file"><name>ShapeFactory.cs</name>
+  </compound>
+  <compound refid="_syntax_exception_8cs" kind="file"><name>SyntaxException.cs</name>
   </compound>
   <compound refid="_triangle_8cs" kind="file"><name>Triangle.cs</name>
   </compound>

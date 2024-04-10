@@ -1,0 +1,87 @@
+\doxysection{ASE\+\_\+assignment.\+Shape\+Factory Class Reference}
+\hypertarget{class_a_s_e__assignment_1_1_shape_factory}{}\label{class_a_s_e__assignment_1_1_shape_factory}\index{ASE\_assignment.ShapeFactory@{ASE\_assignment.ShapeFactory}}
+
+
+Factory method for creating shape objects.  
+
+
+\doxysubsubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_a_s_e__assignment_1_1_shape_factory_a39806ab6ea999fef7bc320026895db95}\label{class_a_s_e__assignment_1_1_shape_factory_a39806ab6ea999fef7bc320026895db95} 
+enum \mbox{\hyperlink{class_a_s_e__assignment_1_1_shape_factory_a39806ab6ea999fef7bc320026895db95}{Shape\+Type}} \{ {\bfseries Circle}
+, {\bfseries Rectangle}
+, {\bfseries Triangle}
+, {\bfseries Custom}
+ \}
+\begin{DoxyCompactList}\small\item\em The type of shapes that can be creates. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_a_s_e__assignment_1_1_shape}{Shape}} \mbox{\hyperlink{class_a_s_e__assignment_1_1_shape_factory_ab676d3abeef22d78cfe8c6a88bcc9f4b}{Get\+Shape}} (\mbox{\hyperlink{class_a_s_e__assignment_1_1_shape_factory_a39806ab6ea999fef7bc320026895db95}{Shape\+Type}} type, int parameter)
+\begin{DoxyCompactList}\small\item\em Create a shape with the specified size from a single parameter. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_a_s_e__assignment_1_1_shape}{Shape}} \mbox{\hyperlink{class_a_s_e__assignment_1_1_shape_factory_a75ef5e8dba39fae18483e0a0eec04bbe}{Get\+Shape}} (\mbox{\hyperlink{class_a_s_e__assignment_1_1_shape_factory_a39806ab6ea999fef7bc320026895db95}{Shape\+Type}} type, int length, int width)
+\begin{DoxyCompactList}\small\item\em Create a shape with two parameters for size. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Factory method for creating shape objects. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_a_s_e__assignment_1_1_shape_factory_a75ef5e8dba39fae18483e0a0eec04bbe}\label{class_a_s_e__assignment_1_1_shape_factory_a75ef5e8dba39fae18483e0a0eec04bbe} 
+\index{ASE\_assignment.ShapeFactory@{ASE\_assignment.ShapeFactory}!GetShape@{GetShape}}
+\index{GetShape@{GetShape}!ASE\_assignment.ShapeFactory@{ASE\_assignment.ShapeFactory}}
+\doxysubsubsection{\texorpdfstring{GetShape()}{GetShape()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_a_s_e__assignment_1_1_shape}{Shape}} ASE\+\_\+assignment.\+Shape\+Factory.\+Get\+Shape (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_a_s_e__assignment_1_1_shape_factory_a39806ab6ea999fef7bc320026895db95}{Shape\+Type}}}]{type,  }\item[{int}]{length,  }\item[{int}]{width }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Create a shape with two parameters for size. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & The type of shape to create\\
+\hline
+{\em length} & Length of the shape\\
+\hline
+{\em width} & Width of the shape\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+returns a new instance of the specified shape
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Argument\+Exception} & Throws an exception when the wrong parameter is entered\\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_a_s_e__assignment_1_1_shape_factory_ab676d3abeef22d78cfe8c6a88bcc9f4b}\label{class_a_s_e__assignment_1_1_shape_factory_ab676d3abeef22d78cfe8c6a88bcc9f4b} 
+\index{ASE\_assignment.ShapeFactory@{ASE\_assignment.ShapeFactory}!GetShape@{GetShape}}
+\index{GetShape@{GetShape}!ASE\_assignment.ShapeFactory@{ASE\_assignment.ShapeFactory}}
+\doxysubsubsection{\texorpdfstring{GetShape()}{GetShape()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_a_s_e__assignment_1_1_shape}{Shape}} ASE\+\_\+assignment.\+Shape\+Factory.\+Get\+Shape (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_a_s_e__assignment_1_1_shape_factory_a39806ab6ea999fef7bc320026895db95}{Shape\+Type}}}]{type,  }\item[{int}]{parameter }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Create a shape with the specified size from a single parameter. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & The type of shape to create\\
+\hline
+{\em parameter} & The size parameter for the shape\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A new instance of the specified shape
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Argument\+Exception} & Thrown when an invalid shape is created\\
+\hline
+\end{DoxyExceptions}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Git\+Hub-\/\+Repos/\+ASE-\/assignment/\+ASE-\/assignment/Shape\+Factory.\+cs\end{DoxyCompactItemize}

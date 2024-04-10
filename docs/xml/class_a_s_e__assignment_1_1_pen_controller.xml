@@ -35,19 +35,19 @@
       </memberdef>
     </sectiondef>
     <sectiondef kind="private-attrib">
-      <memberdef kind="variable" id="class_a_s_e__assignment_1_1_pen_controller_1ad342cfb33c46c73dfe715f666b23488d" prot="private" static="no" mutable="no">
-        <type><ref refid="class_a_s_e__assignment_1_1_canvass" kindref="compound">Canvass</ref></type>
-        <definition>Canvass ASE_assignment.PenController.canvass</definition>
+      <memberdef kind="variable" id="class_a_s_e__assignment_1_1_pen_controller_1a306b17b673d6da904a498393aea84c41" prot="private" static="no" mutable="no">
+        <type><ref refid="class_a_s_e__assignment_1_1_canvas" kindref="compound">Canvas</ref></type>
+        <definition>Canvas ASE_assignment.PenController.canvas</definition>
         <argsstring></argsstring>
-        <name>canvass</name>
-        <qualifiedname>ASE_assignment.PenController.canvass</qualifiedname>
+        <name>canvas</name>
+        <qualifiedname>ASE_assignment.PenController.canvas</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/PenController.cs" line="19" column="25" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/PenController.cs" bodystart="19" bodyend="-1"/>
+        <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/PenController.cs" line="19" column="24" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/PenController.cs" bodystart="19" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_a_s_e__assignment_1_1_pen_controller_1a3da8cdeb8ac18b12cf46cdaa7d7dccfb" prot="private" static="no" mutable="no">
         <type>Pen</type>
@@ -109,15 +109,15 @@
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-func">
-      <memberdef kind="function" id="class_a_s_e__assignment_1_1_pen_controller_1ac71f9f022d0c3883625b03779ed8fb9c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+      <memberdef kind="function" id="class_a_s_e__assignment_1_1_pen_controller_1a23aed290dcecd6586246ce737833c141" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
         <definition>ASE_assignment.PenController.PenController</definition>
-        <argsstring>(Canvass canvass)</argsstring>
+        <argsstring>(Canvas canvas)</argsstring>
         <name>PenController</name>
         <qualifiedname>ASE_assignment.PenController.PenController</qualifiedname>
         <param>
-          <type><ref refid="class_a_s_e__assignment_1_1_canvass" kindref="compound">Canvass</ref></type>
-          <declname>canvass</declname>
+          <type><ref refid="class_a_s_e__assignment_1_1_canvas" kindref="compound">Canvas</ref></type>
+          <declname>canvas</declname>
         </param>
         <briefdescription>
 <para>Default setings for the canvass when the application is launched. </para>
@@ -125,7 +125,7 @@
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
-<parametername>canvass</parametername>
+<parametername>canvas</parametername>
 </parameternamelist>
 <parameterdescription>
 <para>The bitmap canvas that all operations take place on</para>
@@ -318,17 +318,17 @@
         <label>ASE_assignment.PenController</label>
         <link refid="class_a_s_e__assignment_1_1_pen_controller"/>
         <childnode refid="2" relation="usage">
-          <edgelabel>canvass</edgelabel>
+          <edgelabel>canvas</edgelabel>
         </childnode>
       </node>
       <node id="2">
-        <label>ASE_assignment.Canvass</label>
-        <link refid="class_a_s_e__assignment_1_1_canvass"/>
+        <label>ASE_assignment.Canvas</label>
+        <link refid="class_a_s_e__assignment_1_1_canvas"/>
       </node>
     </collaborationgraph>
     <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/PenController.cs" line="15" column="13" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/PenController.cs" bodystart="16" bodyend="89"/>
     <listofallmembers>
-      <member refid="class_a_s_e__assignment_1_1_pen_controller_1ad342cfb33c46c73dfe715f666b23488d" prot="private" virt="non-virtual"><scope>ASE_assignment::PenController</scope><name>canvass</name></member>
+      <member refid="class_a_s_e__assignment_1_1_pen_controller_1a306b17b673d6da904a498393aea84c41" prot="private" virt="non-virtual"><scope>ASE_assignment::PenController</scope><name>canvas</name></member>
       <member refid="class_a_s_e__assignment_1_1_pen_controller_1a55b9a2c7a4a3739551eb109cabd02a31" prot="public" virt="non-virtual"><scope>ASE_assignment::PenController</scope><name>CurrentPenColor</name></member>
       <member refid="class_a_s_e__assignment_1_1_pen_controller_1a5a74a4f83631c5ef4a2aab2a2d66cbbd" prot="public" virt="non-virtual"><scope>ASE_assignment::PenController</scope><name>currentX</name></member>
       <member refid="class_a_s_e__assignment_1_1_pen_controller_1abdfe8d4ac4c25c972007b975221bc2a7" prot="public" virt="non-virtual"><scope>ASE_assignment::PenController</scope><name>currentY</name></member>
@@ -336,7 +336,7 @@
       <member refid="class_a_s_e__assignment_1_1_pen_controller_1a3da8cdeb8ac18b12cf46cdaa7d7dccfb" prot="private" virt="non-virtual"><scope>ASE_assignment::PenController</scope><name>pen</name></member>
       <member refid="class_a_s_e__assignment_1_1_pen_controller_1a247bbb666989d8acffcbffe5bbae607b" prot="private" virt="non-virtual"><scope>ASE_assignment::PenController</scope><name>penColour</name></member>
       <member refid="class_a_s_e__assignment_1_1_pen_controller_1a658df602355f7ecaf398502e8ca5b195" prot="public" virt="non-virtual"><scope>ASE_assignment::PenController</scope><name>PenColour</name></member>
-      <member refid="class_a_s_e__assignment_1_1_pen_controller_1ac71f9f022d0c3883625b03779ed8fb9c" prot="public" virt="non-virtual"><scope>ASE_assignment::PenController</scope><name>PenController</name></member>
+      <member refid="class_a_s_e__assignment_1_1_pen_controller_1a23aed290dcecd6586246ce737833c141" prot="public" virt="non-virtual"><scope>ASE_assignment::PenController</scope><name>PenController</name></member>
       <member refid="class_a_s_e__assignment_1_1_pen_controller_1af59aaeb3d3a8ef3292f5bee5b5cab799" prot="public" virt="non-virtual"><scope>ASE_assignment::PenController</scope><name>PenDraw</name></member>
       <member refid="class_a_s_e__assignment_1_1_pen_controller_1a457cfc2b6cee199a6173d2ef36f276fc" prot="public" virt="non-virtual"><scope>ASE_assignment::PenController</scope><name>PositionPen</name></member>
       <member refid="class_a_s_e__assignment_1_1_pen_controller_1af1610253d9985aa1ff38082ac1deef56" prot="private" virt="non-virtual"><scope>ASE_assignment::PenController</scope><name>shapeFill</name></member>

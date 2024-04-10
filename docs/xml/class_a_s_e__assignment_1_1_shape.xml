@@ -3,6 +3,7 @@
   <compounddef id="class_a_s_e__assignment_1_1_shape" kind="class" language="C#" prot="public" abstract="yes">
     <compoundname>ASE_assignment::Shape</compoundname>
     <derivedcompoundref refid="class_a_s_e__assignment_1_1_circle" prot="public" virt="non-virtual">ASE_assignment.Circle</derivedcompoundref>
+    <derivedcompoundref refid="class_a_s_e__assignment_1_1_custom_shape" prot="public" virt="non-virtual">ASE_assignment.CustomShape</derivedcompoundref>
     <derivedcompoundref refid="class_a_s_e__assignment_1_1_rectangle" prot="public" virt="non-virtual">ASE_assignment.Rectangle</derivedcompoundref>
     <derivedcompoundref refid="class_a_s_e__assignment_1_1_triangle" prot="public" virt="non-virtual">ASE_assignment.Triangle</derivedcompoundref>
     <sectiondef kind="property">
@@ -172,12 +173,18 @@
         </childnode>
       </node>
       <node id="3">
+        <label>ASE_assignment.CustomShape</label>
+        <link refid="class_a_s_e__assignment_1_1_custom_shape"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
         <label>ASE_assignment.Rectangle</label>
         <link refid="class_a_s_e__assignment_1_1_rectangle"/>
         <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="4">
+      <node id="5">
         <label>ASE_assignment.Triangle</label>
         <link refid="class_a_s_e__assignment_1_1_triangle"/>
         <childnode refid="1" relation="public-inheritance">

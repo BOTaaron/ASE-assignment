@@ -2,24 +2,29 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
   <compounddef id="namespace_a_s_e__assignment" kind="namespace" language="C#">
     <compoundname>ASE_assignment</compoundname>
-    <innerclass refid="class_a_s_e__assignment_1_1_canvass" prot="public">ASE_assignment::Canvass</innerclass>
+    <innerclass refid="class_a_s_e__assignment_1_1_canvas" prot="public">ASE_assignment::Canvas</innerclass>
     <innerclass refid="class_a_s_e__assignment_1_1_circle" prot="package">ASE_assignment::Circle</innerclass>
     <innerclass refid="class_a_s_e__assignment_1_1_command" prot="package">ASE_assignment::Command</innerclass>
     <innerclass refid="class_a_s_e__assignment_1_1_command_parser" prot="package">ASE_assignment::CommandParser</innerclass>
     <innerclass refid="class_a_s_e__assignment_1_1_command_processor" prot="package">ASE_assignment::CommandProcessor</innerclass>
     <innerclass refid="class_a_s_e__assignment_1_1_conditionals" prot="package">ASE_assignment::Conditionals</innerclass>
+    <innerclass refid="class_a_s_e__assignment_1_1_custom_shape" prot="package">ASE_assignment::CustomShape</innerclass>
     <innerclass refid="class_a_s_e__assignment_1_1_file_manager" prot="public">ASE_assignment::FileManager</innerclass>
     <innerclass refid="class_a_s_e__assignment_1_1_form1" prot="public">ASE_assignment::Form1</innerclass>
+    <innerclass refid="class_a_s_e__assignment_1_1_loops" prot="package">ASE_assignment::Loops</innerclass>
+    <innerclass refid="class_a_s_e__assignment_1_1_methods" prot="package">ASE_assignment::Methods</innerclass>
     <innerclass refid="class_a_s_e__assignment_1_1_pen_controller" prot="package">ASE_assignment::PenController</innerclass>
     <innerclass refid="class_a_s_e__assignment_1_1_program" prot="package">ASE_assignment::Program</innerclass>
     <innerclass refid="class_a_s_e__assignment_1_1_rectangle" prot="package">ASE_assignment::Rectangle</innerclass>
     <innerclass refid="class_a_s_e__assignment_1_1_shape" prot="public">ASE_assignment::Shape</innerclass>
+    <innerclass refid="class_a_s_e__assignment_1_1_shape_factory" prot="package">ASE_assignment::ShapeFactory</innerclass>
+    <innerclass refid="class_a_s_e__assignment_1_1_syntax_exception" prot="public">ASE_assignment::SyntaxException</innerclass>
     <innerclass refid="class_a_s_e__assignment_1_1_triangle" prot="public">ASE_assignment::Triangle</innerclass>
     <innerclass refid="class_a_s_e__assignment_1_1_variable_manager" prot="package">ASE_assignment::VariableManager</innerclass>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Canvass.cs" line="8" column="1"/>
+    <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/Canvas.cs" line="8" column="1"/>
   </compounddef>
 </doxygen>

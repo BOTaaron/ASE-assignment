@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['shapefill_0',['ShapeFill',['../class_a_s_e__assignment_1_1_shape.html#add0c33be27ded76dd89bbfe6f7f32fbf',1,'ASE_assignment::Shape']]]
+  ['iscapturing_0',['IsCapturing',['../class_a_s_e__assignment_1_1_methods.html#ac2dcbf849cfa5c7fd75ad4abd53f452e',1,'ASE_assignment::Methods']]]
 ];

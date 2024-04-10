@@ -5,16 +5,13 @@
 \item 
 void \mbox{\hyperlink{class_a_s_e__assignment_1_1_variable_manager_a7fbf0e694da7ca1c86614df817033b8c}{Declare\+Variable}} (string string\+Parameter)
 \begin{DoxyCompactList}\small\item\em Logic for creating a variable and saving it to dictionary along with its value after checking for an expression. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_a_s_e__assignment_1_1_variable_manager_ae122257a0ce5b1bc2576269c1353b939}{Update\+Variable}} (string variable\+Name, string expression)
+\item 
 object \mbox{\hyperlink{class_a_s_e__assignment_1_1_variable_manager_ad7747571f146871172040d1393ca7400}{Get\+Variable}} (string name)
 \begin{DoxyCompactList}\small\item\em Method that publicly returns the variable value. \end{DoxyCompactList}\item 
 \Hypertarget{class_a_s_e__assignment_1_1_variable_manager_afc6822e94a1161943555b42b61736728}\label{class_a_s_e__assignment_1_1_variable_manager_afc6822e94a1161943555b42b61736728} 
 void {\bfseries Clear\+Variables} ()
 \begin{DoxyCompactList}\small\item\em Clears stored variables from the dictionary to prevent duplicates when running the code twice. \end{DoxyCompactList}\end{DoxyCompactItemize}
-\doxysubsubsection*{Private Member Functions}
-\begin{DoxyCompactItemize}
-\item 
-object \mbox{\hyperlink{class_a_s_e__assignment_1_1_variable_manager_afde8e60a64a1d7cb03c2eb9a45285ad0}{Evaluate\+Expression}} (string expression)
-\begin{DoxyCompactList}\small\item\em Evaluates expressions on more complex variable declarations, for example completing arithmetic operations. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
@@ -47,29 +44,6 @@ Logic for creating a variable and saving it to dictionary along with its value a
 {\em Argument\+Exception} & Throws exception when variable incorrectly declared\\
 \hline
 \end{DoxyExceptions}
-\Hypertarget{class_a_s_e__assignment_1_1_variable_manager_afde8e60a64a1d7cb03c2eb9a45285ad0}\label{class_a_s_e__assignment_1_1_variable_manager_afde8e60a64a1d7cb03c2eb9a45285ad0} 
-\index{ASE\_assignment.VariableManager@{ASE\_assignment.VariableManager}!EvaluateExpression@{EvaluateExpression}}
-\index{EvaluateExpression@{EvaluateExpression}!ASE\_assignment.VariableManager@{ASE\_assignment.VariableManager}}
-\doxysubsubsection{\texorpdfstring{EvaluateExpression()}{EvaluateExpression()}}
-{\footnotesize\ttfamily object ASE\+\_\+assignment.\+Variable\+Manager.\+Evaluate\+Expression (\begin{DoxyParamCaption}\item[{string}]{expression }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
-
-
-
-Evaluates expressions on more complex variable declarations, for example completing arithmetic operations. 
-
-
-\begin{DoxyParams}{Parameters}
-{\em expression} & The expression part of the variable, taken by splitting the line after the var command\\
-\hline
-\end{DoxyParams}
-\begin{DoxyReturn}{Returns}
-The result of the expression within the string
-\end{DoxyReturn}
-
-\begin{DoxyExceptions}{Exceptions}
-{\em Argument\+Exception} & Throws an exception if the exception was unable to be evaluated\\
-\hline
-\end{DoxyExceptions}
 \Hypertarget{class_a_s_e__assignment_1_1_variable_manager_ad7747571f146871172040d1393ca7400}\label{class_a_s_e__assignment_1_1_variable_manager_ad7747571f146871172040d1393ca7400} 
 \index{ASE\_assignment.VariableManager@{ASE\_assignment.VariableManager}!GetVariable@{GetVariable}}
 \index{GetVariable@{GetVariable}!ASE\_assignment.VariableManager@{ASE\_assignment.VariableManager}}
@@ -91,6 +65,24 @@ The value of the provided variable
 
 \begin{DoxyExceptions}{Exceptions}
 {\em Key\+Not\+Found\+Exception} & Exception thrown if the variable was not found, like does not exist or spelled wrong\\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_a_s_e__assignment_1_1_variable_manager_ae122257a0ce5b1bc2576269c1353b939}\label{class_a_s_e__assignment_1_1_variable_manager_ae122257a0ce5b1bc2576269c1353b939} 
+\index{ASE\_assignment.VariableManager@{ASE\_assignment.VariableManager}!UpdateVariable@{UpdateVariable}}
+\index{UpdateVariable@{UpdateVariable}!ASE\_assignment.VariableManager@{ASE\_assignment.VariableManager}}
+\doxysubsubsection{\texorpdfstring{UpdateVariable()}{UpdateVariable()}}
+{\footnotesize\ttfamily void ASE\+\_\+assignment.\+Variable\+Manager.\+Update\+Variable (\begin{DoxyParamCaption}\item[{string}]{variable\+Name,  }\item[{string}]{expression }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em variable\+Name} & \\
+\hline
+{\em expression} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Argument\+Exception} & \\
 \hline
 \end{DoxyExceptions}
 

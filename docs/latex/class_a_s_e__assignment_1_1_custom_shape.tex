@@ -1,0 +1,142 @@
+\doxysection{ASE\+\_\+assignment.\+Custom\+Shape Class Reference}
+\hypertarget{class_a_s_e__assignment_1_1_custom_shape}{}\label{class_a_s_e__assignment_1_1_custom_shape}\index{ASE\_assignment.CustomShape@{ASE\_assignment.CustomShape}}
+Inheritance diagram for ASE\+\_\+assignment.\+Custom\+Shape\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_a_s_e__assignment_1_1_custom_shape}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_a_s_e__assignment_1_1_custom_shape_a7c169205429ac3bb49d659aba51776d2}{Custom\+Shape}} (int size, int sides)
+\begin{DoxyCompactList}\small\item\em Draws a custom shape defined by the user, in a circular shape but with a custom number of sides for example 6 sides for a hexagon, 8 sides for a octagon, etc. \end{DoxyCompactList}\item 
+override void \mbox{\hyperlink{class_a_s_e__assignment_1_1_custom_shape_a0648dabfe31e08c8c1b3b3cd1353887c}{Draw}} (Graphics graphics, Pen pen, int x, int y)
+\begin{DoxyCompactList}\small\item\em Draw a hollow shape on the bitmap. \end{DoxyCompactList}\item 
+override void \mbox{\hyperlink{class_a_s_e__assignment_1_1_custom_shape_adb3e3d8d708f0870f199e5609aff3b0d}{Fill}} (Graphics graphics, Brush brush, int x, int y)
+\begin{DoxyCompactList}\small\item\em Draw a solid shape on the bitmap. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_a_s_e__assignment_1_1_shape}{ASE\+\_\+assignment.\+Shape}}}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_a_s_e__assignment_1_1_shape_a6bb21024ef15686aa32c25733de9f56e}{Draw}} (Graphics graphics, Pen pen, int x, int y)
+\begin{DoxyCompactList}\small\item\em Abstract method to draw shape outlines, to be overriden in the class for each specific shape. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_a_s_e__assignment_1_1_shape_a967d0bc8edb9161499e0dc7cb0bb4833}{Fill}} (Graphics graphics, Brush brush, int x, int y)
+\begin{DoxyCompactList}\small\item\em Abstract method to draw solid fill shapes, to be overriden in the class for each specific shape. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_a_s_e__assignment_1_1_custom_shape_a69ad592dae4b79ec0d86adbd37926da0}\label{class_a_s_e__assignment_1_1_custom_shape_a69ad592dae4b79ec0d86adbd37926da0} 
+int {\bfseries Sides}\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
+\item 
+\Hypertarget{class_a_s_e__assignment_1_1_custom_shape_ab4ce668f8932c7d0703a810a755c557a}\label{class_a_s_e__assignment_1_1_custom_shape_ab4ce668f8932c7d0703a810a755c557a} 
+int {\bfseries Size}\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties inherited from \mbox{\hyperlink{class_a_s_e__assignment_1_1_shape}{ASE\+\_\+assignment.\+Shape}}}
+\begin{DoxyCompactItemize}
+\item 
+bool {\bfseries Shape\+Fill} = false\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Accessor for the boolean to change between pen or brush fill. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Point\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_a_s_e__assignment_1_1_custom_shape_ae89d6f347839a1c6e6640539deef8c24}{Calculate\+Vertices}} (int centerX, int centerY, int size, int sides)
+\begin{DoxyCompactList}\small\item\em Calculate the structure of the polygon. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_a_s_e__assignment_1_1_custom_shape_a7c169205429ac3bb49d659aba51776d2}\label{class_a_s_e__assignment_1_1_custom_shape_a7c169205429ac3bb49d659aba51776d2} 
+\index{ASE\_assignment.CustomShape@{ASE\_assignment.CustomShape}!CustomShape@{CustomShape}}
+\index{CustomShape@{CustomShape}!ASE\_assignment.CustomShape@{ASE\_assignment.CustomShape}}
+\doxysubsubsection{\texorpdfstring{CustomShape()}{CustomShape()}}
+{\footnotesize\ttfamily ASE\+\_\+assignment.\+Custom\+Shape.\+Custom\+Shape (\begin{DoxyParamCaption}\item[{int}]{size,  }\item[{int}]{sides }\end{DoxyParamCaption})}
+
+
+
+Draws a custom shape defined by the user, in a circular shape but with a custom number of sides for example 6 sides for a hexagon, 8 sides for a octagon, etc. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em size} & The size of the polygon\\
+\hline
+{\em sides} & The number of sides, between 3 and 10\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Argument\+Out\+Of\+Range\+Exception} & Throws an exception if user defines more than 10 sides or less than 3\\
+\hline
+\end{DoxyExceptions}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_a_s_e__assignment_1_1_custom_shape_ae89d6f347839a1c6e6640539deef8c24}\label{class_a_s_e__assignment_1_1_custom_shape_ae89d6f347839a1c6e6640539deef8c24} 
+\index{ASE\_assignment.CustomShape@{ASE\_assignment.CustomShape}!CalculateVertices@{CalculateVertices}}
+\index{CalculateVertices@{CalculateVertices}!ASE\_assignment.CustomShape@{ASE\_assignment.CustomShape}}
+\doxysubsubsection{\texorpdfstring{CalculateVertices()}{CalculateVertices()}}
+{\footnotesize\ttfamily Point\mbox{[}$\,$\mbox{]} ASE\+\_\+assignment.\+Custom\+Shape.\+Calculate\+Vertices (\begin{DoxyParamCaption}\item[{int}]{centerX,  }\item[{int}]{centerY,  }\item[{int}]{size,  }\item[{int}]{sides }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Calculate the structure of the polygon. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em centerX} & \\
+\hline
+{\em centerY} & \\
+\hline
+{\em size} & size of the polygon\\
+\hline
+{\em sides} & number of sides to the polygon\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+returns the array of vertices
+\end{DoxyReturn}
+\Hypertarget{class_a_s_e__assignment_1_1_custom_shape_a0648dabfe31e08c8c1b3b3cd1353887c}\label{class_a_s_e__assignment_1_1_custom_shape_a0648dabfe31e08c8c1b3b3cd1353887c} 
+\index{ASE\_assignment.CustomShape@{ASE\_assignment.CustomShape}!Draw@{Draw}}
+\index{Draw@{Draw}!ASE\_assignment.CustomShape@{ASE\_assignment.CustomShape}}
+\doxysubsubsection{\texorpdfstring{Draw()}{Draw()}}
+{\footnotesize\ttfamily override void ASE\+\_\+assignment.\+Custom\+Shape.\+Draw (\begin{DoxyParamCaption}\item[{Graphics}]{graphics,  }\item[{Pen}]{pen,  }\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+Draw a hollow shape on the bitmap. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em graphics} & The bitmap to draw on\\
+\hline
+{\em pen} & The pen that draws the shape\\
+\hline
+{\em x} & the x location of the shape to draw\\
+\hline
+{\em y} & the y location of the shape to draw\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_a_s_e__assignment_1_1_custom_shape_adb3e3d8d708f0870f199e5609aff3b0d}\label{class_a_s_e__assignment_1_1_custom_shape_adb3e3d8d708f0870f199e5609aff3b0d} 
+\index{ASE\_assignment.CustomShape@{ASE\_assignment.CustomShape}!Fill@{Fill}}
+\index{Fill@{Fill}!ASE\_assignment.CustomShape@{ASE\_assignment.CustomShape}}
+\doxysubsubsection{\texorpdfstring{Fill()}{Fill()}}
+{\footnotesize\ttfamily override void ASE\+\_\+assignment.\+Custom\+Shape.\+Fill (\begin{DoxyParamCaption}\item[{Graphics}]{graphics,  }\item[{Brush}]{brush,  }\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+Draw a solid shape on the bitmap. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em graphics} & The bitmap to draw on\\
+\hline
+{\em brush} & The brush that draws the solid shape\\
+\hline
+{\em x} & the x location of the shape to draw\\
+\hline
+{\em y} & the y location of the shame to draw\\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Git\+Hub-\/\+Repos/\+ASE-\/assignment/\+ASE-\/assignment/Custom\+Shape.\+cs\end{DoxyCompactItemize}

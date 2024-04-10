@@ -1,0 +1,178 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="class_a_s_e__assignment_1_1_shape_factory" kind="class" language="C#" prot="package">
+    <compoundname>ASE_assignment::ShapeFactory</compoundname>
+    <sectiondef kind="public-type">
+      <memberdef kind="enum" id="class_a_s_e__assignment_1_1_shape_factory_1a39806ab6ea999fef7bc320026895db95" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>ShapeType</name>
+        <qualifiedname>ASE_assignment.ShapeFactory.ShapeType</qualifiedname>
+        <enumvalue id="class_a_s_e__assignment_1_1_shape_factory_1a39806ab6ea999fef7bc320026895db95a30954d90085f6eaaf5817917fc5fecb3" prot="public">
+          <name>Circle</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_a_s_e__assignment_1_1_shape_factory_1a39806ab6ea999fef7bc320026895db95ace9291906a4c3b042650b70d7f3b152e" prot="public">
+          <name>Rectangle</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_a_s_e__assignment_1_1_shape_factory_1a39806ab6ea999fef7bc320026895db95a5e5500cb2b82eb72d550de644bd1b64b" prot="public">
+          <name>Triangle</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_a_s_e__assignment_1_1_shape_factory_1a39806ab6ea999fef7bc320026895db95a90589c47f06eb971d548591f23c285af" prot="public">
+          <name>Custom</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>The type of shapes that can be creates. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/ShapeFactory.cs" line="17" column="15" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/ShapeFactory.cs" bodystart="18" bodyend="23"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_a_s_e__assignment_1_1_shape_factory_1ab676d3abeef22d78cfe8c6a88bcc9f4b" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_a_s_e__assignment_1_1_shape" kindref="compound">Shape</ref></type>
+        <definition>static Shape ASE_assignment.ShapeFactory.GetShape</definition>
+        <argsstring>(ShapeType type, int parameter)</argsstring>
+        <name>GetShape</name>
+        <qualifiedname>ASE_assignment.ShapeFactory.GetShape</qualifiedname>
+        <param>
+          <type><ref refid="class_a_s_e__assignment_1_1_shape_factory_1a39806ab6ea999fef7bc320026895db95" kindref="member">ShapeType</ref></type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>parameter</declname>
+        </param>
+        <briefdescription>
+<para>Create a shape with the specified size from a single parameter. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The type of shape to create</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>parameter</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The size parameter for the shape</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A new instance of the specified shape</para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>ArgumentException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Thrown when an invalid shape is created</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/ShapeFactory.cs" line="31" column="29" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/ShapeFactory.cs" bodystart="31" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_s_e__assignment_1_1_shape_factory_1a75ef5e8dba39fae18483e0a0eec04bbe" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_a_s_e__assignment_1_1_shape" kindref="compound">Shape</ref></type>
+        <definition>static Shape ASE_assignment.ShapeFactory.GetShape</definition>
+        <argsstring>(ShapeType type, int length, int width)</argsstring>
+        <name>GetShape</name>
+        <qualifiedname>ASE_assignment.ShapeFactory.GetShape</qualifiedname>
+        <param>
+          <type><ref refid="class_a_s_e__assignment_1_1_shape_factory_1a39806ab6ea999fef7bc320026895db95" kindref="member">ShapeType</ref></type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>length</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>width</declname>
+        </param>
+        <briefdescription>
+<para>Create a shape with two parameters for size. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The type of shape to create</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>length</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Length of the shape</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>width</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Width of the shape</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>returns a new instance of the specified shape</para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>ArgumentException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Throws an exception when the wrong parameter is entered</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/ShapeFactory.cs" line="50" column="29" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/ShapeFactory.cs" bodystart="50" bodyend="64"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Factory method for creating shape objects. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/GitHub-Repos/ASE-assignment/ASE-assignment/ShapeFactory.cs" line="12" column="13" bodyfile="D:/GitHub-Repos/ASE-assignment/ASE-assignment/ShapeFactory.cs" bodystart="13" bodyend="66"/>
+    <listofallmembers>
+      <member refid="class_a_s_e__assignment_1_1_shape_factory_1ab676d3abeef22d78cfe8c6a88bcc9f4b" prot="public" virt="non-virtual"><scope>ASE_assignment::ShapeFactory</scope><name>GetShape</name></member>
+      <member refid="class_a_s_e__assignment_1_1_shape_factory_1a75ef5e8dba39fae18483e0a0eec04bbe" prot="public" virt="non-virtual"><scope>ASE_assignment::ShapeFactory</scope><name>GetShape</name></member>
+      <member refid="class_a_s_e__assignment_1_1_shape_factory_1a39806ab6ea999fef7bc320026895db95" prot="public" virt="non-virtual"><scope>ASE_assignment::ShapeFactory</scope><name>ShapeType</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
