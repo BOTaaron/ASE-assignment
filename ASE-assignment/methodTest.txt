@@ -8,15 +8,14 @@
 8:         circle c
 9:         var c = c + 10
 10:     endloop
-11:     moveto 100,100
-12: endmethod
-13: method incrementRectangles()
-14:     moveto 450,400
-15:     while d < 15
-16:         var d = d + 1
-17:         rectangle b,b
-18:         var b = b + 20
-19:     endloop
-20: endmethod
-21: incrementCircles()
-22: incrementRectangles()
+11: endmethod
+12: method incrementRectangles()
+13:     moveto 450,400
+14:     while d < 15
+15:         var d = d + 1
+16:         rectangle b,b
+17:         var b = b + 20
+18:     endloop
+19: endmethod
+20: incrementCircles()
+21: incrementRectangles()

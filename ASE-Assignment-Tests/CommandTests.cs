@@ -27,7 +27,7 @@ namespace ASE_Assignment_Tests
                 var parsedLine = parse.ParseLine("circle 50,50");
 
                 // Act 
-                Assert.Throws<ArgumentException>(() => runCommand.RunLines(parsedLine));
+                Assert.Throws<SyntaxException>(() => runCommand.RunLines(parsedLine));
 
         }
         /// <summary>
@@ -44,10 +44,10 @@ namespace ASE_Assignment_Tests
             CommandProcessor runCommand = new CommandProcessor(controller, testBitmap, variableManager);
 
             // Assert
-            var parsedLine = parse.ParseLine("rectangle 50,50,100,100");
+            var parsedLine = parse.ParseLine("rectangle invalidVariable,24");
 
             // Act 
-            Assert.Throws<ArgumentException>(() => runCommand.RunLines(parsedLine));
+            Assert.Throws<SyntaxException>(() => runCommand.RunLines(parsedLine));
 
         }
         /// <summary>
@@ -64,7 +64,7 @@ namespace ASE_Assignment_Tests
             CommandProcessor runCommand = new CommandProcessor(controller, testBitmap, variableManager);
 
             // Assert
-            var parsedLine = parse.ParseLine("triangle 30,30,30");
+            var parsedLine = parse.ParseLine("triangle variable");
 
             // Act 
             Assert.Throws<ArgumentException>(() => runCommand.RunLines(parsedLine));
